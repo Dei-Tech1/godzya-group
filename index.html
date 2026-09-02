@@ -1,369 +1,399 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GODZYA GROUP | AI • Data • Business • Technology</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<title>GODZYA GROUP | AI • Data • Business • Technology</title>
 
-    html {
-      scroll-behavior: smooth;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #07111f;
-      color: white;
-      line-height: 1.6;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background:
-        linear-gradient(rgba(7, 17, 31, 0.82), rgba(7, 17, 31, 0.95)),
-        radial-gradient(circle at top right, #164e63, transparent 45%);
-    }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #07111f;
+  color: #ffffff;
+  line-height: 1.6;
+}
 
-    nav {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 25px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 25px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
 
-    .logo {
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
 
-    .logo span {
-      font-weight: 400;
-    }
+.logo span {
+  font-weight: 300;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-size: 14px;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
 
-    nav a:hover {
-      opacity: 0.7;
-    }
+nav a:hover {
+  opacity: .7;
+}
 
-    .hero {
-      flex: 1;
-      max-width: 1000px;
-      width: 100%;
-      margin: auto;
-      padding: 80px 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.hero {
+  min-height: 100vh;
+  padding: 150px 7% 80px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 85% 20%, #164e63 0%, transparent 30%),
+    radial-gradient(circle at 10% 90%, #102a43 0%, transparent 35%),
+    #07111f;
+}
 
-    .tagline {
-      font-size: 14px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      opacity: 0.75;
-    }
+.hero-content {
+  max-width: 850px;
+}
 
-    h1 {
-      font-size: clamp(48px, 9vw, 90px);
-      line-height: 1;
-      margin-bottom: 25px;
-      letter-spacing: -3px;
-    }
+.label {
+  font-size: 13px;
+  letter-spacing: 5px;
+  opacity: .65;
+  margin-bottom: 20px;
+}
 
-    .hero h2 {
-      font-size: clamp(22px, 4vw, 38px);
-      font-weight: 400;
-      margin-bottom: 20px;
-    }
+h1 {
+  font-size: clamp(55px, 10vw, 105px);
+  line-height: .95;
+  letter-spacing: -5px;
+  margin-bottom: 25px;
+}
 
-    .hero p {
-      max-width: 650px;
-      font-size: 18px;
-      opacity: 0.8;
-      margin-bottom: 35px;
-    }
+.hero h2 {
+  font-size: clamp(22px, 4vw, 38px);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  opacity: .72;
+  margin-bottom: 35px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 14px 25px;
-      border: 1px solid white;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
-    .btn:hover {
-      background: white;
-      color: #07111f;
-    }
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
 
-    section {
-      padding: 90px 25px;
-    }
+.btn:hover {
+  background: white;
+  color: #07111f;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-    }
+section {
+  padding: 100px 7%;
+}
 
-    .section-title {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
 
-    .section-intro {
-      max-width: 700px;
-      opacity: 0.75;
-      margin-bottom: 45px;
-    }
+.section-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: .55;
+  margin-bottom: 12px;
+}
 
-    .services {
-      background: #0b1728;
-    }
+h2.section-title {
+  font-size: clamp(35px, 6vw, 55px);
+  margin-bottom: 18px;
+}
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 20px;
-    }
+.intro {
+  max-width: 700px;
+  opacity: .7;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
 
-    .service {
-      padding: 30px;
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 10px;
-      background: rgba(255,255,255,0.03);
-    }
+.services {
+  background: #0a1728;
+}
 
-    .service h3 {
-      margin-bottom: 12px;
-      font-size: 21px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
 
-    .service p {
-      opacity: 0.7;
-      font-size: 15px;
-    }
+.card {
+  padding: 35px 28px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,.035);
+  transition: .3s;
+}
 
-    .about {
-      background: #07111f;
-    }
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,.35);
+}
 
-    .about-box {
-      max-width: 800px;
-      font-size: 19px;
-      opacity: 0.8;
-    }
+.number {
+  font-size: 13px;
+  opacity: .4;
+  margin-bottom: 25px;
+}
 
-    .values {
-      margin-top: 35px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+.card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
 
-    .value {
-      padding: 10px 18px;
-      border: 1px solid rgba(255,255,255,0.2);
-      border-radius: 30px;
-    }
+.card p {
+  font-size: 14px;
+  opacity: .62;
+}
 
-    .contact {
-      background: #0b1728;
-      text-align: center;
-    }
+.about {
+  background: #07111f;
+}
 
-    .contact p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      opacity: 0.75;
-    }
+.about-text {
+  max-width: 850px;
+  font-size: 21px;
+  opacity: .78;
+}
 
-    footer {
-      padding: 30px 20px;
-      text-align: center;
-      background: #040b14;
-      font-size: 13px;
-      opacity: 0.7;
-    }
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 35px;
+}
 
-    @media (max-width: 700px) {
-      nav {
-        padding: 20px;
-      }
+.value {
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 30px;
+  padding: 9px 18px;
+  font-size: 14px;
+}
 
-      nav div:last-child {
-        display: none;
-      }
+.contact {
+  text-align: center;
+  background: #0a1728;
+}
 
-      .hero {
-        padding: 60px 20px;
-      }
+.contact .intro {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-      section {
-        padding: 70px 20px;
-      }
-    }
-  </style>
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #040a12;
+  font-size: 13px;
+  opacity: .6;
+}
+
+@media(max-width:700px) {
+  nav {
+    padding: 20px;
+  }
+
+  nav div:last-child {
+    display: none;
+  }
+
+  .hero {
+    padding: 130px 20px 70px;
+  }
+
+  section {
+    padding: 75px 20px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header id="home">
-    <nav>
-      <div class="logo">GODZYA <span>GROUP</span></div>
+<nav>
+  <div class="logo">GODZYA <span>GROUP</span></div>
 
-      <div>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <div class="hero">
-      <div class="tagline">AI • Data • Business • Technology</div>
+<section class="hero" id="home">
+  <div class="hero-content">
 
-      <h1>GODZYA GROUP</h1>
+    <div class="label">AI • DATA • BUSINESS • TECHNOLOGY</div>
 
-      <h2>Building smarter solutions for a connected future.</h2>
+    <h1>GODZYA<br>GROUP</h1>
 
-      <p>
-        We combine artificial intelligence, data, business strategy
-        and technology to help businesses solve problems, improve
-        efficiency and create new opportunities.
-      </p>
+    <h2>Building smarter solutions for a connected future.</h2>
 
-      <div class="buttons">
-        <a href="#services" class="btn">Explore Our Services</a>
-        <a href="#contact" class="btn">Contact Us</a>
-      </div>
+    <p>
+      We bring together artificial intelligence, data, business
+      strategy and technology to help organizations solve problems,
+      improve performance and create new opportunities.
+    </p>
+
+    <div class="buttons">
+      <a href="#services" class="btn">Explore Services</a>
+      <a href="#contact" class="btn">Contact Us</a>
     </div>
-  </header>
 
-  <section class="services" id="services">
-    <div class="container">
-      <h2 class="section-title">Our Services</h2>
+  </div>
+</section>
 
-      <p class="section-intro">
-        Practical solutions designed to help organizations become
-        smarter, more efficient and ready for the future.
-      </p>
+<section class="services" id="services">
+  <div class="container">
 
-      <div class="service-grid">
+    <div class="section-label">WHAT WE DO</div>
 
-        <div class="service">
-          <h3>AI & Automation</h3>
-          <p>
-            Intelligent automation and AI-powered solutions that
-            simplify processes and improve productivity.
-          </p>
-        </div>
+    <h2 class="section-title">Our Services</h2>
 
-        <div class="service">
-          <h3>Data Analytics</h3>
-          <p>
-            Turning data into meaningful insights that support
-            better decisions and business growth.
-          </p>
-        </div>
+    <p class="intro">
+      Technology and business solutions designed for organizations
+      ready to grow, adapt and operate smarter.
+    </p>
 
-        <div class="service">
-          <h3>Business Solutions</h3>
-          <p>
-            Strategic solutions designed to improve operations,
-            performance and customer experiences.
-          </p>
-        </div>
+    <div class="grid">
 
-        <div class="service">
-          <h3>Logistics</h3>
-          <p>
-            Technology-driven approaches to transportation,
-            logistics and operational efficiency.
-          </p>
-        </div>
-
-        <div class="service">
-          <h3>Technology Solutions</h3>
-          <p>
-            Modern technology solutions that help businesses
-            adapt, connect and grow.
-          </p>
-        </div>
-
+      <div class="card">
+        <div class="number">01</div>
+        <h3>AI & Automation</h3>
+        <p>
+          Intelligent automation and AI solutions that simplify
+          processes and improve productivity.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <section class="about" id="about">
-    <div class="container">
+      <div class="card">
+        <div class="number">02</div>
+        <h3>Data Analytics</h3>
+        <p>
+          Transforming data into insights that support better
+          decisions and sustainable growth.
+        </p>
+      </div>
 
-      <h2 class="section-title">About GODZYA GROUP</h2>
+      <div class="card">
+        <div class="number">03</div>
+        <h3>Business Solutions</h3>
+        <p>
+          Practical strategies and solutions designed to improve
+          operations and customer experiences.
+        </p>
+      </div>
 
-      <p class="about-box">
-        GODZYA GROUP is a modern technology and business solutions
-        company focused on the intersection of AI, data, business
-        and technology. Our goal is to help businesses operate
-        smarter, make better decisions and prepare for tomorrow.
-      </p>
+      <div class="card">
+        <div class="number">04</div>
+        <h3>Logistics</h3>
+        <p>
+          Technology-driven approaches to transportation,
+          logistics and operational efficiency.
+        </p>
+      </div>
 
-      <div class="values">
-        <div class="value">Innovation</div>
-        <div class="value">Intelligence</div>
-        <div class="value">Strategy</div>
-        <div class="value">Technology</div>
-        <div class="value">Results</div>
+      <div class="card">
+        <div class="number">05</div>
+        <h3>Technology Solutions</h3>
+        <p>
+          Modern technology services that help businesses
+          connect, adapt and grow.
+        </p>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <div class="container">
+<section class="about" id="about">
+  <div class="container">
 
-      <h2 class="section-title">Let's Build Something Smarter</h2>
+    <div class="section-label">WHO WE ARE</div>
 
-      <p>
-        Have an idea, business challenge or project?
-        GODZYA GROUP is ready to explore the possibilities with you.
-      </p>
+    <h2 class="section-title">About GODZYA GROUP</h2>
 
-      <a href="mailto:info@godzyagroup.com" class="btn">
-        Contact GODZYA GROUP
-      </a>
+    <p class="about-text">
+      GODZYA GROUP is a modern business and technology company
+      focused on the intersection of AI, data, business and
+      technology. Our mission is to help businesses become
+      smarter, more efficient and prepared for the future.
+    </p>
 
+    <div class="values">
+      <div class="value">Innovation</div>
+      <div class="value">Intelligence</div>
+      <div class="value">Strategy</div>
+      <div class="value">Technology</div>
+      <div class="value">Results</div>
     </div>
-  </section>
 
-  <footer>
-    © 2026 GODZYA GROUP. All rights reserved.
-  </footer>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="section-label">LET'S CONNECT</div>
+
+    <h2 class="section-title">Let's Build Something Smarter.</h2>
+
+    <p class="intro">
+      Have an idea, business challenge or project?
+      Let's explore what's possible together.
+    </p>
+
+    <a href="mailto:info@godzyagroup.com" class="btn">
+      Contact GODZYA GROUP
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 GODZYA GROUP. All rights reserved.
+</footer>
 
 </body>
-            </html>
+  </html>  
