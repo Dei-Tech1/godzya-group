@@ -2505,3 +2505,236 @@ footer {
 <footer>
   © 2026 GODZYA GROUP. All rights reserved.
 </footer>
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu() {
+
+  const menu = document.getElementById("mobileMenu");
+
+  menu.classList.toggle("active");
+
+}
+
+
+function closeMenu() {
+
+  const menu = document.getElementById("mobileMenu");
+
+  menu.classList.remove("active");
+
+}
+
+
+/* =========================
+   SERVICE CARD FLIP
+========================= */
+
+document.querySelectorAll(".service-card").forEach(card => {
+
+  card.addEventListener("click", () => {
+
+    card.classList.toggle("flipped");
+
+  });
+
+});
+
+
+/* =========================
+   TECHNOLOGY CANVAS
+========================= */
+
+const canvas = document.getElementById("tech-canvas");
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+
+function resizeCanvas() {
+
+  canvas.width = window.innerWidth;
+  canvas.height = document.querySelector(".hero").offsetHeight;
+
+}
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
+
+
+/* =========================
+   CREATE PARTICLES
+========================= */
+
+function createParticles() {
+
+  particles = [];
+
+  const amount =
+    window.innerWidth < 700 ? 35 : 75;
+
+  for (let i = 0; i < amount; i++) {
+
+    particles.push({
+
+      x: Math.random() * canvas.width,
+
+      y: Math.random() * canvas.height,
+
+      radius:
+        Math.random() * 1.8 + 0.5,
+
+      speedX:
+        (Math.random() - 0.5) * 0.25,
+
+      speedY:
+        (Math.random() - 0.5) * 0.25,
+
+      opacity:
+        Math.random() * 0.6 + 0.2
+
+    });
+
+  }
+
+}
+
+createParticles();
+
+
+/* =========================
+   DRAW PARTICLES
+========================= */
+
+function drawParticles() {
+
+  ctx.clearRect(
+    0,
+    0,
+    canvas.width,
+    canvas.height
+  );
+
+
+  particles.forEach(p => {
+
+    p.x += p.speedX;
+    p.y += p.speedY;
+
+
+    if (p.x < 0)
+      p.x = canvas.width;
+
+    if (p.x > canvas.width)
+      p.x = 0;
+
+    if (p.y < 0)
+      p.y = canvas.height;
+
+    if (p.y > canvas.height)
+      p.y = 0;
+
+
+    ctx.beginPath();
+
+    ctx.arc(
+      p.x,
+      p.y,
+      p.radius,
+      0,
+      Math.PI * 2
+    );
+
+    ctx.fillStyle =
+      `rgba(120,220,255,${p.opacity})`;
+
+    ctx.fill();
+
+  });
+
+
+  requestAnimationFrame(drawParticles);
+
+}
+
+drawParticles();
+
+
+/* =========================
+   REBUILD PARTICLES
+   AFTER RESIZE
+========================= */
+
+window.addEventListener(
+  "resize",
+  createParticles
+);
+
+
+/* =========================
+   CLOSE MOBILE MENU
+   WHEN CLICKING OUTSIDE
+========================= */
+
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const menu =
+      document.getElementById("mobileMenu");
+
+    const button =
+      document.querySelector(".menu-toggle");
+
+
+    if (
+      menu.classList.contains("active") &&
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+
+      closeMenu();
+
+    }
+
+  }
+);
+
+
+/* =========================
+   ESCAPE KEY
+========================= */
+
+document.addEventListener(
+  "keydown",
+  function(event) {
+
+    if (event.key === "Escape") {
+
+      closeMenu();
+
+      document
+        .querySelectorAll(".service-card.flipped")
+        .forEach(card => {
+
+          card.classList.remove("flipped");
+
+        });
+
+    }
+
+  }
+);
+
+</script>
+
+
+</body>
+</html>
