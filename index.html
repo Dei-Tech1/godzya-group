@@ -380,7 +380,99 @@ footer {
   
 </style>
 </head>
+<script>
+const canvas = document.getElementById("tech-canvas");
+const ctx = canvas.getContext("2d");
 
+let particles = [];
+
+function resizeCanvas() {
+  const hero = document.querySelector(".hero");
+
+  canvas.width = hero.offsetWidth;
+  canvas.height = hero.offsetHeight;
+
+  createParticles();
+}
+
+function createParticles() {
+  particles = [];
+
+  const amount = window.innerWidth < 700 ? 35 : 65;
+
+  for (let i = 0; i < amount; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 1.8 + 0.6,
+      speedX: (Math.random() - 0.5) * 0.25,
+      speedY: (Math.random() - 0.5) * 0.25
+    });
+  }
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((particle, index) => {
+
+    particle.x += particle.speedX;
+    particle.y += particle.speedY;
+
+    if (particle.x < 0 || particle.x > canvas.width) {
+      particle.speedX *= -1;
+    }
+
+    if (particle.y < 0 || particle.y > canvas.height) {
+      particle.speedY *= -1;
+    }
+
+    ctx.beginPath();
+    ctx.arc(
+      particle.x,
+      particle.y,
+      particle.size,
+      0,
+      Math.PI * 2
+    );
+
+    ctx.fillStyle = "rgba(120, 210, 255, 0.65)";
+    ctx.fill();
+
+    for (let j = index + 1; j < particles.length; j++) {
+
+      const other = particles[j];
+
+      const dx = particle.x - other.x;
+      const dy = particle.y - other.y;
+
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < 150) {
+
+        const opacity = 0.16 * (1 - distance / 150);
+
+        ctx.beginPath();
+        ctx.moveTo(particle.x, particle.y);
+        ctx.lineTo(other.x, other.y);
+
+        ctx.strokeStyle =
+          "rgba(100, 200, 255, " + opacity + ")";
+
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener("resize", resizeCanvas);
+
+resizeCanvas();
+animate();
+</script>
 <body>
 
 <nav>
