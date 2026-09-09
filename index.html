@@ -1549,4 +1549,317 @@ footer {
         </h3>
 
         <p>
-          Te
+          Technology-driven approaches to improve
+coordination, visibility and operational efficiency.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="home-cta">
+
+  <div class="container">
+
+    <div class="section-label">
+      LET'S BUILD
+    </div>
+
+    <h2>
+      Ready to grow smarter?
+    </h2>
+
+    <p>
+      Tell us what you're trying to achieve and let's explore
+      a practical solution for your business.
+    </p>
+
+    <a
+      href="contact.html"
+      class="btn"
+    >
+      Start a Conversation
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  © 2026 GODZYA GROUP.
+  All rights reserved.
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById("mobileMenu");
+
+  if (menu) {
+    menu.classList.toggle("active");
+  }
+
+}
+
+
+function closeMenu() {
+
+  const menu =
+    document.getElementById("mobileMenu");
+
+  if (menu) {
+    menu.classList.remove("active");
+  }
+
+}
+
+
+/* =========================
+   FUTURISTIC NETWORK
+========================= */
+
+const canvas =
+  document.getElementById("tech-canvas");
+
+if (canvas) {
+
+  const ctx =
+    canvas.getContext("2d");
+
+  let particles = [];
+
+
+  function resizeCanvas() {
+
+    canvas.width =
+      window.innerWidth;
+
+    canvas.height =
+      window.innerHeight;
+
+  }
+
+
+  resizeCanvas();
+
+
+  window.addEventListener(
+    "resize",
+    () => {
+
+      resizeCanvas();
+
+      createParticles();
+
+    }
+  );
+
+
+  function createParticles() {
+
+    particles = [];
+
+    const count =
+      window.innerWidth < 700
+        ? 35
+        : 70;
+
+
+    for (
+      let i = 0;
+      i < count;
+      i++
+    ) {
+
+      particles.push({
+
+        x:
+          Math.random()
+          * canvas.width,
+
+        y:
+          Math.random()
+          * canvas.height,
+
+        vx:
+          (Math.random() - .5)
+          * .35,
+
+        vy:
+          (Math.random() - .5)
+          * .35,
+
+        radius:
+          Math.random()
+          * 1.5 + .5
+
+      });
+
+    }
+
+  }
+
+
+  createParticles();
+
+
+  function animateNetwork() {
+
+    ctx.clearRect(
+      0,
+      0,
+      canvas.width,
+      canvas.height
+    );
+
+
+    for (
+      let i = 0;
+      i < particles.length;
+      i++
+    ) {
+
+      const p =
+        particles[i];
+
+
+      p.x += p.vx;
+
+      p.y += p.vy;
+
+
+      if (
+        p.x < 0 ||
+        p.x > canvas.width
+      ) {
+
+        p.vx *= -1;
+
+      }
+
+
+      if (
+        p.y < 0 ||
+        p.y > canvas.height
+      ) {
+
+        p.vy *= -1;
+
+      }
+
+
+      ctx.beginPath();
+
+      ctx.arc(
+        p.x,
+        p.y,
+        p.radius,
+        0,
+        Math.PI * 2
+      );
+
+      ctx.fillStyle =
+        "rgba(120,220,255,.55)";
+
+      ctx.fill();
+
+
+      for (
+        let j = i + 1;
+        j < particles.length;
+        j++
+      ) {
+
+        const q =
+          particles[j];
+
+
+        const dx =
+          p.x - q.x;
+
+        const dy =
+          p.y - q.y;
+
+
+        const distance =
+          Math.sqrt(
+            dx * dx +
+            dy * dy
+          );
+
+
+        if (
+          distance < 130
+        ) {
+
+          const opacity =
+            (1 - distance / 130)
+            * .16;
+
+
+          ctx.beginPath();
+
+          ctx.moveTo(
+            p.x,
+            p.y
+          );
+
+          ctx.lineTo(
+            q.x,
+            q.y
+          );
+
+          ctx.strokeStyle =
+            `rgba(100,210,255,${opacity})`;
+
+          ctx.lineWidth = 1;
+
+          ctx.stroke();
+
+        }
+
+      }
+
+    }
+
+
+    requestAnimationFrame(
+      animateNetwork
+    );
+
+  }
+
+
+  animateNetwork();
+
+}
+
+</script>
+
+
+</body>
+
+</html>
