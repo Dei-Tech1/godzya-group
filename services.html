@@ -1,1 +1,1427 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
+<title>GODZYA GROUP | Services</title><style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #07111f;
+
+  color: #ffffff;
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 7%;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 28px 7%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  z-index: 20;
+}
+
+.logo {
+  font-size: 21px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.logo span {
+  opacity: .45;
+}
+
+.nav-links {
+  display: flex;
+
+  gap: 25px;
+}
+
+.nav-links a {
+  font-size: 13px;
+
+  opacity: .65;
+
+  transition: .3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  opacity: 1;
+
+  color: #8edfff;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-toggle {
+  display: none;
+
+  background: none;
+
+  border: 0;
+
+  color: white;
+
+  font-size: 26px;
+
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+  min-height: 72vh;
+
+  padding:
+    170px 7%
+    100px;
+
+  display: flex;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(28,115,160,.30),
+      transparent 25%
+    ),
+
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(20,70,120,.20),
+      transparent 30%
+    ),
+
+    #020812;
+}
+
+.page-hero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -20%;
+
+  background:
+
+    radial-gradient(
+      ellipse at 70% 45%,
+      rgba(80,180,255,.15),
+      transparent 35%
+    ),
+
+    radial-gradient(
+      ellipse at 30% 65%,
+      rgba(90,120,255,.10),
+      transparent 30%
+    );
+
+  filter: blur(20px);
+
+  animation:
+    galaxyPulse 8s ease-in-out
+    infinite alternate;
+
+  pointer-events: none;
+}
+
+.page-hero::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.7) 1px,
+      transparent 1px
+    ),
+
+    radial-gradient(
+      circle,
+      rgba(120,210,255,.4) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    90px 90px,
+    150px 150px;
+
+  opacity: .20;
+
+  animation:
+    starDrift 30s linear infinite;
+
+  pointer-events: none;
+}
+
+@keyframes galaxyPulse {
+
+  from {
+    transform: scale(1);
+
+    opacity: .65;
+  }
+
+  to {
+    transform: scale(1.08);
+
+    opacity: 1;
+  }
+
+}
+
+@keyframes starDrift {
+
+  from {
+    transform:
+      translate(0,0);
+  }
+
+  to {
+    transform:
+      translate(-40px,25px);
+  }
+
+}
+
+.page-hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  max-width: 850px;
+}
+
+.section-label {
+  font-size: 12px;
+
+  letter-spacing: 4px;
+
+  opacity: .55;
+
+  margin-bottom: 18px;
+}
+
+.page-hero h1 {
+  font-size:
+    clamp(55px,9vw,105px);
+
+  line-height: .9;
+
+  letter-spacing: -5px;
+
+  margin-bottom: 28px;
+}
+
+.page-hero h1 span {
+  color: #a6e7ff;
+}
+
+.page-hero p {
+  max-width: 700px;
+
+  font-size: 18px;
+
+  opacity: .68;
+}
+
+
+/* =========================
+   SERVICES INTRO
+========================= */
+
+.services-intro {
+  background: #06101d;
+
+  text-align: center;
+}
+
+.services-intro .section-label {
+  margin-bottom: 12px;
+}
+
+.services-intro h2 {
+  font-size:
+    clamp(35px,6vw,55px);
+
+  margin-bottom: 20px;
+}
+
+.services-intro p {
+  max-width: 720px;
+
+  margin:
+    0 auto;
+
+  font-size: 17px;
+
+  opacity: .68;
+}
+
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-section {
+  background: #06101d;
+
+  padding-top: 40px;
+}
+
+.service-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+  position: relative;
+
+  padding: 40px;
+
+  min-height: 390px;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #07111f,
+      #0b1a2d
+    );
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  box-shadow:
+    0 15px 45px
+    rgba(0,0,0,.25);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.service-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+
+  height: 220px;
+
+  right: -80px;
+
+  top: -80px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(80,190,255,.08);
+
+  filter: blur(10px);
+}
+
+.service-card:hover {
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(100,210,255,.38);
+
+  box-shadow:
+    0 25px 60px
+    rgba(0,0,0,.35),
+
+    0 0 30px
+    rgba(60,190,255,.08);
+}
+
+.service-number {
+  font-size: 12px;
+
+  letter-spacing: 3px;
+
+  opacity: .4;
+
+  margin-bottom: 25px;
+}
+
+.service-icon {
+  font-size: 42px;
+
+  margin-bottom: 22px;
+
+  filter:
+    drop-shadow(
+      0 0 12px
+      rgba(100,210,255,.18)
+    );
+}
+
+.service-card h3 {
+  font-size: 27px;
+
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+
+  opacity: .68;
+
+  line-height: 1.75;
+
+  margin-bottom: 22px;
+}
+
+.service-card h4 {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  opacity: .5;
+
+  margin-bottom: 12px;
+}
+
+.service-card ul {
+  list-style: none;
+
+  padding: 0;
+}
+
+.service-card li {
+  font-size: 14px;
+
+  opacity: .68;
+
+  margin-bottom: 8px;
+}
+
+.service-card li::before {
+  content: "→";
+
+  margin-right: 9px;
+
+  color: #8edfff;
+
+  opacity: .7;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process {
+  background: #07111f;
+}
+
+.process-header {
+  max-width: 700px;
+
+  margin-bottom: 55px;
+}
+
+.process-header h2 {
+  font-size:
+    clamp(35px,6vw,55px);
+
+  margin-bottom: 18px;
+}
+
+.process-header p {
+  opacity: .65;
+
+  font-size: 17px;
+}
+
+.process-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap: 20px;
+}
+
+.process-item {
+  padding: 30px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.15);
+
+  transition:
+    border-color .3s ease;
+}
+
+.process-item:hover {
+  border-color:
+    rgba(100,210,255,.55);
+}
+
+.process-number {
+  font-size: 12px;
+
+  letter-spacing: 3px;
+
+  opacity: .4;
+
+  margin-bottom: 20px;
+}
+
+.process-item h3 {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+.process-item p {
+  font-size: 14px;
+
+  opacity: .62;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  text-align: center;
+
+  background: #0a1728;
+
+  padding:
+    110px 7%;
+}
+
+.cta h2 {
+  font-size:
+    clamp(35px,6vw,55px);
+
+  margin-bottom: 20px;
+}
+
+.cta p {
+  max-width: 680px;
+
+  margin:
+    0 auto 35px;
+
+  font-size: 17px;
+
+  opacity: .68;
+}
+
+.btn {
+  display: inline-block;
+
+  padding:
+    14px 26px;
+
+  border:
+    1px solid
+    rgba(140,220,255,.30);
+
+  border-radius: 30px;
+
+  background:
+    rgba(80,170,220,.08);
+
+  font-size: 13px;
+
+  transition: .3s ease;
+}
+
+.btn:hover {
+  background:
+    rgba(80,170,220,.16);
+
+  border-color:
+    rgba(140,220,255,.65);
+
+  box-shadow:
+    0 0 25px
+    rgba(70,190,255,.12);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+
+  padding: 30px;
+
+  background: #040a12;
+
+  font-size: 13px;
+
+  opacity: .6;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+  nav {
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+
+    top: 70px;
+
+    left: 20px;
+
+    right: 20px;
+
+    padding: 15px;
+
+    background:
+      rgba(5,15,28,.97);
+
+    border:
+      1px solid
+      rgba(100,210,255,.18);
+
+    border-radius: 15px;
+
+    box-shadow:
+      0 15px 40px
+      rgba(0,0,0,.35);
+
+    z-index: 30;
+  }
+
+  .mobile-menu.active {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .mobile-menu a {
+    padding: 10px;
+
+    font-size: 14px;
+
+    opacity: .75;
+  }
+
+  .page-hero {
+    min-height: 65vh;
+
+    padding:
+      140px 20px
+      80px;
+  }
+
+  .page-hero h1 {
+    letter-spacing: -3px;
+  }
+
+  section {
+    padding:
+      75px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+
+    padding: 30px;
+  }
+
+  .process-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media(prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      .01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      .01ms !important;
+
+    scroll-behavior:
+      auto !important;
+  }
+
+}
+
+</style></head><body><!-- =========================
+     NAVIGATION
+========================= --><nav><a
+href="index.html"
+class="logo">
+
+GODZYA
+<span>GROUP</span>
+
+  </a>  <div class="nav-links"><a href="index.html">
+  Home
+</a>
+
+<a
+  href="services.html"
+  class="active">
+
+  Services
+
+</a>
+
+<a href="who-we-serve.html">
+  Who We Serve
+</a>
+
+<a href="about.html">
+  About
+</a>
+
+<a href="why-godzya.html">
+  Why GODZYA
+</a>
+
+<a href="contact.html">
+  Contact
+</a>
+
+  </div><button
+class="menu-toggle"
+onclick="toggleMenu()"
+aria-label="Open navigation menu">
+
+☰
+
+  </button></nav><!-- =========================
+     MOBILE MENU
+========================= --><div
+  class="mobile-menu"
+  id="mobileMenu"><a
+href="index.html"
+onclick="closeMenu()">
+
+Home
+
+  </a><a
+href="services.html"
+onclick="closeMenu()">
+
+Services
+
+  </a><a
+href="who-we-serve.html"
+onclick="closeMenu()">
+
+Who We Serve
+
+  </a><a
+href="about.html"
+onclick="closeMenu()">
+
+About
+
+  </a><a
+href="why-godzya.html"
+onclick="closeMenu()">
+
+Why GODZYA
+
+  </a><a
+href="contact.html"
+onclick="closeMenu()">
+
+Contact
+
+  </a></div><!-- =========================
+     PAGE HERO
+========================= --><section class="page-hero">  <div class="page-hero-content"><div class="section-label">
+
+  GODZYA GROUP
+
+</div>
+
+<h1>
+
+  What We<br>
+
+  <span>Build.</span>
+
+</h1>
+
+<p>
+
+  Technology-driven solutions designed
+  to help businesses operate smarter,
+  make better decisions and grow with
+  confidence.
+
+</p>
+
+  </div></section><!-- =========================
+     SERVICES INTRO
+========================= --><section class="services-intro">  <div class="container"><div class="section-label">
+
+  OUR SERVICES
+
+</div>
+
+<h2>
+
+  Technology With Purpose
+
+</h2>
+
+<p>
+
+  GODZYA GROUP brings together
+  artificial intelligence, data,
+  business strategy and technology
+  to create practical solutions for
+  modern businesses.
+
+</p>
+
+  </div></section><!-- =========================
+     SERVICES
+========================= --><section class="services-section">  <div class="service-grid"><!-- AI -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    01
+  </div>
+
+  <div class="service-icon">
+    🤖
+  </div>
+
+  <h3>
+    AI & Automation
+  </h3>
+
+  <p>
+
+    We help businesses use
+    artificial intelligence and
+    automation to reduce repetitive
+    work, improve efficiency and
+    create smarter workflows.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      AI-powered workflows
+    </li>
+
+    <li>
+      Business automation
+    </li>
+
+    <li>
+      Intelligent assistants
+    </li>
+
+    <li>
+      Process optimisation
+    </li>
+
+  </ul>
+
+</article>
+
+
+<!-- DATA -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    02
+  </div>
+
+  <div class="service-icon">
+    📊
+  </div>
+
+  <h3>
+    Data Analytics
+  </h3>
+
+  <p>
+
+    We transform business data into
+    meaningful information that helps
+    organisations understand
+    performance and make informed
+    decisions.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      Data analysis
+    </li>
+
+    <li>
+      Dashboards & reporting
+    </li>
+
+    <li>
+      Performance insights
+    </li>
+
+    <li>
+      Data-driven decisions
+    </li>
+
+  </ul>
+
+</article>
+
+
+<!-- BUSINESS -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    03
+  </div>
+
+  <div class="service-icon">
+    💼
+  </div>
+
+  <h3>
+    Business Solutions
+  </h3>
+
+  <p>
+
+    We help businesses identify
+    opportunities, improve processes
+    and develop practical strategies
+    for sustainable growth.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      Business analysis
+    </li>
+
+    <li>
+      Process improvement
+    </li>
+
+    <li>
+      Digital transformation
+    </li>
+
+    <li>
+      Growth strategy
+    </li>
+
+  </ul>
+
+</article>
+
+
+<!-- TECHNOLOGY -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    04
+  </div>
+
+  <div class="service-icon">
+    💻
+  </div>
+
+  <h3>
+    Technology
+  </h3>
+
+  <p>
+
+    We design and develop modern
+    digital experiences that help
+    businesses establish a stronger
+    online presence.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      Business websites
+    </li>
+
+    <li>
+      Digital platforms
+    </li>
+
+    <li>
+      Web solutions
+    </li>
+
+    <li>
+      Technology integration
+    </li>
+
+  </ul>
+
+</article>
+
+
+<!-- LOGISTICS -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    05
+  </div>
+
+  <div class="service-icon">
+    🚚
+  </div>
+
+  <h3>
+    Logistics
+  </h3>
+
+  <p>
+
+    We explore technology-driven
+    solutions for logistics and
+    operational environments,
+    helping businesses improve
+    visibility and efficiency.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      Logistics processes
+    </li>
+
+    <li>
+      Operational analysis
+    </li>
+
+    <li>
+      Workflow optimisation
+    </li>
+
+    <li>
+      Digital logistics solutions
+    </li>
+
+  </ul>
+
+</article>
+
+
+<!-- DIGITAL STRATEGY -->
+
+<article class="service-card">
+
+  <div class="service-number">
+    06
+  </div>
+
+  <div class="service-icon">
+    🌐
+  </div>
+
+  <h3>
+    Digital Strategy
+  </h3>
+
+  <p>
+
+    We help businesses connect
+    technology with their goals,
+    creating a clear path toward
+    stronger digital operations.
+
+  </p>
+
+  <h4>
+    Focus
+  </h4>
+
+  <ul>
+
+    <li>
+      Digital planning
+    </li>
+
+    <li>
+      Technology roadmaps
+    </li>
+
+    <li>
+      Online presence
+    </li>
+
+    <li>
+      Digital growth
+    </li>
+
+  </ul>
+
+</article>
+
+  </div></section><!-- =========================
+     OUR PROCESS
+========================= --><section class="process">  <div class="container"><div class="process-header">
+
+  <div class="section-label">
+    HOW WE WORK
+  </div>
+
+  <h2>
+    From Idea To Impact
+  </h2>
+
+  <p>
+
+    Every GODZYA GROUP project starts
+    with understanding the problem
+    and ends with a practical solution
+    designed around the client's goals.
+
+  </p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+  <div class="process-item">
+
+    <div class="process-number">
+      01
+    </div>
+
+    <h3>
+      Understand
+    </h3>
+
+    <p>
+
+      We understand your business,
+      challenges, objectives and
+      opportunities.
+
+    </p>
+
+  </div>
+
+
+  <div class="process-item">
+
+    <div class="process-number">
+      02
+    </div>
+
+    <h3>
+      Analyse
+    </h3>
+
+    <p>
+
+      We examine the processes,
+      data and technology involved
+      in the problem.
+
+    </p>
+
+  </div>
+
+
+  <div class="process-item">
+
+    <div class="process-number">
+      03
+    </div>
+
+    <h3>
+      Build
+    </h3>
+
+    <p>
+
+      We develop a practical,
+      technology-driven solution
+      around your requirements.
+
+    </p>
+
+  </div>
+
+
+  <div class="process-item">
+
+    <div class="process-number">
+      04
+    </div>
+
+    <h3>
+      Grow
+    </h3>
+
+    <p>
+
+      We focus on solutions that
+      can evolve as your business
+      grows.
+
+    </p>
+
+  </div>
+
+
+</div>
+
+  </div></section><!-- =========================
+     CTA
+========================= --><section class="cta">  <div class="container"><div class="section-label">
+  LET'S BUILD
+</div>
+
+<h2>
+  Have an idea?
+</h2>
+
+<p>
+
+  Tell us what you are trying to
+  achieve. Let's explore how
+  technology can help turn the idea
+  into something useful.
+
+</p>
+
+<a
+  href="contact.html"
+  class="btn">
+
+  Start a Conversation
+
+</a>
+
+  </div></section><!-- =========================
+     FOOTER
+========================= --><footer>© 2026 GODZYA GROUP.
+All rights reserved.
+
+</footer><!-- =========================
+     JAVASCRIPT
+========================= --><script>
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById(
+      "mobileMenu"
+    );
+
+  menu.classList.toggle(
+    "active"
+  );
+
+}
+
+
+function closeMenu() {
+
+  const menu =
+    document.getElementById(
+      "mobileMenu"
+    );
+
+  menu.classList.remove(
+    "active"
+  );
+
+}
+
+</script></body></html>
