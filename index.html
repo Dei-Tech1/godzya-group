@@ -1091,9 +1091,26 @@ nav a:hover {
   margin-bottom: 35px;
 }
 
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.whatsapp-contact {
+  border-color: rgba(37,211,102,.35);
+}
+
+.whatsapp-contact:hover {
+  border-color: rgba(37,211,102,.75);
+  box-shadow: 0 0 25px rgba(37,211,102,.15);
+}
+
 
 /* =========================
-   WHATSAPP
+   WHATSAPP FLOAT
 ========================= */
 
 .whatsapp-float {
@@ -1113,8 +1130,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 
-  font-size: 27px;
-
   text-decoration: none;
 
   box-shadow:
@@ -1125,6 +1140,12 @@ nav a:hover {
   transition:
     transform .3s ease,
     box-shadow .3s ease;
+}
+
+.whatsapp-float svg {
+  width: 29px;
+  height: 29px;
+  fill: white;
 }
 
 .whatsapp-float:hover {
@@ -1282,8 +1303,20 @@ footer {
 
     width: 54px;
     height: 54px;
+  }
 
-    font-size: 25px;
+  .whatsapp-float svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-buttons .btn {
+    width: 100%;
+    max-width: 280px;
   }
 }
 
@@ -1423,33 +1456,4 @@ footer {
       GROUP
     </h1>
 
-    <p class="slogan">
-      We Build. You Grow.
-    </p>
-
-    <h2>
-      Building smarter solutions for a connected future.
-    </h2>
-
-    <p>
-      We help businesses build smarter, work more efficiently and
-      grow with practical solutions across AI, data, business and
-      technology.
-    </p>
-
-
-    <div class="buttons">
-
-      <a href="#services" class="btn">
-        Explore Services
-      </a>
-
-      <a href="#contact" class="btn">
-        Contact Us
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
+     
