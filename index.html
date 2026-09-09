@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -67,15 +67,15 @@ nav a:hover {
     #07111f;
 }
 
-  .slogan {
+.slogan {
   margin: 18px 0 12px;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   opacity: 0.85;
-  }
-  
+}
+
 .hero-content {
   max-width: 850px;
   width: 100%;
@@ -214,6 +214,7 @@ h2.section-title {
   line-height: 1.7;
   opacity: .72;
 }
+
 .card {
   background: #07111f !important;
   color: white !important;
@@ -224,6 +225,7 @@ h2.section-title {
 .card .number {
   color: white !important;
 }
+
 .about {
   background: #07111f;
 }
@@ -288,7 +290,7 @@ h2.section-title {
   font-size: 15px;
   opacity: .65;
 }
-  
+
 .value {
   border: 1px solid rgba(255,255,255,.2);
   border-radius: 30px;
@@ -340,6 +342,7 @@ footer {
   position: relative;
   z-index: 2;
 }
+
 @media(max-width:700px) {
   nav {
     padding: 20px;
@@ -357,102 +360,10 @@ footer {
     padding: 75px 20px;
   }
 }
-  
+
 </style>
 </head>
-<script>
-const canvas = document.getElementById("tech-canvas");
-const ctx = canvas.getContext("2d");
 
-let particles = [];
-
-function resizeCanvas() {
-  const hero = document.querySelector(".hero");
-
-  canvas.width = hero.offsetWidth;
-  canvas.height = hero.offsetHeight;
-
-  createParticles();
-}
-
-function createParticles() {
-  particles = [];
-
-  const amount = window.innerWidth < 700 ? 35 : 65;
-
-  for (let i = 0; i < amount; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: Math.random() * 1.8 + 0.6,
-      speedX: (Math.random() - 0.5) * 0.25,
-      speedY: (Math.random() - 0.5) * 0.25
-    });
-  }
-}
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  particles.forEach((particle, index) => {
-
-    particle.x += particle.speedX;
-    particle.y += particle.speedY;
-
-    if (particle.x < 0 || particle.x > canvas.width) {
-      particle.speedX *= -1;
-    }
-
-    if (particle.y < 0 || particle.y > canvas.height) {
-      particle.speedY *= -1;
-    }
-
-    ctx.beginPath();
-    ctx.arc(
-      particle.x,
-      particle.y,
-      particle.size,
-      0,
-      Math.PI * 2
-    );
-
-    ctx.fillStyle = "rgba(120, 210, 255, 0.65)";
-    ctx.fill();
-
-    for (let j = index + 1; j < particles.length; j++) {
-
-      const other = particles[j];
-
-      const dx = particle.x - other.x;
-      const dy = particle.y - other.y;
-
-      const distance = Math.sqrt(dx * dx + dy * dy);
-
-      if (distance < 150) {
-
-        const opacity = 0.16 * (1 - distance / 150);
-
-        ctx.beginPath();
-        ctx.moveTo(particle.x, particle.y);
-        ctx.lineTo(other.x, other.y);
-
-        ctx.strokeStyle =
-          "rgba(100, 200, 255, " + opacity + ")";
-
-        ctx.lineWidth = 0.7;
-        ctx.stroke();
-      }
-    }
-  });
-
-  requestAnimationFrame(animate);
-}
-
-window.addEventListener("resize", resizeCanvas);
-
-resizeCanvas();
-animate();
-</script>
 <body>
 
 <nav>
@@ -476,14 +387,16 @@ animate();
     <div class="label">AI • DATA • BUSINESS • TECHNOLOGY</div>
 
     <h1>GODZYA<br>GROUP</h1>
-<p class="slogan">We Build. You Grow.</p>
+
+    <p class="slogan">We Build. You Grow.</p>
+
     <h2>Building smarter solutions for a connected future.</h2>
 
     <p>
-  We help businesses build smarter, work more efficiently and
-  grow with practical solutions across AI, data, business and
-  technology.
-</p>
+      We help businesses build smarter, work more efficiently and
+      grow with practical solutions across AI, data, business and
+      technology.
+    </p>
 
     <div class="buttons">
       <a href="#services" class="btn">Explore Services</a>
@@ -591,14 +504,14 @@ animate();
 
     <h2 class="section-title">About GODZYA GROUP</h2>
 
-   <p class="about-text">
-  GODZYA GROUP is a modern business and technology company
-  focused on helping businesses solve real-world challenges
-  through AI, data, business and technology. We combine
-  practical thinking, intelligent solutions and modern
-  technology to help organizations work smarter, improve
-  efficiency and create opportunities for sustainable growth.
-   </p> 
+    <p class="about-text">
+      GODZYA GROUP is a modern business and technology company
+      focused on helping businesses solve real-world challenges
+      through AI, data, business and technology. We combine
+      practical thinking, intelligent solutions and modern
+      technology to help organizations work smarter, improve
+      efficiency and create opportunities for sustainable growth.
+    </p>
 
     <div class="values">
       <div class="value">Innovation</div>
@@ -611,7 +524,7 @@ animate();
   </div>
 </section>
 
-  <section class="why-godzya" id="why-godzya">
+<section class="why-godzya" id="why-godzya">
   <div class="container">
 
     <div class="section-label">WHY GODZYA</div>
@@ -647,11 +560,11 @@ animate();
     </div>
 
   </div>
-  </section>
+</section>
 
-  <section id="who-we-serve">
+<section id="who-we-serve">
   <div class="container">
-    
+
     <div class="section-label">WHO WE SERVE</div>
 
     <h2 class="section-title">Solutions for businesses ready to grow.</h2>
@@ -693,22 +606,24 @@ animate();
     </div>
 
   </div>
-  </section>
+</section>
 
 <section class="contact" id="contact">
-  <div class="container"><div class="section-label">LET'S CONNECT</div>
+  <div class="container">
 
-<h2 class="section-title">Let's Build Something Smarter.</h2>
+    <div class="section-label">LET'S CONNECT</div>
 
-<p class="intro">
-  Whether you need a professional website, smarter business solutions,
-  AI and automation, data insights, or technology support, GODZYA GROUP
-  is ready to help turn your ideas into practical solutions.
-</p>
+    <h2 class="section-title">Let's Build Something Smarter.</h2>
 
-<a href="mailto:info@godzyagroup.com" class="btn">
-  Start a Conversation
-</a>
+    <p class="intro">
+      Whether you need a professional website, smarter business solutions,
+      AI and automation, data insights, or technology support, GODZYA GROUP
+      is ready to help turn your ideas into practical solutions.
+    </p>
+
+    <a href="mailto:info@godzyagroup.com" class="btn">
+      Start a Conversation
+    </a>
 
   </div>
 </section>
@@ -716,6 +631,100 @@ animate();
 <footer>
   © 2026 GODZYA GROUP. All rights reserved.
 </footer>
-  
+
+<script>
+const canvas = document.getElementById("tech-canvas");
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+
+function resizeCanvas() {
+  const hero = document.querySelector(".hero");
+
+  canvas.width = hero.offsetWidth;
+  canvas.height = hero.offsetHeight;
+
+  createParticles();
+}
+
+function createParticles() {
+  particles = [];
+
+  const amount = window.innerWidth < 700 ? 35 : 65;
+
+  for (let i = 0; i < amount; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 1.8 + 0.6,
+      speedX: (Math.random() - 0.5) * 0.25,
+      speedY: (Math.random() - 0.5) * 0.25
+    });
+  }
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particles.forEach((particle, index) => {
+
+    particle.x += particle.speedX;
+    particle.y += particle.speedY;
+
+    if (particle.x < 0 || particle.x > canvas.width) {
+      particle.speedX *= -1;
+    }
+
+    if (particle.y < 0 || particle.y > canvas.height) {
+      particle.speedY *= -1;
+    }
+
+    ctx.beginPath();
+    ctx.arc(
+      particle.x,
+      particle.y,
+      particle.size,
+      0,
+      Math.PI * 2
+    );
+
+    ctx.fillStyle = "rgba(120, 210, 255, 0.65)";
+    ctx.fill();
+
+    for (let j = index + 1; j < particles.length; j++) {
+
+      const other = particles[j];
+
+      const dx = particle.x - other.x;
+      const dy = particle.y - other.y;
+
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+      if (distance < 150) {
+
+        const opacity = 0.16 * (1 - distance / 150);
+
+        ctx.beginPath();
+        ctx.moveTo(particle.x, particle.y);
+        ctx.lineTo(other.x, other.y);
+
+        ctx.strokeStyle =
+          "rgba(100, 200, 255, " + opacity + ")";
+
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener("resize", resizeCanvas);
+
+resizeCanvas();
+animate();
+</script>
+
 </body>
-  </html>  
+</html>
