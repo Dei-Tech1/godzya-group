@@ -1,7 +1,13 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<title>GODZYA GROUP | Services</title><style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GODZYA GROUP | Services</title>
+
+<style>
 
 /* =========================
    GLOBAL
@@ -18,18 +24,10 @@ html {
 }
 
 body {
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
   background: #07111f;
-
   color: #ffffff;
-
   line-height: 1.6;
-
-  overflow-x: hidden;
 }
 
 a {
@@ -46,6 +44,25 @@ section {
   margin: auto;
 }
 
+.section-label {
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: .5;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 720px;
+  font-size: 17px;
+  opacity: .68;
+}
+
 
 /* =========================
    NAVIGATION
@@ -53,28 +70,22 @@ section {
 
 nav {
   position: absolute;
-
   top: 0;
   left: 0;
-
   width: 100%;
 
   padding: 28px 7%;
 
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
 
-  z-index: 20;
+  z-index: 100;
 }
 
 .logo {
   font-size: 21px;
-
   font-weight: 700;
-
   letter-spacing: 2px;
 }
 
@@ -84,22 +95,17 @@ nav {
 
 .nav-links {
   display: flex;
-
   gap: 25px;
 }
 
 .nav-links a {
   font-size: 13px;
-
   opacity: .65;
-
   transition: .3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
   opacity: 1;
-
   color: #8edfff;
 }
 
@@ -112,12 +118,11 @@ nav {
   display: none;
 
   background: none;
-
-  border: 0;
+  border: none;
 
   color: white;
 
-  font-size: 26px;
+  font-size: 27px;
 
   cursor: pointer;
 }
@@ -128,42 +133,38 @@ nav {
 
 
 /* =========================
-   PAGE HERO
+   SERVICES HERO
 ========================= */
 
-.page-hero {
-  min-height: 72vh;
-
-  padding:
-    170px 7%
-    100px;
+.services-hero {
+  min-height: 70vh;
 
   display: flex;
-
   align-items: center;
 
   position: relative;
 
   overflow: hidden;
 
+  padding:
+    150px 7%
+    100px;
+
   background:
-
     radial-gradient(
-      circle at 75% 40%,
-      rgba(28,115,160,.30),
-      transparent 25%
-    ),
-
-    radial-gradient(
-      circle at 20% 80%,
-      rgba(20,70,120,.20),
+      circle at 75% 35%,
+      rgba(40,150,200,.22),
       transparent 30%
     ),
-
+    radial-gradient(
+      circle at 20% 75%,
+      rgba(30,80,150,.16),
+      transparent 35%
+    ),
     #020812;
 }
 
-.page-hero::before {
+.services-hero::before {
   content: "";
 
   position: absolute;
@@ -171,92 +172,42 @@ nav {
   inset: -20%;
 
   background:
-
     radial-gradient(
       ellipse at 70% 45%,
-      rgba(80,180,255,.15),
+      rgba(80,180,255,.13),
       transparent 35%
     ),
-
     radial-gradient(
-      ellipse at 30% 65%,
-      rgba(90,120,255,.10),
+      ellipse at 30% 70%,
+      rgba(80,120,255,.08),
       transparent 30%
     );
 
-  filter: blur(20px);
+  filter: blur(25px);
 
   animation:
-    galaxyPulse 8s ease-in-out
+    servicesPulse
+    8s ease-in-out
     infinite alternate;
 
   pointer-events: none;
 }
 
-.page-hero::after {
-  content: "";
-
-  position: absolute;
-
-  inset: 0;
-
-  background-image:
-
-    radial-gradient(
-      circle,
-      rgba(255,255,255,.7) 1px,
-      transparent 1px
-    ),
-
-    radial-gradient(
-      circle,
-      rgba(120,210,255,.4) 1px,
-      transparent 1px
-    );
-
-  background-size:
-    90px 90px,
-    150px 150px;
-
-  opacity: .20;
-
-  animation:
-    starDrift 30s linear infinite;
-
-  pointer-events: none;
-}
-
-@keyframes galaxyPulse {
+@keyframes servicesPulse {
 
   from {
     transform: scale(1);
-
-    opacity: .65;
+    opacity: .55;
   }
 
   to {
     transform: scale(1.08);
-
     opacity: 1;
   }
 
 }
 
-@keyframes starDrift {
-
-  from {
-    transform:
-      translate(0,0);
-  }
-
-  to {
-    transform:
-      translate(-40px,25px);
-  }
-
-}
-
-.page-hero-content {
+.services-hero-content {
   position: relative;
 
   z-index: 5;
@@ -264,68 +215,35 @@ nav {
   max-width: 850px;
 }
 
-.section-label {
+.services-label {
   font-size: 12px;
 
   letter-spacing: 4px;
 
   opacity: .55;
 
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
-.page-hero h1 {
+.services-hero h1 {
   font-size:
-    clamp(55px,9vw,105px);
+    clamp(55px, 9vw, 110px);
 
-  line-height: .9;
+  line-height: .88;
 
   letter-spacing: -5px;
 
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
-.page-hero h1 span {
+.services-hero h1 span {
   color: #a6e7ff;
 }
 
-.page-hero p {
+.services-hero p {
   max-width: 700px;
 
-  font-size: 18px;
-
-  opacity: .68;
-}
-
-
-/* =========================
-   SERVICES INTRO
-========================= */
-
-.services-intro {
-  background: #06101d;
-
-  text-align: center;
-}
-
-.services-intro .section-label {
-  margin-bottom: 12px;
-}
-
-.services-intro h2 {
-  font-size:
-    clamp(35px,6vw,55px);
-
-  margin-bottom: 20px;
-}
-
-.services-intro p {
-  max-width: 720px;
-
-  margin:
-    0 auto;
-
-  font-size: 17px;
+  font-size: 19px;
 
   opacity: .68;
 }
@@ -337,21 +255,17 @@ nav {
 
 .services-section {
   background: #06101d;
-
-  padding-top: 40px;
 }
 
-.service-grid {
-  max-width: 1150px;
-
-  margin: auto;
-
+.services-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(2,1fr);
+    repeat(2, 1fr);
 
   gap: 25px;
+
+  margin-top: 55px;
 }
 
 
@@ -362,16 +276,13 @@ nav {
 .service-card {
   position: relative;
 
-  padding: 40px;
+  min-height: 380px;
 
-  min-height: 390px;
+  padding: 38px;
 
   border-radius: 20px;
 
-  overflow: hidden;
-
   background:
-
     linear-gradient(
       145deg,
       #07111f,
@@ -382,9 +293,7 @@ nav {
     1px solid
     rgba(255,255,255,.10);
 
-  box-shadow:
-    0 15px 45px
-    rgba(0,0,0,.25);
+  overflow: hidden;
 
   transition:
     transform .35s ease,
@@ -397,39 +306,40 @@ nav {
 
   position: absolute;
 
-  width: 220px;
+  width: 180px;
+  height: 180px;
 
-  height: 220px;
-
-  right: -80px;
-
-  top: -80px;
+  right: -70px;
+  top: -70px;
 
   border-radius: 50%;
 
   background:
-    rgba(80,190,255,.08);
+    radial-gradient(
+      circle,
+      rgba(80,200,255,.16),
+      transparent 70%
+    );
 
-  filter: blur(10px);
+  filter: blur(5px);
 }
 
 .service-card:hover {
-  transform:
-    translateY(-7px);
+  transform: translateY(-7px);
 
   border-color:
-    rgba(100,210,255,.38);
+    rgba(110,215,255,.38);
 
   box-shadow:
-    0 25px 60px
-    rgba(0,0,0,.35),
+    0 20px 50px
+    rgba(0,0,0,.30),
 
     0 0 30px
-    rgba(60,190,255,.08);
+    rgba(60,180,255,.07);
 }
 
 .service-number {
-  font-size: 12px;
+  font-size: 11px;
 
   letter-spacing: 3px;
 
@@ -439,60 +349,44 @@ nav {
 }
 
 .service-icon {
-  font-size: 42px;
+  font-size: 38px;
 
   margin-bottom: 22px;
 
-  filter:
-    drop-shadow(
-      0 0 12px
-      rgba(100,210,255,.18)
-    );
+  opacity: .9;
 }
 
-.service-card h3 {
-  font-size: 27px;
+.service-card h2 {
+  font-size: 28px;
 
   margin-bottom: 15px;
 }
 
-.service-card p {
+.service-card > p {
   font-size: 15px;
 
-  opacity: .68;
+  opacity: .65;
 
-  line-height: 1.75;
+  max-width: 520px;
 
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
-.service-card h4 {
-  font-size: 11px;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-  opacity: .5;
-
-  margin-bottom: 12px;
-}
-
-.service-card ul {
+.service-list {
   list-style: none;
 
   padding: 0;
 }
 
-.service-card li {
+.service-list li {
   font-size: 14px;
 
-  opacity: .68;
+  opacity: .7;
 
   margin-bottom: 8px;
 }
 
-.service-card li::before {
+.service-list li::before {
   content: "→";
 
   margin-right: 9px;
@@ -504,69 +398,71 @@ nav {
 
 
 /* =========================
-   PROCESS
+   FEATURED SERVICE
 ========================= */
 
-.process {
+.service-card.featured {
+  grid-column: span 2;
+
+  min-height: 330px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(50,170,220,.12),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      #07111f,
+      #0d2035
+    );
+}
+
+.featured-content {
+  max-width: 800px;
+}
+
+
+/* =========================
+   HOW WE WORK
+========================= */
+
+.process-section {
   background: #07111f;
-}
-
-.process-header {
-  max-width: 700px;
-
-  margin-bottom: 55px;
-}
-
-.process-header h2 {
-  font-size:
-    clamp(35px,6vw,55px);
-
-  margin-bottom: 18px;
-}
-
-.process-header p {
-  opacity: .65;
-
-  font-size: 17px;
 }
 
 .process-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(4,1fr);
+    repeat(4, 1fr);
 
-  gap: 20px;
+  gap: 25px;
+
+  margin-top: 55px;
 }
 
 .process-item {
-  padding: 30px;
+  padding: 30px 0;
 
   border-top:
     1px solid
-    rgba(255,255,255,.15);
-
-  transition:
-    border-color .3s ease;
-}
-
-.process-item:hover {
-  border-color:
-    rgba(100,210,255,.55);
+    rgba(255,255,255,.16);
 }
 
 .process-number {
   font-size: 12px;
 
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 
   opacity: .4;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .process-item h3 {
-  font-size: 20px;
+  font-size: 21px;
 
   margin-bottom: 12px;
 }
@@ -585,35 +481,47 @@ nav {
 .cta {
   text-align: center;
 
-  background: #0a1728;
-
   padding:
-    110px 7%;
+    120px 7%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(50,150,200,.13),
+      transparent 45%
+    ),
+    #0a1728;
 }
 
-.cta h2 {
-  font-size:
-    clamp(35px,6vw,55px);
-
+.cta .section-title {
   margin-bottom: 20px;
 }
 
 .cta p {
-  max-width: 680px;
+  max-width: 650px;
 
   margin:
     0 auto 35px;
 
-  font-size: 17px;
+  font-size: 18px;
 
   opacity: .68;
+}
+
+.cta-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
 }
 
 .btn {
   display: inline-block;
 
-  padding:
-    14px 26px;
+  padding: 14px 25px;
 
   border:
     1px solid
@@ -642,6 +550,63 @@ nav {
 
   transform:
     translateY(-2px);
+}
+
+.btn.primary {
+  background:
+    rgba(100,200,255,.12);
+
+  border-color:
+    rgba(140,220,255,.45);
+}
+
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
+.whatsapp-float {
+  position: fixed;
+
+  right: 24px;
+  bottom: 24px;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #25D366;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+
+  box-shadow:
+    0 8px 25px
+    rgba(0,0,0,.35);
+
+  transition: .3s ease;
+}
+
+.whatsapp-float svg {
+  width: 29px;
+  height: 29px;
+
+  fill: white;
+}
+
+.whatsapp-float:hover {
+  transform:
+    translateY(-4px)
+    scale(1.06);
+
+  box-shadow:
+    0 12px 30px
+    rgba(37,211,102,.35);
 }
 
 
@@ -686,7 +651,6 @@ footer {
     top: 70px;
 
     left: 20px;
-
     right: 20px;
 
     padding: 15px;
@@ -704,7 +668,7 @@ footer {
       0 15px 40px
       rgba(0,0,0,.35);
 
-    z-index: 30;
+    z-index: 200;
   }
 
   .mobile-menu.active {
@@ -712,7 +676,7 @@ footer {
 
     flex-direction: column;
 
-    gap: 8px;
+    gap: 10px;
   }
 
   .mobile-menu a {
@@ -723,52 +687,76 @@ footer {
     opacity: .75;
   }
 
-  .page-hero {
-    min-height: 65vh;
-
-    padding:
-      140px 20px
-      80px;
-  }
-
-  .page-hero h1 {
-    letter-spacing: -3px;
-  }
-
   section {
     padding:
       75px 20px;
   }
 
-  .service-grid {
+  .services-hero {
+    padding:
+      130px 20px 90px;
+
+    min-height: 65vh;
+  }
+
+  .services-hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .services-hero p {
+    font-size: 17px;
+  }
+
+  .services-grid {
     grid-template-columns: 1fr;
   }
 
-  .service-card {
-    min-height: auto;
+  .service-card.featured {
+    grid-column: span 1;
+  }
 
-    padding: 30px;
+  .service-card {
+    min-height: 350px;
+    padding: 30px 25px;
   }
 
   .process-grid {
     grid-template-columns:
-      repeat(2,1fr);
+      repeat(2, 1fr);
+  }
+
+  .cta {
+    padding:
+      90px 20px;
+  }
+
+  .contact-buttons,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .whatsapp-float {
+    right: 18px;
+    bottom: 18px;
+
+    width: 54px;
+    height: 54px;
   }
 
 }
+
 
 @media(max-width:500px) {
 
   .process-grid {
     grid-template-columns: 1fr;
-  }
-
-  .page-hero p {
-    font-size: 16px;
-  }
-
-  .service-card h3 {
-    font-size: 24px;
   }
 
 }
@@ -799,603 +787,708 @@ footer {
 
 }
 
-</style></head><body><!-- =========================
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
      NAVIGATION
-========================= --><nav><a
-href="index.html"
-class="logo">
+========================= -->
 
-GODZYA
-<span>GROUP</span>
+<nav>
 
-  </a>  <div class="nav-links"><a href="index.html">
-  Home
-</a>
+  <a href="index.html" class="logo">
+    GODZYA <span>GROUP</span>
+  </a>
 
-<a
-  href="services.html"
-  class="active">
+  <div class="nav-links">
 
-  Services
+    <a href="index.html">
+      Home
+    </a>
 
-</a>
+    <a href="services.html">
+      Services
+    </a>
 
-<a href="who-we-serve.html">
-  Who We Serve
-</a>
+    <a href="index.html#who-we-serve">
+      Who We Serve
+    </a>
 
-<a href="about.html">
-  About
-</a>
+    <a href="index.html#about">
+      About
+    </a>
 
-<a href="why-godzya.html">
-  Why GODZYA
-</a>
+    <a href="index.html#why-godzya">
+      Why GODZYA
+    </a>
 
-<a href="contact.html">
-  Contact
-</a>
+    <a href="index.html#contact">
+      Contact
+    </a>
 
-  </div><button
-class="menu-toggle"
-onclick="toggleMenu()"
-aria-label="Open navigation menu">
+  </div>
 
-☰
 
-  </button></nav><!-- =========================
+  <button
+    class="menu-toggle"
+    onclick="toggleMenu()"
+    aria-label="Open navigation menu">
+
+    ☰
+
+  </button>
+
+</nav>
+
+
+<!-- =========================
      MOBILE MENU
-========================= --><div
+========================= -->
+
+<div
   class="mobile-menu"
-  id="mobileMenu"><a
-href="index.html"
-onclick="closeMenu()">
+  id="mobileMenu">
 
-Home
+  <a
+    href="index.html"
+    onclick="closeMenu()">
 
-  </a><a
-href="services.html"
-onclick="closeMenu()">
+    Home
 
-Services
+  </a>
 
-  </a><a
-href="who-we-serve.html"
-onclick="closeMenu()">
+  <a
+    href="services.html"
+    onclick="closeMenu()">
 
-Who We Serve
+    Services
 
-  </a><a
-href="about.html"
-onclick="closeMenu()">
+  </a>
 
-About
+  <a
+    href="index.html#who-we-serve"
+    onclick="closeMenu()">
 
-  </a><a
-href="why-godzya.html"
-onclick="closeMenu()">
+    Who We Serve
 
-Why GODZYA
+  </a>
 
-  </a><a
-href="contact.html"
-onclick="closeMenu()">
+  <a
+    href="index.html#about"
+    onclick="closeMenu()">
 
-Contact
+    About
 
-  </a></div><!-- =========================
-     PAGE HERO
-========================= --><section class="page-hero">  <div class="page-hero-content"><div class="section-label">
+  </a>
 
-  GODZYA GROUP
+  <a
+    href="index.html#why-godzya"
+    onclick="closeMenu()">
 
-</div>
+    Why GODZYA
 
-<h1>
+  </a>
 
-  What We<br>
+  <a
+    href="index.html#contact"
+    onclick="closeMenu()">
 
-  <span>Build.</span>
+    Contact
 
-</h1>
-
-<p>
-
-  Technology-driven solutions designed
-  to help businesses operate smarter,
-  make better decisions and grow with
-  confidence.
-
-</p>
-
-  </div></section><!-- =========================
-     SERVICES INTRO
-========================= --><section class="services-intro">  <div class="container"><div class="section-label">
-
-  OUR SERVICES
+  </a>
 
 </div>
 
-<h2>
 
-  Technology With Purpose
+<!-- =========================
+     HERO
+========================= -->
 
-</h2>
+<section class="services-hero">
 
-<p>
+  <div class="services-hero-content">
 
-  GODZYA GROUP brings together
-  artificial intelligence, data,
-  business strategy and technology
-  to create practical solutions for
-  modern businesses.
+    <div class="services-label">
 
-</p>
+      GODZYA GROUP / SERVICES
 
-  </div></section><!-- =========================
+    </div>
+
+    <h1>
+
+      BUILDING<br>
+
+      <span>SMARTER.</span>
+
+    </h1>
+
+    <p>
+
+      Practical solutions across AI, data,
+      business and technology — designed
+      to help businesses operate smarter,
+      solve problems and create sustainable
+      growth.
+
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
      SERVICES
-========================= --><section class="services-section">  <div class="service-grid"><!-- AI -->
+========================= -->
 
-<article class="service-card">
+<section
+  class="services-section"
+  id="services">
 
-  <div class="service-number">
-    01
-  </div>
+  <div class="container">
 
-  <div class="service-icon">
-    🤖
-  </div>
+    <div class="section-label">
 
-  <h3>
-    AI & Automation
-  </h3>
+      WHAT WE DO
 
-  <p>
-
-    We help businesses use
-    artificial intelligence and
-    automation to reduce repetitive
-    work, improve efficiency and
-    create smarter workflows.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      AI-powered workflows
-    </li>
-
-    <li>
-      Business automation
-    </li>
-
-    <li>
-      Intelligent assistants
-    </li>
-
-    <li>
-      Process optimisation
-    </li>
-
-  </ul>
-
-</article>
-
-
-<!-- DATA -->
-
-<article class="service-card">
-
-  <div class="service-number">
-    02
-  </div>
-
-  <div class="service-icon">
-    📊
-  </div>
-
-  <h3>
-    Data Analytics
-  </h3>
-
-  <p>
-
-    We transform business data into
-    meaningful information that helps
-    organisations understand
-    performance and make informed
-    decisions.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      Data analysis
-    </li>
-
-    <li>
-      Dashboards & reporting
-    </li>
-
-    <li>
-      Performance insights
-    </li>
-
-    <li>
-      Data-driven decisions
-    </li>
-
-  </ul>
-
-</article>
-
-
-<!-- BUSINESS -->
-
-<article class="service-card">
-
-  <div class="service-number">
-    03
-  </div>
-
-  <div class="service-icon">
-    💼
-  </div>
-
-  <h3>
-    Business Solutions
-  </h3>
-
-  <p>
-
-    We help businesses identify
-    opportunities, improve processes
-    and develop practical strategies
-    for sustainable growth.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      Business analysis
-    </li>
-
-    <li>
-      Process improvement
-    </li>
-
-    <li>
-      Digital transformation
-    </li>
-
-    <li>
-      Growth strategy
-    </li>
-
-  </ul>
-
-</article>
-
-
-<!-- TECHNOLOGY -->
-
-<article class="service-card">
-
-  <div class="service-number">
-    04
-  </div>
-
-  <div class="service-icon">
-    💻
-  </div>
-
-  <h3>
-    Technology
-  </h3>
-
-  <p>
-
-    We design and develop modern
-    digital experiences that help
-    businesses establish a stronger
-    online presence.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      Business websites
-    </li>
-
-    <li>
-      Digital platforms
-    </li>
-
-    <li>
-      Web solutions
-    </li>
-
-    <li>
-      Technology integration
-    </li>
-
-  </ul>
-
-</article>
-
-
-<!-- LOGISTICS -->
-
-<article class="service-card">
-
-  <div class="service-number">
-    05
-  </div>
-
-  <div class="service-icon">
-    🚚
-  </div>
-
-  <h3>
-    Logistics
-  </h3>
-
-  <p>
-
-    We explore technology-driven
-    solutions for logistics and
-    operational environments,
-    helping businesses improve
-    visibility and efficiency.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      Logistics processes
-    </li>
-
-    <li>
-      Operational analysis
-    </li>
-
-    <li>
-      Workflow optimisation
-    </li>
-
-    <li>
-      Digital logistics solutions
-    </li>
-
-  </ul>
-
-</article>
-
-
-<!-- DIGITAL STRATEGY -->
-
-<article class="service-card">
-
-  <div class="service-number">
-    06
-  </div>
-
-  <div class="service-icon">
-    🌐
-  </div>
-
-  <h3>
-    Digital Strategy
-  </h3>
-
-  <p>
-
-    We help businesses connect
-    technology with their goals,
-    creating a clear path toward
-    stronger digital operations.
-
-  </p>
-
-  <h4>
-    Focus
-  </h4>
-
-  <ul>
-
-    <li>
-      Digital planning
-    </li>
-
-    <li>
-      Technology roadmaps
-    </li>
-
-    <li>
-      Online presence
-    </li>
-
-    <li>
-      Digital growth
-    </li>
-
-  </ul>
-
-</article>
-
-  </div></section><!-- =========================
-     OUR PROCESS
-========================= --><section class="process">  <div class="container"><div class="process-header">
-
-  <div class="section-label">
-    HOW WE WORK
-  </div>
-
-  <h2>
-    From Idea To Impact
-  </h2>
-
-  <p>
-
-    Every GODZYA GROUP project starts
-    with understanding the problem
-    and ends with a practical solution
-    designed around the client's goals.
-
-  </p>
-
-</div>
-
-
-<div class="process-grid">
-
-
-  <div class="process-item">
-
-    <div class="process-number">
-      01
     </div>
 
-    <h3>
-      Understand
-    </h3>
+    <h2 class="section-title">
 
-    <p>
+      Our Services
 
-      We understand your business,
-      challenges, objectives and
-      opportunities.
+    </h2>
+
+    <p class="intro">
+
+      GODZYA GROUP brings together technology,
+      business thinking and practical execution
+      to help organisations move from ideas
+      to meaningful results.
 
     </p>
 
-  </div>
+
+    <div class="services-grid">
 
 
-  <div class="process-item">
+      <!-- AI -->
 
-    <div class="process-number">
-      02
+      <article class="service-card featured">
+
+        <div class="service-number">
+          01 / AI & AUTOMATION
+        </div>
+
+        <div class="service-icon">
+          ◉
+        </div>
+
+        <div class="featured-content">
+
+          <h2>
+            AI & Automation
+          </h2>
+
+          <p>
+
+            We explore practical ways businesses
+            can use artificial intelligence and
+            automation to reduce repetitive work,
+            improve processes and create better
+            customer experiences.
+
+          </p>
+
+          <ul class="service-list">
+
+            <li>
+              AI-powered business solutions
+            </li>
+
+            <li>
+              Workflow automation
+            </li>
+
+            <li>
+              Process optimisation
+            </li>
+
+            <li>
+              Intelligent customer experiences
+            </li>
+
+          </ul>
+
+        </div>
+
+      </article>
+
+
+      <!-- DATA -->
+
+      <article class="service-card">
+
+        <div class="service-number">
+          02 / DATA
+        </div>
+
+        <div class="service-icon">
+          ◌
+        </div>
+
+        <h2>
+          Data Analytics
+        </h2>
+
+        <p>
+
+          Turn business data into clearer
+          information that supports better
+          decisions.
+
+        </p>
+
+        <ul class="service-list">
+
+          <li>
+            Data analysis
+          </li>
+
+          <li>
+            Excel solutions
+          </li>
+
+          <li>
+            Reporting
+          </li>
+
+          <li>
+            Dashboards & insights
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- BUSINESS -->
+
+      <article class="service-card">
+
+        <div class="service-number">
+          03 / BUSINESS
+        </div>
+
+        <div class="service-icon">
+          ◇
+        </div>
+
+        <h2>
+          Business Solutions
+        </h2>
+
+        <p>
+
+          Practical business thinking that
+          connects problems, opportunities
+          and measurable outcomes.
+
+        </p>
+
+        <ul class="service-list">
+
+          <li>
+            Business analysis
+          </li>
+
+          <li>
+            Process improvement
+          </li>
+
+          <li>
+            Requirements analysis
+          </li>
+
+          <li>
+            Business strategy
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- TECHNOLOGY -->
+
+      <article class="service-card">
+
+        <div class="service-number">
+          04 / TECHNOLOGY
+        </div>
+
+        <div class="service-icon">
+          ⌘
+        </div>
+
+        <h2>
+          Technology Solutions
+        </h2>
+
+        <p>
+
+          Digital solutions designed around
+          the needs of modern businesses.
+
+        </p>
+
+        <ul class="service-list">
+
+          <li>
+            Website development
+          </li>
+
+          <li>
+            Digital solutions
+          </li>
+
+          <li>
+            Technology consulting
+          </li>
+
+          <li>
+            Digital transformation
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- LOGISTICS -->
+
+      <article class="service-card">
+
+        <div class="service-number">
+          05 / LOGISTICS
+        </div>
+
+        <div class="service-icon">
+          ⬡
+        </div>
+
+        <h2>
+          Logistics Solutions
+        </h2>
+
+        <p>
+
+          Supporting businesses with smarter
+          operational thinking across logistics
+          and service processes.
+
+        </p>
+
+        <ul class="service-list">
+
+          <li>
+            Process analysis
+          </li>
+
+          <li>
+            Operational improvement
+          </li>
+
+          <li>
+            Workflow optimisation
+          </li>
+
+          <li>
+            Business process mapping
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- DIGITAL STRATEGY -->
+
+      <article class="service-card">
+
+        <div class="service-number">
+          06 / STRATEGY
+        </div>
+
+        <div class="service-icon">
+          ✦
+        </div>
+
+        <h2>
+          Digital Strategy
+        </h2>
+
+        <p>
+
+          Helping businesses identify where
+          technology can create practical
+          competitive advantages.
+
+        </p>
+
+        <ul class="service-list">
+
+          <li>
+            Digital planning
+          </li>
+
+          <li>
+            Technology roadmaps
+          </li>
+
+          <li>
+            Digital opportunity analysis
+          </li>
+
+          <li>
+            Growth-focused solutions
+          </li>
+
+        </ul>
+
+      </article>
+
+
     </div>
 
-    <h3>
-      Analyse
-    </h3>
+  </div>
 
-    <p>
+</section>
 
-      We examine the processes,
-      data and technology involved
-      in the problem.
+
+<!-- =========================
+     HOW WE WORK
+========================= -->
+
+<section class="process-section">
+
+  <div class="container">
+
+    <div class="section-label">
+
+      OUR APPROACH
+
+    </div>
+
+    <h2 class="section-title">
+
+      How We Work
+
+    </h2>
+
+    <p class="intro">
+
+      We keep the process simple:
+      understand the challenge,
+      analyse the opportunity,
+      build the right solution,
+      and focus on measurable growth.
 
     </p>
 
-  </div>
+
+    <div class="process-grid">
 
 
-  <div class="process-item">
+      <div class="process-item">
 
-    <div class="process-number">
-      03
+        <div class="process-number">
+          01
+        </div>
+
+        <h3>
+          Understand
+        </h3>
+
+        <p>
+
+          We start by understanding your
+          business, your goals and the
+          challenge you are trying to solve.
+
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          02
+        </div>
+
+        <h3>
+          Analyse
+        </h3>
+
+        <p>
+
+          We examine the problem, identify
+          opportunities and determine what
+          can create the most value.
+
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          03
+        </div>
+
+        <h3>
+          Build
+        </h3>
+
+        <p>
+
+          We develop practical solutions
+          aligned with the needs of the
+          business.
+
+        </p>
+
+      </div>
+
+
+      <div class="process-item">
+
+        <div class="process-number">
+          04
+        </div>
+
+        <h3>
+          Grow
+        </h3>
+
+        <p>
+
+          The goal is not simply to deliver
+          technology — it is to create
+          meaningful business progress.
+
+        </p>
+
+      </div>
+
+
     </div>
 
-    <h3>
-      Build
-    </h3>
-
-    <p>
-
-      We develop a practical,
-      technology-driven solution
-      around your requirements.
-
-    </p>
-
   </div>
 
-
-  <div class="process-item">
-
-    <div class="process-number">
-      04
-    </div>
-
-    <h3>
-      Grow
-    </h3>
-
-    <p>
-
-      We focus on solutions that
-      can evolve as your business
-      grows.
-
-    </p>
-
-  </div>
+</section>
 
 
-</div>
-
-  </div></section><!-- =========================
+<!-- =========================
      CTA
-========================= --><section class="cta">  <div class="container"><div class="section-label">
-  LET'S BUILD
-</div>
+========================= -->
 
-<h2>
-  Have an idea?
-</h2>
+<section class="cta">
 
-<p>
+  <div class="container">
 
-  Tell us what you are trying to
-  achieve. Let's explore how
-  technology can help turn the idea
-  into something useful.
+    <div class="section-label">
 
-</p>
+      LET'S BUILD
+
+    </div>
+
+    <h2 class="section-title">
+
+      Have a challenge<br>
+      worth solving?
+
+    </h2>
+
+    <p>
+
+      Tell us what you are working on.
+      Together, we can explore a smarter
+      way forward.
+
+    </p>
+
+
+    <div class="cta-buttons">
+
+      <a
+        href="index.html#contact"
+        class="btn primary">
+
+        Start a Conversation
+
+      </a>
+
+      <a
+        href="index.html"
+        class="btn">
+
+        Back to Home
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
 
 <a
-  href="contact.html"
-  class="btn">
+  href="https://wa.me/"
+  class="whatsapp-float"
+  aria-label="Contact GODZYA GROUP on WhatsApp">
 
-  Start a Conversation
+  <svg
+    viewBox="0 0 32 32"
+    aria-hidden="true">
+
+    <path
+      d="M19.11 17.43c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.74.94-.91 1.13-.17.19-.33.22-.62.07-.29-.14-1.22-.45-2.32-1.43-.86-.77-1.43-1.72-1.6-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.56-.47-.49-.64-.5h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.1 2.41.9 1.41 1.76 2.43 3.83 3.4 2.07.97 2.07.65 2.44.61.37-.04 1.2-.49 1.37-.96.17-.47.17-.87.12-.96-.05-.1-.19-.14-.48-.29zM16.03 3C8.84 3 3 8.67 3 15.67c0 2.23.6 4.41 1.73 6.33L3 29l7.17-1.69a13.1 13.1 0 0 0 5.86 1.39h.01C23.2 28.7 29 23.03 29 16.03 29 8.83 23.2 3 16.03 3zm0 23.47h-.01c-1.83 0-3.63-.49-5.2-1.42l-.37-.22-4.25 1 1.02-4.14-.24-.4a10.9 10.9 0 0 1-1.67-5.79c0-6.03 4.93-10.94 11-10.94 2.94 0 5.7 1.14 7.78 3.21a10.87 10.87 0 0 1 3.22 7.76c0 6.04-4.94 10.94-11.28 10.94z"/>
+
+  </svg>
 
 </a>
 
-  </div></section><!-- =========================
-     FOOTER
-========================= --><footer>© 2026 GODZYA GROUP.
-All rights reserved.
 
-</footer><!-- =========================
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  © 2026 GODZYA GROUP.
+  All rights reserved.
+
+</footer>
+
+
+<!-- =========================
      JAVASCRIPT
-========================= --><script>
+========================= -->
+
+<script>
 
 function toggleMenu() {
 
@@ -1424,4 +1517,38 @@ function closeMenu() {
 
 }
 
-</script></body></html>
+
+/* Close menu when clicking outside */
+
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const menu =
+      document.getElementById(
+        "mobileMenu"
+      );
+
+    const button =
+      document.querySelector(
+        ".menu-toggle"
+      );
+
+    if (
+      menu.classList.contains("active") &&
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+
+      closeMenu();
+
+    }
+
+  }
+);
+
+</script>
+
+
+</body>
+</html>
