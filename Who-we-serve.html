@@ -1,1 +1,1699 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
 
+«»
+
+<title>
+  GODZYA GROUP | Who We Serve
+</title><meta
+name="description"
+content="Discover who GODZYA GROUP serves — startups, entrepreneurs, growing businesses, corporate teams, organisations and creators."
+
+«»
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background:
+    #07111f;
+
+  color:
+    #ffffff;
+
+  line-height:
+    1.6;
+
+  overflow-x:
+    hidden;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(40,160,255,.10),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(0,210,255,.08),
+      transparent 30%
+    );
+
+  z-index: -2;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 76px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding:
+    0 7%;
+
+  background:
+    rgba(5,14,27,.88);
+
+  backdrop-filter:
+    blur(18px);
+
+  border-bottom:
+    1px solid rgba(100,210,255,.10);
+
+  z-index: 1000;
+}
+
+
+.logo {
+
+  font-size:
+    21px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    2px;
+
+  color:
+    #ffffff;
+}
+
+
+.logo span {
+
+  color:
+    #63d6ff;
+
+  font-weight:
+    400;
+}
+
+
+nav > div:last-of-type {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    28px;
+}
+
+
+nav a {
+
+  color:
+    rgba(255,255,255,.75);
+
+  text-decoration:
+    none;
+
+  font-size:
+    13px;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    .4px;
+
+  transition:
+    .3s ease;
+}
+
+
+nav a:hover {
+
+  color:
+    #63d6ff;
+
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+
+  display:
+    none;
+
+  background:
+    transparent;
+
+  border:
+    none;
+
+  color:
+    #ffffff;
+
+  font-size:
+    28px;
+
+  cursor:
+    pointer;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.mobile-menu {
+
+  display:
+    none;
+
+  position:
+    fixed;
+
+  top:
+    76px;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  padding:
+    25px;
+
+  background:
+    rgba(5,14,27,.98);
+
+  border-bottom:
+    1px solid rgba(100,210,255,.15);
+
+  z-index:
+    999;
+}
+
+
+.mobile-menu.active {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    18px;
+}
+
+
+.mobile-menu a {
+
+  color:
+    #ffffff;
+
+  text-decoration:
+    none;
+
+  font-size:
+    15px;
+
+  padding:
+    8px 0;
+}
+
+
+.mobile-menu a:hover {
+
+  color:
+    #63d6ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height:
+    82vh;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  text-align:
+    center;
+
+  position:
+    relative;
+
+  padding:
+    150px 7% 90px;
+
+  overflow:
+    hidden;
+}
+
+
+.hero::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    520px;
+
+  height:
+    520px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(30,180,255,.08);
+
+  filter:
+    blur(100px);
+
+  top:
+    10%;
+
+  left:
+    50%;
+
+  transform:
+    translateX(-50%);
+}
+
+
+.hero-content {
+
+  max-width:
+    900px;
+
+  position:
+    relative;
+
+  z-index:
+    2;
+}
+
+
+.label {
+
+  display:
+    inline-block;
+
+  color:
+    #63d6ff;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    3px;
+
+  margin-bottom:
+    22px;
+
+  padding:
+    9px 16px;
+
+  border:
+    1px solid rgba(99,214,255,.25);
+
+  border-radius:
+    30px;
+
+  background:
+    rgba(99,214,255,.05);
+}
+
+
+.hero h1 {
+
+  font-size:
+    clamp(45px, 8vw, 90px);
+
+  line-height:
+    .95;
+
+  letter-spacing:
+    -3px;
+
+  margin-bottom:
+    25px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #8ee6ff,
+      #ffffff
+    );
+
+  -webkit-background-clip:
+    text;
+
+  -webkit-text-fill-color:
+    transparent;
+}
+
+
+.hero h1 span {
+
+  color:
+    #63d6ff;
+}
+
+
+.hero p {
+
+  max-width:
+    700px;
+
+  margin:
+    0 auto;
+
+  color:
+    rgba(255,255,255,.68);
+
+  font-size:
+    18px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================
+   HERO LINE
+========================= */
+
+.hero-line {
+
+  width:
+    90px;
+
+  height:
+    2px;
+
+  margin:
+    35px auto 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #63d6ff,
+      transparent
+    );
+
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+
+  padding:
+    100px 7%;
+}
+
+
+.container {
+
+  max-width:
+    1150px;
+
+  margin:
+    auto;
+}
+
+
+.section-label {
+
+  color:
+    #63d6ff;
+
+  font-size:
+    11px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    3px;
+
+  text-transform:
+    uppercase;
+
+  margin-bottom:
+    14px;
+}
+
+
+.section-title {
+
+  font-size:
+    clamp(32px, 5vw, 52px);
+
+  line-height:
+    1.1;
+
+  margin-bottom:
+    20px;
+}
+
+
+.intro {
+
+  max-width:
+    760px;
+
+  color:
+    rgba(255,255,255,.65);
+
+  font-size:
+    17px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================
+   AUDIENCE GRID
+========================= */
+
+.audience-section {
+
+  position:
+    relative;
+}
+
+
+.audience-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap:
+    22px;
+
+  margin-top:
+    55px;
+}
+
+
+.audience-card {
+
+  position:
+    relative;
+
+  min-height:
+    270px;
+
+  padding:
+    35px;
+
+  border:
+    1px solid rgba(100,210,255,.14);
+
+  border-radius:
+    18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20,40,65,.82),
+      rgba(7,17,31,.95)
+    );
+
+  overflow:
+    hidden;
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+
+.audience-card::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    -80px;
+
+  right:
+    -80px;
+
+  width:
+    180px;
+
+  height:
+    180px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(70,200,255,.08);
+
+  filter:
+    blur(10px);
+
+  transition:
+    .35s ease;
+}
+
+
+.audience-card:hover {
+
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(99,214,255,.45);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+}
+
+
+.audience-card:hover::before {
+
+  transform:
+    scale(1.3);
+
+}
+
+
+.audience-number {
+
+  color:
+    rgba(99,214,255,.45);
+
+  font-size:
+    13px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    2px;
+
+  margin-bottom:
+    25px;
+}
+
+
+.audience-icon {
+
+  width:
+    48px;
+
+  height:
+    48px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border:
+    1px solid rgba(99,214,255,.25);
+
+  border-radius:
+    12px;
+
+  color:
+    #63d6ff;
+
+  font-size:
+    21px;
+
+  margin-bottom:
+    22px;
+
+  background:
+    rgba(99,214,255,.06);
+}
+
+
+.audience-card h3 {
+
+  font-size:
+    21px;
+
+  margin-bottom:
+    12px;
+}
+
+
+.audience-card p {
+
+  color:
+    rgba(255,255,255,.60);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.7;
+}
+
+
+/* =========================
+   FOCUS SECTION
+========================= */
+
+.focus-section {
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(9,23,39,.2),
+      rgba(9,23,39,.65)
+    );
+
+  border-top:
+    1px solid rgba(100,210,255,.07);
+
+  border-bottom:
+    1px solid rgba(100,210,255,.07);
+}
+
+
+.focus-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap:
+    25px;
+
+  margin-top:
+    50px;
+}
+
+
+.focus-item {
+
+  padding:
+    38px 30px;
+
+  border-left:
+    2px solid rgba(99,214,255,.35);
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.focus-item span {
+
+  display:
+    block;
+
+  color:
+    #63d6ff;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    2px;
+
+  margin-bottom:
+    15px;
+}
+
+
+.focus-item h3 {
+
+  font-size:
+    25px;
+
+  margin-bottom:
+    12px;
+}
+
+
+.focus-item p {
+
+  color:
+    rgba(255,255,255,.62);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================
+   STATEMENT
+========================= */
+
+.statement {
+
+  text-align:
+    center;
+
+  padding:
+    120px 7%;
+}
+
+
+.statement-inner {
+
+  max-width:
+    850px;
+
+  margin:
+    auto;
+}
+
+
+.statement h2 {
+
+  font-size:
+    clamp(34px, 5vw, 58px);
+
+  line-height:
+    1.1;
+
+  margin-bottom:
+    25px;
+}
+
+
+.statement p {
+
+  color:
+    rgba(255,255,255,.65);
+
+  font-size:
+    17px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+  padding:
+    90px 7%;
+
+  text-align:
+    center;
+}
+
+
+.cta-box {
+
+  max-width:
+    1000px;
+
+  margin:
+    auto;
+
+  padding:
+    70px 35px;
+
+  border:
+    1px solid rgba(99,214,255,.20);
+
+  border-radius:
+    24px;
+
+  background:
+
+    radial-gradient(
+      circle at center,
+      rgba(40,170,255,.10),
+      transparent 65%
+    ),
+
+    rgba(8,20,35,.85);
+
+  box-shadow:
+    inset 0 0 60px rgba(40,170,255,.025);
+}
+
+
+.cta-box h2 {
+
+  font-size:
+    clamp(32px, 5vw, 50px);
+
+  margin-bottom:
+    18px;
+}
+
+
+.cta-box p {
+
+  max-width:
+    650px;
+
+  margin:
+    0 auto 30px;
+
+  color:
+    rgba(255,255,255,.65);
+
+  line-height:
+    1.8;
+}
+
+
+.cta-button {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  padding:
+    14px 28px;
+
+  border-radius:
+    30px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #4ecbff,
+      #7de2ff
+    );
+
+  color:
+    #06101d;
+
+  text-decoration:
+    none;
+
+  font-weight:
+    800;
+
+  font-size:
+    14px;
+
+  transition:
+    .3s ease;
+
+  box-shadow:
+    0 8px 30px rgba(50,190,255,.18);
+}
+
+
+.cta-button:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 12px 40px rgba(50,190,255,.30);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  padding:
+    35px 7%;
+
+  border-top:
+    1px solid rgba(100,210,255,.08);
+
+  text-align:
+    center;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size:
+    12px;
+}
+
+
+.footer-logo {
+
+  color:
+    #ffffff;
+
+  font-size:
+    18px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    2px;
+
+  margin-bottom:
+    10px;
+}
+
+
+.footer-logo span {
+
+  color:
+    #63d6ff;
+
+  font-weight:
+    400;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  nav > div:last-of-type {
+
+    display:
+      none;
+  }
+
+  .menu-toggle {
+
+    display:
+      block;
+  }
+
+  .audience-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .focus-grid {
+
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  nav {
+
+    height:
+      70px;
+
+    padding:
+      0 5%;
+  }
+
+  .logo {
+
+    font-size:
+      18px;
+  }
+
+  .mobile-menu {
+
+    top:
+      70px;
+  }
+
+  .hero {
+
+    min-height:
+      78vh;
+
+    padding:
+      130px 6% 70px;
+  }
+
+  .hero h1 {
+
+    letter-spacing:
+      -2px;
+  }
+
+  .hero p {
+
+    font-size:
+      15px;
+  }
+
+  section {
+
+    padding:
+      75px 6%;
+  }
+
+  .audience-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      18px;
+  }
+
+  .audience-card {
+
+    min-height:
+      auto;
+
+    padding:
+      30px;
+  }
+
+  .statement {
+
+    padding:
+      85px 6%;
+  }
+
+  .cta {
+
+    padding:
+      65px 6%;
+  }
+
+  .cta-box {
+
+    padding:
+      50px 25px;
+  }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior:
+      auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+
+    transition:
+      none !important;
+  }
+
+}
+
+</style></head><body><!-- =========================
+     NAVIGATION
+========================= --><nav>  <div class="logo">
+    GODZYA <span>GROUP</span>
+  </div>  <div><a href="index.html">
+  Home
+</a>
+
+<a href="services.html">
+  Services
+</a>
+
+<a href="who-we-serve.html">
+  Who We Serve
+</a>
+
+<a href="about.html">
+  About
+</a>
+
+<a href="why-godzya.html">
+  Why GODZYA
+</a>
+
+<a href="contact.html">
+  Contact
+</a>
+
+  </div><button
+class="menu-toggle"
+onclick="toggleMenu()"
+aria-label="Open navigation menu"
+
+«»
+
+☰
+
+  </button></nav><!-- =========================
+     MOBILE MENU
+========================= --><div
+  class="mobile-menu"
+  id="mobileMenu"
+>  <a href="index.html">
+    Home
+  </a>  <a href="services.html">
+    Services
+  </a>  <a href="who-we-serve.html">
+    Who We Serve
+  </a>  <a href="about.html">
+    About
+  </a>  <a href="why-godzya.html">
+    Why GODZYA
+  </a>  <a href="contact.html">
+    Contact
+  </a></div><!-- =========================
+     HERO
+========================= --><section class="hero">  <div class="hero-content"><div class="label">
+  WHO WE SERVE
+</div>
+
+<h1>
+  Built Around<br>
+  <span>Your Ambition.</span>
+</h1>
+
+<p>
+  GODZYA GROUP works with people,
+  businesses and organisations ready
+  to turn ideas into meaningful progress
+  through smarter technology and practical
+  business solutions.
+</p>
+
+<div class="hero-line"></div>
+
+  </div></section><!-- =========================
+     INTRO
+========================= --><section class="audience-section">  <div class="container"><div class="section-label">
+  OUR CLIENTS
+</div>
+
+<h2 class="section-title">
+  Who We Build For
+</h2>
+
+<p class="intro">
+  Every organisation has different goals,
+  challenges and opportunities. Our approach
+  begins by understanding where you are,
+  where you want to go, and what needs to
+  change to move you forward.
+</p>
+
+
+<!-- =========================
+     AUDIENCE CARDS
+========================= -->
+
+<div class="audience-grid">
+
+
+  <!-- CARD 01 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      01
+    </div>
+
+    <div class="audience-icon">
+      ◇
+    </div>
+
+    <h3>
+      Startups & Entrepreneurs
+    </h3>
+
+    <p>
+      For people turning ideas into
+      real businesses, products and
+      opportunities. We help create
+      a stronger foundation for the
+      journey ahead.
+    </p>
+
+  </div>
+
+
+  <!-- CARD 02 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      02
+    </div>
+
+    <div class="audience-icon">
+      ↗
+    </div>
+
+    <h3>
+      Small & Growing Businesses
+    </h3>
+
+    <p>
+      For businesses ready to improve
+      their systems, understand their
+      data, strengthen operations and
+      build for sustainable growth.
+    </p>
+
+  </div>
+
+
+  <!-- CARD 03 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      03
+    </div>
+
+    <div class="audience-icon">
+      ◎
+    </div>
+
+    <h3>
+      Corporate & Professional Teams
+    </h3>
+
+    <p>
+      For teams looking for smarter
+      ways to improve processes,
+      technology adoption, customer
+      experiences and decision-making.
+    </p>
+
+  </div>
+
+
+  <!-- CARD 04 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      04
+    </div>
+
+    <div class="audience-icon">
+      ◫
+    </div>
+
+    <h3>
+      Organisations & Institutions
+    </h3>
+
+    <p>
+      For organisations seeking
+      practical digital solutions,
+      structured thinking and better
+      ways to connect technology with
+      their objectives.
+    </p>
+
+  </div>
+
+
+  <!-- CARD 05 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      05
+    </div>
+
+    <div class="audience-icon">
+      ✦
+    </div>
+
+    <h3>
+      Professionals & Creators
+    </h3>
+
+    <p>
+      For individuals building their
+      professional presence, developing
+      digital ideas or looking for
+      smarter ways to work and grow.
+    </p>
+
+  </div>
+
+
+  <!-- CARD 06 -->
+
+  <div class="audience-card">
+
+    <div class="audience-number">
+      06
+    </div>
+
+    <div class="audience-icon">
+      ∞
+    </div>
+
+    <h3>
+      Future-Focused Builders
+    </h3>
+
+    <p>
+      For people and teams who see
+      technology as more than a tool —
+      and want to build solutions that
+      create lasting value.
+    </p>
+
+  </div>
+
+
+</div>
+
+  </div></section><!-- =========================
+     DIFFERENT GOALS
+========================= --><section class="focus-section">  <div class="container"><div class="section-label">
+  YOUR JOURNEY
+</div>
+
+<h2 class="section-title">
+  Different Goals.<br>
+  One Direction.
+</h2>
+
+<p class="intro">
+  Wherever you are in your journey,
+  GODZYA GROUP focuses on helping you
+  move from where you are today toward
+  where you want to be tomorrow.
+</p>
+
+
+<div class="focus-grid">
+
+
+  <!-- START -->
+
+  <div class="focus-item">
+
+    <span>
+      01 — START
+    </span>
+
+    <h3>
+      Turn Ideas Into Reality
+    </h3>
+
+    <p>
+      You have an idea, opportunity or
+      business direction. We help you
+      bring structure to it and identify
+      the right path forward.
+    </p>
+
+  </div>
+
+
+  <!-- GROW -->
+
+  <div class="focus-item">
+
+    <span>
+      02 — GROW
+    </span>
+
+    <h3>
+      Build With Confidence
+    </h3>
+
+    <p>
+      You are already moving and need
+      better systems, clearer insights
+      and smarter ways to support your
+      next stage of growth.
+    </p>
+
+  </div>
+
+
+  <!-- TRANSFORM -->
+
+  <div class="focus-item">
+
+    <span>
+      03 — TRANSFORM
+    </span>
+
+    <h3>
+      Evolve The Way You Work
+    </h3>
+
+    <p>
+      You are ready to rethink existing
+      processes, embrace technology and
+      create a more connected and
+      efficient future.
+    </p>
+
+  </div>
+
+
+</div>
+
+  </div></section><!-- =========================
+     STATEMENT
+========================= --><section class="statement">  <div class="statement-inner"><div class="section-label">
+  THE GODZYA APPROACH
+</div>
+
+<h2>
+  Technology Should Serve
+  Your Vision.
+</h2>
+
+<p>
+  We believe technology works best when
+  it is connected to a real purpose.
+  That's why we look beyond the technology
+  itself and focus on the people, business
+  goals and opportunities behind it.
+</p>
+
+  </div></section><!-- =========================
+     CTA
+========================= --><section class="cta">  <div class="cta-box"><div class="section-label">
+  LET'S BUILD
+</div>
+
+<h2>
+  Your Next Chapter Starts Here.
+</h2>
+
+<p>
+  Whether you're starting something new,
+  growing an existing business or
+  looking to transform the way you work,
+  let's explore what is possible.
+</p>
+
+<a
+  href="contact.html"
+  class="cta-button"
+>
+  Start a Conversation →
+</a>
+
+  </div></section><!-- =========================
+     FOOTER
+========================= --><footer>  <div class="footer-logo">
+    GODZYA <span>GROUP</span>
+  </div>  <p>
+    We Build. You Grow.
+  </p>  <p style="margin-top:10px;">
+    © 2026 GODZYA GROUP. All rights reserved.
+  </p></footer><!-- =========================
+     JAVASCRIPT
+========================= --><script>
+
+function toggleMenu() {
+
+  const menu =
+    document.getElementById(
+      "mobileMenu"
+    );
+
+  menu.classList.toggle(
+    "active"
+  );
+
+}
+
+
+/* Close mobile menu
+   after selecting a page
+*/
+
+document
+  .querySelectorAll(
+    ".mobile-menu a"
+  )
+  .forEach(
+    function(link) {
+
+      link.addEventListener(
+        "click",
+        function() {
+
+          document
+            .getElementById(
+              "mobileMenu"
+            )
+            .classList.remove(
+              "active"
+            );
+
+        }
+      );
+
+    }
+  );
+
+
+/* Close menu when
+   clicking outside it
+*/
+
+document.addEventListener(
+  "click",
+  function(event) {
+
+    const menu =
+      document.getElementById(
+        "mobileMenu"
+      );
+
+    const button =
+      document.querySelector(
+        ".menu-toggle"
+      );
+
+    if (
+      menu.classList.contains(
+        "active"
+      ) &&
+      !menu.contains(event.target) &&
+      !button.contains(event.target)
+    ) {
+
+      menu.classList.remove(
+        "active"
+      );
+
+    }
+
+  }
+);
+
+</script></body></html>
