@@ -1175,11 +1175,46 @@ header {
     color: var(--cyan);
 }
 
+   @media (max-width: 600px) {
+
+    .contact-card {
+        margin-top: 30px;
+        padding: 45px 20px;
+        border-radius: 22px;
+    }
+
+    .contact-card h2 {
+        font-size: clamp(36px, 11vw, 52px);
+    }
+
+    .contact-details {
+        flex-direction: column;
+        gap: 16px;
+        margin: 25px 0;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .whatsapp {
+        right: 16px;
+        bottom: 16px;
+        padding: 11px 15px;
+    }
+
+}
 /* =========================================================
    FOOTER
    ========================================================= */
 
-footer {
+.footer {
     padding: 45px 0 35px;
     border-top: 1px solid var(--line);
     background: #030810;
