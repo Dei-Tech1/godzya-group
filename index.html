@@ -173,15 +173,23 @@ header {
 
 @keyframes logoRotate {
     0% {
-        transform: rotateY(0deg);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    25% {
+        transform: rotateX(12deg) rotateY(90deg) rotateZ(-5deg);
     }
 
     50% {
-        transform: rotateY(180deg);
+        transform: rotateX(-8deg) rotateY(180deg) rotateZ(4deg);
+    }
+
+    75% {
+        transform: rotateX(12deg) rotateY(270deg) rotateZ(-5deg);
     }
 
     100% {
-        transform: rotateY(360deg);
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
     }
 }
 
