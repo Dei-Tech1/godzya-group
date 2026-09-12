@@ -991,6 +991,36 @@ header {
     font-size: 13px;
 }
 
+   @media (max-width: 600px) {
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-box {
+        padding-left: 20px;
+    }
+
+    .about-box p {
+        font-size: 15px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat {
+        min-height: 130px;
+        padding: 20px;
+    }
+
+    .stat strong {
+        font-size: 22px;
+    }
+
+   }
 /* =========================================================
    WHY GODZYA
    ========================================================= */
