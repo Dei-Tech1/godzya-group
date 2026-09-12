@@ -1359,4 +1359,1109 @@ header {
 
 /* =========================================================
    FOOTER
-======
+========================================================= */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #07111f,
+            #030810
+        );
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer strong {
+    color: white;
+
+    font-weight: 700;
+}
+
+.footer-tech {
+    margin-top: 10px;
+
+    color:
+        var(--cyan);
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .services-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        padding:
+            16px 18px;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        background:
+            rgba(5,11,20,0.98);
+
+        border-top:
+            1px solid
+            rgba(255,255,255,0.08);
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,0.08);
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 0;
+
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        padding:
+            100px 20px
+            70px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size:
+            clamp(42px, 12vw, 70px);
+
+        line-height: 0.95;
+    }
+
+    .hero .slogan {
+        font-size: 16px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .hero p {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* 3D CUBE */
+
+    .cube-wrapper {
+        transform:
+            scale(0.72);
+    }
+
+
+    /* SECTIONS */
+
+    section {
+        padding:
+            65px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-label {
+        font-size: 11px;
+
+        letter-spacing: 3px;
+    }
+
+
+    /* SERVICE CARDS */
+
+    .services-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .service-card {
+        min-height: 230px;
+    }
+
+
+    /* WHO WE SERVE */
+
+    .serve-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* WHY GODZYA */
+
+    .why-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* APPROACH */
+
+    .approach-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    /* CONTACT */
+
+    .contact-box {
+        padding:
+            35px 22px;
+    }
+
+    .contact-box h2 {
+        font-size: 32px;
+    }
+
+    .contact-details {
+        font-size: 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding:
+            30px 18px;
+    }
+
+    .footer-tech {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.8;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .hero {
+        padding:
+            90px 16px
+            60px;
+    }
+
+    .hero h1 {
+        font-size:
+            40px;
+    }
+
+    .cube-wrapper {
+        transform:
+            scale(0.62);
+    }
+
+    section {
+        padding:
+            55px 16px;
+    }
+
+    .service-card,
+    .serve-card,
+    .why-card,
+    .approach-card {
+        padding:
+            24px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+
+}
+
+
+/* =========================================================
+   END OF CSS
+========================================================= */
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header>
+
+    <div class="header-inner">
+
+        <a href="index.html"
+           class="brand">
+
+            GODZYA
+            <span>GROUP</span>
+
+        </a>
+
+
+        <button
+            class="menu-toggle"
+            onclick="toggleMenu()"
+            aria-label="Open navigation">
+
+            ☰
+
+        </button>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="#who-we-serve">
+                Who We Serve
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#why-godzya">
+                Why GODZYA
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            AI • DATA • BUSINESS • TECHNOLOGY
+        </div>
+
+        <h1>
+            GODZYA
+            <span>GROUP</span>
+        </h1>
+
+        <div class="slogan">
+            WE BUILD. YOU GROW.
+        </div>
+
+        <p>
+            Building smarter solutions for a connected future.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="services.html"
+                class="btn btn-primary">
+
+                Explore Services
+
+            </a>
+
+            <a
+                href="#contact"
+                class="btn btn-secondary">
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3D CUBE -->
+
+    <div class="cube-scene">
+
+        <div class="cube">
+
+            <div class="cube-face cube-front">
+
+                <img
+                    src="./4497a158b3ee555cea4a4a60060927d22fc0ba2b9b6a8ad721ec19542c2e830f.png"
+                    alt="GODZYA GROUP Logo">
+
+            </div>
+
+
+            <div class="cube-face cube-back">
+
+                <img
+                    src="./4497a158b3ee555cea4a4a60060927d22fc0ba2b9b6a8ad721ec19542c2e830f.png"
+                    alt="GODZYA GROUP Logo">
+
+            </div>
+
+
+            <div class="cube-face cube-right">
+
+                <img
+                    src="./744d2bc533c7b411e69c981e372fb56de2b4d3291be6b36f6c2cb62805d1c0a1.jpg"
+                    alt="Technology hand">
+
+            </div>
+
+
+            <div class="cube-face cube-left">
+
+                <img
+                    src="./494b1e93fe73bcd804f5194a51fc9668480da8511e7798fe704e3b7cd6e5cde7.jpg"
+                    alt="Technology computer">
+
+            </div>
+
+
+            <div class="cube-face cube-top"></div>
+
+            <div class="cube-face cube-bottom"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     MARQUEE
+======================================================= -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        AI
+        <span>•</span>
+        DATA
+        <span>•</span>
+        BUSINESS
+        <span>•</span>
+        TECHNOLOGY
+        <span>•</span>
+        STRATEGY
+        <span>•</span>
+        GROWTH
+        <span>•</span>
+
+        AI
+        <span>•</span>
+        DATA
+        <span>•</span>
+        BUSINESS
+        <span>•</span>
+        TECHNOLOGY
+        <span>•</span>
+
+    </div>
+
+</div>
+
+
+<!-- =======================================================
+     INTRO
+======================================================= -->
+
+<section class="intro">
+
+    <div class="section-label">
+        WHAT WE DO
+    </div>
+
+    <h2>
+        Intelligent solutions.
+        <br>
+        Practical results.
+    </h2>
+
+    <p>
+        GODZYA GROUP combines business thinking,
+        technology and practical execution to help
+        businesses work smarter and grow with confidence.
+    </p>
+
+</section>
+
+
+<!-- =======================================================
+     SERVICES
+======================================================= -->
+
+<section
+    id="services"
+    class="services-section">
+
+    <div class="section-label">
+        OUR SERVICES
+    </div>
+
+    <h2 class="section-title">
+        Solutions built for progress.
+    </h2>
+
+
+    <div class="services-grid">
+
+
+        <article
+            class="service-card"
+            style="background-image:url('./470829e016e6d3f8b60d3bbdc4b076b402e05ff0ee0b6da32cef7f9c1814a5c0.jpg');">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+                <span class="service-number">
+                    01
+                </span>
+
+                <h3>
+                    Data Entry & Excel Support
+                </h3>
+
+                <p>
+                    Accurate data entry, spreadsheet
+                    organisation, Excel support and
+                    business data preparation.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            style="background-image:url('./778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg');">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+                <span class="service-number">
+                    02
+                </span>
+
+                <h3>
+                    French & English Support
+                </h3>
+
+                <p>
+                    Professional bilingual communication,
+                    customer support, translation and
+                    language assistance.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article
+            class="service-card"
+            style="background-image:url('./bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg');">
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+
+                <span class="service-number">
+                    03
+                </span>
+
+                <h3>
+                    Virtual Assistance
+                </h3>
+
+                <p>
+                    Reliable administrative support,
+                    research, organisation and day-to-day
+                    business assistance.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     WHO WE SERVE
+======================================================= -->
+
+<section
+    id="who-we-serve"
+    class="serve-section">
+
+    <div class="section-label">
+        WHO WE SERVE
+    </div>
+
+    <h2 class="section-title">
+        Solutions for businesses ready to grow.
+    </h2>
+
+
+    <div class="serve-grid">
+
+        <article class="serve-card">
+
+            <span>01</span>
+
+            <h3>
+                Startups & Entrepreneurs
+            </h3>
+
+            <p>
+                Practical support for turning ideas
+                into structured businesses.
+            </p>
+
+        </article>
+
+
+        <article class="serve-card">
+
+            <span>02</span>
+
+            <h3>
+                Growing Businesses
+            </h3>
+
+            <p>
+                Better systems, data and operational
+                support for sustainable growth.
+            </p>
+
+        </article>
+
+
+        <article class="serve-card">
+
+            <span>03</span>
+
+            <h3>
+                Professionals
+            </h3>
+
+            <p>
+                Support with business tasks,
+                documentation, data and productivity.
+            </p>
+
+        </article>
+
+
+        <article class="serve-card">
+
+            <span>04</span>
+
+            <h3>
+                Global Clients
+            </h3>
+
+            <p>
+                Flexible international support across
+                business, technology and communication.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section
+    id="about"
+    class="about-section">
+
+    <div class="section-label">
+        WHO WE ARE
+    </div>
+
+    <div class="about-grid">
+
+        <div>
+
+            <h2 class="section-title">
+                About GODZYA GROUP
+            </h2>
+
+            <p>
+                GODZYA GROUP is a modern business and
+                technology company operating at the
+                intersection of AI, data, business
+                and technology.
+            </p>
+
+            <p>
+                Our goal is simple: build practical
+                solutions that help people and businesses
+                work smarter, solve problems and create
+                sustainable growth.
+            </p>
+
+        </div>
+
+
+        <div class="about-stats">
+
+            <div>
+                <strong>AI</strong>
+                <span>Intelligence</span>
+            </div>
+
+            <div>
+                <strong>DATA</strong>
+                <span>Insight</span>
+            </div>
+
+            <div>
+                <strong>BUSINESS</strong>
+                <span>Strategy</span>
+            </div>
+
+            <div>
+                <strong>TECHNOLOGY</strong>
+                <span>Innovation</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     WHY GODZYA
+======================================================= -->
+
+<section
+    id="why-godzya"
+    class="why-section">
+
+    <div class="section-label">
+        WHY GODZYA
+    </div>
+
+    <h2 class="section-title">
+        Built around intelligent thinking.
+    </h2>
+
+
+    <div class="why-grid">
+
+        <article class="why-card">
+
+            <span>01</span>
+
+            <h3>
+                Innovation
+            </h3>
+
+            <p>
+                We look for smarter ways to solve
+                modern business challenges.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <span>02</span>
+
+            <h3>
+                Intelligence
+            </h3>
+
+            <p>
+                We turn information into practical
+                understanding and action.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <span>03</span>
+
+            <h3>
+                Strategy
+            </h3>
+
+            <p>
+                Every solution begins with understanding
+                the bigger business objective.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <span>04</span>
+
+            <h3>
+                Results
+            </h3>
+
+            <p>
+                We focus on useful outcomes rather
+                than unnecessary complexity.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     APPROACH
+======================================================= -->
+
+<section class="approach-section">
+
+    <div class="section-label">
+        OUR APPROACH
+    </div>
+
+    <h2 class="section-title">
+        From challenge to solution.
+    </h2>
+
+
+    <div class="approach-grid">
+
+        <article class="approach-card">
+
+            <span>01</span>
+
+            <h3>
+                Understand
+            </h3>
+
+            <p>
+                Understand the business,
+                challenge and objective.
+            </p>
+
+        </article>
+
+
+        <article class="approach-card">
+
+            <span>02</span>
+
+            <h3>
+                Analyse
+            </h3>
+
+            <p>
+                Examine the information,
+                requirements and opportunities.
+            </p>
+
+        </article>
+
+
+        <article class="approach-card">
+
+            <span>03</span>
+
+            <h3>
+                Build
+            </h3>
+
+            <p>
+                Create a practical solution
+                designed around the need.
+            </p>
+
+        </article>
+
+
+        <article class="approach-card">
+
+            <span>04</span>
+
+            <h3>
+                Grow
+            </h3>
+
+            <p>
+                Improve, measure and build
+                toward sustainable progress.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =======================================================
+     CONTACT
+======================================================= -->
+
+<section
+    id="contact"
+    class="contact-section">
+
+    <div class="contact-box">
+
+        <div class="section-label">
+            LET'S CONNECT
+        </div>
+
+        <h2>
+            Let's Build Something Smarter.
+        </h2>
+
+        <p>
+            Have an idea, business challenge or project?
+            Let's explore what's possible together.
+        </p>
+
+
+        <div class="contact-details">
+
+            <a href="mailto:info@godzyagroup.com">
+                info@godzyagroup.com
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+    <p>
+        © 2026
+        <strong>GODZYA GROUP</strong>.
+        All rights reserved.
+    </p>
+
+    <p class="footer-tech">
+        AI • DATA • BUSINESS • TECHNOLOGY
+    </p>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+function toggleMenu() {
+
+    const nav =
+        document.getElementById(
+            "navLinks"
+        );
+
+    nav.classList.toggle(
+        "active"
+    );
+
+}
+
+
+document
+    .querySelectorAll(
+        ".nav-links a"
+    )
+    .forEach(
+        function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    document
+                        .getElementById(
+                            "navLinks"
+                        )
+                        .classList
+                        .remove(
+                            "active"
+                        );
+
+                }
+            );
+
+        }
+    );
+
+</script>
+
+
+</body>
+
+</html>
