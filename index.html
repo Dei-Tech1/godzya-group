@@ -207,6 +207,59 @@ header {
         #07111f;
 }
 
+.logo-cube {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    transform-style: preserve-3d;
+
+    animation:
+        cubeRotate 10s ease-in-out infinite;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   ALL SIX SIDES
+========================================================= */
+
+.cube-face {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    border:
+        1px solid
+        rgba(100,210,255,.28);
+
+    box-shadow:
+        inset 0 0 18px
+        rgba(100,210,255,.08);
+}
+
+
+/* =========================================================
+   FRONT
+========================================================= */
+
+.cube-front {
+    transform:
+        translateZ(25px);
+
+    background:
+        #07111f;
+}
+
 .cube-front img {
     width: 100%;
     height: 100%;
@@ -217,7 +270,9 @@ header {
 }
 
 
-/* BACK */
+/* =========================================================
+   BACK
+========================================================= */
 
 .cube-back {
     transform:
@@ -241,7 +296,9 @@ header {
 }
 
 
-/* RIGHT SIDE */
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
 
 .cube-right {
     transform:
@@ -257,7 +314,9 @@ header {
 }
 
 
-/* LEFT SIDE */
+/* =========================================================
+   LEFT SIDE
+========================================================= */
 
 .cube-left {
     transform:
@@ -272,6 +331,37 @@ header {
         );
 }
 
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.cube-top {
+    transform:
+        rotateX(90deg)
+        translateZ(25px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #1a5168,
+            #07111f
+        );
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.cube-bottom {
+    transform:
+        rotateX(-90deg)
+        translateZ(25px);
+
+    background:
+        #030810;
+}
 
 
 /* =========================================================
