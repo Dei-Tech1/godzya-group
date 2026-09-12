@@ -1,2467 +1,1222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>GODZYA GROUP | AI • Data • Business • Technology</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<meta
-    name="description"
-    content="GODZYA GROUP builds intelligent AI, data, business and technology solutions for ambitious businesses ready to grow."
->
+    <title>
+        GODZYA GROUP | AI • DATA • BUSINESS • TECHNOLOGY
+    </title>
 
-<style>
+    <meta
+        name="description"
+        content="GODZYA GROUP builds intelligent AI, data, business and technology solutions for ambitious businesses ready to grow."
+    >
 
-/* =========================================================
-   GODZYA GROUP — PREMIUM CORPORATE WEBSITE
-========================================================= */
+    <meta
+        name="theme-color"
+        content="#050b14"
+    >
 
-:root {
-    --bg: #050b14;
-    --bg-soft: #081321;
-    --panel: rgba(10, 23, 40, 0.78);
-    --text: #f4f8fc;
-    --muted: #aab8c8;
-    --cyan: #46d9ff;
-    --blue: #3b82f6;
-    --line: rgba(255,255,255,.10);
-    --max: 1180px;
-}
+    <style>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* =====================================================
+           GODZYA GROUP
+           PREMIUM HOME PAGE
+        ===================================================== */
 
-html {
-    scroll-behavior: smooth;
-}
+        :root {
 
-body {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    background:
-        radial-gradient(
-            circle at 20% 10%,
-            rgba(25,105,145,.22),
-            transparent 32%
-        ),
-        radial-gradient(
-            circle at 85% 35%,
-            rgba(36,91,180,.18),
-            transparent 30%
-        ),
-        var(--bg);
+            --bg:
+                #050b14;
 
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+            --bg-deep:
+                #030810;
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+            --bg-soft:
+                #081321;
 
-img {
-    max-width: 100%;
-    display: block;
-}
+            --panel:
+                rgba(10, 23, 40, .78);
 
+            --panel-strong:
+                rgba(8, 19, 33, .94);
 
-/* =========================================================
-   GLOBAL
-========================================================= */
+            --text:
+                #f4f8fc;
 
-.container {
-    width: min(92%, var(--max));
-    margin: auto;
-}
+            --muted:
+                #aab8c8;
 
-section {
-    position: relative;
-    padding: 110px 0;
-    overflow: hidden;
-}
+            --soft:
+                #7f91a5;
 
-.section-label {
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-}
+            --cyan:
+                #46d9ff;
 
-.section-title {
-    font-size: clamp(36px, 5vw, 64px);
-    line-height: 1.05;
-    letter-spacing: -2px;
-    max-width: 800px;
-    margin-bottom: 25px;
-}
+            --blue:
+                #3b82f6;
 
-.section-text {
-    color: var(--muted);
-    max-width: 700px;
-    font-size: 17px;
-}
+            --line:
+                rgba(255,255,255,.10);
 
-.gradient-text {
-    background:
-        linear-gradient(
-            90deg,
-            #ffffff,
-            var(--cyan),
-            #8bbcff
-        );
+            --line-soft:
+                rgba(255,255,255,.06);
 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+            --max:
+                1180px;
 
+            --radius:
+                24px;
 
-/* =========================================================
-   HEADER
-========================================================= */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    background:
-        rgba(4,10,18,.72);
-
-    backdrop-filter: blur(18px);
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.07);
-}
-
-.navbar {
-    width: min(94%, 1250px);
-    margin: auto;
-
-    min-height: 78px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-
-    font-size: 19px;
-    font-weight: 900;
-    letter-spacing: 2px;
-
-    white-space: nowrap;
-}
-
-
-/* =========================================================
-   3D FLOATING CUBE LOGO
-========================================================= */
-
-.logo-cube-wrap {
-    position: relative;
-
-    width: 72px;
-    height: 82px;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    perspective: 700px;
-
-    animation:
-        cubeFloat
-        4s
-        ease-in-out
-        infinite;
-}
-
-.logo-cube {
-    position: relative;
-
-    width: 50px;
-    height: 50px;
-
-    transform-style: preserve-3d;
-
-    animation:
-        cubeRotate
-        10s
-        ease-in-out
-        infinite;
-}
-
-.cube-face {
-    position: absolute;
-
-    width: 50px;
-    height: 50px;
-
-    overflow: hidden;
-
-    border-radius: 9px;
-
-    backface-visibility: hidden;
-
-    border:
-        1px solid
-        rgba(100,210,255,.28);
-
-    box-shadow:
-        inset 0 0 18px
-        rgba(100,210,255,.08);
-
-    background:
-        #07111f;
-}
-
-.cube-face img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-
-/* FRONT */
-
-.cube-front {
-    transform:
-        translateZ(25px);
-}
-
-
-/* BACK */
-
-.cube-back {
-    transform:
-        rotateY(180deg)
-        translateZ(25px);
-}
-
-
-/* RIGHT */
-
-.cube-right {
-    transform:
-        rotateY(90deg)
-        translateZ(25px);
-}
-
-
-/* LEFT */
-
-.cube-left {
-    transform:
-        rotateY(-90deg)
-        translateZ(25px);
-}
-
-
-/* TOP */
-
-.cube-top {
-    transform:
-        rotateX(90deg)
-        translateZ(25px);
-
-    background:
-        linear-gradient(
-            135deg,
-            #1a5168,
-            #07111f
-        );
-}
-
-
-/* BOTTOM */
-
-.cube-bottom {
-    transform:
-        rotateX(-90deg)
-        translateZ(25px);
-
-    background:
-        #030810;
-}
-
-
-/* =========================================================
-   CUBE ROTATION
-========================================================= */
-
-@keyframes cubeRotate {
-
-    0% {
-        transform:
-            rotateX(-8deg)
-            rotateY(0deg)
-            rotateZ(2deg);
-    }
-
-    20% {
-        transform:
-            rotateX(12deg)
-            rotateY(65deg)
-            rotateZ(-3deg);
-    }
-
-    40% {
-        transform:
-            rotateX(-5deg)
-            rotateY(145deg)
-            rotateZ(3deg);
-    }
-
-    60% {
-        transform:
-            rotateX(10deg)
-            rotateY(225deg)
-            rotateZ(-2deg);
-    }
-
-    80% {
-        transform:
-            rotateX(-8deg)
-            rotateY(305deg)
-            rotateZ(3deg);
-    }
-
-    100% {
-        transform:
-            rotateX(-8deg)
-            rotateY(360deg)
-            rotateZ(2deg);
-    }
-}
-
-
-/* =========================================================
-   FLOATING MOVEMENT
-========================================================= */
-
-@keyframes cubeFloat {
-
-    0%,
-    100% {
-        transform:
-            translateY(0);
-    }
-
-    50% {
-        transform:
-            translateY(-7px);
-    }
-}
-
-
-/* =========================================================
-   CUBE SHADOW
-========================================================= */
-
-.cube-shadow {
-    position: absolute;
-
-    left: 50%;
-    bottom: 1px;
-
-    width: 42px;
-    height: 8px;
-
-    transform:
-        translateX(-50%);
-
-    border-radius: 50%;
-
-    background:
-        rgba(0,0,0,.55);
-
-    filter:
-        blur(6px);
-
-    opacity: .65;
-
-    animation:
-        shadowFloat
-        4s
-        ease-in-out
-        infinite;
-}
-
-@keyframes shadowFloat {
-
-    0%,
-    100% {
-        transform:
-            translateX(-50%)
-            scaleX(1);
-
-        opacity: .65;
-    }
-
-    50% {
-        transform:
-            translateX(-50%)
-            scaleX(.70);
-
-        opacity: .38;
-    }
-}
-
-
-/* =========================================================
-   CUBE HOVER
-========================================================= */
-
-.logo-cube-wrap:hover .logo-cube {
-    animation-duration: 5s;
-}
-
-.logo-cube-wrap:hover {
-    filter:
-        drop-shadow(
-            0 0 12px
-            rgba(70,217,255,.28)
-        );
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
-.nav-links {
-    display: flex;
-    align-items: center;
-
-    gap: 30px;
-
-    list-style: none;
-}
-
-.nav-links a {
-    color: #c7d2df;
-
-    font-size: 13px;
-    font-weight: 600;
-
-    transition: .3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--cyan);
-}
-
-.nav-cta {
-    padding: 11px 19px;
-
-    border:
-        1px solid
-        rgba(70,217,255,.4);
-
-    border-radius: 50px;
-
-    color: white !important;
-
-    background:
-        rgba(70,217,255,.08);
-}
-
-.menu-toggle {
-    display: none;
-
-    font-size: 27px;
-
-    cursor: pointer;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero {
-    min-height: 100vh;
-
-    display: flex;
-    align-items: center;
-
-    position: relative;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(3,9,17,.96) 0%,
-            rgba(3,9,17,.72) 42%,
-            rgba(3,9,17,.35) 100%
-        ),
-        url(
-            "3fa1f90e63d632bba744b19cc486fd38eef301e9e449bc2f0ec21eddf2bdcd35.png"
-        )
-        center/cover
-        no-repeat;
-}
-
-.hero::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        radial-gradient(
-            circle at 70% 45%,
-            rgba(42,186,230,.20),
-            transparent 25%
-        ),
-        linear-gradient(
-            180deg,
-            rgba(5,11,20,.15),
-            var(--bg)
-        );
-}
-
-.hero-content {
-    position: relative;
-
-    z-index: 2;
-
-    padding-top: 80px;
-}
-
-.hero-label {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    color: var(--cyan);
-
-    font-size: 12px;
-    font-weight: 800;
-
-    letter-spacing: 4px;
-
-    margin-bottom: 25px;
-}
-
-.hero-label::before {
-    content: "";
-
-    width: 35px;
-    height: 1px;
-
-    background:
-        var(--cyan);
-}
-
-.hero h1 {
-    font-size:
-        clamp(
-            65px,
-            12vw,
-            150px
-        );
-
-    line-height: .78;
-
-    letter-spacing: -8px;
-
-    font-weight: 900;
-
-    margin-bottom: 30px;
-}
-
-.hero h1 span {
-    display: block;
-
-    color: transparent;
-
-    -webkit-text-stroke:
-        1px
-        rgba(255,255,255,.75);
-}
-
-.slogan {
-    font-size:
-        clamp(
-            25px,
-            4vw,
-            42px
-        );
-
-    font-weight: 700;
-
-    margin-bottom: 14px;
-}
-
-.hero-description {
-    color: #b7c5d4;
-
-    max-width: 650px;
-
-    font-size: 17px;
-}
-
-.hero-buttons {
-    display: flex;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-
-    margin-top: 35px;
-}
-
-.btn {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 14px 24px;
-
-    border-radius: 50px;
-
-    font-size: 13px;
-
-    font-weight: 800;
-
-    letter-spacing: .4px;
-
-    transition: .3s ease;
-}
-
-.btn-primary {
-    background:
-        linear-gradient(
-            100deg,
-            #ffffff,
-            #a8eaff
-        );
-
-    color: #06101a;
-
-    box-shadow:
-        0 10px 40px
-        rgba(70,217,255,.18);
-}
-
-.btn-primary:hover {
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 15px 50px
-        rgba(70,217,255,.30);
-}
-
-.btn-outline {
-    border:
-        1px solid
-        rgba(255,255,255,.22);
-
-    background:
-        rgba(255,255,255,.04);
-
-    color: white;
-}
-
-.btn-outline:hover {
-    border-color:
-        var(--cyan);
-
-    background:
-        rgba(70,217,255,.08);
-}
-
-.hero-bottom {
-    position: absolute;
-
-    bottom: 28px;
-    left: 50%;
-
-    transform:
-        translateX(-50%);
-
-    width:
-        min(92%,1180px);
-
-    display: flex;
-
-    justify-content:
-        space-between;
-
-    color:
-        rgba(255,255,255,.55);
-
-    font-size: 11px;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-}
-
-
-/* =========================================================
-   MOVING MARQUEE
-========================================================= */
-
-.marquee {
-    overflow: hidden;
-
-    border-top:
-        1px solid
-        var(--line);
-
-    border-bottom:
-        1px solid
-        var(--line);
-
-    background:
-        rgba(255,255,255,.025);
-
-    padding: 18px 0;
-}
-
-.marquee-track {
-    display: flex;
-
-    width: max-content;
-
-    animation:
-        marquee
-        25s
-        linear
-        infinite;
-}
-
-.marquee-item {
-    display: flex;
-
-    align-items: center;
-
-    gap: 30px;
-
-    padding: 0 30px;
-
-    color: #c9d8e7;
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 3px;
-
-    white-space: nowrap;
-}
-
-.marquee-item span {
-    color: var(--cyan);
-}
-
-@keyframes marquee {
-
-    from {
-        transform:
-            translateX(0);
-    }
-
-    to {
-        transform:
-            translateX(-50%);
-    }
-}
-
-
-/* =========================================================
-   INTRO
-========================================================= */
-
-.intro {
-    text-align: center;
-}
-
-.intro .section-text {
-    margin: auto;
-}
-
-
-/* =========================================================
-   SERVICES
-========================================================= */
-
-.services-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap: 22px;
-
-    margin-top: 55px;
-}
-
-.service-card {
-    position: relative;
-
-    min-height: 390px;
-
-    overflow: hidden;
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius: 22px;
-
-    background:
-        #091321;
-
-    transition:
-        .45s ease;
-}
-
-.service-card:hover {
-    transform:
-        translateY(-10px);
-
-    border-color:
-        rgba(70,217,255,.45);
-
-    box-shadow:
-        0 25px 70px
-        rgba(0,0,0,.35);
-}
-
-.service-image {
-    position: absolute;
-
-    inset: 0;
-
-    background-position:
-        center;
-
-    background-size:
-        cover;
-
-    transition:
-        .6s ease;
-}
-
-.service-card:hover .service-image {
-    transform:
-        scale(1.08);
-}
-
-.service-card:nth-child(1)
-.service-image {
-    background-image:
-        url(
-            "470829e016e6d3f8b60d3bbdc4b076b402e05ff0ee0b6da32cef7f9c1814a5c0.jpg"
-        );
-}
-
-.service-card:nth-child(2)
-.service-image {
-    background-image:
-        url(
-            "778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg"
-        );
-}
-
-.service-card:nth-child(3)
-.service-image {
-    background-image:
-        url(
-            "bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg"
-        );
-}
-
-.service-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(4,10,18,.10),
-            rgba(4,10,18,.48) 40%,
-            rgba(4,10,18,.97)
-        );
-}
-
-.service-content {
-    position: absolute;
-
-    left: 28px;
-    right: 28px;
-    bottom: 28px;
-
-    z-index: 2;
-}
-
-.service-number {
-    color: var(--cyan);
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 10px;
-}
-
-.service-card h3 {
-    font-size: 26px;
-
-    margin-bottom: 9px;
-}
-
-.service-card p {
-    color: #b7c4d2;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   WHO WE SERVE
-========================================================= */
-
-.global-section {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4,10,18,.94),
-            rgba(4,10,18,.68)
-        ),
-        url(
-            "d5d5a159f1a021f0a8956b1c234e99f4ab62913b56f9a028719e6ccef898cb35.jpg"
-        )
-        center/cover
-        no-repeat;
-}
-
-.audience-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap: 14px;
-
-    margin-top: 50px;
-}
-
-.audience-card {
-    padding: 28px 22px;
-
-    border:
-        1px solid
-        var(--line);
-
-    background:
-        rgba(5,12,22,.65);
-
-    backdrop-filter:
-        blur(12px);
-
-    border-radius: 16px;
-
-    transition:
-        .3s ease;
-}
-
-.audience-card:hover {
-    transform:
-        translateY(-6px);
-
-    border-color:
-        rgba(70,217,255,.4);
-}
-
-.audience-card span {
-    color:
-        var(--cyan);
-
-    font-size: 12px;
-
-    font-weight: 800;
-}
-
-.audience-card h3 {
-    margin:
-        15px 0 8px;
-
-    font-size: 20px;
-}
-
-.audience-card p {
-    color:
-        var(--muted);
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-section {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4,10,18,.97),
-            rgba(4,10,18,.78)
-        ),
-        url(
-            "dffc672b6c062e5eec6ed9a8e09565c66bdea772a3b6f61ea61f3a0d6f40c1bf.jpg"
-        )
-        center/cover
-        no-repeat;
-}
-
-.about-layout {
-    display: grid;
-
-    grid-template-columns:
-        1.1fr .9fr;
-
-    gap: 70px;
-
-    align-items: center;
-}
-
-.about-box {
-    border-left:
-        1px solid
-        var(--cyan);
-
-    padding-left: 30px;
-}
-
-.about-box p {
-    color:
-        #b9c6d5;
-
-    font-size: 17px;
-
-    margin-bottom: 20px;
-}
-
-.signature {
-    color:
-        var(--cyan);
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    font-size: 13px;
-}
-
-.about-stats {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2,1fr);
-
-    gap: 15px;
-}
-
-.stat {
-    min-height: 150px;
-
-    padding: 25px;
-
-    border:
-        1px solid
-        var(--line);
-
-    background:
-        rgba(255,255,255,.035);
-
-    border-radius: 18px;
-}
-
-.stat strong {
-    display: block;
-
-    font-size: 25px;
-
-    margin-bottom: 8px;
-}
-
-.stat span {
-    color:
-        var(--muted);
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   WHY GODZYA
-========================================================= */
-
-.why-section {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4,10,18,.93),
-            rgba(4,10,18,.73)
-        ),
-        url(
-            "778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg"
-        )
-        center/cover
-        no-repeat;
-}
-
-.values {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap: 15px;
-
-    margin-top: 50px;
-}
-
-.value {
-    padding: 30px 22px;
-
-    background:
-        rgba(5,12,22,.68);
-
-    border:
-        1px solid
-        var(--line);
-
-    border-radius: 18px;
-
-    backdrop-filter:
-        blur(12px);
-}
-
-.value-number {
-    color:
-        rgba(70,217,255,.6);
-
-    font-size: 12px;
-
-    letter-spacing: 2px;
-}
-
-.value h3 {
-    margin:
-        22px 0 8px;
-
-    font-size: 21px;
-}
-
-.value p {
-    color:
-        var(--muted);
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   APPROACH
-========================================================= */
-
-.approach {
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4,10,18,.94),
-            rgba(4,10,18,.78)
-        ),
-        url(
-            "bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg"
-        )
-        center/cover
-        no-repeat;
-}
-
-.approach-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
-    gap: 18px;
-
-    margin-top: 55px;
-}
-
-.step {
-    position: relative;
-
-    padding: 30px;
-
-    min-height: 220px;
-
-    border:
-        1px solid
-        var(--line);
-
-    background:
-        rgba(5,12,22,.65);
-
-    backdrop-filter:
-        blur(10px);
-
-    border-radius: 18px;
-}
-
-.step-number {
-    font-size: 40px;
-
-    font-weight: 900;
-
-    color:
-        rgba(70,217,255,.18);
-}
-
-.step h3 {
-    margin:
-        15px 0 8px;
-}
-
-.step p {
-    color:
-        var(--muted);
-
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact {
-    text-align: center;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4,10,18,.93),
-            rgba(4,10,18,.74)
-        ),
-        url(
-            "d994469e3bb9cc3aee895fdbc9e5cbc961328c674466b057f6b4feb084e25f65.jpg"
-        )
-        center/cover
-        no-repeat;
-}
-
-.contact-card {
-    max-width: 900px;
-
-    margin:
-        40px auto 0;
-
-    padding:
-        60px 30px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.12);
-
-    border-radius: 28px;
-
-    background:
-        rgba(5,12,22,.68);
-
-    backdrop-filter:
-        blur(18px);
-
-    box-shadow:
-        0 30px 100px
-        rgba(0,0,0,.30);
-}
-
-.contact-card h2 {
-    font-size:
-        clamp(
-            38px,
-            6vw,
-            72px
-        );
-
-    line-height: 1;
-
-    margin-bottom: 20px;
-}
-
-.contact-card p {
-    color:
-        var(--muted);
-
-    max-width: 650px;
-
-    margin:
-        auto;
-}
-
-.contact-details {
-    margin:
-        30px 0;
-
-    display: flex;
-
-    justify-content:
-        center;
-
-    gap: 30px;
-
-    flex-wrap: wrap;
-}
-
-.contact-details a {
-    color: white;
-
-    font-weight: 700;
-}
-
-.contact-details a:hover {
-    color:
-        var(--cyan);
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    padding: 35px 20px;
-    text-align: center;
-
-    background:
-        linear-gradient(
-            180deg,
-            #07111f,
-            #030810
-        );
-
-    border-top:
-        1px solid
-        rgba(255,255,255,0.08);
-
-    color:
-        rgba(255,255,255,0.65);
-
-    font-size: 13px;
-
-    letter-spacing: 0.5px;
-}
-
-footer p {
-    margin: 6px 0;
-}
-
-footer strong {
-    color: white;
-
-    font-weight: 700;
-}
-
-.footer-tech {
-    margin-top: 10px;
-
-    color:
-        var(--cyan);
-
-    font-size: 11px;
-
-    letter-spacing: 3px;
-
-    text-transform: uppercase;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 800px) {
-
-    .services-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    header {
-        padding:
-            16px 18px;
-    }
-
-    .nav-links {
-        position: absolute;
-
-        top: 70px;
-        left: 0;
-        right: 0;
-
-        display: none;
-
-        flex-direction: column;
-
-        padding: 20px;
-
-        background:
-            rgba(5,11,20,0.98);
-
-        border-top:
-            1px solid
-            rgba(255,255,255,0.08);
-
-        border-bottom:
-            1px solid
-            rgba(255,255,255,0.08);
-
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 12px 0;
-
-        text-align: center;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        min-height: auto;
-
-        padding:
-            100px 20px
-            70px;
-    }
-
-    .hero-content {
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size:
-            clamp(42px, 12vw, 70px);
-
-        line-height: 0.95;
-    }
-
-    .hero .slogan {
-        font-size: 16px;
-
-        letter-spacing: 1.5px;
-    }
-
-    .hero p {
-        font-size: 15px;
-
-        line-height: 1.7;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-
-        width: 100%;
-    }
-
-    .hero-buttons a {
-        width: 100%;
-
-        text-align: center;
-    }
-
-
-    /* 3D CUBE */
-
-    .cube-wrapper {
-        transform:
-            scale(0.72);
-    }
-
-
-    /* SECTIONS */
-
-    section {
-        padding:
-            65px 20px;
-    }
-
-    .section-title {
-        font-size: 32px;
-    }
-
-    .section-label {
-        font-size: 11px;
-
-        letter-spacing: 3px;
-    }
-
-
-    /* SERVICE CARDS */
-
-    .services-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-    .service-card {
-        min-height: 230px;
-    }
-
-
-    /* WHO WE SERVE */
-
-    .serve-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    /* ABOUT */
-
-    .about-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    /* WHY GODZYA */
-
-    .why-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    /* APPROACH */
-
-    .approach-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-
-    /* CONTACT */
-
-    .contact-box {
-        padding:
-            35px 22px;
-    }
-
-    .contact-box h2 {
-        font-size: 32px;
-    }
-
-    .contact-details {
-        font-size: 15px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        padding:
-            30px 18px;
-    }
-
-    .footer-tech {
-        font-size: 9px;
-
-        letter-spacing: 2px;
-
-        line-height: 1.8;
-    }
-
-}
-
-
-/* =========================================================
-   SMALL PHONES
-========================================================= */
-
-@media (max-width: 420px) {
-
-    .hero {
-        padding:
-            90px 16px
-            60px;
-    }
-
-    .hero h1 {
-        font-size:
-            40px;
-    }
-
-    .cube-wrapper {
-        transform:
-            scale(0.62);
-    }
-
-    section {
-        padding:
-            55px 16px;
-    }
-
-    .service-card,
-    .serve-card,
-    .why-card,
-    .approach-card {
-        padding:
-            24px 20px;
-    }
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-
-        animation-iteration-count:
-            1 !important;
-
-        transition-duration:
-            0.01ms !important;
-
-        scroll-behavior:
-            auto !important;
-    }
-
-}
-
-
-/* =========================================================
-   END OF CSS
-========================================================= */
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<!-- =======================================================
-     HEADER
-======================================================= -->
-
-<header>
-
-    <div class="header-inner">
-
-        <a href="index.html"
-           class="brand">
-
-            GODZYA
-            <span>GROUP</span>
-
-        </a>
-
-
-        <button
-            class="menu-toggle"
-            onclick="toggleMenu()"
-            aria-label="Open navigation">
-
-            ☰
-
-        </button>
-
-
-        <nav
-            class="nav-links"
-            id="navLinks">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="services.html">
-                Services
-            </a>
-
-            <a href="#who-we-serve">
-                Who We Serve
-            </a>
-
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#why-godzya">
-                Why GODZYA
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </nav>
-
-    </div>
-
-</header>
-
-
-<!-- =======================================================
-     HERO
-======================================================= -->
-
-<main>
-
-<section class="hero">
-
-    <div class="hero-bg"></div>
-
-    <div class="hero-content">
-
-        <div class="hero-label">
-            AI • DATA • BUSINESS • TECHNOLOGY
-        </div>
-
-        <h1>
-            GODZYA
-            <span>GROUP</span>
-        </h1>
-
-        <div class="slogan">
-            WE BUILD. YOU GROW.
-        </div>
-
-        <p>
-            Building smarter solutions for a connected future.
-        </p>
-
-
-        <div class="hero-buttons">
-
-            <a
-                href="services.html"
-                class="btn btn-primary">
-
-                Explore Services
-
-            </a>
-
-            <a
-                href="#contact"
-                class="btn btn-secondary">
-
-                Contact Us
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- 3D CUBE -->
-
-    <div class="cube-scene">
-
-        <div class="cube">
-
-            <div class="cube-face cube-front">
-
-                <img
-                    src="./4497a158b3ee555cea4a4a60060927d22fc0ba2b9b6a8ad721ec19542c2e830f.png"
-                    alt="GODZYA GROUP Logo">
-
-            </div>
-
-
-            <div class="cube-face cube-back">
-
-                <img
-                    src="./4497a158b3ee555cea4a4a60060927d22fc0ba2b9b6a8ad721ec19542c2e830f.png"
-                    alt="GODZYA GROUP Logo">
-
-            </div>
-
-
-            <div class="cube-face cube-right">
-
-                <img
-                    src="./744d2bc533c7b411e69c981e372fb56de2b4d3291be6b36f6c2cb62805d1c0a1.jpg"
-                    alt="Technology hand">
-
-            </div>
-
-
-            <div class="cube-face cube-left">
-
-                <img
-                    src="./494b1e93fe73bcd804f5194a51fc9668480da8511e7798fe704e3b7cd6e5cde7.jpg"
-                    alt="Technology computer">
-
-            </div>
-
-
-            <div class="cube-face cube-top"></div>
-
-            <div class="cube-face cube-bottom"></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     MARQUEE
-======================================================= -->
-
-<div class="marquee">
-
-    <div class="marquee-track">
-
-        AI
-        <span>•</span>
-        DATA
-        <span>•</span>
-        BUSINESS
-        <span>•</span>
-        TECHNOLOGY
-        <span>•</span>
-        STRATEGY
-        <span>•</span>
-        GROWTH
-        <span>•</span>
-
-        AI
-        <span>•</span>
-        DATA
-        <span>•</span>
-        BUSINESS
-        <span>•</span>
-        TECHNOLOGY
-        <span>•</span>
-
-    </div>
-
-</div>
-
-
-<!-- =======================================================
-     INTRO
-======================================================= -->
-
-<section class="intro">
-
-    <div class="section-label">
-        WHAT WE DO
-    </div>
-
-    <h2>
-        Intelligent solutions.
-        <br>
-        Practical results.
-    </h2>
-
-    <p>
-        GODZYA GROUP combines business thinking,
-        technology and practical execution to help
-        businesses work smarter and grow with confidence.
-    </p>
-
-</section>
-
-
-<!-- =======================================================
-     SERVICES
-======================================================= -->
-
-<section
-    id="services"
-    class="services-section">
-
-    <div class="section-label">
-        OUR SERVICES
-    </div>
-
-    <h2 class="section-title">
-        Solutions built for progress.
-    </h2>
-
-
-    <div class="services-grid">
-
-
-        <article
-            class="service-card"
-            style="background-image:url('./470829e016e6d3f8b60d3bbdc4b076b402e05ff0ee0b6da32cef7f9c1814a5c0.jpg');">
-
-            <div class="service-overlay"></div>
-
-            <div class="service-content">
-
-                <span class="service-number">
-                    01
-                </span>
-
-                <h3>
-                    Data Entry & Excel Support
-                </h3>
-
-                <p>
-                    Accurate data entry, spreadsheet
-                    organisation, Excel support and
-                    business data preparation.
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <article
-            class="service-card"
-            style="background-image:url('./778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg');">
-
-            <div class="service-overlay"></div>
-
-            <div class="service-content">
-
-                <span class="service-number">
-                    02
-                </span>
-
-                <h3>
-                    French & English Support
-                </h3>
-
-                <p>
-                    Professional bilingual communication,
-                    customer support, translation and
-                    language assistance.
-                </p>
-
-            </div>
-
-        </article>
-
-
-        <article
-            class="service-card"
-            style="background-image:url('./bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg');">
-
-            <div class="service-overlay"></div>
-
-            <div class="service-content">
-
-                <span class="service-number">
-                    03
-                </span>
-
-                <h3>
-                    Virtual Assistance
-                </h3>
-
-                <p>
-                    Reliable administrative support,
-                    research, organisation and day-to-day
-                    business assistance.
-                </p>
-
-            </div>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     WHO WE SERVE
-======================================================= -->
-
-<section
-    id="who-we-serve"
-    class="serve-section">
-
-    <div class="section-label">
-        WHO WE SERVE
-    </div>
-
-    <h2 class="section-title">
-        Solutions for businesses ready to grow.
-    </h2>
-
-
-    <div class="serve-grid">
-
-        <article class="serve-card">
-
-            <span>01</span>
-
-            <h3>
-                Startups & Entrepreneurs
-            </h3>
-
-            <p>
-                Practical support for turning ideas
-                into structured businesses.
-            </p>
-
-        </article>
-
-
-        <article class="serve-card">
-
-            <span>02</span>
-
-            <h3>
-                Growing Businesses
-            </h3>
-
-            <p>
-                Better systems, data and operational
-                support for sustainable growth.
-            </p>
-
-        </article>
-
-
-        <article class="serve-card">
-
-            <span>03</span>
-
-            <h3>
-                Professionals
-            </h3>
-
-            <p>
-                Support with business tasks,
-                documentation, data and productivity.
-            </p>
-
-        </article>
-
-
-        <article class="serve-card">
-
-            <span>04</span>
-
-            <h3>
-                Global Clients
-            </h3>
-
-            <p>
-                Flexible international support across
-                business, technology and communication.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     ABOUT
-======================================================= -->
-
-<section
-    id="about"
-    class="about-section">
-
-    <div class="section-label">
-        WHO WE ARE
-    </div>
-
-    <div class="about-grid">
-
-        <div>
-
-            <h2 class="section-title">
-                About GODZYA GROUP
-            </h2>
-
-            <p>
-                GODZYA GROUP is a modern business and
-                technology company operating at the
-                intersection of AI, data, business
-                and technology.
-            </p>
-
-            <p>
-                Our goal is simple: build practical
-                solutions that help people and businesses
-                work smarter, solve problems and create
-                sustainable growth.
-            </p>
-
-        </div>
-
-
-        <div class="about-stats">
-
-            <div>
-                <strong>AI</strong>
-                <span>Intelligence</span>
-            </div>
-
-            <div>
-                <strong>DATA</strong>
-                <span>Insight</span>
-            </div>
-
-            <div>
-                <strong>BUSINESS</strong>
-                <span>Strategy</span>
-            </div>
-
-            <div>
-                <strong>TECHNOLOGY</strong>
-                <span>Innovation</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     WHY GODZYA
-======================================================= -->
-
-<section
-    id="why-godzya"
-    class="why-section">
-
-    <div class="section-label">
-        WHY GODZYA
-    </div>
-
-    <h2 class="section-title">
-        Built around intelligent thinking.
-    </h2>
-
-
-    <div class="why-grid">
-
-        <article class="why-card">
-
-            <span>01</span>
-
-            <h3>
-                Innovation
-            </h3>
-
-            <p>
-                We look for smarter ways to solve
-                modern business challenges.
-            </p>
-
-        </article>
-
-
-        <article class="why-card">
-
-            <span>02</span>
-
-            <h3>
-                Intelligence
-            </h3>
-
-            <p>
-                We turn information into practical
-                understanding and action.
-            </p>
-
-        </article>
-
-
-        <article class="why-card">
-
-            <span>03</span>
-
-            <h3>
-                Strategy
-            </h3>
-
-            <p>
-                Every solution begins with understanding
-                the bigger business objective.
-            </p>
-
-        </article>
-
-
-        <article class="why-card">
-
-            <span>04</span>
-
-            <h3>
-                Results
-            </h3>
-
-            <p>
-                We focus on useful outcomes rather
-                than unnecessary complexity.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     APPROACH
-======================================================= -->
-
-<section class="approach-section">
-
-    <div class="section-label">
-        OUR APPROACH
-    </div>
-
-    <h2 class="section-title">
-        From challenge to solution.
-    </h2>
-
-
-    <div class="approach-grid">
-
-        <article class="approach-card">
-
-            <span>01</span>
-
-            <h3>
-                Understand
-            </h3>
-
-            <p>
-                Understand the business,
-                challenge and objective.
-            </p>
-
-        </article>
-
-
-        <article class="approach-card">
-
-            <span>02</span>
-
-            <h3>
-                Analyse
-            </h3>
-
-            <p>
-                Examine the information,
-                requirements and opportunities.
-            </p>
-
-        </article>
-
-
-        <article class="approach-card">
-
-            <span>03</span>
-
-            <h3>
-                Build
-            </h3>
-
-            <p>
-                Create a practical solution
-                designed around the need.
-            </p>
-
-        </article>
-
-
-        <article class="approach-card">
-
-            <span>04</span>
-
-            <h3>
-                Grow
-            </h3>
-
-            <p>
-                Improve, measure and build
-                toward sustainable progress.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<!-- =======================================================
-     CONTACT
-======================================================= -->
-
-<section
-    id="contact"
-    class="contact-section">
-
-    <div class="contact-box">
-
-        <div class="section-label">
-            LET'S CONNECT
-        </div>
-
-        <h2>
-            Let's Build Something Smarter.
-        </h2>
-
-        <p>
-            Have an idea, business challenge or project?
-            Let's explore what's possible together.
-        </p>
-
-
-        <div class="contact-details">
-
-            <a href="mailto:info@godzyagroup.com">
-                info@godzyagroup.com
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-<!-- =======================================================
-     FOOTER
-======================================================= -->
-
-<footer>
-
-    <p>
-        © 2026
-        <strong>GODZYA GROUP</strong>.
-        All rights reserved.
-    </p>
-
-    <p class="footer-tech">
-        AI • DATA • BUSINESS • TECHNOLOGY
-    </p>
-
-</footer>
-
-
-<!-- =======================================================
-     JAVASCRIPT
-======================================================= -->
-
-<script>
-
-function toggleMenu() {
-
-    const nav =
-        document.getElementById(
-            "navLinks"
-        );
-
-    nav.classList.toggle(
-        "active"
-    );
-
-}
-
-
-document
-    .querySelectorAll(
-        ".nav-links a"
-    )
-    .forEach(
-        function(link) {
-
-            link.addEventListener(
-                "click",
-                function() {
-
-                    document
-                        .getElementById(
-                            "navLinks"
-                        )
-                        .classList
-                        .remove(
-                            "active"
-                        );
-
-                }
-            );
+            --shadow:
+                0 30px 90px rgba(0,0,0,.38);
 
         }
-    );
-
-</script>
 
 
-</body>
+        /* =====================================================
+           RESET
+        ===================================================== */
 
-</html>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                Inter,
+                ui-sans-serif,
+                system-ui,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+
+            color:
+                var(--text);
+
+            background:
+                var(--bg);
+
+            overflow-x:
+                hidden;
+
+            line-height:
+                1.6;
+
+        }
+
+
+        img {
+            max-width: 100%;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        button,
+        a {
+            -webkit-tap-highlight-color:
+                transparent;
+        }
+
+
+        ::selection {
+
+            background:
+                rgba(70,217,255,.25);
+
+            color:
+                white;
+
+        }
+
+
+        /* =====================================================
+           GLOBAL BACKGROUND
+        ===================================================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            pointer-events: none;
+
+            z-index: -5;
+
+            background:
+
+                radial-gradient(
+                    circle at 15% 10%,
+                    rgba(22,78,99,.22),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 85% 25%,
+                    rgba(16,42,67,.28),
+                    transparent 35%
+                ),
+
+                radial-gradient(
+                    circle at 50% 100%,
+                    rgba(59,130,246,.08),
+                    transparent 35%
+                );
+
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+
+            position:
+                fixed;
+
+            top:
+                0;
+
+            left:
+                0;
+
+            width:
+                100%;
+
+            z-index:
+                1000;
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
+
+            background:
+                rgba(5,11,20,.72);
+
+            backdrop-filter:
+                blur(20px);
+
+            -webkit-backdrop-filter:
+                blur(20px);
+
+        }
+
+
+        .header-inner {
+
+            width:
+                min(
+                    var(--max),
+                    calc(100% - 40px)
+                );
+
+            height:
+                78px;
+
+            margin:
+                auto;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+        }
+
+
+        /* LOGO */
+
+        .brand {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                10px;
+
+            font-size:
+                18px;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                1.5px;
+
+        }
+
+
+        .brand-mark {
+
+            width:
+                34px;
+
+            height:
+                34px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            border:
+                1px solid rgba(70,217,255,.35);
+
+            border-radius:
+                10px;
+
+            color:
+                var(--cyan);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(70,217,255,.13),
+                    rgba(59,130,246,.05)
+                );
+
+            box-shadow:
+                0 0 25px rgba(70,217,255,.08);
+
+        }
+
+
+        .brand span {
+
+            color:
+                var(--cyan);
+
+        }
+
+
+        /* NAV */
+
+        .nav-links {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                28px;
+
+        }
+
+
+        .nav-links a {
+
+            position:
+                relative;
+
+            color:
+                #c5d0dc;
+
+            font-size:
+                13px;
+
+            font-weight:
+                650;
+
+            letter-spacing:
+                .2px;
+
+            transition:
+                color .3s ease;
+
+        }
+
+
+        .nav-links a::after {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                0;
+
+            bottom:
+                -8px;
+
+            width:
+                0;
+
+            height:
+                1px;
+
+            background:
+                var(--cyan);
+
+            transition:
+                width .3s ease;
+
+        }
+
+
+        .nav-links a:hover {
+
+            color:
+                white;
+
+        }
+
+
+        .nav-links a:hover::after {
+
+            width:
+                100%;
+
+        }
+
+
+        /* MENU */
+
+        .menu-button {
+
+            display:
+                none;
+
+            width:
+                44px;
+
+            height:
+                44px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                12px;
+
+            background:
+                rgba(255,255,255,.04);
+
+            color:
+                white;
+
+            cursor:
+                pointer;
+
+            font-size:
+                20px;
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            position:
+                relative;
+
+            min-height:
+                100vh;
+
+            padding:
+                145px 20px 90px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            overflow:
+                hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 18% 40%,
+                    rgba(22,78,99,.55),
+                    transparent 32%
+                ),
+
+                radial-gradient(
+                    circle at 82% 30%,
+                    rgba(16,42,67,.68),
+                    transparent 38%
+                ),
+
+                #07111f;
+
+        }
+
+
+        .hero::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            inset:
+                0;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(5,11,20,.90),
+                    rgba(5,11,20,.62),
+                    rgba(5,11,20,.90)
+                );
+
+            z-index:
+                0;
+
+        }
+
+
+        .hero-grid {
+
+            position:
+                absolute;
+
+            inset:
+                0;
+
+            opacity:
+                .16;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(70,217,255,.10) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(70,217,255,.10) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                80px 80px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    transparent,
+                    black 25%,
+                    black 70%,
+                    transparent
+                );
+
+        }
+
+
+        .hero-inner {
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+            width:
+                min(
+                    var(--max),
+                    100%
+                );
+
+            margin:
+                auto;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.05fr .95fr;
+
+            gap:
+                60px;
+
+            align-items:
+                center;
+
+        }
+
+
+        .hero-content {
+
+            max-width:
+                680px;
+
+        }
+
+
+        .eyebrow {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                10px;
+
+            margin-bottom:
+                22px;
+
+            color:
+                var(--cyan);
+
+            font-size:
+                11px;
+
+            font-weight:
+                850;
+
+            letter-spacing:
+                3.5px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        .eyebrow::before {
+
+            content:
+                "";
+
+            width:
+                30px;
+
+            height:
+                1px;
+
+            background:
+                var(--cyan);
+
+            box-shadow:
+                0 0 12px rgba(70,217,255,.6);
+
+        }
+
+
+        .hero h1 {
+
+            margin-bottom:
+                16px;
+
+            font-size:
+                clamp(
+                    54px,
+                    8vw,
+                    94px
+                );
+
+            line-height:
+                .92;
+
+            letter-spacing:
+                -4px;
+
+            font-weight:
+                950;
+
+        }
+
+
+        .hero h1 span {
+
+            display:
+                block;
+
+            color:
+                transparent;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ffffff,
+                    #8feaff,
+                    #46d9ff
+                );
+
+            -webkit-background-clip:
+                text;
+
+            background-clip:
+                text;
+
+        }
+
+
+        .slogan {
+
+            margin-bottom:
+                14px;
+
+            color:
+                #fff;
+
+            font-size:
+                clamp(
+                    18px,
+                    2.2vw,
+                    24px
+                );
+
+            font-weight:
+                750;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        .hero-description {
+
+            max-width:
+                590px;
+
+            margin-bottom:
+                32px;
+
+            color:
+                var(--muted);
+
+            font-size:
+                16px;
+
+            line-height:
+                1.85;
+
+        }
+
+
+        /* HERO BUTTONS */
+
+        .hero-actions {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                13px;
+
+        }
+
+
+        .btn {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                10px;
+
+            min-height:
+                50px;
+
+            padding:
+                0 22px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                13px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                800;
+
+            transition:
+                .35s ease;
+
+        }
+
+
+        .btn-primary {
+
+            color:
+                #04101a;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #76e8ff,
+                    #46d9ff
+                );
+
+            border-color:
+                transparent;
+
+            box-shadow:
+                0 12px 35px rgba(70,217,255,.18);
+
+        }
+
+
+        .btn-primary:hover {
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 18px 45px rgba(70,217,255,.28);
+
+        }
+
+
+        .btn-secondary {
+
+            color:
+                white;
+
+            background:
+                rgba(255,255,255,.035);
+
+            backdrop-filter:
+                blur(10px);
+
+        }
+
+
+        .btn-secondary:hover {
+
+            border-color:
+                rgba(70,217,255,.35);
+
+            background:
+                rgba(70,217,255,.07);
+
+            transform:
+                translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           3D GODZYA LOGO CUBE
+        ===================================================== */
+
+        .hero-visual {
+
+            position:
+                relative;
+
+            min-height:
+                470px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+        }
+
+
+        .cube-glow {
+
+            position:
+                absolute;
+
+            width:
+                360px;
+
+            height:
+                360px;
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(70,217,255,.13);
+
+            filter:
+                blur(80px);
+
+            animation:
+                glowPulse 5s ease-in-out infinite;
+
+        }
+
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                transform:
+                    scale(.92);
+                opacity:
+                    .55;
+            }
+
+            50% {
+                transform:
+                    scale(1.08);
+                opacity:
+                    .85;
+            }
+
+        }
+
+
+        .cube-scene {
+
+            position:
+                relative;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            perspective:
+                1100px;
+
+        }
+
+
+        .cube {
+
+            position:
+                absolute;
+
+            inset:
+                0;
+
+            transform-style:
+                preserve-3d;
+
+            animation:
+                cubeRotate 18s linear infinite;
+
+        }
+
+
+        @keyframes cubeRotate {
+
+            0% {
+                transform:
+                    rotateX(-8deg)
+                    rotateY(0deg);
+            }
+
+            100% {
+                transform:
+                    rotateX(-8deg)
+                    rotateY(360deg);
+            }
+
+        }
+
+
+        .cube-face {
+
+            position:
+                absolute;
+
+            width:
+                300px;
+
+            height:
+                300px;
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            overflow:
+                hidden;
+
+            border:
+                1px solid rgba(70,217,255,.35);
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 40%,
+                    rgba(70,217,255,.13),
+                    transparent 55%
+                ),
+
+                linear-gradient(
+                    145deg,
+                    rgba(13,34,54,.97),
+                    rgba(3,9,17,.98)
+                );
+
+            box-shadow:
+                inset 0 0 45px rgba(70,217,255,.06),
+                0 0 30px rgba(70,217,255,.05);
+
+            backface-visibility:
+                hidden;
+
+        }
+
+
+        .cube-face::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            inset:
+                12px;
+
+            border:
+                1px solid rgba(255,255,255,.055);
+
+            border-radius:
+                14px;
+
+        }
+
+
+        .cube-face img {
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+            width:
+                72%;
+
+            height:
+                72%;
+
+            object-fit:
+                contain;
+
+            filter:
+                drop-shadow(
+                    0 0 22px rgba(70,217,255,.28)
+                );
+
+        }
+
+
+        .cube-front {
+            transform:
+                rotateY(0deg)
+                translateZ(150px);
+        }
+
+
+        .cube-back {
+            transform:
+                rotateY(180deg)
+                translateZ(150px);
+        }
+
+
+        .cube-right {
+            transform:
+                rotateY(90deg)
+                translateZ(150px);
+        }
+
+
+        .cube-left {
+            transform:
+                rotateY(-90deg)
+                translateZ(150px);
+        }
+
+
+        .cube-top {
+            transform:
+                rotateX(90deg)
+                translateZ(150px);
+        }
+
+
+        .cube-bottom {
+            transform:
+                rotateX(-90deg)
+                translateZ(150px);
+        }
+
+
+        /* CUBE REFLECTION */
+
+        .cube-reflection {
+
+            position:
+                absolute;
+
+            width:
+                230px;
+
+            height:
+                55px;
+
+            bottom:
+                18px;
+
+            left:
+                50%;
+
+            transform:
+                translateX(-50%);
+
+            border-radius:
+                50%;
+
+            background:
+                rgba(70,217,255,.16);
+
+            filter:
+                blur(25px);
+
+            opacity:
+                .7;
+
+        }
+
+
+        /* =====================================================
+           SECTION GLOBAL
+        ===================================================== */
+
+        section {
+
+            position:
+                relative;
+
+            padding:
+                105px 20px;
+
+            overflow:
+                hidden;
+
+        }
+
+
+        .section-inner {
+
+            width:
+                min(
+                    var(--max),
+                    100%
+                );
+
+            margin:
+                auto;
+
+        }
+
+
+        .section-heading {
+
+            max-width:
+                720px;
+
+            margin:
+                0 auto 50px;
+
+            text-align:
+                center;
+
+        }
+
+
+        .section-label {
+
+            margin-bottom:
+                12px;
+
+            color:
+                var(--cyan);
+
+            font-size:
+                10px;
+
+            font-weight:
+                900;
+
+            letter-spacing:
+                4px;
+
+            text-transform:
+                uppercase;
+
+        }
+
+
+        .section-heading h2 {
+
+            margin-bottom:
+                15px;
+
+            font-size:
+                clamp(
+                    32px,
+                    5vw,
+                    54px
+             
