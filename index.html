@@ -1510,6 +1510,50 @@ header {
     }
 }
 
+   /* =====================================================
+   MOBILE HEADER & LANGUAGE FIX
+===================================================== */
+
+@media (max-width: 700px) {
+
+    /* LOGO */
+
+    .navbar {
+        min-height: 78px;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 78px;
+    }
+
+    .logo-cube-wrap {
+        transform: translateY(8px) scale(.85);
+        transform-origin: center;
+    }
+
+
+    /* LANGUAGE MENU */
+
+    .language-selector {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .language-menu {
+        top: calc(100% + 12px);
+        left: 0;
+        right: auto;
+        width: 220px;
+        max-width: calc(100vw - 40px);
+        max-height: 65vh;
+        overflow-y: auto;
+        z-index: 2000;
+    }
+
+}
 </style>
 </head>
 
