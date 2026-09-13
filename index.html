@@ -2205,6 +2205,35 @@ document.querySelectorAll(".reveal").forEach(function(element) {
 
 });
 
+   /* =====================================================
+   LANGUAGE MENU
+===================================================== */
+
+function toggleLanguageMenu() {
+
+    const selector =
+        document.getElementById("languageSelector");
+
+    selector.classList.toggle("active");
+
+}
+
+
+/* CLOSE LANGUAGE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener("click", function(event) {
+
+    const selector =
+        document.getElementById("languageSelector");
+
+    if (!selector.contains(event.target)) {
+
+        selector.classList.remove("active");
+
+    }
+
+});
+
 </script>
 
 </body>
