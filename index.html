@@ -137,6 +137,97 @@ header {
     color: var(--cyan);
 }
 
+   /* =====================================================
+   LANGUAGE SELECTOR
+===================================================== */
+
+.language-selector {
+    position: relative;
+    margin-left: 18px;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 13px;
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 10px;
+    background: rgba(255,255,255,.04);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.language-button:hover {
+    background: rgba(255,255,255,.08);
+    border-color: rgba(255,255,255,.18);
+}
+
+.language-icon {
+    font-size: 15px;
+}
+
+.language-arrow {
+    font-size: 10px;
+    opacity: .7;
+}
+
+
+/* LANGUAGE MENU */
+
+.language-menu {
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 220px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 14px;
+    background: rgba(7,17,31,.97);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: .25s ease;
+}
+
+.language-selector.active .language-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* LANGUAGE OPTIONS */
+
+.language-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 11px;
+    border: 0;
+    border-radius: 9px;
+    background: transparent;
+    color: #ffffff;
+    text-align: left;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.language-option:hover {
+    background: rgba(255,255,255,.07);
+}
+
+.language-option.active {
+    background: rgba(34,211,238,.10);
+    color: var(--cyan);
+}
    /* =========================================================
    GODZYA 3D FLOATING CUBE LOGO
 ========================================================= */
