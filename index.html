@@ -2334,51 +2334,108 @@ document.addEventListener("click", function(event) {
 
 });
 
-   /* =====================================================
+/* =====================================================
    TRANSLATION SYSTEM
 ===================================================== */
 
-en: {
-    home: "Home",
-    services: "Services",
-    who: "Who We Serve",
-    about: "About",
-    why: "Why GODZYA",
-    contact: "Let's Connect",
+const translations = {
 
-    heroLabel: "AI • DATA • BUSINESS • TECHNOLOGY",
-    slogan: "We Build. You Grow.",
-    heroDescription:
-        "Building smarter solutions for a connected future. " +
-        "We bring together technology, intelligence and business thinking " +
-        "to turn ideas into practical opportunities.",
-    exploreServices: "Explore Our Services →",
-    startConversation: "Start a Conversation",
-    southAfrica: "South Africa",
-    beyondBorders: "Building Beyond Borders"
-},
+    en: {
+        home: "Home",
+        services: "Services",
+        who: "Who We Serve",
+        about: "About",
+        why: "Why GODZYA",
+        contact: "Let's Connect",
+
+        heroLabel: "AI • DATA • BUSINESS • TECHNOLOGY",
+        slogan: "We Build. You Grow.",
+        heroDescription:
+            "Building smarter solutions for a connected future. " +
+            "We bring together technology, intelligence and business thinking " +
+            "to turn ideas into practical opportunities.",
+        exploreServices: "Explore Our Services →",
+        startConversation: "Start a Conversation",
+        southAfrica: "South Africa",
+        beyondBorders: "Building Beyond Borders"
+    },
 
     fr: {
-    home: "Accueil",
-    services: "Services",
-    who: "Nos Clients",
-    about: "À propos",
-    why: "Pourquoi GODZYA",
-    contact: "Nous contacter",
+        home: "Accueil",
+        services: "Services",
+        who: "Nos Clients",
+        about: "À propos",
+        why: "Pourquoi GODZYA",
+        contact: "Nous contacter",
 
-    heroLabel: "IA • DONNÉES • ENTREPRISE • TECHNOLOGIE",
-    slogan: "Nous construisons. Vous grandissez.",
-    heroDescription:
-        "Nous créons des solutions plus intelligentes pour un avenir connecté. " +
-        "Nous réunissons technologie, intelligence et vision commerciale " +
-        "pour transformer les idées en opportunités concrètes.",
-    exploreServices: "Découvrir nos services →",
-    startConversation: "Commençons une conversation",
-    southAfrica: "Afrique du Sud",
-    beyondBorders: "Construire au-delà des frontières"
-       }
+        heroLabel: "IA • DONNÉES • ENTREPRISE • TECHNOLOGIE",
+        slogan: "Nous construisons. Vous grandissez.",
+        heroDescription:
+            "Nous créons des solutions plus intelligentes pour un avenir connecté. " +
+            "Nous réunissons technologie, intelligence et vision commerciale " +
+            "pour transformer les idées en opportunités concrètes.",
+        exploreServices: "Découvrir nos services →",
+        startConversation: "Commençons une conversation",
+        southAfrica: "Afrique du Sud",
+        beyondBorders: "Construire au-delà des frontières"
+    }
 
 };
+
+
+/* =====================================================
+   CHANGE LANGUAGE
+===================================================== */
+
+function changeLanguage(language, button) {
+
+    const elements =
+        document.querySelectorAll("[data-i18n]");
+
+    elements.forEach(function(element) {
+
+        const key =
+            element.getAttribute("data-i18n");
+
+        if (
+            translations[language] &&
+            translations[language][key]
+        ) {
+
+            element.textContent =
+                translations[language][key];
+
+        }
+
+    });
+
+
+    /* UPDATE CURRENT LANGUAGE */
+
+    document.getElementById("currentLanguage")
+        .textContent = language.toUpperCase();
+
+
+    /* UPDATE ACTIVE LANGUAGE */
+
+    document
+        .querySelectorAll(".language-option")
+        .forEach(function(option) {
+
+            option.classList.remove("active");
+
+        });
+
+    button.classList.add("active");
+
+
+    /* CLOSE MENU */
+
+    document
+        .getElementById("languageSelector")
+        .classList.remove("active");
+
+}
 </script>
 
 </body>
