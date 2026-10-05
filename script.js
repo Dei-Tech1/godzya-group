@@ -3511,3 +3511,109 @@ revealElements.forEach(
 
   }
 );
+
+/* =====================================================
+   CINEMATIC HERO VIDEO
+===================================================== */
+
+const heroVideo =
+  document.getElementById("heroVideo");
+
+
+function prepareHeroVideo() {
+
+  if (!heroVideo) return;
+
+  heroVideo.muted = true;
+
+  heroVideo.playsInline = true;
+
+  heroVideo.setAttribute(
+    "playsinline",
+    ""
+  );
+
+  heroVideo.setAttribute(
+    "muted",
+    ""
+  );
+
+
+  /*
+     The video source will be added
+     when the final GODZYA cinematic
+     footage is ready.
+  */
+
+  const source =
+    heroVideo.querySelector("source");
+
+
+  if (
+    source &&
+    source.getAttribute("src")
+  ) {
+
+    heroVideo.load();
+
+    const playPromise =
+      heroVideo.play();
+
+
+    if (
+      playPromise &&
+      typeof playPromise.catch ===
+      "function"
+    ) {
+
+      playPromise.catch(
+        () => {
+
+          heroVideo.style.opacity =
+            "0";
+
+        }
+      );
+
+    }
+
+  } else {
+
+    /*
+       No video yet:
+       keep the cinematic hero
+       background clean.
+    */
+
+    heroVideo.style.opacity =
+      "0";
+
+  }
+
+}
+
+
+/* =====================================================
+   VIDEO ERROR HANDLING
+===================================================== */
+
+if (heroVideo) {
+
+  heroVideo.addEventListener(
+    "error",
+    () => {
+
+      heroVideo.style.opacity =
+        "0";
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   INITIALIZE VIDEO
+===================================================== */
+
+prepareHeroVideo();
