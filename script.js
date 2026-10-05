@@ -78,3 +78,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+  if (!revealElements.length) {
+
+    return;
+
+  }
+
+
+  const revealObserver =
+    new IntersectionObserver(
+      (entries, observer) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+  revealElements.forEach((element) => {
+
+    revealObserver.observe(element);
+
+  });
+
+});
+
+
