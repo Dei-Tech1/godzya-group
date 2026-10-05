@@ -4373,3 +4373,810 @@ a {
   }
 
 }
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+
+  /* NAVIGATION */
+
+  .main-nav {
+
+    gap:
+      22px;
+
+  }
+
+
+  .nav-contact {
+
+    display:
+      none;
+
+  }
+
+
+  /* SERVICES */
+
+  .services-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  /* ACCOMPLISHMENTS */
+
+  .accomplishments-showcase {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .project-featured {
+
+    grid-row:
+      auto;
+
+    grid-template-rows:
+      320px auto;
+
+  }
+
+
+  /* CONTACT */
+
+  .contact-container {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      60px;
+
+  }
+
+
+  .contact-panel {
+
+    min-height:
+      420px;
+
+  }
+
+
+  /* FOOTER */
+
+  .footer-container {
+
+    grid-template-columns:
+      1.5fr 1fr 1fr;
+
+  }
+
+
+  .footer-brand {
+
+    grid-column:
+      1 / -1;
+
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 760px) {
+
+
+  /* GLOBAL CONTAINER */
+
+  .nav-container,
+  .services-container,
+  .accomplishments-container,
+  .voice-container,
+  .contact-container,
+  .footer-container {
+
+    width:
+      min(
+        calc(100% - 32px),
+        var(--container)
+      );
+
+  }
+
+
+  /* =================================================
+     HEADER
+  ================================================= */
+
+  .site-header {
+
+    background:
+      rgba(5,11,20,.9);
+
+  }
+
+
+  .nav-container {
+
+    min-height:
+      70px;
+
+  }
+
+
+  .brand-name {
+
+    font-size:
+      16px;
+
+  }
+
+
+  .brand-mark {
+
+    width:
+      38px;
+
+    height:
+      38px;
+
+  }
+
+
+  .main-nav {
+
+    position:
+      absolute;
+
+    top:
+      calc(100% + 1px);
+
+    left:
+      16px;
+
+    right:
+      16px;
+
+    display:
+      flex;
+
+    flex-direction:
+      column;
+
+    align-items:
+      stretch;
+
+    gap:
+      4px;
+
+    padding:
+      12px;
+
+    border:
+      1px solid
+      rgba(70,217,255,.14);
+
+    border-radius:
+      16px;
+
+    background:
+      rgba(7,16,27,.98);
+
+    box-shadow:
+      var(--shadow);
+
+    opacity:
+      0;
+
+    visibility:
+      hidden;
+
+    transform:
+      translateY(-10px);
+
+    transition:
+      opacity .3s ease,
+      visibility .3s ease,
+      transform .3s ease;
+
+  }
+
+
+  .main-nav.open {
+
+    opacity:
+      1;
+
+    visibility:
+      visible;
+
+    transform:
+      translateY(0);
+
+  }
+
+
+  .nav-link {
+
+    padding:
+      13px 14px;
+
+    border-radius:
+      9px;
+
+  }
+
+
+  .nav-link:hover {
+
+    background:
+      rgba(70,217,255,.06);
+
+  }
+
+
+  .nav-link::after {
+
+    display:
+      none;
+
+  }
+
+
+  .language-button {
+
+    min-height:
+      38px;
+
+    padding:
+      0 10px;
+
+  }
+
+
+  .language-button
+  #languageLabel {
+
+    display:
+      none;
+
+  }
+
+
+  .menu-toggle {
+
+    display:
+      block;
+
+  }
+
+
+  .menu-toggle.active span:nth-child(1) {
+
+    transform:
+      translateY(6px)
+      rotate(45deg);
+
+  }
+
+
+  .menu-toggle.active span:nth-child(2) {
+
+    opacity:
+      0;
+
+  }
+
+
+  .menu-toggle.active span:nth-child(3) {
+
+    transform:
+      translateY(-6px)
+      rotate(-45deg);
+
+  }
+
+
+  /* =================================================
+     HERO
+  ================================================= */
+
+  .hero-content {
+
+    width:
+      min(
+        calc(100% - 32px),
+        var(--container)
+      );
+
+    padding:
+      130px 0 90px;
+
+  }
+
+
+  .hero-overlay {
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5,11,20,.96),
+        rgba(5,11,20,.68)
+      );
+
+  }
+
+
+  .hero-title {
+
+    font-size:
+      clamp(
+        44px,
+        13vw,
+        68px
+      );
+
+  }
+
+
+  .hero-description {
+
+    max-width:
+      520px;
+
+    font-size:
+      14px;
+
+  }
+
+
+  .hero-actions {
+
+    flex-direction:
+      column;
+
+    align-items:
+      stretch;
+
+    width:
+      100%;
+
+    max-width:
+      360px;
+
+  }
+
+
+  .hero-actions .btn {
+
+    width:
+      100%;
+
+  }
+
+
+  .hero-brand-line {
+
+    margin-top:
+      40px;
+
+  }
+
+
+  .hero-scroll {
+
+    display:
+      none;
+
+  }
+
+
+  /* =================================================
+     SECTIONS
+  ================================================= */
+
+  .identity-section,
+  .services-preview,
+  .accomplishments-preview,
+  .customer-voice,
+  .contact-section {
+
+    padding:
+      100px 0;
+
+  }
+
+
+  .section-title {
+
+    font-size:
+      clamp(
+        36px,
+        11vw,
+        55px
+      );
+
+  }
+
+
+  .section-description {
+
+    font-size:
+      14px;
+
+  }
+
+
+  /* =================================================
+     IDENTITY
+  ================================================= */
+
+  .identity-pillars {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .identity-pillar {
+
+    min-height:
+      auto;
+
+  }
+
+
+  .brand-promise {
+
+    gap:
+      12px;
+
+    font-size:
+      9px;
+
+    letter-spacing:
+      .18em;
+
+  }
+
+
+  .promise-line {
+
+    width:
+      35px;
+
+  }
+
+
+  /* =================================================
+     SERVICES
+  ================================================= */
+
+  .services-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      12px;
+
+    margin-top:
+      45px;
+
+  }
+
+
+  .service-card {
+
+    min-height:
+      245px;
+
+  }
+
+
+  .service-card h3 {
+
+    margin-top:
+      42px;
+
+  }
+
+
+  /* =================================================
+     ACCOMPLISHMENTS
+  ================================================= */
+
+  .accomplishments-showcase {
+
+    gap:
+      12px;
+
+    margin-top:
+      45px;
+
+  }
+
+
+  .project-card,
+  .project-featured {
+
+    grid-template-rows:
+      240px auto;
+
+    min-height:
+      auto;
+
+  }
+
+
+  .project-content {
+
+    padding:
+      24px;
+
+  }
+
+
+  .project-content h3 {
+
+    font-size:
+      21px;
+
+  }
+
+
+  .project-symbol {
+
+    width:
+      90px;
+
+    height:
+      90px;
+
+  }
+
+
+  /* =================================================
+     CUSTOMER VOICE
+  ================================================= */
+
+  .voice-display {
+
+    grid-template-columns:
+      1fr;
+
+    gap:
+      20px;
+
+    min-height:
+      auto;
+
+    margin-top:
+      45px;
+
+    padding:
+      30px;
+
+  }
+
+
+  .voice-mark {
+
+    font-size:
+      80px;
+
+  }
+
+
+  .voice-side {
+
+    min-height:
+      80px;
+
+    padding:
+      18px 0 0;
+
+    border-left:
+      0;
+
+    border-top:
+      1px solid
+      rgba(255,255,255,.08);
+
+  }
+
+
+  /* =================================================
+     CONTACT
+  ================================================= */
+
+  .contact-container {
+
+    gap:
+      50px;
+
+  }
+
+
+  .contact-title {
+
+    font-size:
+      clamp(
+        40px,
+        11vw,
+        58px
+      );
+
+  }
+
+
+  .contact-panel {
+
+    min-height:
+      auto;
+
+    padding:
+      35px 28px;
+
+  }
+
+
+  .contact-panel h3 {
+
+    font-size:
+      34px;
+
+  }
+
+
+  /* =================================================
+     FOOTER
+  ================================================= */
+
+  .site-footer {
+
+    padding-top:
+      75px;
+
+  }
+
+
+  .footer-container {
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:
+      45px 25px;
+
+    padding-bottom:
+      55px;
+
+  }
+
+
+  .footer-brand {
+
+    grid-column:
+      1 / -1;
+
+  }
+
+
+  .footer-bottom-inner {
+
+    width:
+      min(
+        calc(100% - 32px),
+        var(--container)
+      );
+
+    min-height:
+      auto;
+
+    padding:
+      22px 0;
+
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+  }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 430px) {
+
+
+  .language-switcher {
+
+    display:
+      none;
+
+  }
+
+
+  .brand-name {
+
+    font-size:
+      15px;
+
+  }
+
+
+  .hero-title {
+
+    font-size:
+      43px;
+
+  }
+
+
+  .hero-eyebrow {
+
+    font-size:
+      9px;
+
+    letter-spacing:
+      .18em;
+
+  }
+
+
+  .hero-actions {
+
+    max-width:
+      none;
+
+  }
+
+
+  .contact-item-content strong {
+
+    font-size:
+      12px;
+
+  }
+
+
+  .footer-container {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .footer-column {
+
+    width:
+      100%;
+
+  }
+
+}
