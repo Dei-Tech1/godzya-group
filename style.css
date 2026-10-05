@@ -1067,3 +1067,168 @@ button {
 
   }
 
+/* =====================================================
+   GLOBAL SECTIONS
+===================================================== */
+
+.section {
+
+  position:
+    relative;
+
+  padding:
+    120px 0;
+
+}
+
+
+.section-heading {
+
+  max-width:
+    760px;
+
+  margin-bottom:
+    60px;
+
+}
+
+
+.section-label {
+
+  margin-bottom:
+    16px;
+
+  color:
+    var(--cyan);
+
+  font-size:
+    10px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.28em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.section-heading h2,
+.about-content h2,
+.contact-content h2 {
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(34px, 5vw, 62px);
+
+  line-height:
+    1.05;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    -0.04em;
+
+  color:
+    var(--white);
+
+}
+
+
+.section-heading p {
+
+  max-width:
+    650px;
+
+  margin-top:
+    20px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    15px;
+
+  line-height:
+    1.8;
+
+}
+
+
+/* =====================================================
+   SERVICES SECTION
+===================================================== */
+
+.services-section {
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--bg),
+      var(--bg-soft)
+    );
+
+}
+
+
+/* =====================================================
+   AUDIENCE SECTION
+===================================================== */
+
+.audience-section {
+
+  background:
+    var(--bg);
+
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+===================================================== */
+
+.about-section {
+
+  background:
+    linear-gradient(
+      135deg,
+      #07121d,
+      #091a26
+    );
+
+}
+
+
+/* =====================================================
+   PROCESS SECTION
+===================================================== */
+
+.process-section {
+
+  background:
+    var(--bg-soft);
+
+}
+
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+
+  background:
+    linear-gradient(
+      135deg,
+      #08121d,
+      #050b14
+    );
+
+}
