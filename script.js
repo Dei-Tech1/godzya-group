@@ -3319,3 +3319,121 @@ const savedLanguage =
   ) || "en";
 
 setLanguage(savedLanguage);
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+const menuToggle =
+  document.getElementById("menuToggle");
+
+const mainNav =
+  document.getElementById("mainNav");
+
+
+function toggleMobileMenu() {
+
+  if (!menuToggle || !mainNav) return;
+
+  const isOpen =
+    mainNav.classList.toggle("open");
+
+  menuToggle.classList.toggle(
+    "active",
+    isOpen
+  );
+
+  menuToggle.setAttribute(
+    "aria-expanded",
+    String(isOpen)
+  );
+
+}
+
+
+/* =====================================================
+   MOBILE MENU BUTTON
+===================================================== */
+
+if (menuToggle) {
+
+  menuToggle.addEventListener(
+    "click",
+    toggleMobileMenu
+  );
+
+}
+
+
+/* =====================================================
+   CLOSE MOBILE MENU AFTER CLICK
+===================================================== */
+
+if (mainNav) {
+
+  mainNav.addEventListener(
+    "click",
+    (event) => {
+
+      const link =
+        event.target.closest(
+          ".nav-link"
+        );
+
+      if (!link) return;
+
+      mainNav.classList.remove(
+        "open"
+      );
+
+      menuToggle?.classList.remove(
+        "active"
+      );
+
+      menuToggle?.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   HEADER SCROLL EFFECT
+===================================================== */
+
+const siteHeader =
+  document.getElementById("siteHeader");
+
+
+function updateHeader() {
+
+  if (!siteHeader) return;
+
+  if (window.scrollY > 30) {
+
+    siteHeader.classList.add(
+      "scrolled"
+    );
+
+  } else {
+
+    siteHeader.classList.remove(
+      "scrolled"
+    );
+
+  }
+
+}
+
+
+window.addEventListener(
+  "scroll",
+  updateHeader,
+  { passive: true }
+);
+
+updateHeader();
