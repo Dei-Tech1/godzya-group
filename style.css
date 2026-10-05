@@ -2868,3 +2868,63 @@ button {
 
 }
 
+/* =====================================================
+   MOBILE MENU ANIMATION
+===================================================== */
+
+.menu-toggle.active span:nth-child(1) {
+
+  transform:
+    translateY(7px)
+    rotate(45deg);
+
+}
+
+
+.menu-toggle.active span:nth-child(2) {
+
+  opacity:
+    0;
+
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+
+  transform:
+    translateY(-7px)
+    rotate(-45deg);
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior:
+      auto;
+
+  }
+
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+
+  }
+
+}
