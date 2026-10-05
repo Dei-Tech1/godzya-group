@@ -1953,3 +1953,825 @@ translations.bn = {
     "ভবিষ্যৎ তৈরি করছি।"
 
 };
+
+/* =====================================================
+   RUSSIAN
+===================================================== */
+
+translations.ru = {
+
+  languageName: "Russian",
+
+  navHome: "Главная",
+  navWhatWeDo: "Что Мы Делаем",
+  navAccomplishments: "Наши Проекты",
+  navContact: "Связаться",
+
+  languageEnglish: "Русский",
+
+  heroEyebrow:
+    "ИИ • ДАННЫЕ • БИЗНЕС • ТЕХНОЛОГИИ",
+
+  heroTitle:
+    "Создаём более интеллектуальные решения для взаимосвязанного будущего.",
+
+  heroDescription:
+    "Мы помогаем компаниям работать эффективнее благодаря технологиям, данным, бизнес-решениям и профессиональной поддержке.",
+
+  heroExplore:
+    "Узнать, что мы делаем",
+
+  heroContact:
+    "Начать разговор",
+
+  scroll:
+    "Прокрутите, чтобы изучить",
+
+  identityEyebrow:
+    "ПОДХОД GODZYA",
+
+  identityTitle:
+    "Технологии должны двигать бизнес вперёд.",
+
+  identityDescription:
+    "GODZYA GROUP объединяет технологии, данные, бизнес-мышление и практическую профессиональную поддержку, помогая компаниям решать проблемы, улучшать работу и создавать новые возможности.",
+
+  pillarAI:
+    "ИИ и Автоматизация",
+
+  pillarAIDesc:
+    "Интеллектуальные рабочие процессы и решения, разработанные для реальных бизнес-задач.",
+
+  pillarData:
+    "Данные и Аналитика",
+
+  pillarDataDesc:
+    "Превращаем информацию в организованные, полезные и применимые бизнес-инсайты.",
+
+  pillarBusiness:
+    "Бизнес-решения",
+
+  pillarBusinessDesc:
+    "Практическая поддержка, которая помогает компаниям работать, развиваться и расти.",
+
+  pillarTechnology:
+    "Технологии",
+
+  pillarTechnologyDesc:
+    "Цифровые решения и технологические продукты, созданные с конкретной целью.",
+
+  brandPromise:
+    "Мы создаём. Вы растёте.",
+
+  servicesEyebrow:
+    "ЧТО МЫ ДЕЛАЕМ",
+
+  servicesTitle:
+    "Решения, созданные вокруг вашего бизнеса.",
+
+  servicesDescription:
+    "От данных и технологий до бизнес-поддержки и управления проектами — мы предлагаем практические решения, которые помогают двигаться вперёд.",
+
+  serviceAI:
+    "ИИ и Автоматизация",
+
+  serviceAIDesc:
+    "Интеллектуальные рабочие процессы, prompt engineering и решения для продуктивности на основе ИИ.",
+
+  serviceData:
+    "Данные, Excel и Аналитика",
+
+  serviceDataDesc:
+    "Ввод данных, Excel, очистка данных, отчёты, панели и бизнес-аналитика.",
+
+  serviceBusiness:
+    "Бизнес-анализ",
+
+  serviceBusinessDesc:
+    "Анализ процессов, требований, документации и поддержка улучшения бизнеса.",
+
+  serviceProject:
+    "Управление Проектами",
+
+  serviceProjectDesc:
+    "Планирование, этапы, координация, отслеживание прогресса и поддержка реализации проектов.",
+
+  serviceTechnology:
+    "Технологии и Веб-решения",
+
+  serviceTechnologyDesc:
+    "Профессиональные сайты, цифровые решения и практические технологические продукты.",
+
+  serviceLanguage:
+    "Французский Язык и Документы",
+
+  serviceLanguageDesc:
+    "Перевод английский ↔ французский, корректура, редактирование и профессиональные документы.",
+
+  serviceAdmin:
+    "Виртуальная и Административная Поддержка",
+
+  serviceAdminDesc:
+    "Документы, исследования, Microsoft Office, организация и административная поддержка.",
+
+  servicesViewAll:
+    "Изучить Все Решения",
+
+  accomplishmentsEyebrow:
+    "НАШИ ПРОЕКТЫ",
+
+  accomplishmentsTitle:
+    "Идеи превращаются в реальную работу.",
+
+  accomplishmentsDescription:
+    "Каждый проект — это возможность превратить идею, задачу или бизнес-потребность в практичный, профессиональный и значимый результат.",
+
+  projectWebCategory:
+    "Технологии и Веб-решения",
+
+  projectWebTitle:
+    "Профессиональный Цифровой Опыт",
+
+  projectWebDescription:
+    "Создание современных, адаптивных и профессиональных цифровых решений для компаний и брендов.",
+
+  projectDataCategory:
+    "Данные и Аналитика",
+
+  projectDataTitle:
+    "Организованные Данные для Лучших Решений",
+
+  projectDataDescription:
+    "Практические решения для электронных таблиц, организации данных и отчётности, позволяющие лучше понимать информацию.",
+
+  projectPMCategory:
+    "Управление Проектами",
+
+  projectPMTitle:
+    "От Планирования до Реализации",
+
+  projectPMDescription:
+    "Структурированная поддержка проектов с акцентом на планирование, координацию, документацию, отслеживание и реализацию.",
+
+  projectView:
+    "Посмотреть Проект",
+
+  accomplishmentsViewAll:
+    "Изучить Наши Проекты",
+
+  voiceEyebrow:
+    "МНЕНИЕ КЛИЕНТОВ",
+
+  voiceTitle:
+    "Работа важна. Опыт тоже.",
+
+  voiceDescription:
+    "Мы считаем, что прочные деловые отношения строятся на коммуникации, надёжности, профессионализме и результатах.",
+
+  voicePlaceholder:
+    "Ваш опыт важен для нас. Отзывы клиентов, благодарности и профессиональные рекомендации будут появляться здесь по мере развития GODZYA GROUP.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "Клиентский Опыт",
+
+  voiceSideText:
+    "Основано на доверии. Движимо прогрессом.",
+
+  voiceContact:
+    "Поделиться Опытом",
+
+  contactEyebrow:
+    "ДАВАЙТЕ ПОГОВОРИМ",
+
+  contactTitle:
+    "У вас есть проект, идея или задача?",
+
+  contactDescription:
+    "Расскажите нам, над чем вы работаете. Вместе мы найдём подходящее решение.",
+
+  contactEmailLabel:
+    "Электронная почта",
+
+  contactLocationLabel:
+    "Находимся в",
+
+  contactLocation:
+    "Южной Африке",
+
+  contactAvailabilityLabel:
+    "Работаем с",
+
+  contactAvailability:
+    "Клиентами и компаниями по всему миру",
+
+  contactPanelLabel:
+    "НАЧАТЬ РАЗГОВОР",
+
+  contactPanelTitle:
+    "Давайте создадим что-то значимое.",
+
+  contactPanelDescription:
+    "Нужна поддержка в области данных, технологий, бизнеса, документов или управления проектами? Расскажите нам, что вам необходимо.",
+
+  contactPanelButton:
+    "Связаться с GODZYA GROUP",
+
+  contactPanelFooter:
+    "Мы создаём. Вы растёте.",
+
+  footerTagline:
+    "Создаём более интеллектуальные решения для взаимосвязанного будущего.",
+
+  footerExplore:
+    "Изучить",
+
+  footerServices:
+    "Решения",
+
+  footerContact:
+    "Контакты",
+
+  footerLocation:
+    "Южная Африка",
+
+  footerWorldwide:
+    "Работаем с клиентами по всему миру",
+
+  footerRights:
+    "Все права защищены.",
+
+  footerStatus:
+    "Создаём будущее."
+
+};
+
+
+/* =====================================================
+   GERMAN
+===================================================== */
+
+translations.de = {
+
+  languageName: "German",
+
+  navHome: "Startseite",
+  navWhatWeDo: "Was Wir Tun",
+  navAccomplishments: "Unsere Projekte",
+  navContact: "Kontakt",
+
+  languageEnglish: "Deutsch",
+
+  heroEyebrow:
+    "KI • DATEN • BUSINESS • TECHNOLOGIE",
+
+  heroTitle:
+    "Wir entwickeln intelligente Lösungen für eine vernetzte Zukunft.",
+
+  heroDescription:
+    "Wir unterstützen Unternehmen dabei, intelligenter zu arbeiten – mit Technologie, Daten, Business-Lösungen und professioneller Unterstützung.",
+
+  heroExplore:
+    "Was Wir Tun",
+
+  heroContact:
+    "Gespräch Starten",
+
+  scroll:
+    "Scrollen zum Entdecken",
+
+  identityEyebrow:
+    "DER GODZYA-ANSATZ",
+
+  identityTitle:
+    "Technologie sollte Unternehmen voranbringen.",
+
+  identityDescription:
+    "GODZYA GROUP verbindet Technologie, Daten, unternehmerisches Denken und praktische professionelle Unterstützung, um Unternehmen bei der Lösung von Problemen, der Verbesserung ihrer Arbeit und der Schaffung neuer Möglichkeiten zu unterstützen.",
+
+  pillarAI:
+    "KI & Automatisierung",
+
+  pillarAIDesc:
+    "Intelligente Arbeitsabläufe und Lösungen, die auf echte geschäftliche Anforderungen zugeschnitten sind.",
+
+  pillarData:
+    "Daten & Analytics",
+
+  pillarDataDesc:
+    "Wir verwandeln Informationen in strukturierte, nützliche und umsetzbare Geschäftserkenntnisse.",
+
+  pillarBusiness:
+    "Business-Lösungen",
+
+  pillarBusinessDesc:
+    "Praktische Unterstützung, die Unternehmen beim Arbeiten, Verbessern und Wachsen hilft.",
+
+  pillarTechnology:
+    "Technologie",
+
+  pillarTechnologyDesc:
+    "Digitale Erlebnisse und Technologielösungen mit einem klaren Zweck.",
+
+  brandPromise:
+    "Wir bauen. Sie wachsen.",
+
+  servicesEyebrow:
+    "WAS WIR TUN",
+
+  servicesTitle:
+    "Lösungen für Ihr Unternehmen.",
+
+  servicesDescription:
+    "Von Daten und Technologie bis hin zu Business-Support und Projektmanagement bieten wir praktische Lösungen, die Ihre Arbeit voranbringen.",
+
+  serviceAI:
+    "KI & Automatisierung",
+
+  serviceAIDesc:
+    "Intelligente Workflows, Prompt Engineering und KI-gestützte Produktivitätslösungen.",
+
+  serviceData:
+    "Daten, Excel & Analytics",
+
+  serviceDataDesc:
+    "Dateneingabe, Excel, Datenbereinigung, Berichte, Dashboards und Business Insights.",
+
+  serviceBusiness:
+    "Business Analyse",
+
+  serviceBusinessDesc:
+    "Prozessanalyse, Anforderungen, Dokumentation und Unterstützung bei der Geschäftsverbesserung.",
+
+  serviceProject:
+    "Projektmanagement",
+
+  serviceProjectDesc:
+    "Planung, Meilensteine, Koordination, Fortschrittsverfolgung und Unterstützung bei der Projektumsetzung.",
+
+  serviceTechnology:
+    "Technologie & Web-Lösungen",
+
+  serviceTechnologyDesc:
+    "Professionelle Websites, digitale Erlebnisse und praktische Technologielösungen.",
+
+  serviceLanguage:
+    "Französische Sprache & Dokumente",
+
+  serviceLanguageDesc:
+    "Englisch ↔ Französisch Übersetzung, Korrektur, Bearbeitung und professionelle Dokumente.",
+
+  serviceAdmin:
+    "Virtuelle & Administrative Unterstützung",
+
+  serviceAdminDesc:
+    "Dokumente, Recherche, Microsoft Office, Organisation und administrative Unterstützung.",
+
+  servicesViewAll:
+    "Alle Lösungen Entdecken",
+
+  accomplishmentsEyebrow:
+    "UNSERE PROJEKTE",
+
+  accomplishmentsTitle:
+    "Ideen werden zu echter Arbeit.",
+
+  accomplishmentsDescription:
+    "Jedes Projekt bietet die Möglichkeit, eine Idee, Herausforderung oder geschäftliche Anforderung in etwas Praktisches, Professionelles und Bedeutungsvolles zu verwandeln.",
+
+  projectWebCategory:
+    "Technologie & Web-Lösungen",
+
+  projectWebTitle:
+    "Professionelle Digitale Erlebnisse",
+
+  projectWebDescription:
+    "Moderne, responsive und professionelle digitale Erlebnisse für Unternehmen und Marken.",
+
+  projectDataCategory:
+    "Daten & Analytics",
+
+  projectDataTitle:
+    "Organisierte Daten für bessere Entscheidungen",
+
+  projectDataDescription:
+    "Praktische Lösungen für Tabellen, Datenorganisation und Reporting, damit Informationen leichter verständlich werden.",
+
+  projectPMCategory:
+    "Projektmanagement",
+
+  projectPMTitle:
+    "Von der Planung bis zur Umsetzung",
+
+  projectPMDescription:
+    "Strukturierte Projektunterstützung mit Fokus auf Planung, Koordination, Dokumentation, Nachverfolgung und Umsetzung.",
+
+  projectView:
+    "Projekt Ansehen",
+
+  accomplishmentsViewAll:
+    "Unsere Projekte Entdecken",
+
+  voiceEyebrow:
+    "KUNDENSTIMMEN",
+
+  voiceTitle:
+    "Die Arbeit zählt. Die Erfahrung auch.",
+
+  voiceDescription:
+    "Wir glauben, dass starke Geschäftsbeziehungen durch Kommunikation, Zuverlässigkeit, Professionalität und Ergebnisse entstehen.",
+
+  voicePlaceholder:
+    "Ihre Erfahrung ist uns wichtig. Kundenfeedback, Anerkennung und professionelle Empfehlungen werden hier erscheinen, während GODZYA GROUP weiter wächst.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "Kundenerfahrung",
+
+  voiceSideText:
+    "Auf Vertrauen aufgebaut. Durch Fortschritt angetrieben.",
+
+  voiceContact:
+    "Erfahrung Teilen",
+
+  contactEyebrow:
+    "LASSEN SIE UNS REDEN",
+
+  contactTitle:
+    "Sie haben ein Projekt, eine Idee oder eine Herausforderung?",
+
+  contactDescription:
+    "Erzählen Sie uns, woran Sie arbeiten. Gemeinsam finden wir die passende Lösung.",
+
+  contactEmailLabel:
+    "E-Mail",
+
+  contactLocationLabel:
+    "Sitz in",
+
+  contactLocation:
+    "Südafrika",
+
+  contactAvailabilityLabel:
+    "Wir arbeiten mit",
+
+  contactAvailability:
+    "Kunden und Unternehmen weltweit",
+
+  contactPanelLabel:
+    "GESPRÄCH STARTEN",
+
+  contactPanelTitle:
+    "Lassen Sie uns etwas Bedeutungsvolles schaffen.",
+
+  contactPanelDescription:
+    "Ob Daten, Technologie, Business, Dokumente oder Projektmanagement – erzählen Sie uns zunächst, was Sie benötigen.",
+
+  contactPanelButton:
+    "GODZYA GROUP Kontaktieren",
+
+  contactPanelFooter:
+    "Wir bauen. Sie wachsen.",
+
+  footerTagline:
+    "Wir entwickeln intelligente Lösungen für eine vernetzte Zukunft.",
+
+  footerExplore:
+    "Entdecken",
+
+  footerServices:
+    "Lösungen",
+
+  footerContact:
+    "Kontakt",
+
+  footerLocation:
+    "Südafrika",
+
+  footerWorldwide:
+    "Für Kunden weltweit",
+
+  footerRights:
+    "Alle Rechte vorbehalten.",
+
+  footerStatus:
+    "Wir bauen die Zukunft."
+
+};
+
+
+/* =====================================================
+   SWAHILI
+===================================================== */
+
+translations.sw = {
+
+  languageName: "Swahili",
+
+  navHome: "Nyumbani",
+  navWhatWeDo: "Tunachofanya",
+  navAccomplishments: "Mafanikio Yetu",
+  navContact: "Wasiliana Nasi",
+
+  languageEnglish: "Kiswahili",
+
+  heroEyebrow:
+    "AI • DATA • BIASHARA • TEKNOLOJIA",
+
+  heroTitle:
+    "Tunajenga suluhisho bora zaidi kwa mustakabali uliounganishwa.",
+
+  heroDescription:
+    "Tunasaidia biashara kufanya kazi kwa ufanisi zaidi kupitia teknolojia, data, suluhisho za biashara na msaada wa kitaalamu.",
+
+  heroExplore:
+    "Gundua Tunachofanya",
+
+  heroContact:
+    "Anza Mazungumzo",
+
+  scroll:
+    "Sogeza chini kuchunguza",
+
+  identityEyebrow:
+    "MBINU YA GODZYA",
+
+  identityTitle:
+    "Teknolojia inapaswa kusukuma biashara mbele.",
+
+  identityDescription:
+    "GODZYA GROUP inaunganisha teknolojia, data, fikra za biashara na msaada wa kitaalamu ili kusaidia biashara kutatua matatizo, kuboresha kazi zao na kuunda fursa mpya.",
+
+  pillarAI:
+    "AI na Uendeshaji wa Kiotomatiki",
+
+  pillarAIDesc:
+    "Mifumo mahiri ya kazi na suluhisho zinazoundwa kulingana na mahitaji halisi ya biashara.",
+
+  pillarData:
+    "Data na Uchambuzi",
+
+  pillarDataDesc:
+    "Kubadilisha taarifa kuwa maarifa ya biashara yaliyopangwa, yenye manufaa na yanayoweza kutumika.",
+
+  pillarBusiness:
+    "Suluhisho za Biashara",
+
+  pillarBusinessDesc:
+    "Msaada wa vitendo unaosaidia biashara kufanya kazi, kuboresha na kukua.",
+
+  pillarTechnology:
+    "Teknolojia",
+
+  pillarTechnologyDesc:
+    "Uzoefu wa kidijitali na suluhisho za teknolojia zinazojengwa kwa kusudi.",
+
+  brandPromise:
+    "Tunajenga. Wewe Unakua.",
+
+  servicesEyebrow:
+    "TUNACHOFANYA",
+
+  servicesTitle:
+    "Suluhisho zinazojengwa kulingana na biashara yako.",
+
+  servicesDescription:
+    "Kuanzia data na teknolojia hadi msaada wa biashara na usimamizi wa miradi, tunatoa suluhisho za vitendo zinazosaidia kazi kusonga mbele.",
+
+  serviceAI:
+    "AI na Uendeshaji wa Kiotomatiki",
+
+  serviceAIDesc:
+    "Mifumo mahiri ya kazi, prompt engineering na suluhisho za tija zinazoendeshwa na AI.",
+
+  serviceData:
+    "Data, Excel na Uchambuzi",
+
+  serviceDataDesc:
+    "Uingizaji wa data, Excel, usafishaji wa data, ripoti, dashibodi na maarifa ya biashara.",
+
+  serviceBusiness:
+    "Uchambuzi wa Biashara",
+
+  serviceBusinessDesc:
+    "Uchambuzi wa michakato, mahitaji, nyaraka na msaada wa kuboresha biashara.",
+
+  serviceProject:
+    "Usimamizi wa Miradi",
+
+  serviceProjectDesc:
+    "Mipango, hatua muhimu, uratibu, ufuatiliaji wa maendeleo na msaada wa utekelezaji wa miradi.",
+
+  serviceTechnology:
+    "Teknolojia na Suluhisho za Wavuti",
+
+  serviceTechnologyDesc:
+    "Tovuti za kitaalamu, uzoefu wa kidijitali na suluhisho za teknolojia za vitendo.",
+
+  serviceLanguage:
+    "Lugha ya Kifaransa na Nyaraka",
+
+  serviceLanguageDesc:
+    "Tafsiri Kiingereza ↔ Kifaransa, uhakiki, uhariri na nyaraka za kitaalamu.",
+
+  serviceAdmin:
+    "Msaada wa Mtandaoni na Kiutawala",
+
+  serviceAdminDesc:
+    "Nyaraka, utafiti, Microsoft Office, upangaji na msaada wa kiutawala.",
+
+  servicesViewAll:
+    "Gundua Suluhisho Zote",
+
+  accomplishmentsEyebrow:
+    "MAFANIKIO YETU",
+
+  accomplishmentsTitle:
+    "Mawazo yanageuka kuwa kazi halisi.",
+
+  accomplishmentsDescription:
+    "Kila mradi ni fursa ya kubadilisha wazo, changamoto au hitaji la biashara kuwa kitu cha vitendo, kitaalamu na chenye maana.",
+
+  projectWebCategory:
+    "Teknolojia na Suluhisho za Wavuti",
+
+  projectWebTitle:
+    "Uzoefu wa Kidijitali wa Kitaalamu",
+
+  projectWebDescription:
+    "Kubuni uzoefu wa kisasa, unaojibu vifaa mbalimbali na wa kitaalamu kwa biashara na chapa.",
+
+  projectDataCategory:
+    "Data na Uchambuzi",
+
+  projectDataTitle:
+    "Data Iliyopangwa kwa Maamuzi Bora",
+
+  projectDataDescription:
+    "Suluhisho za vitendo za lahajedwali, upangaji wa data na ripoti zinazofanya taarifa iwe rahisi kueleweka.",
+
+  projectPMCategory:
+    "Usimamizi wa Miradi",
+
+  projectPMTitle:
+    "Kutoka Mipango hadi Utekelezaji",
+
+  projectPMDescription:
+    "Msaada uliopangwa wa miradi unaolenga mipango, uratibu, nyaraka, ufuatiliaji na utekelezaji.",
+
+  projectView:
+    "Tazama Mradi",
+
+  accomplishmentsViewAll:
+    "Gundua Mafanikio Yetu",
+
+  voiceEyebrow:
+    "SAUTI YA MTEJA",
+
+  voiceTitle:
+    "Kazi ni muhimu. Uzoefu pia.",
+
+  voiceDescription:
+    "Tunaamini mahusiano imara ya kibiashara hujengwa kupitia mawasiliano, uaminifu, weledi na matokeo.",
+
+  voicePlaceholder:
+    "Uzoefu wako ni muhimu kwetu. Maoni ya wateja, pongezi na mapendekezo ya kitaalamu yataonekana hapa kadri GODZYA GROUP inavyoendelea kukua.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "Uzoefu wa Mteja",
+
+  voiceSideText:
+    "Imejengwa kwa uaminifu. Inaendeshwa na maendeleo.",
+
+  voiceContact:
+    "Shiriki Uzoefu Wako",
+
+  contactEyebrow:
+    "TUZUNGUMZE",
+
+  contactTitle:
+    "Una mradi, wazo au changamoto?",
+
+  contactDescription:
+    "Tuambie unachofanyia kazi. Tutachunguza suluhisho linalofaa pamoja.",
+
+  contactEmailLabel:
+    "Barua pepe",
+
+  contactLocationLabel:
+    "Tupo",
+
+  contactLocation:
+    "Afrika Kusini",
+
+  contactAvailabilityLabel:
+    "Tunafanya kazi na",
+
+  contactAvailability:
+    "Wateja na biashara duniani kote",
+
+  contactPanelLabel:
+    "ANZA MAZUNGUMZO",
+
+  contactPanelTitle:
+    "Hebu tujenge kitu chenye maana.",
+
+  contactPanelDescription:
+    "Iwe unahitaji msaada katika data, teknolojia, biashara, nyaraka au usimamizi wa miradi, anza kwa kutuambia unachohitaji.",
+
+  contactPanelButton:
+    "Wasiliana na GODZYA GROUP",
+
+  contactPanelFooter:
+    "Tunajenga. Wewe Unakua.",
+
+  footerTagline:
+    "Tunajenga suluhisho bora zaidi kwa mustakabali uliounganishwa.",
+
+  footerExplore:
+    "Chunguza",
+
+  footerServices:
+    "Suluhisho",
+
+  footerContact:
+    "Mawasiliano",
+
+  footerLocation:
+    "Afrika Kusini",
+
+  footerWorldwide:
+    "Tunawahudumia wateja duniani kote",
+
+  footerRights:
+    "Haki zote zimehifadhiwa.",
+
+  footerStatus:
+    "Tunajenga mustakabali."
+
+};
+
+
+/* =====================================================
+   AFRIKAANS
+===================================================== */
+
+translations.af = {
+
+  languageName: "Afrikaans",
+
+  navHome: "Tuis",
+  navWhatWeDo: "Wat Ons Doen",
+  navAccomplishments: "Ons Prestasies",
+  navContact: "Kom Ons Gesels",
+
+  languageEnglish: "Afrikaans",
+
+  heroEyebrow:
+    "KI • DATA • BESIGHEID • TEGNOLOGIE",
+
+  heroTitle:
+    "Ons bou slimmer oplossings vir 'n verbonden toekoms.",
+
+  heroDescription:
+    "Ons help besighede om slimmer te werk deur tegnologie, data, besigheidsoplossings en professionele ondersteuning.",
+
+  heroExplore:
+    "Ontdek Wat Ons Doen",
+
+  heroContact:
+    "Begin 'n Gesprek",
+
+  scroll:
+    "Blaai om te ontdek",
+
+  identityEyebrow:
+    "DIE GODZYA-BENADERING",
+
+  identityTitle:
+    "Tegnologie behoort besighede vorentoe te dryf.",
+
+  identityDescription:
+    "GODZYA GROUP kombineer tegnologie, data, besigheidsdenke en praktiese professionele ondersteuning om besighede te help om probleme op te los, hul werk te verbeter en nuwe geleenthede te skep.",
+
+  pillarAI:
+    "KI & Outomatisering",
+
+  pillarAIDesc:
+    "Slimmer werkvloei en oplossings wat rondom werklike besigheidsbehoeftes ontwerp word.",
+
+  pillarData:
+    "Data & Analise",
+
+  pillarDataDesc:
+    "Ons verander inligting in georganiseerde, nuttige en uitvoerbare besigheidsinsigte.",
+
+  pillarBusiness:
+    "Besigheidsoploss
