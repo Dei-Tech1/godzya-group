@@ -2278,3 +2278,94 @@ button {
     rgba(70, 217, 255, 0.3);
 
    }
+
+/* =====================================================
+   REVEAL ANIMATION
+===================================================== */
+
+.reveal {
+
+  opacity:
+    0;
+
+  transform:
+    translateY(24px);
+
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+
+.reveal.visible {
+
+  opacity:
+    1;
+
+  transform:
+    translateY(0);
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+
+  .main-nav {
+
+    gap:
+      18px;
+
+  }
+
+
+  .hero-inner {
+
+    grid-template-columns:
+      1fr
+      0.85fr;
+
+    gap:
+      35px;
+
+  }
+
+
+  .services-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .audience-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .process-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .about-grid,
+  .contact-grid {
+
+    gap:
+      50px;
+
+  }
+
+}
