@@ -126,4 +126,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* =====================================================
+   FOOTER YEAR
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const yearElement =
+    document.querySelector("#current-year");
+
+
+  if (!yearElement) {
+
+    return;
+
+  }
+
+
+  yearElement.textContent =
+    new Date().getFullYear();
+
+});
+
 
