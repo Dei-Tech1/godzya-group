@@ -1,1 +1,144 @@
+/* =====================================================
+   GODZYA GROUP
+   PREMIUM VISUAL SYSTEM
+   CSS BLOCK 1 — FOUNDATION
+===================================================== */
 
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+:root {
+
+  --bg:
+    #050b14;
+
+  --bg-soft:
+    #08121d;
+
+  --surface:
+    #0b1723;
+
+  --surface-light:
+    #102131;
+
+  --cyan:
+    #46d9ff;
+
+  --cyan-soft:
+    #8be8ff;
+
+  --white:
+    #f4f9fc;
+
+  --text:
+    #d8e5ec;
+
+  --muted:
+    #8296a5;
+
+  --line:
+    rgba(70, 217, 255, 0.16);
+
+  --line-soft:
+    rgba(255, 255, 255, 0.08);
+
+  --shadow:
+    rgba(0, 0, 0, 0.45);
+
+  --container:
+    1180px;
+
+  --radius:
+    18px;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+body {
+
+  min-height: 100vh;
+
+  background:
+    var(--bg);
+
+  color:
+    var(--text);
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  line-height:
+    1.6;
+
+  overflow-x:
+    hidden;
+
+}
+
+
+/* =====================================================
+   GLOBAL ELEMENTS
+===================================================== */
+
+img {
+
+  display: block;
+
+  max-width: 100%;
+
+}
+
+
+a {
+
+  color: inherit;
+
+  text-decoration: none;
+
+}
+
+
+button {
+
+  font: inherit;
+
+}
+
+
+.container {
+
+  width:
+    min(
+      calc(100% - 48px),
+      var(--container)
+    );
+
+  margin:
+    0 auto;
+
+}
