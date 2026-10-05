@@ -1731,3 +1731,187 @@ button {
     var(--white);
 
 }
+
+/* =====================================================
+   PROCESS GRID
+===================================================== */
+
+.process-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    18px;
+
+}
+
+
+/* =====================================================
+   PROCESS STEP
+===================================================== */
+
+.process-step {
+
+  position:
+    relative;
+
+  min-height:
+    300px;
+
+  padding:
+    32px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    flex-end;
+
+  background:
+    rgba(255, 255, 255, 0.02);
+
+  border:
+    1px solid
+    var(--line-soft);
+
+  border-radius:
+    var(--radius);
+
+  overflow:
+    hidden;
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    background .35s ease;
+
+}
+
+
+.process-step::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    0;
+
+  left:
+    0;
+
+  width:
+    100%;
+
+  height:
+    2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--cyan),
+      transparent
+    );
+
+  opacity:
+    0.65;
+
+}
+
+
+.process-step:hover {
+
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(70, 217, 255, 0.28);
+
+  background:
+    rgba(70, 217, 255, 0.035);
+
+}
+
+
+/* =====================================================
+   PROCESS NUMBER
+===================================================== */
+
+.process-step > span {
+
+  position:
+    absolute;
+
+  top:
+    28px;
+
+  left:
+    30px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    38px;
+
+  font-weight:
+    800;
+
+  color:
+    rgba(70, 217, 255, 0.18);
+
+}
+
+
+/* =====================================================
+   PROCESS TITLE
+===================================================== */
+
+.process-step h3 {
+
+  margin-bottom:
+    12px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    21px;
+
+  font-weight:
+    700;
+
+  color:
+    var(--white);
+
+}
+
+
+/* =====================================================
+   PROCESS DESCRIPTION
+===================================================== */
+
+.process-step p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.7;
+
+}
