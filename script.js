@@ -3617,3 +3617,64 @@ if (heroVideo) {
 ===================================================== */
 
 prepareHeroVideo();
+
+/* =====================================================
+   ACTIVE PAGE NAVIGATION
+===================================================== */
+
+function updateActiveNavigation() {
+
+  const currentPage =
+    window.location.pathname
+      .split("/")
+      .pop()
+      .toLowerCase();
+
+
+  const pageMap = {
+
+    "": "index.html",
+
+    "index.html":
+      "index.html",
+
+    "what-we-do.html":
+      "what-we-do.html",
+
+    "accomplishments.html":
+      "accomplishments.html"
+
+  };
+
+
+  const activePage =
+    pageMap[currentPage] ||
+    "index.html";
+
+
+  document.querySelectorAll(
+    ".nav-link"
+  ).forEach((link) => {
+
+    const linkPage =
+      link
+        .getAttribute("href")
+        ?.split("#")[0]
+        .toLowerCase();
+
+
+    link.classList.toggle(
+      "active",
+      linkPage === activePage
+    );
+
+  });
+
+}
+
+
+/* =====================================================
+   INITIALIZE ACTIVE NAVIGATION
+===================================================== */
+
+updateActiveNavigation();
