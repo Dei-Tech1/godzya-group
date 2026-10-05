@@ -2773,5 +2773,204 @@ translations.af = {
   pillarDataDesc:
     "Ons verander inligting in georganiseerde, nuttige en uitvoerbare besigheidsinsigte.",
 
-  pillarBusiness:
-    "Besigheidsoploss
+    pillarBusiness:
+    "Besigheidsoplossings",
+
+  pillarBusinessDesc:
+    "Praktiese ondersteuning wat besighede help om te funksioneer, te verbeter en te groei.",
+
+  pillarTechnology:
+    "Tegnologie",
+
+  pillarTechnologyDesc:
+    "Digitale ervarings en tegnologie-oplossings wat met doelgerigtheid gebou word.",
+
+  brandPromise:
+    "Ons Bou. Jy Groei.",
+
+  servicesEyebrow:
+    "WAT ONS DOEN",
+
+  servicesTitle:
+    "Oplossings wat rondom jou besigheid gebou word.",
+
+  servicesDescription:
+    "Van data en tegnologie tot besigheidsondersteuning en projekbestuur, bied ons praktiese oplossings wat werk vorentoe dryf.",
+
+  serviceAI:
+    "KI & Outomatisering",
+
+  serviceAIDesc:
+    "Slim werkvloei, prompt engineering en KI-aangedrewe produktiwiteitsoplossings.",
+
+  serviceData:
+    "Data, Excel & Analise",
+
+  serviceDataDesc:
+    "Data-invoer, Excel, data-skoonmaak, verslae, dashboards en besigheidsinsigte.",
+
+  serviceBusiness:
+    "Besigheidsanalise",
+
+  serviceBusinessDesc:
+    "Prosesanalise, vereistes, dokumentasie en ondersteuning vir besigheidsverbetering.",
+
+  serviceProject:
+    "Projekbestuur",
+
+  serviceProjectDesc:
+    "Beplanning, mylpale, koördinering, vorderingsopsporing en projekleweringsondersteuning.",
+
+  serviceTechnology:
+    "Tegnologie & Weboplossings",
+
+  serviceTechnologyDesc:
+    "Professionele webwerwe, digitale ervarings en praktiese tegnologie-oplossings.",
+
+  serviceLanguage:
+    "Franse Taal & Dokumente",
+
+  serviceLanguageDesc:
+    "Engels ↔ Frans vertaling, proeflees, redigering en professionele dokumente.",
+
+  serviceAdmin:
+    "Virtuele & Administratiewe Ondersteuning",
+
+  serviceAdminDesc:
+    "Dokumente, navorsing, Microsoft Office, organisasie en administratiewe ondersteuning.",
+
+  servicesViewAll:
+    "Ontdek Alle Oplossings",
+
+  accomplishmentsEyebrow:
+    "ONS PRESTASIES",
+
+  accomplishmentsTitle:
+    "Idees word in werklike werk omskep.",
+
+  accomplishmentsDescription:
+    "Elke projek is 'n geleentheid om 'n idee, uitdaging of besigheidsbehoefte in iets prakties, professioneel en betekenisvol te omskep.",
+
+  projectWebCategory:
+    "Tegnologie & Weboplossings",
+
+  projectWebTitle:
+    "Professionele Digitale Ervarings",
+
+  projectWebDescription:
+    "Ons skep moderne, responsiewe en professionele digitale ervarings vir besighede en handelsmerke.",
+
+  projectDataCategory:
+    "Data & Analise",
+
+  projectDataTitle:
+    "Georganiseerde Data vir Beter Besluite",
+
+  projectDataDescription:
+    "Praktiese sigblad-, data-organisasie- en verslagdoeningsoplossings wat inligting makliker verstaanbaar maak.",
+
+  projectPMCategory:
+    "Projekbestuur",
+
+  projectPMTitle:
+    "Van Beplanning tot Lewering",
+
+  projectPMDescription:
+    "Gestruktureerde projekondersteuning met fokus op beplanning, koördinering, dokumentasie, opsporing en lewering.",
+
+  projectView:
+    "Bekyk Projek",
+
+  accomplishmentsViewAll:
+    "Ontdek Ons Prestasies",
+
+  voiceEyebrow:
+    "KLIËNTSTEM",
+
+  voiceTitle:
+    "Die werk maak saak. Die ervaring ook.",
+
+  voiceDescription:
+    "Ons glo dat sterk besigheidsverhoudings deur kommunikasie, betroubaarheid, professionaliteit en resultate gebou word.",
+
+  voicePlaceholder:
+    "Jou ervaring is vir ons belangrik. Kliënte se terugvoer, komplimente en professionele aanbevelings sal hier verskyn namate GODZYA GROUP aanhou groei.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "Kliëntervaring",
+
+  voiceSideText:
+    "Gebou op vertroue. Gedryf deur vooruitgang.",
+
+  voiceContact:
+    "Deel Jou Ervaring",
+
+  contactEyebrow:
+    "KOM ONS GESELS",
+
+  contactTitle:
+    "Het jy 'n projek, idee of uitdaging?",
+
+  contactDescription:
+    "Vertel ons waaraan jy werk. Ons sal saam die regte oplossing verken.",
+
+  contactEmailLabel:
+    "E-pos",
+
+  contactLocationLabel:
+    "Gebaseer in",
+
+  contactLocation:
+    "Suid-Afrika",
+
+  contactAvailabilityLabel:
+    "Ons werk met",
+
+  contactAvailability:
+    "Kliënte en besighede wêreldwyd",
+
+  contactPanelLabel:
+    "BEGIN 'N GESPREK",
+
+  contactPanelTitle:
+    "Kom ons bou iets betekenisvol.",
+
+  contactPanelDescription:
+    "Of jy ondersteuning met data, tegnologie, besigheid, dokumente of projekbestuur benodig, begin deur ons te vertel wat jy nodig het.",
+
+  contactPanelButton:
+    "Kontak GODZYA GROUP",
+
+  contactPanelFooter:
+    "Ons Bou. Jy Groei.",
+
+  footerTagline:
+    "Ons bou slimmer oplossings vir 'n verbonden toekoms.",
+
+  footerExplore:
+    "Ontdek",
+
+  footerServices:
+    "Oplossings",
+
+  footerContact:
+    "Kontak",
+
+  footerLocation:
+    "Suid-Afrika",
+
+  footerWorldwide:
+    "Ons bedien kliënte wêreldwyd",
+
+  footerRights:
+    "Alle regte voorbehou.",
+
+  footerStatus:
+    "Ons bou die toekoms."
+
+};
+
+
