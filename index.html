@@ -1,4169 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GODZYA GROUP | AI • Data • Business • Technology</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="GODZYA GROUP — Building smarter solutions for a connected future."
+  >
+
+  <meta
+    name="theme-color"
+    content="#050b14"
+  >
+
+  <title>GODZYA GROUP | We Build. You Grow.</title>
+
+  <!-- Google Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main Stylesheet -->
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 
-<meta name="description" content="GODZYA GROUP builds intelligent AI, data, business and technology solutions for ambitious businesses ready to grow.">
-
-<style>
-
-/* =========================================================
-   GODZYA GROUP — PREMIUM CORPORATE WEBSITE
-   ========================================================= */
-
-:root {
-    --bg: #050b14;
-    --bg-soft: #081321;
-    --panel: rgba(10, 23, 40, 0.78);
-    --panel-light: rgba(255,255,255,0.055);
-    --text: #f4f8fc;
-    --muted: #aab8c8;
-    --cyan: #46d9ff;
-    --blue: #3b82f6;
-    --line: rgba(255,255,255,0.10);
-    --max: 1180px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    background:
-        radial-gradient(circle at 20% 10%, rgba(25,105,145,.22), transparent 32%),
-        radial-gradient(circle at 85% 35%, rgba(36,91,180,.18), transparent 30%),
-        var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* =========================================================
-   GLOBAL
-   ========================================================= */
-
-.container {
-    width: min(92%, var(--max));
-    margin: auto;
-}
-
-section {
-    position: relative;
-    padding: 110px 0;
-    overflow: hidden;
-}
-
-.section-label {
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    margin-bottom: 18px;
-}
-
-.section-title {
-    font-size: clamp(36px, 5vw, 64px);
-    line-height: 1.05;
-    letter-spacing: -2px;
-    max-width: 800px;
-    margin-bottom: 25px;
-}
-
-.section-text {
-    color: var(--muted);
-    max-width: 700px;
-    font-size: 17px;
-}
-
-.gradient-text {
-    background: linear-gradient(90deg, #ffffff, var(--cyan), #8bbcff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(4,10,18,.72);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(255,255,255,.07);
-}
-
-.navbar {
-    width: min(94%, 1250px);
-    margin: auto;
-    min-height: 78px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    font-size: 19px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    white-space: nowrap;
-}
-
-.logo span {
-    color: var(--cyan);
-}
-
-   /* =====================================================
-   LANGUAGE SELECTOR
-===================================================== */
-
-.language-selector {
-    position: relative;
-    margin-left: 18px;
-}
-
-.language-button {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    padding: 9px 13px;
-    border: 1px solid rgba(255,255,255,.10);
-    border-radius: 10px;
-    background: rgba(255,255,255,.04);
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.language-button:hover {
-    background: rgba(255,255,255,.08);
-    border-color: rgba(255,255,255,.18);
-}
-
-.language-icon {
-    font-size: 15px;
-}
-
-.language-arrow {
-    font-size: 10px;
-    opacity: .7;
-}
-
-
-/* LANGUAGE MENU */
-
-.language-menu {
-    position: absolute;
-    top: calc(100% + 12px);
-    right: 0;
-    width: 220px;
-    padding: 10px;
-    border: 1px solid rgba(255,255,255,.10);
-    border-radius: 14px;
-    background: rgba(7,17,31,.97);
-    backdrop-filter: blur(18px);
-    box-shadow: 0 20px 50px rgba(0,0,0,.35);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: .25s ease;
-}
-
-.language-selector.active .language-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-
-/* LANGUAGE OPTIONS */
-
-.language-option {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 11px;
-    border: 0;
-    border-radius: 9px;
-    background: transparent;
-    color: #ffffff;
-    text-align: left;
-    font-size: 13px;
-    cursor: pointer;
-    transition: .2s ease;
-}
-
-.language-option:hover {
-    background: rgba(255,255,255,.07);
-}
-
-.language-option.active {
-    background: rgba(34,211,238,.10);
-    color: var(--cyan);
-}
-   /* =========================================================
-   GODZYA 3D FLOATING CUBE LOGO
-========================================================= */
-
-.logo-cube-wrap {
-    position: relative;
-    width: 72px;
-    height: 82px;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    perspective: 700px;
-
-    animation: cubeFloat 4s ease-in-out infinite;
-}
-
-
-/* THE ACTUAL CUBE */
-
-.logo-cube {
-    position: relative;
-
-    width: 62px;
-    height: 62px;
-
-    transform-style: preserve-3d;
-
-    animation:
-        cubeRotate 10s ease-in-out infinite;
-
-    border-radius: 10px;
-}
-
-
-/* ALL SIX SIDES */
-
-.cube-face {
-    position: absolute;
-
-    width: 62px;
-    height: 62px;
-
-    border-radius: 9px;
-
-    overflow: hidden;
-
-    backface-visibility: hidden;
-
-    border:
-        1px solid
-        rgba(100,210,255,.28);
-
-    box-shadow:
-        inset 0 0 18px
-        rgba(100,210,255,.08);
-}
-
-
-/* FRONT */
-
-.cube-front {
-    transform:
-        translateZ(31px);
-
-    background:
-        #07111f;
-}
-
-.cube-front img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-}
-
-
-/* BACK */
-
-.cube-back {
-    transform:
-        rotateY(180deg)
-        translateZ(31px);
-
-    background:
-        #07111f;
-}
-
-.cube-back img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transform:
-        rotateY(180deg);
-}
-
-
-/* RIGHT SIDE */
-
-.cube-right {
-    transform:
-        rotateY(90deg)
-        translateZ(31px);
-
-    background:
-        linear-gradient(
-            145deg,
-            #123d52,
-            #06101c
-        );
-}
-
-
-/* LEFT SIDE */
-
-.cube-left {
-    transform:
-        rotateY(-90deg)
-        translateZ(31px);
-
-    background:
-        linear-gradient(
-            145deg,
-            #0c2b3d,
-            #040b14
-        );
-}
-
-
-/* TOP */
-
-.cube-top {
-    transform:
-        rotateX(90deg)
-        translateZ(31px);
-
-    background:
-        linear-gradient(
-            135deg,
-            #1a5168,
-            #07111f
-        );
-}
-
-
-/* BOTTOM */
-
-.cube-bottom {
-    transform:
-        rotateX(-90deg)
-        translateZ(31px);
-
-    background:
-        #030810;
-}
-
-
-/* =========================================================
-   CUBE ROTATION
-========================================================= */
-
-@keyframes cubeRotate {
-
-    0% {
-        transform:
-            rotateX(-8deg)
-            rotateY(0deg)
-            rotateZ(2deg);
-    }
-
-    20% {
-        transform:
-            rotateX(12deg)
-            rotateY(65deg)
-            rotateZ(-3deg);
-    }
-
-    40% {
-        transform:
-            rotateX(-5deg)
-            rotateY(145deg)
-            rotateZ(3deg);
-    }
-
-    60% {
-        transform:
-            rotateX(10deg)
-            rotateY(225deg)
-            rotateZ(-2deg);
-    }
-
-    80% {
-        transform:
-            rotateX(-8deg)
-            rotateY(305deg)
-            rotateZ(3deg);
-    }
-
-    100% {
-        transform:
-            rotateX(-8deg)
-            rotateY(360deg)
-            rotateZ(2deg);
-    }
-}
-
-
-/* =========================================================
-   FLOATING MOVEMENT
-========================================================= */
-
-@keyframes cubeFloat {
-
-    0%,
-    100% {
-        transform:
-            translateY(0);
-    }
-
-    50% {
-        transform:
-            translateY(-7px);
-    }
-}
-
-
-/* =========================================================
-   SHADOW UNDER CUBE
-========================================================= */
-
-.cube-shadow {
-
-    position: absolute;
-
-    left: 50%;
-
-    bottom: 1px;
-
-    width: 42px;
-    height: 8px;
-
-    transform:
-        translateX(-50%);
-
-    border-radius: 50%;
-
-    background:
-        rgba(0,0,0,.55);
-
-    filter:
-        blur(6px);
-
-    opacity: .65;
-
-    animation:
-        shadowFloat 4s ease-in-out infinite;
-}
-
-
-/* Shadow reacts to floating cube */
-
-@keyframes shadowFloat {
-
-    0%,
-    100% {
-        transform:
-            translateX(-50%)
-            scaleX(1);
-
-        opacity: .65;
-    }
-
-    50% {
-        transform:
-            translateX(-50%)
-            scaleX(.70);
-
-        opacity: .38;
-    }
-}
-
-
-/* =========================================================
-   PREMIUM HOVER
-========================================================= */
-
-.logo-cube-wrap:hover .logo-cube {
-
-    animation-duration:
-        5s;
-
-}
-
-.logo-cube-wrap:hover {
-
-    filter:
-        drop-shadow(
-            0 0 12px
-            rgba(70,217,255,.28)
-        );
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .logo-cube-wrap {
-        width: 66px;
-        height: 76px;
-    }
-
-    .logo-cube {
-        width: 56px;
-        height: 56px;
-    }
-
-    .cube-face {
-        width: 56px;
-        height: 56px;
-    }
-
-    .cube-front {
-        transform:
-            translateZ(28px);
-    }
-
-    .cube-back {
-        transform:
-            rotateY(180deg)
-            translateZ(28px);
-    }
-
-    .cube-right {
-        transform:
-            rotateY(90deg)
-            translateZ(28px);
-    }
-
-    .cube-left {
-        transform:
-            rotateY(-90deg)
-            translateZ(28px);
-    }
-
-    .cube-top {
-        transform:
-            rotateX(90deg)
-            translateZ(28px);
-    }
-
-    .cube-bottom {
-        transform:
-            rotateX(-90deg)
-            translateZ(28px);
-    }
-
-    .cube-shadow {
-        width: 38px;
-    }
-   }
-   
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    list-style: none;
-}
-
-.nav-links a {
-    color: #c7d2df;
-    font-size: 13px;
-    font-weight: 600;
-    transition: .3s ease;
-}
-
-.nav-links a:hover {
-    color: var(--cyan);
-}
-
-.nav-cta {
-    padding: 11px 19px;
-    border: 1px solid rgba(70,217,255,.4);
-    border-radius: 50px;
-    color: white !important;
-    background: rgba(70,217,255,.08);
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 27px;
-    cursor: pointer;
-}
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    background:
-        linear-gradient(90deg, rgba(3,9,17,.96) 0%, rgba(3,9,17,.72) 42%, rgba(3,9,17,.35) 100%),
-        url("3fa1f90e63d632bba744b19cc486fd38eef301e9e449bc2f0ec21eddf2bdcd35.png") center/cover no-repeat;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 70% 45%, rgba(42,186,230,.20), transparent 25%),
-        linear-gradient(180deg, rgba(5,11,20,.15), var(--bg));
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    padding-top: 80px;
-}
-
-.hero-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 4px;
-    margin-bottom: 25px;
-}
-
-.hero-label::before {
-    content: "";
-    width: 35px;
-    height: 1px;
-    background: var(--cyan);
-}
-
-.hero h1 {
-    font-size: clamp(65px, 12vw, 150px);
-    line-height: .78;
-    letter-spacing: -8px;
-    font-weight: 900;
-    margin-bottom: 30px;
-}
-
-.hero h1 span {
-    display: block;
-    color: transparent;
-    -webkit-text-stroke: 1px rgba(255,255,255,.75);
-}
-
-.slogan {
-    font-size: clamp(25px, 4vw, 42px);
-    font-weight: 700;
-    margin-bottom: 14px;
-}
-
-.hero-description {
-    color: #b7c5d4;
-    max-width: 650px;
-    font-size: 17px;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 35px;
-}
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 24px;
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: .4px;
-    transition: .3s ease;
-}
-
-.btn-primary {
-    background: linear-gradient(100deg, #ffffff, #a8eaff);
-    color: #06101a;
-    box-shadow: 0 10px 40px rgba(70,217,255,.18);
-}
-
-.btn-primary:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 50px rgba(70,217,255,.30);
-}
-
-.btn-outline {
-    border: 1px solid rgba(255,255,255,.22);
-    background: rgba(255,255,255,.04);
-    color: white;
-}
-
-.btn-outline:hover {
-    border-color: var(--cyan);
-    background: rgba(70,217,255,.08);
-}
-
-.hero-bottom {
-    position: absolute;
-    bottom: 28px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(92%, 1180px);
-    display: flex;
-    justify-content: space-between;
-    color: rgba(255,255,255,.55);
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-   
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 100svh;
-        padding: 0 20px;
-    }
-
-    .hero-content {
-        width: 100%;
-        max-width: 100%;
-        padding-top: 100px;
-    }
-
-    .hero h1 {
-        font-size: clamp(48px, 15vw, 76px);
-        letter-spacing: -4px;
-        line-height: .82;
-    }
-
-    .hero-description {
-        max-width: 100%;
-        font-size: 15px;
-    }
-
-    .hero-buttons {
-        width: 100%;
-    }
-
-    .hero-bottom {
-        width: calc(100% - 40px);
-    }
-
-}
-/* =========================================================
-   MOVING MARQUEE
-   ========================================================= */
-
-.marquee {
-    overflow: hidden;
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    background: rgba(255,255,255,.025);
-    padding: 18px 0;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-    animation: marquee 25s linear infinite;
-}
-
-.marquee-item {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 0 30px;
-    color: #c9d8e7;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    white-space: nowrap;
-}
-
-.marquee-item span {
-    color: var(--cyan);
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-/* =========================================================
-   INTRO
-   ========================================================= */
-
-.intro {
-    text-align: center;
-}
-
-.intro .section-text {
-    margin: auto;
-}
-
-/* =========================================================
-   SERVICES
-   ========================================================= */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-top: 55px;
-}
-
-.service-card {
-    position: relative;
-    min-height: 390px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    border-radius: 22px;
-    background: #091321;
-    transition: .45s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-10px);
-    border-color: rgba(70,217,255,.45);
-    box-shadow: 0 25px 70px rgba(0,0,0,.35);
-}
-
-.service-image {
-    position: absolute;
-    inset: 0;
-    background-position: center;
-    background-size: cover;
-    transition: .6s ease;
-}
-
-.service-card:hover .service-image {
-    transform: scale(1.08);
-}
-
-.service-card:nth-child(1) .service-image {
-    background-image: url("470829e016e6d3f8b60d3bbdc4b076b402e05ff0ee0b6da32cef7f9c1814a5c0.jpg");
-}
-
-.service-card:nth-child(2) .service-image {
-    background-image: url("778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg");
-}
-
-.service-card:nth-child(3) .service-image {
-    background-image: url("bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg");
-}
-
-.service-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(4,10,18,.10),
-        rgba(4,10,18,.48) 40%,
-        rgba(4,10,18,.97)
-    );
-}
-
-.service-content {
-    position: absolute;
-    left: 28px;
-    right: 28px;
-    bottom: 28px;
-    z-index: 2;
-}
-
-.service-number {
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.service-card h3 {
-    font-size: 26px;
-    margin-bottom: 9px;
-}
-
-.service-card p {
-    color: #b7c4d2;
-    font-size: 14px;
-}
-
-   @media (max-width: 600px) {
-
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 40px;
-    }
-
-    .service-card {
-        position: relative;
-        height: 390px;
-        min-height: 390px;
-        overflow: hidden;
-    }
-
-    .service-image {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .service-overlay {
-        position: absolute;
-        inset: 0;
-    }
-
-    .service-content {
-        position: absolute;
-        left: 22px;
-        right: 22px;
-        bottom: 22px;
-        z-index: 2;
-    }
-
-    .service-card h3 {
-        font-size: 23px;
-        line-height: 1.2;
-    }
-
-    .service-card p {
-        font-size: 14px;
-        line-height: 1.6;
-    }
-
-}
-/* =========================================================
-   WHO WE SERVE
-   ========================================================= */
-
-.global-section {
-    background:
-        linear-gradient(90deg, rgba(4,10,18,.94), rgba(4,10,18,.68)),
-        url("d5d5a159f1a021f0a8956b1c234e99f4ab62913b56f9a028719e6ccef898cb35.jpg") center/cover no-repeat;
-}
-
-.audience-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-    margin-top: 50px;
-}
-
-.audience-card {
-    padding: 28px 22px;
-    border: 1px solid var(--line);
-    background: rgba(5,12,22,.65);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    transition: .3s ease;
-}
-
-.audience-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(70,217,255,.4);
-}
-
-.audience-card span {
-    color: var(--cyan);
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.audience-card h3 {
-    margin: 15px 0 8px;
-    font-size: 20px;
-}
-
-.audience-card p {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-   @media (max-width: 600px) {
-
-    .audience-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        margin-top: 40px;
-    }
-
-    .audience-card {
-        padding: 24px 20px;
-    }
-
-    .audience-card h3 {
-        font-size: 21px;
-    }
-
-   }
-/* =========================================================
-   ABOUT
-   ========================================================= */
-
-.about-section {
-    background:
-        linear-gradient(90deg, rgba(4,10,18,.97), rgba(4,10,18,.78)),
-        url("dffc672b6c062e5eec6ed9a8e09565c66bdea772a3b6f61ea61f3a0d6f40c1bf.jpg") center/cover no-repeat;
-}
-
-.about-layout {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.about-box {
-    border-left: 1px solid var(--cyan);
-    padding-left: 30px;
-}
-
-.about-box p {
-    color: #b9c6d5;
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.signature {
-    color: var(--cyan);
-    font-weight: 800;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
-
-.about-stats {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 15px;
-}
-
-.stat {
-    min-height: 150px;
-    padding: 25px;
-    border: 1px solid var(--line);
-    background: rgba(255,255,255,.035);
-    border-radius: 18px;
-}
-
-.stat strong {
-    display: block;
-    font-size: 25px;
-    margin-bottom: 8px;
-}
-
-.stat span {
-    color: var(--muted);
-    font-size: 13px;
-}
-
-   @media (max-width: 600px) {
-
-    .about-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-box {
-        padding-left: 20px;
-    }
-
-    .about-box p {
-        font-size: 15px;
-    }
-
-    .about-stats {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .stat {
-        min-height: 130px;
-        padding: 20px;
-    }
-
-    .stat strong {
-        font-size: 22px;
-    }
-
-   }
-/* =========================================================
-   WHY GODZYA
-   ========================================================= */
-
-.why-section {
-    background:
-        linear-gradient(90deg, rgba(4,10,18,.93), rgba(4,10,18,.73)),
-        url("778e033e1c5d529bac6bc4a740e33c01b74b49fda3494c7b64c3b9b95aa99e4f.jpg") center/cover no-repeat;
-}
-
-.values {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-top: 50px;
-}
-
-.value {
-    padding: 30px 22px;
-    background: rgba(5,12,22,.68);
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    backdrop-filter: blur(12px);
-}
-
-.value-number {
-    color: rgba(70,217,255,.6);
-    font-size: 12px;
-    letter-spacing: 2px;
-}
-
-.value h3 {
-    margin: 22px 0 8px;
-    font-size: 21px;
-}
-
-.value p {
-    color: var(--muted);
-    font-size: 13px;
-}
-   @media (max-width: 600px) {
-
-    .values {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .value {
-        padding: 24px 20px;
-    }
-
-    .value h3 {
-        font-size: 21px;
-    }
-
-    .value p {
-        font-size: 14px;
-    }
-
-}
-
-/* =========================================================
-   APPROACH
-   ========================================================= */
-
-.approach {
-    background:
-        linear-gradient(90deg, rgba(4,10,18,.94), rgba(4,10,18,.78)),
-        url("bec592c81f1e1e5ded1ef82bef013cff22aaf71c1c33eb004f0e777c200099cf.jpg") center/cover no-repeat;
-}
-
-.approach-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 55px;
-}
-
-.step {
-    position: relative;
-    padding: 30px;
-    min-height: 220px;
-    border: 1px solid var(--line);
-    background: rgba(5,12,22,.65);
-    backdrop-filter: blur(10px);
-    border-radius: 18px;
-}
-
-.step-number {
-    font-size: 40px;
-    font-weight: 900;
-    color: rgba(70,217,255,.18);
-}
-
-.step h3 {
-    margin: 15px 0 8px;
-}
-
-.step p {
-    color: var(--muted);
-    font-size: 13px;
-
-}
-   @media (max-width: 600px) {
-
-    .approach-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 40px;
-    }
-
-    .step {
-        padding: 24px 20px;
-        min-height: 200px;
-    }
-
-    .step-number {
-        font-size: 34px;
-    }
-
-    .step h3 {
-        font-size: 20px;
-    }
-
-    .step p {
-        font-size: 14px;
-    }
-
-   }
-
-
-/* =========================================================
-   CONTACT
-   ========================================================= */
-
-.contact {
-    text-align: center;
-    background:
-        linear-gradient(90deg, rgba(4,10,18,.93), rgba(4,10,18,.74)),
-        url("d994469e3bb9cc3aee895fdbc9e5cbc961328c674466b057f6b4feb084e25f65.jpg") center/cover no-repeat;
-}
-
-.contact-card {
-    max-width: 900px;
-    margin: 40px auto 0;
-    padding: 60px 30px;
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 28px;
-    background: rgba(5,12,22,.68);
-    backdrop-filter: blur(18px);
-    box-shadow: 0 30px 100px rgba(0,0,0,.30);
-}
-
-.contact-card h2 {
-    font-size: clamp(38px,6vw,72px);
-    line-height: 1;
-    margin-bottom: 20px;
-}
-
-.contact-card p {
-    color: var(--muted);
-    max-width: 650px;
-    margin: auto;
-}
-
-.contact-details {
-    margin: 30px 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.contact-details a {
-    color: white;
-    font-weight: 700;
-}
-
-.contact-details a:hover {
-    color: var(--cyan);
-}
-
-   @media (max-width: 600px) {
-
-    .contact-card {
-        margin-top: 30px;
-        padding: 45px 20px;
-        border-radius: 22px;
-    }
-
-    .contact-card h2 {
-        font-size: clamp(36px, 11vw, 52px);
-    }
-
-    .contact-details {
-        flex-direction: column;
-        gap: 16px;
-        margin: 25px 0;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    .whatsapp {
-        right: 16px;
-        bottom: 16px;
-        padding: 11px 15px;
-    }
-
-}
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.footer {
-    padding: 45px 0 35px;
-    border-top: 1px solid var(--line);
-    background: #030810;
-}
-
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-}
-
-.footer-logo {
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.footer-logo span {
-    color: var(--cyan);
-}
-
-.footer-text {
-    color: #718195;
-    font-size: 12px;
-}
-
-/* =========================================================
-   FLOATING WHATSAPP
-   ========================================================= */
-
-.whatsapp {
-    position: fixed;
-    right: 24px;
-    bottom: 24px;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    padding: 13px 18px;
-    border-radius: 50px;
-    background: rgba(8,25,35,.94);
-    border: 1px solid rgba(70,217,255,.35);
-    box-shadow: 0 10px 40px rgba(0,0,0,.35);
-    backdrop-filter: blur(14px);
-    animation: float 3s ease-in-out infinite;
-}
-
-.whatsapp-icon {
-    width: 30px;
-    height: 30px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: #25d366;
-    color: white;
-    font-weight: 900;
-}
-
-.whatsapp-text {
-    font-size: 12px;
-    font-weight: 800;
-}
-
-.whatsapp-text small {
-    display: block;
-    color: #8fa1b4;
-    font-size: 9px;
-    font-weight: 500;
-}
-
-@keyframes float {
-    0%,100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-7px);
-    }
-}
-
-/* =========================================================
-   SCROLL REVEAL
-   ========================================================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(35px);
-    transition: opacity .8s ease, transform .8s ease;
-}
-
-.reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 900px) {
-
-    .nav-links {
-        position: absolute;
-        top: 78px;
-        left: 0;
-        width: 100%;
-        padding: 25px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        background: rgba(4,10,18,.97);
-        border-bottom: 1px solid var(--line);
-        transform: translateY(-150%);
-        transition: .35s ease;
-    }
-
-    .nav-links.active {
-        transform: translateY(0);
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .services-grid,
-    .about-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .audience-grid,
-    .values,
-    .approach-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .about-stats {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-
-    section {
-        padding: 80px 0;
-    }
-
-    .hero {
-        min-height: 850px;
-    }
-
-    .hero h1 {
-        font-size: 65px;
-        letter-spacing: -4px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .hero-bottom {
-        display: none;
-    }
-
-    .services-grid,
-    .audience-grid,
-    .values,
-    .approach-grid,
-    .about-stats {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        min-height: 350px;
-    }
-
-    .contact-card {
-        padding: 45px 20px;
-    }
-
-    .contact-details {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .footer-inner {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .whatsapp {
-        right: 15px;
-        bottom: 15px;
-        padding: 10px 14px;
-    }
-
-    .whatsapp-text {
-        display: none;
-    }
-
-    .whatsapp-icon {
-        width: 42px;
-        height: 42px;
-    }
-}
-
-   /* =====================================================
-   MOBILE HEADER & LANGUAGE FIX
-===================================================== */
-
-@media (max-width: 700px) {
-
-    /* LOGO */
-
-    .navbar {
-        min-height: 78px;
-        align-items: center;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        height: 78px;
-    }
-
-    .logo-cube-wrap {
-        transform: translateY(8px) scale(.85);
-        transform-origin: center;
-    }
-
-
-    /* LANGUAGE MENU */
-
-    .language-selector {
-        position: relative;
-        margin-left: 0;
-    }
-
-    .language-menu {
-        top: calc(100% + 12px);
-        left: 0;
-        right: auto;
-        width: 220px;
-        max-width: calc(100vw - 40px);
-        max-height: 65vh;
-        overflow-y: auto;
-        z-index: 2000;
-    }
-
-}
-   /* =================================================
-   GODZYA GROUP
-   AI & AUTOMATION SERVICE PAGE
-================================================= */
-
-
-/* =================================================
-   SERVICE HERO
-================================================= */
-
-.service-hero {
-
-  position: relative;
-
-  min-height: 88vh;
-
-  display: flex;
-
-  align-items: center;
-
-  overflow: hidden;
-
-  background:
-    radial-gradient(
-      circle at 75% 30%,
-      rgba(70, 217, 255, .12),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #050b14 0%,
-      #071521 55%,
-      #050b14 100%
-    );
-
-}
-
-
-.service-hero::before {
-
-  content: "";
-
-  position: absolute;
-
-  width: 500px;
-  height: 500px;
-
-  right: -180px;
-  top: -160px;
-
-  border-radius: 50%;
-
-  border:
-    1px solid
-    rgba(70, 217, 255, .12);
-
-  box-shadow:
-    0 0 80px
-    rgba(70, 217, 255, .08);
-
-}
-
-
-.service-hero::after {
-
-  content: "";
-
-  position: absolute;
-
-  width: 350px;
-  height: 350px;
-
-  left: -180px;
-  bottom: -200px;
-
-  border-radius: 50%;
-
-  background:
-    rgba(70, 217, 255, .04);
-
-  filter: blur(20px);
-
-}
-
-
-.service-hero-content {
-
-  position: relative;
-
-  z-index: 2;
-
-  max-width: 900px;
-
-  padding:
-    140px 0
-    100px;
-
-}
-
-
-.service-hero .eyebrow {
-
-  display: inline-block;
-
-  margin-bottom: 28px;
-
-  font-size: 10px;
-
-  font-weight: 600;
-
-  letter-spacing: .28em;
-
-  color:
-    var(--cyan);
-
-}
-
-
-.service-hero h1 {
-
-  margin: 0;
-
-  max-width: 850px;
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size:
-    clamp(52px, 8vw, 108px);
-
-  line-height: .98;
-
-  letter-spacing: -.055em;
-
-  font-weight: 700;
-
-  color: #ffffff;
-
-}
-
-
-.service-hero h1 span {
-
-  color:
-    var(--cyan);
-
-}
-
-
-.service-hero p {
-
-  max-width: 650px;
-
-  margin:
-    32px 0 40px;
-
-  font-family:
-    "DM Sans",
-    sans-serif;
-
-  font-size: 18px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.66);
-
-}
-
-
-.service-hero-actions {
-
-  display: flex;
-
-  gap: 16px;
-
-  flex-wrap: wrap;
-
-}
-
-
-/* =================================================
-   BUTTONS
-================================================= */
-
-.service-hero .btn,
-.service-cta .btn {
-
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  min-height: 52px;
-
-  padding:
-    0 28px;
-
-  text-decoration: none;
-
-  font-size: 11px;
-
-  font-weight: 600;
-
-  letter-spacing: .12em;
-
-  text-transform: uppercase;
-
-  transition:
-    transform .3s ease,
-    box-shadow .3s ease,
-    background .3s ease;
-
-}
-
-
-.btn-primary {
-
-  color: #050b14;
-
-  background:
-    var(--cyan);
-
-  box-shadow:
-    0 0 30px
-    rgba(70,217,255,.18);
-
-}
-
-
-.btn-primary:hover {
-
-  transform:
-    translateY(-3px);
-
-  box-shadow:
-    0 0 45px
-    rgba(70,217,255,.30);
-
-}
-
-
-.btn-secondary {
-
-  color: #ffffff;
-
-  border:
-    1px solid
-    rgba(255,255,255,.18);
-
-  background:
-    rgba(255,255,255,.03);
-
-}
-
-
-.btn-secondary:hover {
-
-  transform:
-    translateY(-3px);
-
-  border-color:
-    rgba(70,217,255,.5);
-
-}
-
-
-/* =================================================
-   INTRO
-================================================= */
-
-.service-intro {
-
-  padding:
-    120px 0;
-
-  background:
-    #07111c;
-
-  border-top:
-    1px solid
-    rgba(255,255,255,.05);
-
-  border-bottom:
-    1px solid
-    rgba(255,255,255,.05);
-
-}
-
-
-.service-intro-grid {
-
-  display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  gap: 100px;
-
-  align-items: start;
-
-}
-
-
-.section-label {
-
-  display: block;
-
-  margin-bottom: 22px;
-
-  font-size: 9px;
-
-  font-weight: 600;
-
-  letter-spacing: .28em;
-
-  color:
-    var(--cyan);
-
-}
-
-
-.service-intro h2,
-.section-heading h2,
-.service-cta h2 {
-
-  margin: 0;
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size:
-    clamp(38px, 5vw, 68px);
-
-  line-height: 1.05;
-
-  letter-spacing: -.045em;
-
-  color:
-    #ffffff;
-
-}
-
-
-.service-intro h2 span,
-.section-heading h2 span,
-.service-cta h2 span {
-
-  color:
-    var(--cyan);
-
-}
-
-
-.service-intro-grid p {
-
-  margin:
-    0 0 22px;
-
-  font-size: 16px;
-
-  line-height: 1.85;
-
-  color:
-    rgba(255,255,255,.62);
-
-}
-
-
-/* =================================================
-   SOLUTIONS
-================================================= */
-
-.service-solutions {
-
-  padding:
-    130px 0;
-
-  background:
-    #050b14;
-
-}
-
-
-.section-heading {
-
-  max-width: 750px;
-
-  margin-bottom: 70px;
-
-}
-
-
-.section-heading p {
-
-  margin-top: 25px;
-
-  max-width: 600px;
-
-  font-size: 16px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.55);
-
-}
-
-
-.solutions-grid {
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, 1fr);
-
-  gap: 20px;
-
-}
-
-
-.solution-card {
-
-  position: relative;
-
-  padding:
-    42px;
-
-  min-height: 270px;
-
-  border:
-    1px solid
-    rgba(255,255,255,.08);
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255,255,255,.045),
-      rgba(255,255,255,.015)
-    );
-
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
-
-}
-
-
-.solution-card:hover {
-
-  transform:
-    translateY(-7px);
-
-  border-color:
-    rgba(70,217,255,.32);
-
-  box-shadow:
-    0 25px 70px
-    rgba(0,0,0,.25);
-
-}
-
-
-.solution-number {
-
-  display: block;
-
-  margin-bottom: 45px;
-
-  font-size: 10px;
-
-  letter-spacing: .2em;
-
-  color:
-    var(--cyan);
-
-}
-
-
-.solution-card h3 {
-
-  margin:
-    0 0 16px;
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size: 25px;
-
-  color:
-    #ffffff;
-
-}
-
-
-.solution-card p {
-
-  max-width: 520px;
-
-  margin: 0;
-
-  font-size: 14px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.55);
-
-}
-
-
-/* =================================================
-   BENEFITS
-================================================= */
-
-.service-benefits {
-
-  padding:
-    130px 0;
-
-  background:
-    #07111c;
-
-}
-
-
-.benefits-grid {
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 20px;
-
-}
-
-
-.benefit-item {
-
-  padding:
-    32px 25px;
-
-  border-top:
-    1px solid
-    rgba(70,217,255,.35);
-
-}
-
-
-.benefit-item h3 {
-
-  margin:
-    0 0 15px;
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size: 19px;
-
-  color:
-    #ffffff;
-
-}
-
-
-.benefit-item p {
-
-  margin: 0;
-
-  font-size: 13px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.52);
-
-}
-
-
-/* =================================================
-   PROCESS
-================================================= */
-
-.service-process {
-
-  padding:
-    130px 0;
-
-  background:
-    #050b14;
-
-}
-
-
-.process-grid {
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(4, 1fr);
-
-  gap: 1px;
-
-  background:
-    rgba(255,255,255,.08);
-
-}
-
-
-.process-step {
-
-  min-height: 280px;
-
-  padding:
-    35px;
-
-  background:
-    #050b14;
-
-}
-
-
-.process-step > span {
-
-  display: block;
-
-  margin-bottom: 55px;
-
-  font-size: 10px;
-
-  letter-spacing: .2em;
-
-  color:
-    var(--cyan);
-
-}
-
-
-.process-step h3 {
-
-  margin:
-    0 0 15px;
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size: 22px;
-
-  color:
-    #ffffff;
-
-}
-
-
-.process-step p {
-
-  margin: 0;
-
-  font-size: 13px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.5);
-
-}
-
-
-/* =================================================
-   CTA
-================================================= */
-
-.service-cta {
-
-  position: relative;
-
-  overflow: hidden;
-
-  padding:
-    150px 0;
-
-  text-align: center;
-
-  background:
-    radial-gradient(
-      circle at center,
-      rgba(70,217,255,.10),
-      transparent 45%
-    ),
-    #07111c;
-
-}
-
-
-.service-cta-content {
-
-  position: relative;
-
-  z-index: 2;
-
-  max-width: 850px;
-
-  margin: auto;
-
-}
-
-
-.service-cta h2 {
-
-  max-width: 800px;
-
-  margin:
-    0 auto 25px;
-
-}
-
-
-.service-cta p {
-
-  max-width: 600px;
-
-  margin:
-    0 auto 35px;
-
-  font-size: 16px;
-
-  line-height: 1.8;
-
-  color:
-    rgba(255,255,255,.58);
-
-}
-
-
-/* =================================================
-   FOOTER
-================================================= */
-
-.site-footer {
-
-  padding:
-    60px 0 25px;
-
-  background:
-    #03070c;
-
-  border-top:
-    1px solid
-    rgba(255,255,255,.06);
-
-}
-
-
-.footer-inner {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  gap: 30px;
-
-}
-
-
-.footer-brand {
-
-  font-family:
-    "Manrope",
-    sans-serif;
-
-  font-size: 20px;
-
-  font-weight: 700;
-
-  letter-spacing: .08em;
-
-  color:
-    #ffffff;
-
-}
-
-
-.footer-inner p {
-
-  margin:
-    8px 0 0;
-
-  font-size: 10px;
-
-  letter-spacing: .18em;
-
-  color:
-    rgba(255,255,255,.4);
-
-}
-
-
-.footer-bottom {
-
-  margin-top: 45px;
-
-  padding-top: 20px;
-
-  border-top:
-    1px solid
-    rgba(255,255,255,.05);
-
-}
-
-
-.footer-bottom p {
-
-  margin: 0;
-
-  font-size: 10px;
-
-  color:
-    rgba(255,255,255,.3);
-
-}
-
-
-/* =================================================
-   MOBILE
-================================================= */
-
-@media (max-width: 900px) {
-
-
-  .service-intro-grid {
-
-    grid-template-columns:
-      1fr;
-
-    gap: 45px;
-
-  }
-
-
-  .benefits-grid {
-
-    grid-template-columns:
-      repeat(2, 1fr);
-
-  }
-
-
-  .process-grid {
-
-    grid-template-columns:
-      repeat(2, 1fr);
-
-  }
-
-
-}
-
-
-@media (max-width: 650px) {
-
-
-  .service-hero {
-
-    min-height: auto;
-
-  }
-
-
-  .service-hero-content {
-
-    padding:
-      120px 0 90px;
-
-  }
-
-
-  .service-hero h1 {
-
-    font-size:
-      clamp(48px, 15vw, 72px);
-
-  }
-
-
-  .service-hero p {
-
-    font-size: 15px;
-
-  }
-
-
-  .service-hero-actions {
-
-    flex-direction:
-      column;
-
-    align-items:
-      stretch;
-
-  }
-
-
-  .service-hero .btn {
-
-    width: 100%;
-
-  }
-
-
-  .service-intro,
-  .service-solutions,
-  .service-benefits,
-  .service-process {
-
-    padding:
-      90px 0;
-
-  }
-
-
-  .solutions-grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .benefits-grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .process-grid {
-
-    grid-template-columns:
-      1fr;
-
-  }
-
-
-  .process-step {
-
-    min-height:
-      auto;
-
-  }
-
-
-  .footer-inner {
-
-    flex-direction:
-      column;
-
-    align-items:
-      flex-start;
-
-  }
-
-
-     }
-   
-</style>
 </head>
+
 
 <body>
 
-<!-- =====================================================
-     HEADER
-     ===================================================== -->
 
-<header>
+  <!-- =================================================
+       HEADER
+  ================================================== -->
 
-<nav class="navbar">
+  <header class="site-header">
 
-<a href="#home" class="logo">
+    <div class="container header-inner">
 
-    <div class="logo-cube-wrap">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="GODZYA GROUP Home"
+      >
+        GODZYA GROUP
+      </a>
 
-        <div class="logo-cube">
 
-            <div class="cube-face cube-front">
-    <img
-        src="https://dei-tech1.github.io/godzya-group/file_00000000f978820eba0e62d8aaf57859.png"
-        alt="GODZYA GROUP">
-</div>
+      <nav
+        class="main-nav"
+        aria-label="Main navigation"
+      >
 
-            <div class="cube-face cube-back">
-    <img
-        src="https://dei-tech1.github.io/godzya-group/file_00000000f978820eba0e62d8aaf57859.png"
-        alt="GODZYA GROUP">
-</div>
-         
+        <a href="#home">Home</a>
 
-            <div class="cube-face cube-right">
-    <img
-        src="https://dei-tech1.github.io/godzya-group/file_00000000f978820eba0e62d8aaf57859.png"
-        alt="GODZYA GROUP">
- </div>
+        <a href="#services">Services</a>
 
-            <div class="cube-face cube-left">
-    <img
-        src="https://dei-tech1.github.io/godzya-group/file_00000000f978820eba0e62d8aaf57859.png"
-        alt="GODZYA GROUP">
- </div>
-            
-           <div class="cube-face cube-top"></div>
-            <div class="cube-face cube-bottom"></div>
+        <a href="#who-we-serve">Who We Serve</a>
 
-        </div>
+        <a href="#about">About</a>
 
-        <div class="cube-shadow"></div>
+        <a href="#why-godzya">Why GODZYA</a>
+
+        <a href="#contact">Let's Connect</a>
+
+      </nav>
+
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      >
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
 
     </div>
 
-</a>
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<ul class="nav-links" id="navLinks">
-
-<li><a href="#home" data-i18n="home">Home</a></li>
-<li><a href="#services" data-i18n="services">Services</a></li>
-<li><a href="#who" data-i18n="who">Who We Serve</a></li>
-<li><a href="#about" data-i18n="about">About</a></li>
-<li><a href="#why" data-i18n="why">Why GODZYA</a></li>
-<li><a href="#contact" class="nav-cta" data-i18n="contact">Let's Connect</a></li>
-   
-    <!-- LANGUAGE SELECTOR -->
-
-    <li class="language-selector" id="languageSelector">
-
-        <button
-            class="language-button"
-            onclick="toggleLanguageMenu()"
-            type="button">
-
-            <span class="language-icon">🌐</span>
-            <span id="currentLanguage">EN</span>
-            <span class="language-arrow">▼</span>
-
-        </button>
-
-        <div class="language-menu" id="languageMenu">
-
-    <button class="language-option active" type="button"
-    onclick="changeLanguage('en', this)">
-    🇬🇧 English
-</button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('zh')">
-        🇨🇳 Mandarin
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('es')">
-        🇪🇸 Español
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('hi')">
-        🇮🇳 हिन्दी
-    </button>
-
-    <button class="language-option" type="button"
-    onclick="changeLanguage('fr', this)">
-    🇫🇷 Français
-</button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('ar')">
-        🇸🇦 العربية
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('pt')">
-        🇵🇹 Português
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('bn')">
-        🇧🇩 বাংলা
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('ru')">
-        🇷🇺 Русский
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('de')">
-        🇩🇪 Deutsch
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('sw')">
-        🌍 Kiswahili
-    </button>
-
-    <button class="language-option" type="button"
-        onclick="changeLanguage('af')">
-        🇿🇦 Afrikaans
-    </button>
-
-</div>
-
-    </li>
-
-</ul>
-
-</nav>
-
-</header>
+  </header>
 
 
-<!-- =====================================================
-     HERO
-     ===================================================== -->
 
-<section class="hero" id="home">
-
-<div class="container hero-content">
-
-<div class="hero-label" data-i18n="heroLabel">
-    AI • DATA • BUSINESS • TECHNOLOGY
-</div>
-
-<h1>
-    GODZYA
-    <span>GROUP</span>
-</h1>
-
-<div class="slogan" data-i18n="slogan">
-    We Build. <span class="gradient-text">You Grow.</span>
-</div>
-
-<p class="hero-description" data-i18n="heroDescription">
-    Building smarter solutions for a connected future.
-    We bring together technology, intelligence and business thinking
-    to turn ideas into practical opportunities.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#services" class="btn btn-primary" data-i18n="exploreServices">
-    Explore Our Services →
-</a>
-
-<a href="#contact" class="btn btn-outline" data-i18n="startConversation">
-    Start a Conversation
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-bottom">
-    <span data-i18n="southAfrica">South Africa</span>
-    <span data-i18n="beyondBorders">Building Beyond Borders</span>
-</div>
-
-</section>
+  <main>
 
 
-<!-- =====================================================
-     MOVING BRAND BAR
-     ===================================================== -->
+    <!-- =================================================
+         HERO
+    ================================================== -->
 
-<div class="marquee">
+    <section
+      id="home"
+      class="hero"
+    >
 
-<div class="marquee-track">
+      <div class="container hero-content">
 
-<div class="marquee-item">AI & AUTOMATION <span>✦</span></div>
-<div class="marquee-item">DATA INTELLIGENCE <span>✦</span></div>
-<div class="marquee-item">BUSINESS SOLUTIONS <span>✦</span></div>
-<div class="marquee-item">DIGITAL TECHNOLOGY <span>✦</span></div>
-<div class="marquee-item">STRATEGY & GROWTH <span>✦</span></div>
-<div class="marquee-item">GLOBAL THINKING <span>✦</span></div>
-
-<div class="marquee-item">AI & AUTOMATION <span>✦</span></div>
-<div class="marquee-item">DATA INTELLIGENCE <span>✦</span></div>
-<div class="marquee-item">BUSINESS SOLUTIONS <span>✦</span></div>
-<div class="marquee-item">DIGITAL TECHNOLOGY <span>✦</span></div>
-<div class="marquee-item">GLOBAL THINKING <span>✦</span></div>
-
-</div>
-
-</div>
+        <p class="eyebrow">
+          AI • DATA • BUSINESS • TECHNOLOGY
+        </p>
 
 
-<!-- =====================================================
-     INTRO
-     ===================================================== -->
+        <h1>
+          Building smarter solutions
+          for a connected future.
+        </h1>
 
-<section class="intro reveal">
 
-    <div class="container">
+        <p class="hero-text">
+          We help businesses turn ideas, information and
+          technology into smarter ways of working and growing.
+        </p>
 
-        <div class="section-label">The GODZYA Vision</div>
 
-        <a href="#home" class="logo">
+        <div class="hero-actions">
 
-            <div class="logo-3d">
+          <a
+            href="#services"
+            class="btn btn-primary"
+          >
+            Explore Our Services
+          </a>
 
-                <div class="logo-3d-inner">
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+          >
+            Let's Connect
+          </a>
 
-                    <img
-                        src="https://raw.githubusercontent.com/Dei-Tech1/godzya-group/main/file_00000000f978820eba0e62d8aaf57859.png"
-                        alt="GODZYA GROUP"
-                        class="godzya-logo">
+        </div>
 
-                </div>
+      </div>
 
-            </div>
+    </section>
 
+
+
+    <!-- =================================================
+         SERVICES
+    ================================================== -->
+
+    <section
+      id="services"
+      class="section services-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            WHAT WE DO
+          </p>
+
+          <h2>
+            Solutions designed to move
+            your business forward.
+          </h2>
+
+          <p>
+            Practical technology, business and operational
+            support designed around the way modern businesses work.
+          </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+
+          <article class="service-card">
+
+            <span class="service-number">01</span>
+
+            <h3>
+              AI & Automation
+            </h3>
+
+            <p>
+              Smarter workflows and technology-driven
+              solutions that help businesses work more efficiently.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">02</span>
+
+            <h3>
+              Data & Analytics
+            </h3>
+
+            <p>
+              Turning business information into clearer
+              insights that support better decisions.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">03</span>
+
+            <h3>
+              Business Analysis
+            </h3>
+
+            <p>
+              Understanding business needs and translating
+              them into practical solutions.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">04</span>
+
+            <h3>
+              Project & Operations Support
+            </h3>
+
+            <p>
+              Helping projects and operations stay organised,
+              structured and moving toward their objectives.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">05</span>
+
+            <h3>
+              Microsoft Office & Documentation
+            </h3>
+
+            <p>
+              Professional documents, spreadsheets,
+              presentations and business support.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">06</span>
+
+            <h3>
+              Translation
+            </h3>
+
+            <p>
+              French and English language support for
+              businesses working across markets.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         WHO WE SERVE
+    ================================================== -->
+
+    <section
+      id="who-we-serve"
+      class="section who-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            WHO WE SERVE
+          </p>
+
+          <h2>
+            Built for businesses
+            ready to grow smarter.
+          </h2>
+
+        </div>
+
+
+        <div class="audience-grid">
+
+          <div class="audience-card">
+            <h3>Small Businesses</h3>
+            <p>
+              Practical solutions without unnecessary complexity.
+            </p>
+          </div>
+
+
+          <div class="audience-card">
+            <h3>Entrepreneurs</h3>
+            <p>
+              Turning ideas into structured and scalable operations.
+            </p>
+          </div>
+
+
+          <div class="audience-card">
+            <h3>Growing Teams</h3>
+            <p>
+              Supporting teams as their projects and operations evolve.
+            </p>
+          </div>
+
+
+          <div class="audience-card">
+            <h3>Organisations</h3>
+            <p>
+              Technology, data and business support for modern operations.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ABOUT
+    ================================================== -->
+
+    <section
+      id="about"
+      class="section about-section"
+    >
+
+      <div class="container about-grid">
+
+        <div>
+
+          <p class="eyebrow">
+            ABOUT GODZYA
+          </p>
+
+          <h2>
+            We build.
+            You grow.
+          </h2>
+
+        </div>
+
+
+        <div>
+
+          <p>
+            GODZYA GROUP brings together technology,
+            data and business thinking to create practical
+            solutions for a connected world.
+          </p>
+
+          <p>
+            Our approach is simple: understand the challenge,
+            build the right solution and create value that
+            supports long-term growth.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         WHY GODZYA
+    ================================================== -->
+
+    <section
+      id="why-godzya"
+      class="section why-section"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            WHY GODZYA
+          </p>
+
+          <h2>
+            Technology with purpose.
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-step">
+
+            <span>01</span>
+
+            <h3>
+              Understand
+            </h3>
+
+            <p>
+              We start with the real business need.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>02</span>
+
+            <h3>
+              Build
+            </h3>
+
+            <p>
+              We create practical solutions around the challenge.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <span>03</span>
+
+            <h3>
+              Improve
+            </h3>
+
+            <p>
+              We focus on better ways of working and growing.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+    <section
+      id="contact"
+      class="section contact-section"
+    >
+
+      <div class="container contact-content">
+
+        <p class="eyebrow">
+          LET'S CONNECT
+        </p>
+
+        <h2>
+          Have an idea?
+          Let's build it.
+        </h2>
+
+        <p>
+          Tell us what you're working on and let's explore
+          how GODZYA GROUP can help.
+        </p>
+
+        <a
+          href="mailto:info@godzyagroup.com"
+          class="btn btn-primary"
+        >
+          Get in Touch
         </a>
 
-<p class="section-text">
-    GODZYA GROUP sits at the intersection of AI, data, business
-    and technology — helping ambitious people and organisations
-    move from ideas to intelligent action.
-</p>
+      </div>
 
-</div>
+    </section>
 
-</section>
 
+  </main>
 
-<!-- =====================================================
-     SERVICES
-     ===================================================== -->
 
-<section id="services" class="reveal">
 
-<div class="container">
+  <!-- =================================================
+       FOOTER
+  ================================================== -->
 
-<div class="section-label">What We Do</div>
+  <footer class="site-footer">
 
-<h2 class="section-title">
-    Intelligent solutions for
-    <span class="gradient-text">modern business.</span>
-</h2>
+    <div class="container footer-inner">
 
-<p class="section-text">
-    We combine strategic thinking, technology and practical execution
-    to help businesses operate smarter and grow with confidence.
-</p>
+      <div>
 
-<div class="services-grid">
+        <div class="footer-brand">
+          GODZYA GROUP
+        </div>
 
-<div class="service-card">
+        <p>
+          We Build. You Grow.
+        </p>
 
-<div class="service-image"></div>
-<div class="service-overlay"></div>
+      </div>
 
-<div class="service-content">
 
-<div class="service-number">01 / INTELLIGENCE</div>
+      <p class="copyright">
+        © 2026 GODZYA GROUP. All rights reserved.
+      </p>
 
-<h3>AI & Automation</h3>
+    </div>
 
-<p>
-    Explore smarter ways to automate processes,
-    improve efficiency and create new possibilities.
-</p>
+  </footer>
 
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-image"></div>
-<div class="service-overlay"></div>
-
-<div class="service-content">
-
-<div class="service-number">02 / DATA</div>
-
-<h3>Data & Analytics</h3>
-
-<p>
-    Transform information into meaningful insights
-    that support stronger business decisions.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-image"></div>
-<div class="service-overlay"></div>
-
-<div class="service-content">
-<section id="services" class="reveal">
-
-<div class="container">
-
-<div class="section-label" data-i18n="whatWeDo">
-    What We Do
-</div>
-
-<h2 class="section-title" data-i18n="servicesTitle">
-    Intelligent solutions for
-    <span class="gradient-text">modern business.</span>
-</h2>
-
-<p class="section-text" data-i18n="servicesIntro">
-    We combine strategic thinking, technology and practical execution
-    to help businesses operate smarter and grow with confidence.
-</p>
-
-<div class="services-grid">
-
-<div class="service-card">
-
-<div class="service-image"></div>
-<div class="service-overlay"></div>
-
-<div class="service-content">
-
-<div class="service-number" data-i18n="service01Number">
-    01 / INTELLIGENCE
-</div>
-
-<h3 data-i18n="service01Title">
-    AI & Automation
-</h3>
-
-<p data-i18n="service01Description">
-    Explore smarter ways to automate processes,
-    improve efficiency and create new possibilities.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-image"></div>
-<div class="service-overlay"></div>
-
-<div class="service-content">
-
-<div class="service-number" data-i18n="service02Number">
-    02 / DATA
-</div>
-
-<h3 data-i18n="service02Title">
-    Data & Analytics
-</h3>
-
-<p data-i18n="service02Description">
-    Transform information into meaningful insights
-    that support stronger business decisions.
-</p>
-
-</div>
-
-</div>
-
-
-<div class="service-card">
-
-<div class="service-image"></div>
-<div class="service-overlay"></div>
-
-<div class="service-content">
-
-<div class="service-number" data-i18n="service03Number">
-    03 / TECHNOLOGY
-</div>
-
-<h3 data-i18n="service03Title">
-    Business Technology
-</h3>
-
-<p data-i18n="service03Description">
-    Practical digital solutions designed around
-    real business challenges and opportunities.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     WHO WE SERVE
-     ===================================================== -->
-
-<section id="who" class="global-section reveal">
-
-<div class="container">
-
-<div class="section-label" data-i18n="whoWeServe">
-    Who We Serve
-</div>
-
-<h2 class="section-title">
-
-    <span data-i18n="whoTitleStart">
-        Built for businesses
-    </span>
-
-    <span class="gradient-text" data-i18n="whoTitleEnd">
-        ready to grow.
-    </span>
-
-</h2>
-
-<p class="section-text" data-i18n="whoIntro">
-    From ambitious entrepreneurs to growing organisations,
-    we focus on practical solutions that create momentum.
-</p>
-
-<div class="audience-grid">
-
-<div class="audience-card">
-
-<span>01</span>
-
-<h3 data-i18n="audienceStartups">
-    Startups
-</h3>
-
-<p data-i18n="audienceStartupsText">
-    Turning ideas into practical digital solutions.
-</p>
-
-</div>
-
-
-<div class="audience-card">
-
-<span>02</span>
-
-<h3 data-i18n="audienceEntrepreneurs">
-    Entrepreneurs
-</h3>
-
-<p data-i18n="audienceEntrepreneursText">
-    Helping ambitious founders build smarter operations.
-</p>
-
-</div>
-
-
-<div class="audience-card">
-
-<span>03</span>
-
-<h3 data-i18n="audienceGrowing">
-    Growing Businesses
-</h3>
-
-<p data-i18n="audienceGrowingText">
-    Supporting businesses as they scale and evolve.
-</p>
-
-</div>
-
-
-<div class="audience-card">
-
-<span>04</span>
-
-<h3 data-i18n="audienceOrganisations">
-    Organisations
-</h3>
-
-<p data-i18n="audienceOrganisationsText">
-    Bringing technology and strategic thinking together.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =====================================================
-     ABOUT
-     ===================================================== -->
-
-<section id="about" class="about-section reveal">
-
-<div class="container about-layout">
-
-<div>
-
-<div class="section-label" data-i18n="whoWeAre">
-    Who We Are
-</div>
-
-<h2 class="section-title">
-
-    <span data-i18n="aboutTitleStart">
-        A modern company built around
-    </span>
-
-    <span class="gradient-text" data-i18n="aboutTitleEnd">
-        possibility.
-    </span>
-
-</h2>
-
-<div class="about-box">
-
-<p data-i18n="aboutParagraph1">
-    GODZYA GROUP is a modern business and technology company
-    operating at the intersection of AI, data, business and technology.
-</p>
-
-<p data-i18n="aboutParagraph2">
-    Our approach is simple: understand the challenge,
-    find the opportunity, build intelligently and create measurable value.
-</p>
-
-<div class="signature" data-i18n="aboutSignature">
-    INTELLIGENCE • STRATEGY • TECHNOLOGY • RESULTS
-</div>
-
-</div>
-
-</div>
-
-
-<div class="about-stats">
-
-<div class="stat">
-
-<strong>AI</strong>
-
-<span data-i18n="aboutAI">
-    Intelligent thinking and automation
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>DATA</strong>
-
-<span data-i18n="aboutData">
-    Turning information into insight
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>BUSINESS</strong>
-
-<!-- =====================================================
-     ABOUT
-     ===================================================== -->
-
-<section id="about" class="about-section reveal">
-
-<div class="container about-layout">
-
-<div>
-
-<div class="section-label" data-i18n="whoWeAre">
-    Who We Are
-</div>
-
-<h2 class="section-title">
-
-    <span data-i18n="aboutTitleStart">
-        A modern company built around
-    </span>
-
-    <span class="gradient-text" data-i18n="aboutTitleEnd">
-        possibility.
-    </span>
-
-</h2>
-
-<div class="about-box">
-
-<p data-i18n="aboutParagraph1">
-    GODZYA GROUP is a modern business and technology company
-    operating at the intersection of AI, data, business and technology.
-</p>
-
-<p data-i18n="aboutParagraph2">
-    Our approach is simple: understand the challenge,
-    find the opportunity, build intelligently and create measurable value.
-</p>
-
-<div class="signature" data-i18n="aboutSignature">
-    INTELLIGENCE • STRATEGY • TECHNOLOGY • RESULTS
-</div>
-
-</div>
-
-</div>
-
-
-<div class="about-stats">
-
-<div class="stat">
-
-<strong>AI</strong>
-
-<span data-i18n="aboutAI">
-    Intelligent thinking and automation
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>DATA</strong>
-
-<span data-i18n="aboutData">
-    Turning information into insight
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>BUSINESS</strong>
-
-<span data-i18n="aboutBusiness">
-    Solutions built around real needs
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>GROWTH</strong>
-
-<span data-i18n="aboutGrowth">
-    Creating momentum for the future
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =====================================================
-     WHY GODZYA
-     ===================================================== -->
-
-<section id="why" class="why-section reveal">
-
-<div class="container">
-
-<div class="section-label" data-i18n="whyLabel">
-    Why GODZYA
-</div>
-
-<h2 class="section-title">
-
-    <span data-i18n="whyTitleStart">
-        Think differently.
-    </span>
-
-    <span class="gradient-text" data-i18n="whyTitleEnd">
-        Build intelligently.
-    </span>
-
-</h2>
-
-<p class="section-text" data-i18n="whyIntro">
-    We believe technology is most powerful when it is connected
-    to strategy, people and measurable outcomes.
-</p>
-
-<div class="values">
-
-<div class="value">
-
-<div class="value-number">01</div>
-
-<h3 data-i18n="whyCard1Title">
-    Innovation
-</h3>
-
-<p data-i18n="whyCard1Text">
-    We challenge conventional thinking and look for better possibilities.
-</p>
-
-</div>
-
-
-<div class="value">
-
-<div class="value-number">02</div>
-
-<h3 data-i18n="whyCard2Title">
-    Intelligence
-</h3>
-
-<p data-i18n="whyCard2Text">
-    We use information, technology and analysis to make smarter decisions.
-</p>
-
-</div>
-
-
-<div class="value">
-
-<div class="value-number">03</div>
-
-<h3 data-i18n="whyCard3Title">
-    Strategy
-</h3>
-
-<p data-i18n="whyCard3Text">
-    We connect ideas to practical business objectives.
-</p>
-
-</div>
-
-
-<div class="value">
-
-<div class="value-number">04</div>
-
-<h3 data-i18n="whyCard4Title">
-    Results
-</h3>
-
-<p data-i18n="whyCard4Text">
-    We focus on solutions that create meaningful progress.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =====================================================
-     APPROACH
-     ===================================================== -->
-
-<section class="approach reveal">
-
-<div class="container">
-
-<div class="section-label">Our Approach</div>
-
-<h2 class="section-title">
-    From challenge to
-    <span class="gradient-text">possibility.</span>
-</h2>
-
-<div class="approach-grid">
-
-<div class="step">
-<div class="step-number">01</div>
-<h3>Understand</h3>
-<p>We start by understanding the business, the challenge and the opportunity.</p>
-</div>
-
-<div class="step">
-<div class="step-number">02</div>
-<h3>Analyse</h3>
-<p>We examine the information and identify practical paths forward.</p>
-</div>
-
-<div class="step">
-<div class="step-number">03</div>
-<h3>Build</h3>
-<p>We turn the strategy into practical digital solutions.</p>
-</div>
-
-<div class="step">
-<div class="step-number">04</div>
-<h3>Grow</h3>
-<p>We focus on sustainable progress and future opportunities.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     FINAL MARQUEE
-     ===================================================== -->
-
-<div class="marquee">
-
-<div class="marquee-track">
-
-<div class="marquee-item">WE BUILD <span>✦</span></div>
-<div class="marquee-item">YOU GROW <span>✦</span></div>
-<div class="marquee-item">THINK SMARTER <span>✦</span></div>
-<div class="marquee-item">BUILD BETTER <span>✦</span></div>
-<div class="marquee-item">CREATE IMPACT <span>✦</span></div>
-
-<div class="marquee-item">WE BUILD <span>✦</span></div>
-<div class="marquee-item">YOU GROW <span>✦</span></div>
-<div class="marquee-item">THINK SMARTER <span>✦</span></div>
-<div class="marquee-item">BUILD BETTER <span>✦</span></div>
-<div class="marquee-item">CREATE IMPACT <span>✦</span></div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     CONTACT
-     ===================================================== -->
-
-<section id="contact" class="contact reveal">
-
-<div class="container">
-
-<div class="section-label" data-i18n="contactLabel">
-    Let's Connect
-</div>
-
-<div class="contact-card">
-
-<h2>
-
-    <span data-i18n="contactTitleStart">
-        Let's Build Something
-    </span>
-
-    <span class="gradient-text" data-i18n="contactTitleEnd">
-        Smarter.
-    </span>
-
-</h2>
-
-<p data-i18n="contactIntro">
-    Have an idea, business challenge or project?
-    Let's explore what's possible together.
-</p>
-
-<div class="contact-details">
-
-<a href="mailto:info@godzyagroup.com">
-    info@godzyagroup.com
-</a>
-
-<a href="https://wa.me/27814905793" target="_blank">
-    WhatsApp: +27 81 490 5793
-</a>
-
-</div>
-
-<a
-    href="https://wa.me/27814905793"
-    target="_blank"
-    class="btn btn-primary"
-    data-i18n="contactButton"
->
-    Start a WhatsApp Conversation →
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =====================================================
-     FOOTER
-     ===================================================== -->
-
-<footer>
-
-<div class="container footer-inner">
-
-<div class="footer-logo">
-    GODZYA <span>GROUP</span>
-</div>
-
-<div class="footer-text">
-    © 2026 GODZYA GROUP. All rights reserved.
-</div>
-
-<div class="footer-text">
-    We Build. You Grow.
-</div>
-
-</div>
-
-</footer>
-
-
-<!-- =====================================================
-     FLOATING WHATSAPP
-     ===================================================== -->
-
-<a
-    href="https://wa.me/27814905793"
-    target="_blank"
-    class="whatsapp"
-    aria-label="Contact GODZYA GROUP on WhatsApp"
->
-
-<div class="whatsapp-icon">W</div>
-
-<div class="whatsapp-text">
-    WhatsApp Us
-    <small>+27 81 490 5793</small>
-</div>
-
-</a>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-     ===================================================== -->
-
-<script>
-
-/* MOBILE MENU */
-
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-}
-
-document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-    link.addEventListener("click", function() {
-
-        document
-            .getElementById("navLinks")
-            .classList.remove("active");
-
-    });
-
-});
-
-
-/* SCROLL REVEAL */
-
-const observer = new IntersectionObserver(
-    function(entries) {
-
-        entries.forEach(function(entry) {
-
-            if (entry.isIntersecting) {
-
-                entry.target.classList.add("visible");
-
-            }
-
-        });
-
-    },
-    {
-        threshold: 0.12
-    }
-);
-
-document.querySelectorAll(".reveal").forEach(function(element) {
-
-    observer.observe(element);
-
-});
-
-   /* =====================================================
-   LANGUAGE MENU
-===================================================== */
-
-function toggleLanguageMenu() {
-
-    const selector =
-        document.getElementById("languageSelector");
-
-    selector.classList.toggle("active");
-
-}
-
-
-/* CLOSE LANGUAGE MENU WHEN CLICKING OUTSIDE */
-
-document.addEventListener("click", function(event) {
-
-    const selector =
-        document.getElementById("languageSelector");
-
-    if (!selector.contains(event.target)) {
-
-        selector.classList.remove("active");
-
-    }
-
-});
-
-/* =====================================================
-   TRANSLATION SYSTEM
-===================================================== */
-
-const translations = {
-    
-    en: {
-
-    /* =====================================================
-       NAVIGATION
-    ===================================================== */
-
-    home: "Home",
-    services: "Services",
-    who: "Who We Serve",
-    about: "About",
-    why: "Why GODZYA",
-    contact: "Let's Connect",
-
-
-    /* =====================================================
-       HERO SECTION
-    ===================================================== */
-
-    heroLabel: "AI • DATA • BUSINESS • TECHNOLOGY",
-
-    sloganStart: "We Build.",
-
-    sloganEnd: "You Grow.",
-
-    heroDescription:
-        "Building smarter solutions for a connected future. " +
-        "We bring together technology, intelligence and business thinking " +
-        "to turn ideas into practical opportunities.",
-
-    exploreServices: "Explore Services →",
-
-    startConversation: "Start a Conversation",
-
-    southAfrica: "South Africa",
-
-    beyondBorders: "Building Beyond Borders",
-
-
-    /* =====================================================
-       SERVICES SECTION
-    ===================================================== */
-
-    whatWeDo: "What We Do",
-
-    servicesTitleStart:
-        "Intelligent solutions for",
-
-    servicesTitleEnd:
-        "modern business.",
-
-    servicesIntro:
-        "We combine strategic thinking, technology and practical execution " +
-        "to help businesses operate smarter and grow with confidence.",
-
-    service01Number:
-        "01 / INTELLIGENCE",
-
-    service01Title:
-        "AI & Automation",
-
-    service01Description:
-        "Explore smarter ways to automate processes, improve efficiency " +
-        "and create new possibilities.",
-
-    service02Number:
-        "02 / DATA",
-
-    service02Title:
-        "Data & Analytics",
-
-    service02Description:
-        "Transform information into meaningful insights that support " +
-        "stronger business decisions.",
-
-    service03Number:
-        "03 / TECHNOLOGY",
-
-    service03Title:
-        "Business Technology",
-
-    service03Description:
-        "Practical digital solutions designed around real business " +
-        "challenges and opportunities.",
-
-
-    /* =====================================================
-       WHO WE SERVE
-    ===================================================== */
-
-    whoWeServe:
-        "Who We Serve",
-
-    whoTitleStart:
-        "Built for businesses",
-
-    whoTitleEnd:
-        "ready to grow.",
-
-    whoIntro:
-        "From ambitious entrepreneurs to growing organisations, " +
-        "we focus on practical solutions that create momentum.",
-
-    audienceStartups:
-        "Startups",
-
-    audienceStartupsText:
-        "Turning ideas into practical digital solutions.",
-
-    audienceEntrepreneurs:
-        "Entrepreneurs",
-
-    audienceEntrepreneursText:
-        "Helping ambitious founders build smarter operations.",
-
-    audienceGrowing:
-        "Growing Businesses",
-
-    audienceGrowingText:
-        "Supporting businesses as they scale and evolve.",
-
-    audienceOrganisations:
-        "Organisations",
-
-    audienceOrganisationsText:
-        "Bringing technology and strategic thinking together.",
-
-
-    /* =====================================================
-       ABOUT SECTION
-    ===================================================== */
-
-    whoWeAre:
-        "Who We Are",
-
-    aboutTitleStart:
-        "A modern company built around",
-
-    aboutTitleEnd:
-        "possibility.",
-
-    aboutParagraph1:
-        "GODZYA GROUP is a modern business and technology company " +
-        "operating at the intersection of AI, data, business and technology.",
-
-    aboutParagraph2:
-        "Our approach is simple: understand the challenge, " +
-        "find the opportunity, build intelligently and create measurable value.",
-
-    aboutSignature:
-        "INTELLIGENCE • STRATEGY • TECHNOLOGY • RESULTS",
-
-    aboutAI:
-        "Intelligent thinking and automation",
-
-    aboutData:
-        "Turning information into insight",
-
-    aboutBusiness:
-        "Solutions built around real needs",
-
-    aboutGrowth:
-        "Creating momentum for the future",   
-
-       /* =====================================================
-   WHY GODZYA SECTION
-===================================================== */
-
-whyLabel:
-    "Why GODZYA",
-
-whyTitleStart:
-    "Think differently.",
-
-whyTitleEnd:
-    "Build intelligently.",
-
-whyIntro:
-    "We believe technology is most powerful when it is connected " +
-    "to strategy, people and measurable outcomes.",
-
-whyCard1Title:
-    "Innovation",
-
-whyCard1Text:
-    "We challenge conventional thinking and look for better possibilities.",
-
-whyCard2Title:
-    "Intelligence",
-
-whyCard2Text:
-    "We use information, technology and analysis to make smarter decisions.",
-
-whyCard3Title:
-    "Strategy",
-
-whyCard3Text:
-    "We connect ideas to practical business objectives.",
-
-whyCard4Title:
-    "Results",
-
-whyCard4Text:
-    "We focus on solutions that create meaningful progress.",
-
-       /* =====================================================
-   CONTACT SECTION
-===================================================== */
-
-contactLabel:
-    "Let's Connect",
-
-contactTitleStart:
-    "Let's Build Something",
-
-contactTitleEnd:
-    "Smarter.",
-
-contactIntro:
-    "Have an idea, business challenge or project? " +
-    "Let's explore what's possible together.",
-
-contactButton:
-    "Start a WhatsApp Conversation →"
-},
-
-    fr: {
-
-    /* =====================================================
-       NAVIGATION
-    ===================================================== */
-
-    home: "Accueil",
-    services: "Services",
-    who: "À qui nous nous adressons",
-    about: "À propos",
-    why: "Pourquoi GODZYA",
-    contact: "Nous contacter",
-
-
-    /* =====================================================
-       HERO SECTION
-    ===================================================== */
-
-    heroLabel:
-        "IA • DONNÉES • ENTREPRISE • TECHNOLOGIE",
-
-    sloganStart:
-        "Nous construisons.",
-
-    sloganEnd:
-        "Vous grandissez.",
-
-    heroDescription:
-        "Nous créons des solutions plus intelligentes pour un avenir connecté. " +
-        "Nous réunissons technologie, intelligence et vision commerciale " +
-        "pour transformer les idées en opportunités concrètes.",
-
-    exploreServices:
-        "Découvrir nos services →",
-
-    startConversation:
-        "Commençons une conversation",
-
-    southAfrica:
-        "Afrique du Sud",
-
-    beyondBorders:
-        "Construire au-delà des frontières",
-
-
-    /* =====================================================
-       SERVICES SECTION
-    ===================================================== */
-
-    whatWeDo:
-        "Ce que nous faisons",
-
-    servicesTitleStart:
-        "Des solutions intelligentes pour",
-
-    servicesTitleEnd:
-        "les entreprises modernes.",
-
-    servicesIntro:
-        "Nous combinons réflexion stratégique, technologie et mise en œuvre pratique " +
-        "pour aider les entreprises à fonctionner plus intelligemment et à se développer avec confiance.",
-
-    service01Number:
-        "01 / INTELLIGENCE",
-
-    service01Title:
-        "IA et automatisation",
-
-    service01Description:
-        "Découvrez des moyens plus intelligents d'automatiser les processus, " +
-        "d'améliorer l'efficacité et de créer de nouvelles possibilités.",
-
-    service02Number:
-        "02 / DONNÉES",
-
-    service02Title:
-        "Données et analyses",
-
-    service02Description:
-        "Transformez les informations en données utiles pour prendre " +
-        "de meilleures décisions commerciales.",
-
-    service03Number:
-        "03 / TECHNOLOGIE",
-
-    service03Title:
-        "Technologie d'entreprise",
-
-    service03Description:
-        "Des solutions numériques pratiques conçues autour des véritables " +
-        "défis et opportunités de votre entreprise.",
-
-
-    /* =====================================================
-       WHO WE SERVE
-    ===================================================== */
-
-    whoWeServe:
-        "À qui nous nous adressons",
-
-    whoTitleStart:
-        "Conçu pour les entreprises",
-
-    whoTitleEnd:
-        "prêtes à se développer.",
-
-    whoIntro:
-        "Des entrepreneurs ambitieux aux organisations en pleine croissance, " +
-        "nous proposons des solutions pratiques qui créent une dynamique positive.",
-
-    audienceStartups:
-        "Startups",
-
-    audienceStartupsText:
-        "Transformer les idées en solutions numériques concrètes.",
-
-    audienceEntrepreneurs:
-        "Entrepreneurs",
-
-    audienceEntrepreneursText:
-        "Aider les fondateurs ambitieux à construire des opérations plus intelligentes.",
-
-    audienceGrowing:
-        "Entreprises en croissance",
-
-    audienceGrowingText:
-        "Accompagner les entreprises dans leur développement et leur évolution.",
-
-    audienceOrganisations:
-        "Organisations",
-
-    audienceOrganisationsText:
-        "Réunir la technologie et la réflexion stratégique.",
-
-
-    /* =====================================================
-       ABOUT SECTION
-    ===================================================== */
-
-    whoWeAre:
-        "Qui nous sommes",
-
-    aboutTitleStart:
-        "Une entreprise moderne construite autour de",
-
-    aboutTitleEnd:
-        "la possibilité.",
-
-    aboutParagraph1:
-        "GODZYA GROUP est une entreprise moderne spécialisée dans les affaires et la technologie, " +
-        "à l'intersection de l'IA, des données, des affaires et de la technologie.",
-
-    aboutParagraph2:
-        "Notre approche est simple : comprendre le défi, trouver l'opportunité, " +
-        "construire intelligemment et créer une valeur mesurable.",
-
-    aboutSignature:
-        "INTELLIGENCE • STRATÉGIE • TECHNOLOGIE • RÉSULTATS",
-
-    aboutAI:
-        "Réflexion intelligente et automatisation",
-
-    aboutData:
-        "Transformer les informations en connaissances utiles",
-
-    aboutBusiness:
-        "Des solutions adaptées aux besoins réels",
-
-        aboutGrowth:
-    "Créer une dynamique pour l'avenir",
-
-/* =====================================================
-   WHY GODZYA SECTION
-===================================================== */
-
-whyLabel:
-    "Pourquoi GODZYA",
-
-whyTitleStart:
-    "Pensez différemment.",
-
-whyTitleEnd:
-    "Construisez intelligemment.",
-
-whyIntro:
-    "Nous croyons que la technologie est plus puissante lorsqu'elle est liée " +
-    "à la stratégie, aux personnes et à des résultats mesurables.",
-
-whyCard1Title:
-    "Innovation",
-
-whyCard1Text:
-    "Nous remettons en question les méthodes traditionnelles et recherchons de meilleures possibilités.",
-
-whyCard2Title:
-    "Intelligence",
-
-whyCard2Text:
-    "Nous utilisons l'information, la technologie et l'analyse pour prendre de meilleures décisions.",
-
-whyCard3Title:
-    "Stratégie",
-
-whyCard3Text:
-    "Nous relions les idées à des objectifs commerciaux pratiques.",
-
-whyCard4Title:
-    "Résultats",
-
-whyCard4Text:
-    "Nous nous concentrons sur des solutions qui créent un progrès significatif.",
-
-/* =====================================================
-   CONTACT SECTION
-===================================================== */
-
-contactLabel:
-    "Nous contacter",
-
-contactTitleStart:
-    "Construisons quelque chose de",
-
-contactTitleEnd:
-    "plus intelligent.",
-
-contactIntro:
-    "Vous avez une idée, un défi commercial ou un projet ? " +
-    "Explorons ensemble les possibilités.",
-
-contactButton:
-    "Démarrer une conversation WhatsApp →"
- }
-   
-};
-
-/* =====================================================
-   CHANGE LANGUAGE
-===================================================== */
-
-function changeLanguage(language, button) {
-
-    const elements =
-        document.querySelectorAll("[data-i18n]");
-
-    elements.forEach(function(element) {
-
-        const key =
-            element.getAttribute("data-i18n");
-
-        if (
-            translations[language] &&
-            translations[language][key]
-        ) {
-
-            element.textContent =
-                translations[language][key];
-
-        }
-
-    });
-
-
-    /* UPDATE CURRENT LANGUAGE */
-
-    document.getElementById("currentLanguage")
-        .textContent = language.toUpperCase();
-
-
-    /* UPDATE ACTIVE LANGUAGE */
-
-    document
-        .querySelectorAll(".language-option")
-        .forEach(function(option) {
-
-            option.classList.remove("active");
-
-        });
-
-    button.classList.add("active");
-
-
-    /* CLOSE MENU */
-
-    document
-        .getElementById("languageSelector")
-        .classList.remove("active");
-
-}
-</script>
+  <!-- Main JavaScript -->
+  <script
+    src="script.js"
+    defer
+  ></script>
 
 </body>
+
 </html>
