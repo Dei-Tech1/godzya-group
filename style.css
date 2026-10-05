@@ -2442,3 +2442,547 @@ a {
     55px;
 
 }
+
+/* =====================================================
+   ACCOMPLISHMENTS PREVIEW
+===================================================== */
+
+.accomplishments-preview {
+
+  position:
+    relative;
+
+  padding:
+    150px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--bg-soft),
+      var(--bg)
+    );
+
+  overflow:
+    hidden;
+
+}
+
+
+.accomplishments-preview::after {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    -200px;
+
+  bottom:
+    -200px;
+
+  width:
+    500px;
+
+  height:
+    500px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(70,217,255,.035);
+
+  filter:
+    blur(100px);
+
+  pointer-events:
+    none;
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS HEADING
+===================================================== */
+
+.accomplishments-heading {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+
+/* =====================================================
+   PROJECT SHOWCASE
+===================================================== */
+
+.accomplishments-showcase {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1.4fr 1fr;
+
+  gap:
+    16px;
+
+  margin-top:
+    65px;
+
+}
+
+
+/* =====================================================
+   PROJECT CARD
+===================================================== */
+
+.project-card {
+
+  position:
+    relative;
+
+  display:
+    grid;
+
+  grid-template-rows:
+    270px auto;
+
+  min-height:
+    500px;
+
+  overflow:
+    hidden;
+
+  border:
+    1px solid
+    rgba(255,255,255,.07);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    #08121e;
+
+  transition:
+    transform .4s ease,
+    border-color .4s ease,
+    box-shadow .4s ease;
+
+}
+
+
+.project-card:hover {
+
+  transform:
+    translateY(-8px);
+
+  border-color:
+    rgba(70,217,255,.28);
+
+  box-shadow:
+    0 30px 70px
+    rgba(0,0,0,.35);
+
+}
+
+
+/* =====================================================
+   FEATURED PROJECT
+===================================================== */
+
+.project-featured {
+
+  grid-row:
+    span 2;
+
+  grid-template-rows:
+    360px auto;
+
+}
+
+
+/* =====================================================
+   PROJECT VISUAL
+===================================================== */
+
+.project-visual {
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(70,217,255,.13),
+      rgba(5,11,20,.96) 68%
+    );
+
+}
+
+
+.project-visual::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  inset:
+    20px;
+
+  border:
+    1px solid
+    rgba(70,217,255,.1);
+
+  border-radius:
+    14px;
+
+}
+
+
+.project-visual::after {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    160px;
+
+  height:
+    160px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(70,217,255,.08);
+
+  filter:
+    blur(55px);
+
+}
+
+
+/* =====================================================
+   PROJECT GRID
+===================================================== */
+
+.project-grid {
+
+  position:
+    absolute;
+
+  inset:
+    0;
+
+  opacity:
+    .3;
+
+  background-image:
+    linear-gradient(
+      rgba(70,217,255,.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(70,217,255,.08) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    45px 45px;
+
+}
+
+
+/* =====================================================
+   PROJECT CODE
+===================================================== */
+
+.project-code {
+
+  position:
+    absolute;
+
+  top:
+    24px;
+
+  left:
+    26px;
+
+  z-index:
+    3;
+
+  color:
+    rgba(255,255,255,.38);
+
+  font-size:
+    9px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .2em;
+
+}
+
+
+/* =====================================================
+   PROJECT SYMBOL
+===================================================== */
+
+.project-symbol {
+
+  position:
+    relative;
+
+  z-index:
+    3;
+
+  width:
+    115px;
+
+  height:
+    115px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  border:
+    1px solid
+    rgba(70,217,255,.28);
+
+  border-radius:
+    24px;
+
+  background:
+    rgba(70,217,255,.035);
+
+  box-shadow:
+    0 0 50px
+    rgba(70,217,255,.08);
+
+  transform:
+    rotate(45deg);
+
+  transition:
+    transform .5s ease;
+
+}
+
+
+.project-symbol span {
+
+  color:
+    var(--cyan);
+
+  font-size:
+    12px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .16em;
+
+  transform:
+    rotate(-45deg);
+
+}
+
+
+.project-card:hover
+.project-symbol {
+
+  transform:
+    rotate(45deg)
+    scale(1.08);
+
+}
+
+
+/* =====================================================
+   PROJECT CONTENT
+===================================================== */
+
+.project-content {
+
+  position:
+    relative;
+
+  padding:
+    30px;
+
+  background:
+    rgba(8,18,30,.98);
+
+}
+
+
+.project-category {
+
+  display:
+    block;
+
+  color:
+    var(--cyan);
+
+  font-size:
+    9px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .16em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+.project-content h3 {
+
+  max-width:
+    600px;
+
+  margin-top:
+    13px;
+
+  color:
+    var(--white);
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    24px;
+
+  line-height:
+    1.2;
+
+}
+
+
+.project-content p {
+
+  max-width:
+    600px;
+
+  margin-top:
+    14px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.75;
+
+}
+
+
+.project-link {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    12px;
+
+  margin-top:
+    25px;
+
+  color:
+    var(--cyan);
+
+  font-size:
+    11px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .08em;
+
+  text-transform:
+    uppercase;
+
+  transition:
+    gap .3s ease;
+
+}
+
+
+.project-card:hover
+.project-link {
+
+  gap:
+    18px;
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS CTA
+===================================================== */
+
+.accomplishments-cta {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  margin-top:
+    55px;
+
+}
+
