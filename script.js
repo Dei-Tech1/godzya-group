@@ -2973,4 +2973,281 @@ translations.af = {
 
 };
 
+/* =====================================================
+   LANGUAGE CONFIGURATION
+===================================================== */
 
+const languageOrder = [
+  "en",
+  "zh",
+  "es",
+  "hi",
+  "fr",
+  "ar",
+  "pt",
+  "bn",
+  "ru",
+  "de",
+  "sw",
+  "af"
+];
+
+
+/* =====================================================
+   LANGUAGE MENU
+===================================================== */
+
+const languageSwitcher =
+  document.getElementById("languageSwitcher");
+
+const languageButton =
+  document.getElementById("languageButton");
+
+const languageMenu =
+  document.getElementById("languageMenu");
+
+const languageLabel =
+  document.getElementById("languageLabel");
+
+
+function buildLanguageMenu() {
+
+  if (!languageMenu) return;
+
+  languageMenu.innerHTML = "";
+
+  languageOrder.forEach((code) => {
+
+    const language =
+      translations[code];
+
+    if (!language) return;
+
+    const button =
+      document.createElement("button");
+
+    button.type = "button";
+
+    button.dataset.language = code;
+
+    button.textContent =
+      language.languageName;
+
+    languageMenu.appendChild(button);
+
+  });
+
+}
+
+
+/* =====================================================
+   TRANSLATE PAGE
+===================================================== */
+
+function applyLanguage(languageCode) {
+
+  const language =
+    translations[languageCode];
+
+  if (!language) return;
+
+  document.documentElement.lang =
+    languageCode;
+
+  document.querySelectorAll("[data-i18n]")
+    .forEach((element) => {
+
+      const key =
+        element.dataset.i18n;
+
+      if (
+        language[key] !== undefined
+      ) {
+
+        element.textContent =
+          language[key];
+
+      }
+
+    });
+
+
+  if (languageLabel) {
+
+    languageLabel.textContent =
+      language.languageName;
+
+  }
+
+
+  document.querySelectorAll(
+    "#languageMenu button"
+  ).forEach((button) => {
+
+    button.classList.toggle(
+      "active",
+      button.dataset.language === languageCode
+    );
+
+  });
+
+
+  localStorage.setItem(
+    "godzyaLanguage",
+    languageCode
+  );
+
+}
+
+
+/* =====================================================
+   LANGUAGE SELECTION
+===================================================== */
+
+function setLanguage(languageCode) {
+
+  if (!translations[languageCode]) {
+
+    languageCode = "en";
+
+  }
+
+  applyLanguage(languageCode);
+
+}
+
+
+/* =====================================================
+   OPEN / CLOSE LANGUAGE MENU
+===================================================== */
+
+function toggleLanguageMenu() {
+
+  if (!languageSwitcher) return;
+
+  languageSwitcher.classList.toggle(
+    "open"
+  );
+
+  if (languageButton) {
+
+    const isOpen =
+      languageSwitcher.classList.contains(
+        "open"
+      );
+
+    languageButton.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+  }
+
+}
+
+
+/* =====================================================
+   LANGUAGE BUTTON
+===================================================== */
+
+if (languageButton) {
+
+  languageButton.addEventListener(
+    "click",
+    (event) => {
+
+      event.stopPropagation();
+
+      toggleLanguageMenu();
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   LANGUAGE OPTIONS
+===================================================== */
+
+if (languageMenu) {
+
+  languageMenu.addEventListener(
+    "click",
+    (event) => {
+
+      const button =
+        event.target.closest(
+          "button[data-language]"
+        );
+
+      if (!button) return;
+
+      const languageCode =
+        button.dataset.language;
+
+      setLanguage(languageCode);
+
+      languageSwitcher.classList.remove(
+        "open"
+      );
+
+      if (languageButton) {
+
+        languageButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   CLOSE LANGUAGE MENU OUTSIDE
+===================================================== */
+
+document.addEventListener(
+  "click",
+  (event) => {
+
+    if (
+      languageSwitcher &&
+      !languageSwitcher.contains(event.target)
+    ) {
+
+      languageSwitcher.classList.remove(
+        "open"
+      );
+
+      if (languageButton) {
+
+        languageButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+
+  }
+);
+
+
+/* =====================================================
+   INITIAL LANGUAGE
+===================================================== */
+
+buildLanguageMenu();
+
+const savedLanguage =
+  localStorage.getItem(
+    "godzyaLanguage"
+  ) || "en";
+
+setLanguage(savedLanguage);
