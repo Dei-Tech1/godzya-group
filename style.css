@@ -2986,3 +2986,363 @@ a {
 
 }
 
+/* =====================================================
+   CUSTOMER VOICE
+===================================================== */
+
+.customer-voice {
+
+  position:
+    relative;
+
+  padding:
+    150px 0;
+
+  background:
+    var(--bg);
+
+  overflow:
+    hidden;
+
+}
+
+
+.customer-voice::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  right:
+    -180px;
+
+  width:
+    500px;
+
+  height:
+    500px;
+
+  transform:
+    translateY(-50%);
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(70,217,255,.035);
+
+  filter:
+    blur(100px);
+
+  pointer-events:
+    none;
+
+}
+
+
+/* =====================================================
+   VOICE HEADING
+===================================================== */
+
+.voice-heading {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+}
+
+
+.voice-heading
+.section-title {
+
+  max-width:
+    850px;
+
+}
+
+
+/* =====================================================
+   VOICE DISPLAY
+===================================================== */
+
+.voice-display {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    110px 1fr 180px;
+
+  gap:
+    35px;
+
+  align-items:
+    center;
+
+  min-height:
+    300px;
+
+  margin-top:
+    65px;
+
+  padding:
+    45px;
+
+  border:
+    1px solid
+    rgba(70,217,255,.14);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(14,28,43,.9),
+      rgba(7,17,28,.94)
+    );
+
+  box-shadow:
+    var(--shadow);
+
+}
+
+
+/* =====================================================
+   QUOTE MARK
+===================================================== */
+
+.voice-mark {
+
+  color:
+    var(--cyan);
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size:
+    110px;
+
+  line-height:
+    .7;
+
+  opacity:
+    .55;
+
+  text-shadow:
+    0 0 35px
+    rgba(70,217,255,.18);
+
+}
+
+
+/* =====================================================
+   VOICE CONTENT
+===================================================== */
+
+.voice-content {
+
+  max-width:
+    700px;
+
+}
+
+
+.voice-placeholder {
+
+  color:
+    var(--text);
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(
+      18px,
+      2.2vw,
+      26px
+    );
+
+  line-height:
+    1.55;
+
+}
+
+
+/* =====================================================
+   VOICE AUTHOR
+===================================================== */
+
+.voice-author {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    14px;
+
+  margin-top:
+    30px;
+
+}
+
+
+.voice-line {
+
+  width:
+    35px;
+
+  height:
+    1px;
+
+  background:
+    var(--cyan);
+
+}
+
+
+.voice-author div {
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    2px;
+
+}
+
+
+.voice-author strong {
+
+  color:
+    var(--white);
+
+  font-size:
+    11px;
+
+  letter-spacing:
+    .12em;
+
+}
+
+
+.voice-author span {
+
+  color:
+    var(--muted);
+
+  font-size:
+    10px;
+
+}
+
+
+/* =====================================================
+   VOICE SIDE
+===================================================== */
+
+.voice-side {
+
+  align-self:
+    stretch;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    space-between;
+
+  padding-left:
+    25px;
+
+  border-left:
+    1px solid
+    rgba(255,255,255,.08);
+
+}
+
+
+.voice-side-number {
+
+  color:
+    rgba(70,217,255,.5);
+
+  font-size:
+    10px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .18em;
+
+}
+
+
+.voice-side span:last-child {
+
+  color:
+    rgba(255,255,255,.5);
+
+  font-size:
+    10px;
+
+  line-height:
+    1.7;
+
+  letter-spacing:
+    .08em;
+
+  text-transform:
+    uppercase;
+
+}
+
+
+/* =====================================================
+   VOICE CTA
+===================================================== */
+
+.voice-cta {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  margin-top:
+    40px;
+
+}
