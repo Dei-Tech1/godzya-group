@@ -1189,3 +1189,767 @@ translations.fr = {
     "Construire l'avenir."
 
 };
+
+/* =====================================================
+   ARABIC
+===================================================== */
+
+translations.ar = {
+
+  languageName: "Arabic",
+
+  navHome: "الرئيسية",
+  navWhatWeDo: "ماذا نقدم",
+  navAccomplishments: "إنجازاتنا",
+  navContact: "لنتحدث",
+
+  languageEnglish: "العربية",
+
+  heroEyebrow:
+    "الذكاء الاصطناعي • البيانات • الأعمال • التكنولوجيا",
+
+  heroTitle:
+    "نبني حلولاً أكثر ذكاءً لمستقبل متصل.",
+
+  heroDescription:
+    "نساعد الشركات على العمل بذكاء أكبر من خلال التكنولوجيا والبيانات وحلول الأعمال والدعم المهني.",
+
+  heroExplore:
+    "اكتشف ما نقدمه",
+
+  heroContact:
+    "ابدأ محادثة",
+
+  scroll:
+    "مرر للاستكشاف",
+
+  identityEyebrow:
+    "نهج GODZYA",
+
+  identityTitle:
+    "يجب أن تدفع التكنولوجيا الأعمال إلى الأمام.",
+
+  identityDescription:
+    "تجمع GODZYA GROUP بين التكنولوجيا والبيانات والتفكير في الأعمال والدعم المهني العملي لمساعدة الشركات على حل المشكلات وتحسين أعمالها وخلق فرص جديدة.",
+
+  pillarAI:
+    "الذكاء الاصطناعي والأتمتة",
+
+  pillarAIDesc:
+    "سير عمل أكثر ذكاءً وحلول مصممة وفقاً لاحتياجات الأعمال الحقيقية.",
+
+  pillarData:
+    "البيانات والتحليلات",
+
+  pillarDataDesc:
+    "تحويل المعلومات إلى رؤى أعمال منظمة ومفيدة وقابلة للتنفيذ.",
+
+  pillarBusiness:
+    "حلول الأعمال",
+
+  pillarBusinessDesc:
+    "دعم عملي يساعد الشركات على العمل والتحسين والنمو.",
+
+  pillarTechnology:
+    "التكنولوجيا",
+
+  pillarTechnologyDesc:
+    "تجارب رقمية وحلول تقنية مبنية بهدف واضح.",
+
+  brandPromise:
+    "نحن نبني. أنتم تنمون.",
+
+  servicesEyebrow:
+    "ماذا نقدم",
+
+  servicesTitle:
+    "حلول مصممة حول أعمالكم.",
+
+  servicesDescription:
+    "من البيانات والتكنولوجيا إلى دعم الأعمال وإدارة المشاريع، نقدم حلولاً عملية مصممة لدفع العمل إلى الأمام.",
+
+  serviceAI:
+    "الذكاء الاصطناعي والأتمتة",
+
+  serviceAIDesc:
+    "سير عمل ذكي وهندسة الأوامر وحلول إنتاجية مدعومة بالذكاء الاصطناعي.",
+
+  serviceData:
+    "البيانات وExcel والتحليلات",
+
+  serviceDataDesc:
+    "إدخال البيانات وExcel وتنظيف البيانات والتقارير ولوحات المعلومات ورؤى الأعمال.",
+
+  serviceBusiness:
+    "تحليل الأعمال",
+
+  serviceBusinessDesc:
+    "تحليل العمليات والمتطلبات والتوثيق ودعم تحسين الأعمال.",
+
+  serviceProject:
+    "إدارة المشاريع",
+
+  serviceProjectDesc:
+    "التخطيط والمراحل والتنسيق وتتبع التقدم ودعم تسليم المشاريع.",
+
+  serviceTechnology:
+    "التكنولوجيا وحلول الويب",
+
+  serviceTechnologyDesc:
+    "مواقع احترافية وتجارب رقمية وحلول تقنية عملية.",
+
+  serviceLanguage:
+    "اللغة الفرنسية والخدمات الوثائقية",
+
+  serviceLanguageDesc:
+    "الترجمة بين الإنجليزية والفرنسية والتدقيق والتحرير والوثائق المهنية.",
+
+  serviceAdmin:
+    "الدعم الافتراضي والإداري",
+
+  serviceAdminDesc:
+    "المستندات والبحث وMicrosoft Office والتنظيم والدعم الإداري.",
+
+  servicesViewAll:
+    "اكتشف جميع الحلول",
+
+  accomplishmentsEyebrow:
+    "إنجازاتنا",
+
+  accomplishmentsTitle:
+    "تحويل الأفكار إلى أعمال حقيقية.",
+
+  accomplishmentsDescription:
+    "كل مشروع هو فرصة لتحويل فكرة أو تحدٍ أو حاجة تجارية إلى شيء عملي واحترافي وذي قيمة.",
+
+  projectWebCategory:
+    "التكنولوجيا وحلول الويب",
+
+  projectWebTitle:
+    "تجارب رقمية احترافية",
+
+  projectWebDescription:
+    "تصميم تجارب رقمية حديثة ومتجاوبة واحترافية للشركات والعلامات التجارية.",
+
+  projectDataCategory:
+    "البيانات والتحليلات",
+
+  projectDataTitle:
+    "بيانات منظمة لاتخاذ قرارات أفضل",
+
+  projectDataDescription:
+    "حلول عملية لجداول البيانات وتنظيم المعلومات والتقارير لجعل البيانات أسهل في الفهم.",
+
+  projectPMCategory:
+    "إدارة المشاريع",
+
+  projectPMTitle:
+    "من التخطيط إلى التسليم",
+
+  projectPMDescription:
+    "دعم منظم للمشاريع يركز على التخطيط والتنسيق والتوثيق والمتابعة والتسليم.",
+
+  projectView:
+    "عرض المشروع",
+
+  accomplishmentsViewAll:
+    "اكتشف إنجازاتنا",
+
+  voiceEyebrow:
+    "صوت العميل",
+
+  voiceTitle:
+    "العمل مهم. والتجربة مهمة أيضاً.",
+
+  voiceDescription:
+    "نؤمن بأن العلاقات التجارية القوية تُبنى من خلال التواصل والموثوقية والاحترافية والنتائج.",
+
+  voicePlaceholder:
+    "تجربتكم تهمنا. ستظهر آراء العملاء وإشاداتهم وتوصياتهم المهنية هنا مع استمرار نمو GODZYA GROUP.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "تجربة العميل",
+
+  voiceSideText:
+    "نبني على الثقة. وندفع بالتقدم.",
+
+  voiceContact:
+    "شارك تجربتك",
+
+  contactEyebrow:
+    "لنتحدث",
+
+  contactTitle:
+    "هل لديك مشروع أو فكرة أو تحدٍ؟",
+
+  contactDescription:
+    "أخبرنا بما تعمل عليه. وسنستكشف الحل المناسب معاً.",
+
+  contactEmailLabel:
+    "البريد الإلكتروني",
+
+  contactLocationLabel:
+    "مقرنا في",
+
+  contactLocation:
+    "جنوب أفريقيا",
+
+  contactAvailabilityLabel:
+    "نعمل مع",
+
+  contactAvailability:
+    "العملاء والشركات حول العالم",
+
+  contactPanelLabel:
+    "ابدأ محادثة",
+
+  contactPanelTitle:
+    "لنبنِ شيئاً ذا قيمة معاً.",
+
+  contactPanelDescription:
+    "سواء كنت بحاجة إلى دعم في البيانات أو التكنولوجيا أو الأعمال أو المستندات أو إدارة المشاريع، ابدأ بإخبارنا بما تحتاج إليه.",
+
+  contactPanelButton:
+    "تواصل مع GODZYA GROUP",
+
+  contactPanelFooter:
+    "نحن نبني. أنتم تنمون.",
+
+  footerTagline:
+    "نبني حلولاً أكثر ذكاءً لمستقبل متصل.",
+
+  footerExplore:
+    "استكشف",
+
+  footerServices:
+    "الحلول",
+
+  footerContact:
+    "تواصل",
+
+  footerLocation:
+    "جنوب أفريقيا",
+
+  footerWorldwide:
+    "نخدم العملاء حول العالم",
+
+  footerRights:
+    "جميع الحقوق محفوظة.",
+
+  footerStatus:
+    "نبني المستقبل."
+
+};
+
+
+/* =====================================================
+   PORTUGUESE
+===================================================== */
+
+translations.pt = {
+
+  languageName: "Portuguese",
+
+  navHome: "Início",
+  navWhatWeDo: "O Que Fazemos",
+  navAccomplishments: "Nossas Realizações",
+  navContact: "Vamos Conversar",
+
+  languageEnglish: "Português",
+
+  heroEyebrow:
+    "IA • DADOS • NEGÓCIOS • TECNOLOGIA",
+
+  heroTitle:
+    "Construindo soluções mais inteligentes para um futuro conectado.",
+
+  heroDescription:
+    "Ajudamos empresas a trabalhar de forma mais inteligente através de tecnologia, dados, soluções empresariais e suporte profissional.",
+
+  heroExplore:
+    "Explorar O Que Fazemos",
+
+  heroContact:
+    "Iniciar uma Conversa",
+
+  scroll:
+    "Role para explorar",
+
+  identityEyebrow:
+    "A ABORDAGEM GODZYA",
+
+  identityTitle:
+    "A tecnologia deve impulsionar os negócios.",
+
+  identityDescription:
+    "A GODZYA GROUP reúne tecnologia, dados, pensamento empresarial e suporte profissional prático para ajudar empresas a resolver problemas, melhorar o trabalho e criar novas oportunidades.",
+
+  pillarAI:
+    "IA e Automação",
+
+  pillarAIDesc:
+    "Fluxos de trabalho mais inteligentes e soluções desenvolvidas para necessidades empresariais reais.",
+
+  pillarData:
+    "Dados e Análises",
+
+  pillarDataDesc:
+    "Transformando informações em insights empresariais organizados, úteis e acionáveis.",
+
+  pillarBusiness:
+    "Soluções Empresariais",
+
+  pillarBusinessDesc:
+    "Suporte prático que ajuda empresas a operar, melhorar e crescer.",
+
+  pillarTechnology:
+    "Tecnologia",
+
+  pillarTechnologyDesc:
+    "Experiências digitais e soluções tecnológicas criadas com propósito.",
+
+  brandPromise:
+    "Nós Construímos. Você Cresce.",
+
+  servicesEyebrow:
+    "O QUE FAZEMOS",
+
+  servicesTitle:
+    "Soluções construídas para o seu negócio.",
+
+  servicesDescription:
+    "De dados e tecnologia a suporte empresarial e gestão de projetos, oferecemos soluções práticas para fazer o trabalho avançar.",
+
+  serviceAI:
+    "IA e Automação",
+
+  serviceAIDesc:
+    "Fluxos de trabalho inteligentes, engenharia de prompts e soluções de produtividade com IA.",
+
+  serviceData:
+    "Dados, Excel e Análises",
+
+  serviceDataDesc:
+    "Entrada de dados, Excel, limpeza de dados, relatórios, dashboards e insights empresariais.",
+
+  serviceBusiness:
+    "Análise de Negócios",
+
+  serviceBusinessDesc:
+    "Análise de processos, requisitos, documentação e suporte à melhoria empresarial.",
+
+  serviceProject:
+    "Gestão de Projetos",
+
+  serviceProjectDesc:
+    "Planejamento, marcos, coordenação, acompanhamento do progresso e suporte à entrega de projetos.",
+
+  serviceTechnology:
+    "Tecnologia e Soluções Web",
+
+  serviceTechnologyDesc:
+    "Sites profissionais, experiências digitais e soluções tecnológicas práticas.",
+
+  serviceLanguage:
+    "Língua Francesa e Documentos",
+
+  serviceLanguageDesc:
+    "Tradução inglês ↔ francês, revisão, edição e documentos profissionais.",
+
+  serviceAdmin:
+    "Suporte Virtual e Administrativo",
+
+  serviceAdminDesc:
+    "Documentos, pesquisa, Microsoft Office, organização e suporte administrativo.",
+
+  servicesViewAll:
+    "Explorar Todas as Soluções",
+
+  accomplishmentsEyebrow:
+    "NOSSAS REALIZAÇÕES",
+
+  accomplishmentsTitle:
+    "Ideias transformadas em trabalho real.",
+
+  accomplishmentsDescription:
+    "Cada projeto é uma oportunidade de transformar uma ideia, desafio ou necessidade empresarial em algo prático, profissional e significativo.",
+
+  projectWebCategory:
+    "Tecnologia e Soluções Web",
+
+  projectWebTitle:
+    "Experiências Digitais Profissionais",
+
+  projectWebDescription:
+    "Criando experiências digitais modernas, responsivas e profissionais para empresas e marcas.",
+
+  projectDataCategory:
+    "Dados e Análises",
+
+  projectDataTitle:
+    "Dados Organizados para Melhores Decisões",
+
+  projectDataDescription:
+    "Soluções práticas de planilhas, organização de dados e relatórios para tornar as informações mais fáceis de compreender.",
+
+  projectPMCategory:
+    "Gestão de Projetos",
+
+  projectPMTitle:
+    "Do Planejamento à Entrega",
+
+  projectPMDescription:
+    "Suporte estruturado de projetos focado em planejamento, coordenação, documentação, acompanhamento e entrega.",
+
+  projectView:
+    "Ver Projeto",
+
+  accomplishmentsViewAll:
+    "Explorar Nossas Realizações",
+
+  voiceEyebrow:
+    "VOZ DO CLIENTE",
+
+  voiceTitle:
+    "O trabalho importa. A experiência também.",
+
+  voiceDescription:
+    "Acreditamos que relações empresariais fortes são construídas através de comunicação, confiabilidade, profissionalismo e resultados.",
+
+  voicePlaceholder:
+    "A sua experiência é importante para nós. Feedbacks, elogios e recomendações profissionais dos clientes aparecerão aqui à medida que a GODZYA GROUP continuar crescendo.",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "Experiência do Cliente",
+
+  voiceSideText:
+    "Construído com confiança. Impulsionado pelo progresso.",
+
+  voiceContact:
+    "Compartilhar Sua Experiência",
+
+  contactEyebrow:
+    "VAMOS CONVERSAR",
+
+  contactTitle:
+    "Você tem um projeto, ideia ou desafio?",
+
+  contactDescription:
+    "Conte-nos no que está trabalhando. Vamos explorar juntos a solução certa.",
+
+  contactEmailLabel:
+    "E-mail",
+
+  contactLocationLabel:
+    "Baseado em",
+
+  contactLocation:
+    "África do Sul",
+
+  contactAvailabilityLabel:
+    "Trabalhamos com",
+
+  contactAvailability:
+    "Clientes e empresas em todo o mundo",
+
+  contactPanelLabel:
+    "INICIAR UMA CONVERSA",
+
+  contactPanelTitle:
+    "Vamos construir algo significativo.",
+
+  contactPanelDescription:
+    "Seja qual for o seu apoio necessário em dados, tecnologia, negócios, documentos ou gestão de projetos, comece contando-nos o que precisa.",
+
+  contactPanelButton:
+    "Contactar GODZYA GROUP",
+
+  contactPanelFooter:
+    "Nós Construímos. Você Cresce.",
+
+  footerTagline:
+    "Construindo soluções mais inteligentes para um futuro conectado.",
+
+  footerExplore:
+    "Explorar",
+
+  footerServices:
+    "Soluções",
+
+  footerContact:
+    "Contato",
+
+  footerLocation:
+    "África do Sul",
+
+  footerWorldwide:
+    "Atendendo clientes em todo o mundo",
+
+  footerRights:
+    "Todos os direitos reservados.",
+
+  footerStatus:
+    "Construindo o futuro."
+
+};
+
+
+/* =====================================================
+   BENGALI
+===================================================== */
+
+translations.bn = {
+
+  languageName: "Bengali",
+
+  navHome: "হোম",
+  navWhatWeDo: "আমরা যা করি",
+  navAccomplishments: "আমাদের অর্জন",
+  navContact: "যোগাযোগ করুন",
+
+  languageEnglish: "বাংলা",
+
+  heroEyebrow:
+    "AI • ডেটা • ব্যবসা • প্রযুক্তি",
+
+  heroTitle:
+    "সংযুক্ত ভবিষ্যতের জন্য আরও স্মার্ট সমাধান তৈরি করছি।",
+
+  heroDescription:
+    "প্রযুক্তি, ডেটা, ব্যবসায়িক সমাধান এবং পেশাদার সহায়তার মাধ্যমে আমরা ব্যবসাগুলোকে আরও স্মার্টভাবে কাজ করতে সাহায্য করি।",
+
+  heroExplore:
+    "আমরা কী করি দেখুন",
+
+  heroContact:
+    "আলোচনা শুরু করুন",
+
+  scroll:
+    "অন্বেষণ করতে স্ক্রল করুন",
+
+  identityEyebrow:
+    "GODZYA পদ্ধতি",
+
+  identityTitle:
+    "প্রযুক্তি ব্যবসাকে এগিয়ে নিয়ে যাবে।",
+
+  identityDescription:
+    "GODZYA GROUP প্রযুক্তি, ডেটা, ব্যবসায়িক চিন্তাভাবনা এবং ব্যবহারিক পেশাদার সহায়তাকে একত্রিত করে ব্যবসাগুলোকে সমস্যা সমাধান, কাজের উন্নতি এবং নতুন সুযোগ তৈরিতে সহায়তা করে।",
+
+  pillarAI:
+    "AI ও অটোমেশন",
+
+  pillarAIDesc:
+    "বাস্তব ব্যবসায়িক প্রয়োজন অনুযায়ী তৈরি স্মার্ট ওয়ার্কফ্লো এবং সমাধান।",
+
+  pillarData:
+    "ডেটা ও অ্যানালিটিক্স",
+
+  pillarDataDesc:
+    "তথ্যকে সংগঠিত, কার্যকর এবং ব্যবহারযোগ্য ব্যবসায়িক অন্তর্দৃষ্টিতে রূপান্তর করা।",
+
+  pillarBusiness:
+    "ব্যবসায়িক সমাধান",
+
+  pillarBusinessDesc:
+    "ব্যবসাকে পরিচালনা, উন্নত এবং বৃদ্ধিতে সহায়তা করার জন্য ব্যবহারিক সহায়তা।",
+
+  pillarTechnology:
+    "প্রযুক্তি",
+
+  pillarTechnologyDesc:
+    "উদ্দেশ্যপূর্ণভাবে তৈরি ডিজিটাল অভিজ্ঞতা এবং প্রযুক্তিগত সমাধান।",
+
+  brandPromise:
+    "আমরা তৈরি করি। আপনি এগিয়ে যান।",
+
+  servicesEyebrow:
+    "আমরা যা করি",
+
+  servicesTitle:
+    "আপনার ব্যবসাকে কেন্দ্র করে তৈরি সমাধান।",
+
+  servicesDescription:
+    "ডেটা ও প্রযুক্তি থেকে ব্যবসায়িক সহায়তা এবং প্রজেক্ট ম্যানেজমেন্ট পর্যন্ত, আমরা কাজকে এগিয়ে নেওয়ার জন্য ব্যবহারিক সমাধান প্রদান করি।",
+
+  serviceAI:
+    "AI ও অটোমেশন",
+
+  serviceAIDesc:
+    "স্মার্ট ওয়ার্কফ্লো, প্রম্পট ইঞ্জিনিয়ারিং এবং AI-চালিত উৎপাদনশীলতা সমাধান।",
+
+  serviceData:
+    "ডেটা, Excel ও অ্যানালিটিক্স",
+
+  serviceDataDesc:
+    "ডেটা এন্ট্রি, Excel, ডেটা পরিষ্কারকরণ, রিপোর্ট, ড্যাশবোর্ড এবং ব্যবসায়িক অন্তর্দৃষ্টি।",
+
+  serviceBusiness:
+    "বিজনেস অ্যানালিসিস",
+
+  serviceBusinessDesc:
+    "প্রক্রিয়া বিশ্লেষণ, প্রয়োজনীয়তা, ডকুমেন্টেশন এবং ব্যবসায়িক উন্নয়নে সহায়তা।",
+
+  serviceProject:
+    "প্রজেক্ট ম্যানেজমেন্ট",
+
+  serviceProjectDesc:
+    "পরিকল্পনা, মাইলস্টোন, সমন্বয়, অগ্রগতি ট্র্যাকিং এবং প্রকল্প সরবরাহে সহায়তা।",
+
+  serviceTechnology:
+    "প্রযুক্তি ও ওয়েব সমাধান",
+
+  serviceTechnologyDesc:
+    "পেশাদার ওয়েবসাইট, ডিজিটাল অভিজ্ঞতা এবং ব্যবহারিক প্রযুক্তি সমাধান।",
+
+  serviceLanguage:
+    "ফরাসি ভাষা ও ডকুমেন্ট পরিষেবা",
+
+  serviceLanguageDesc:
+    "ইংরেজি ↔ ফরাসি অনুবাদ, প্রুফরিডিং, সম্পাদনা এবং পেশাদার ডকুমেন্ট।",
+
+  serviceAdmin:
+    "ভার্চুয়াল ও প্রশাসনিক সহায়তা",
+
+  serviceAdminDesc:
+    "ডকুমেন্ট, গবেষণা, Microsoft Office, সংগঠন এবং প্রশাসনিক সহায়তা।",
+
+  servicesViewAll:
+    "সব সমাধান দেখুন",
+
+  accomplishmentsEyebrow:
+    "আমাদের অর্জন",
+
+  accomplishmentsTitle:
+    "ধারণাকে বাস্তব কাজে রূপান্তর করা।",
+
+  accomplishmentsDescription:
+    "প্রতিটি প্রকল্প একটি ধারণা, চ্যালেঞ্জ বা ব্যবসায়িক প্রয়োজনকে ব্যবহারিক, পেশাদার এবং অর্থপূর্ণ ফলাফলে রূপান্তর করার সুযোগ।",
+
+  projectWebCategory:
+    "প্রযুক্তি ও ওয়েব সমাধান",
+
+  projectWebTitle:
+    "পেশাদার ডিজিটাল অভিজ্ঞতা",
+
+  projectWebDescription:
+    "ব্যবসা ও ব্র্যান্ডের জন্য আধুনিক, responsive এবং পেশাদার ডিজিটাল অভিজ্ঞতা তৈরি করা।",
+
+  projectDataCategory:
+    "ডেটা ও অ্যানালিটিক্স",
+
+  projectDataTitle:
+    "উন্নত সিদ্ধান্তের জন্য সংগঠিত ডেটা",
+
+  projectDataDescription:
+    "স্প্রেডশিট, ডেটা সংগঠন এবং রিপোর্টিংয়ের ব্যবহারিক সমাধান যা তথ্য বোঝা সহজ করে।",
+
+  projectPMCategory:
+    "প্রজেক্ট ম্যানেজমেন্ট",
+
+  projectPMTitle:
+    "পরিকল্পনা থেকে ডেলিভারি পর্যন্ত",
+
+  projectPMDescription:
+    "পরিকল্পনা, সমন্বয়, ডকুমেন্টেশন, ট্র্যাকিং এবং ডেলিভারিকে কেন্দ্র করে কাঠামোবদ্ধ প্রকল্প সহায়তা।",
+
+  projectView:
+    "প্রকল্প দেখুন",
+
+  accomplishmentsViewAll:
+    "আমাদের অর্জন দেখুন",
+
+  voiceEyebrow:
+    "গ্রাহকের মতামত",
+
+  voiceTitle:
+    "কাজ গুরুত্বপূর্ণ। অভিজ্ঞতাও গুরুত্বপূর্ণ।",
+
+  voiceDescription:
+    "আমরা বিশ্বাস করি শক্তিশালী ব্যবসায়িক সম্পর্ক যোগাযোগ, নির্ভরযোগ্যতা, পেশাদারিত্ব এবং ফলাফলের মাধ্যমে তৈরি হয়।",
+
+  voicePlaceholder:
+    "আপনার অভিজ্ঞতা আমাদের কাছে গুরুত্বপূর্ণ। GODZYA GROUP এগিয়ে যাওয়ার সঙ্গে সঙ্গে গ্রাহকদের মতামত, প্রশংসা এবং পেশাদার সুপারিশ এখানে প্রদর্শিত হবে।",
+
+  voiceAuthor:
+    "GODZYA GROUP",
+
+  voiceAuthorRole:
+    "গ্রাহক অভিজ্ঞতা",
+
+  voiceSideText:
+    "বিশ্বাসের উপর নির্মিত। অগ্রগতিতে পরিচালিত।",
+
+  voiceContact:
+    "আপনার অভিজ্ঞতা শেয়ার করুন",
+
+  contactEyebrow:
+    "যোগাযোগ করুন",
+
+  contactTitle:
+    "আপনার কি কোনো প্রকল্প, ধারণা বা চ্যালেঞ্জ আছে?",
+
+  contactDescription:
+    "আপনি কী নিয়ে কাজ করছেন তা আমাদের জানান। আমরা একসাথে সঠিক সমাধান খুঁজে দেখব।",
+
+  contactEmailLabel:
+    "ইমেইল",
+
+  contactLocationLabel:
+    "অবস্থান",
+
+  contactLocation:
+    "দক্ষিণ আফ্রিকা",
+
+  contactAvailabilityLabel:
+    "আমরা কাজ করি",
+
+  contactAvailability:
+    "বিশ্বব্যাপী ক্লায়েন্ট ও ব্যবসার সঙ্গে",
+
+  contactPanelLabel:
+    "আলোচনা শুরু করুন",
+
+  contactPanelTitle:
+    "চলুন একসাথে অর্থপূর্ণ কিছু তৈরি করি।",
+
+  contactPanelDescription:
+    "ডেটা, প্রযুক্তি, ব্যবসা, ডকুমেন্ট বা প্রজেক্ট ম্যানেজমেন্টে সহায়তা প্রয়োজন হলে আপনার প্রয়োজনটি আমাদের জানান।",
+
+  contactPanelButton:
+    "GODZYA GROUP-এর সাথে যোগাযোগ করুন",
+
+  contactPanelFooter:
+    "আমরা তৈরি করি। আপনি এগিয়ে যান।",
+
+  footerTagline:
+    "সংযুক্ত ভবিষ্যতের জন্য আরও স্মার্ট সমাধান তৈরি করছি।",
+
+  footerExplore:
+    "অন্বেষণ",
+
+  footerServices:
+    "সমাধান",
+
+  footerContact:
+    "যোগাযোগ",
+
+  footerLocation:
+    "দক্ষিণ আফ্রিকা",
+
+  footerWorldwide:
+    "বিশ্বব্যাপী ক্লায়েন্টদের সেবা প্রদান",
+
+  footerRights:
+    "সর্বস্বত্ব সংরক্ষিত।",
+
+  footerStatus:
+    "ভবিষ্যৎ তৈরি করছি।"
+
+};
