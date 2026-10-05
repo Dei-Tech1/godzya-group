@@ -1459,3 +1459,275 @@ button {
     1.7;
 
 }
+
+/* =====================================================
+   WHO WE SERVE
+===================================================== */
+
+.audience-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap:
+    18px;
+
+}
+
+
+.audience-card {
+
+  min-height:
+    220px;
+
+  padding:
+    30px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    flex-end;
+
+  background:
+    rgba(255, 255, 255, 0.02);
+
+  border:
+    1px solid
+    var(--line-soft);
+
+  border-radius:
+    var(--radius);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    background .35s ease;
+
+}
+
+
+.audience-card:hover {
+
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(70, 217, 255, 0.25);
+
+  background:
+    rgba(70, 217, 255, 0.035);
+
+}
+
+
+.audience-card h3 {
+
+  margin-bottom:
+    12px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    21px;
+
+  color:
+    var(--white);
+
+}
+
+
+.audience-card p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.7;
+
+}
+
+
+/* =====================================================
+   ABOUT GRID
+===================================================== */
+
+.about-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1.1fr
+    .9fr;
+
+  gap:
+    80px;
+
+  align-items:
+    center;
+
+}
+
+
+.about-content p {
+
+  max-width:
+    650px;
+
+  margin-top:
+    22px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    15px;
+
+  line-height:
+    1.9;
+
+}
+
+
+/* =====================================================
+   ABOUT PANEL
+===================================================== */
+
+.about-panel {
+
+  position:
+    relative;
+
+  min-height:
+    360px;
+
+  padding:
+    50px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  justify-content:
+    center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #102131,
+      #07121d
+    );
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:
+    24px;
+
+  overflow:
+    hidden;
+
+}
+
+
+.about-panel::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    220px;
+
+  height:
+    220px;
+
+  top:
+    -80px;
+
+  right:
+    -70px;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(70, 217, 255, 0.09);
+
+  filter:
+    blur(20px);
+
+}
+
+
+.about-panel-label {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  margin-bottom:
+    24px;
+
+  color:
+    var(--cyan);
+
+  font-size:
+    10px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    0.25em;
+
+}
+
+
+.about-panel p {
+
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  max-width:
+    450px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(25px, 3vw, 38px);
+
+  line-height:
+    1.15;
+
+  font-weight:
+    700;
+
+  color:
+    var(--white);
+
+}
