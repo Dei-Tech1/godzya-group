@@ -3437,3 +3437,77 @@ window.addEventListener(
 );
 
 updateHeader();
+
+/* =====================================================
+   PREMIUM SCROLL REVEALS
+===================================================== */
+
+const revealElements = document.querySelectorAll(
+  ".identity-section, " +
+  ".services-heading, " +
+  ".service-card, " +
+  ".accomplishments-heading, " +
+  ".project-card, " +
+  ".voice-heading, " +
+  ".voice-display, " +
+  ".contact-intro, " +
+  ".contact-panel, " +
+  ".footer-brand, " +
+  ".footer-column"
+);
+
+
+revealElements.forEach(
+  (element) => {
+
+    element.classList.add(
+      "reveal"
+    );
+
+  }
+);
+
+
+/* =====================================================
+   INTERSECTION OBSERVER
+===================================================== */
+
+const revealObserver =
+  new IntersectionObserver(
+    (entries, observer) => {
+
+      entries.forEach(
+        (entry) => {
+
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add(
+            "visible"
+          );
+
+          observer.unobserve(
+            entry.target
+          );
+
+        }
+      );
+
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -40px 0px"
+    }
+  );
+
+
+revealElements.forEach(
+  (element) => {
+
+    revealObserver.observe(
+      element
+    );
+
+  }
+);
