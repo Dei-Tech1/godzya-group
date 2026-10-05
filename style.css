@@ -5180,3 +5180,231 @@ a {
   }
 
 }
+
+/* =====================================================
+   PREMIUM MOTION & POLISH
+===================================================== */
+
+
+/* =====================================================
+   SCROLL REVEAL
+===================================================== */
+
+.reveal {
+
+  opacity:
+    0;
+
+  transform:
+    translateY(35px);
+
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+
+.reveal.visible {
+
+  opacity:
+    1;
+
+  transform:
+    translateY(0);
+
+}
+
+
+/* =====================================================
+   STAGGERED SERVICE ANIMATION
+===================================================== */
+
+.service-card {
+
+  transition-delay:
+    0s;
+
+}
+
+
+.service-card:nth-child(2) {
+
+  transition-delay:
+    .05s;
+
+}
+
+
+.service-card:nth-child(3) {
+
+  transition-delay:
+    .1s;
+
+}
+
+
+.service-card:nth-child(4) {
+
+  transition-delay:
+    .15s;
+
+}
+
+
+/* =====================================================
+   SUBTLE FLOATING EFFECT
+===================================================== */
+
+.project-symbol {
+
+  animation:
+    premiumFloat 5s ease-in-out infinite;
+
+}
+
+
+@keyframes premiumFloat {
+
+  0%,
+  100% {
+
+    margin-top:
+      0;
+
+  }
+
+  50% {
+
+    margin-top:
+      -8px;
+
+  }
+
+}
+
+
+/* =====================================================
+   HERO CINEMATIC MOVEMENT
+===================================================== */
+
+.hero-grid {
+
+  animation:
+    heroGridMove 18s linear infinite;
+
+}
+
+
+@keyframes heroGridMove {
+
+  0% {
+
+    background-position:
+      0 0;
+
+  }
+
+  100% {
+
+    background-position:
+      90px 90px;
+
+  }
+
+}
+
+
+/* =====================================================
+   CONTACT PANEL LIGHT
+===================================================== */
+
+.contact-panel-glow {
+
+  animation:
+    panelGlow 4s ease-in-out infinite;
+
+}
+
+
+@keyframes panelGlow {
+
+  0%,
+  100% {
+
+    opacity:
+      .45;
+
+  }
+
+  50% {
+
+    opacity:
+      1;
+
+  }
+
+}
+
+
+/* =====================================================
+   CARD HOVER LIGHT
+===================================================== */
+
+.service-card,
+.project-card,
+.identity-pillar {
+
+  will-change:
+    transform;
+
+}
+
+
+/* =====================================================
+   FOCUS ACCESSIBILITY
+===================================================== */
+
+a:focus-visible,
+button:focus-visible {
+
+  outline:
+    2px solid
+    var(--cyan);
+
+  outline-offset:
+    4px;
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior:
+      auto;
+
+  }
+
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      .01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      .01ms !important;
+
+  }
+
+}
