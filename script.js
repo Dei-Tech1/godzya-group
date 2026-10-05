@@ -3054,6 +3054,12 @@ function applyLanguage(languageCode) {
   document.documentElement.lang =
     languageCode;
 
+  document.documentElement.dir =
+    languageCode === "ar"
+      ? "rtl"
+      : "ltr";
+
+
   document.querySelectorAll("[data-i18n]")
     .forEach((element) => {
 
@@ -3061,11 +3067,74 @@ function applyLanguage(languageCode) {
         element.dataset.i18n;
 
       if (
-        language[key] !== undefined
+        language[key] === undefined
       ) {
+        return;
+      }
+
+      const translatedText =
+        language[key];
+
+      const styledSpan =
+        element.querySelector(":scope > span");
+
+
+      if (styledSpan) {
+
+        const words =
+          translatedText.split(" ");
+
+        const splitPoint =
+          Math.max(
+            1,
+            Math.ceil(words.length * 0.65)
+          );
+
+        const firstPart =
+          words
+            .slice(0, splitPoint)
+            .join(" ");
+
+        const secondPart =
+          words
+            .slice(splitPoint)
+            .join(" ");
+
+
+        element.childNodes.forEach(
+          (node) => {
+
+            if (
+              node.nodeType ===
+              Node.TEXT_NODE
+            ) {
+
+              node.textContent = "";
+
+            }
+
+          }
+        );
+
+
+        const textNode =
+          document.createTextNode(
+            firstPart + " "
+          );
+
+        element.insertBefore(
+          textNode,
+          styledSpan
+        );
+
+
+        styledSpan.textContent =
+          secondPart;
+
+      } else {
 
         element.textContent =
-          language[key];
+          translatedText;
 
       }
 
@@ -3098,7 +3167,6 @@ function applyLanguage(languageCode) {
   );
 
 }
-
 
 /* =====================================================
    LANGUAGE SELECTION
