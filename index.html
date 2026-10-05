@@ -1607,6 +1607,981 @@ header {
     }
 
 }
+   /* =================================================
+   GODZYA GROUP
+   AI & AUTOMATION SERVICE PAGE
+================================================= */
+
+
+/* =================================================
+   SERVICE HERO
+================================================= */
+
+.service-hero {
+
+  position: relative;
+
+  min-height: 88vh;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 30%,
+      rgba(70, 217, 255, .12),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #050b14 0%,
+      #071521 55%,
+      #050b14 100%
+    );
+
+}
+
+
+.service-hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -180px;
+  top: -160px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(70, 217, 255, .12);
+
+  box-shadow:
+    0 0 80px
+    rgba(70, 217, 255, .08);
+
+}
+
+
+.service-hero::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  left: -180px;
+  bottom: -200px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(70, 217, 255, .04);
+
+  filter: blur(20px);
+
+}
+
+
+.service-hero-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 900px;
+
+  padding:
+    140px 0
+    100px;
+
+}
+
+
+.service-hero .eyebrow {
+
+  display: inline-block;
+
+  margin-bottom: 28px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: .28em;
+
+  color:
+    var(--cyan);
+
+}
+
+
+.service-hero h1 {
+
+  margin: 0;
+
+  max-width: 850px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(52px, 8vw, 108px);
+
+  line-height: .98;
+
+  letter-spacing: -.055em;
+
+  font-weight: 700;
+
+  color: #ffffff;
+
+}
+
+
+.service-hero h1 span {
+
+  color:
+    var(--cyan);
+
+}
+
+
+.service-hero p {
+
+  max-width: 650px;
+
+  margin:
+    32px 0 40px;
+
+  font-family:
+    "DM Sans",
+    sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.66);
+
+}
+
+
+.service-hero-actions {
+
+  display: flex;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+}
+
+
+/* =================================================
+   BUTTONS
+================================================= */
+
+.service-hero .btn,
+.service-cta .btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 52px;
+
+  padding:
+    0 28px;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
+
+}
+
+
+.btn-primary {
+
+  color: #050b14;
+
+  background:
+    var(--cyan);
+
+  box-shadow:
+    0 0 30px
+    rgba(70,217,255,.18);
+
+}
+
+
+.btn-primary:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 0 45px
+    rgba(70,217,255,.30);
+
+}
+
+
+.btn-secondary {
+
+  color: #ffffff;
+
+  border:
+    1px solid
+    rgba(255,255,255,.18);
+
+  background:
+    rgba(255,255,255,.03);
+
+}
+
+
+.btn-secondary:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    rgba(70,217,255,.5);
+
+}
+
+
+/* =================================================
+   INTRO
+================================================= */
+
+.service-intro {
+
+  padding:
+    120px 0;
+
+  background:
+    #07111c;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.05);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.05);
+
+}
+
+
+.service-intro-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 100px;
+
+  align-items: start;
+
+}
+
+
+.section-label {
+
+  display: block;
+
+  margin-bottom: 22px;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: .28em;
+
+  color:
+    var(--cyan);
+
+}
+
+
+.service-intro h2,
+.section-heading h2,
+.service-cta h2 {
+
+  margin: 0;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size:
+    clamp(38px, 5vw, 68px);
+
+  line-height: 1.05;
+
+  letter-spacing: -.045em;
+
+  color:
+    #ffffff;
+
+}
+
+
+.service-intro h2 span,
+.section-heading h2 span,
+.service-cta h2 span {
+
+  color:
+    var(--cyan);
+
+}
+
+
+.service-intro-grid p {
+
+  margin:
+    0 0 22px;
+
+  font-size: 16px;
+
+  line-height: 1.85;
+
+  color:
+    rgba(255,255,255,.62);
+
+}
+
+
+/* =================================================
+   SOLUTIONS
+================================================= */
+
+.service-solutions {
+
+  padding:
+    130px 0;
+
+  background:
+    #050b14;
+
+}
+
+
+.section-heading {
+
+  max-width: 750px;
+
+  margin-bottom: 70px;
+
+}
+
+
+.section-heading p {
+
+  margin-top: 25px;
+
+  max-width: 600px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.55);
+
+}
+
+
+.solutions-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.solution-card {
+
+  position: relative;
+
+  padding:
+    42px;
+
+  min-height: 270px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.045),
+      rgba(255,255,255,.015)
+    );
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+
+}
+
+
+.solution-card:hover {
+
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(70,217,255,.32);
+
+  box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.25);
+
+}
+
+
+.solution-number {
+
+  display: block;
+
+  margin-bottom: 45px;
+
+  font-size: 10px;
+
+  letter-spacing: .2em;
+
+  color:
+    var(--cyan);
+
+}
+
+
+.solution-card h3 {
+
+  margin:
+    0 0 16px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 25px;
+
+  color:
+    #ffffff;
+
+}
+
+
+.solution-card p {
+
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.55);
+
+}
+
+
+/* =================================================
+   BENEFITS
+================================================= */
+
+.service-benefits {
+
+  padding:
+    130px 0;
+
+  background:
+    #07111c;
+
+}
+
+
+.benefits-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.benefit-item {
+
+  padding:
+    32px 25px;
+
+  border-top:
+    1px solid
+    rgba(70,217,255,.35);
+
+}
+
+
+.benefit-item h3 {
+
+  margin:
+    0 0 15px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 19px;
+
+  color:
+    #ffffff;
+
+}
+
+
+.benefit-item p {
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.52);
+
+}
+
+
+/* =================================================
+   PROCESS
+================================================= */
+
+.service-process {
+
+  padding:
+    130px 0;
+
+  background:
+    #050b14;
+
+}
+
+
+.process-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 1px;
+
+  background:
+    rgba(255,255,255,.08);
+
+}
+
+
+.process-step {
+
+  min-height: 280px;
+
+  padding:
+    35px;
+
+  background:
+    #050b14;
+
+}
+
+
+.process-step > span {
+
+  display: block;
+
+  margin-bottom: 55px;
+
+  font-size: 10px;
+
+  letter-spacing: .2em;
+
+  color:
+    var(--cyan);
+
+}
+
+
+.process-step h3 {
+
+  margin:
+    0 0 15px;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 22px;
+
+  color:
+    #ffffff;
+
+}
+
+
+.process-step p {
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.5);
+
+}
+
+
+/* =================================================
+   CTA
+================================================= */
+
+.service-cta {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    150px 0;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(70,217,255,.10),
+      transparent 45%
+    ),
+    #07111c;
+
+}
+
+
+.service-cta-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  margin: auto;
+
+}
+
+
+.service-cta h2 {
+
+  max-width: 800px;
+
+  margin:
+    0 auto 25px;
+
+}
+
+
+.service-cta p {
+
+  max-width: 600px;
+
+  margin:
+    0 auto 35px;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color:
+    rgba(255,255,255,.58);
+
+}
+
+
+/* =================================================
+   FOOTER
+================================================= */
+
+.site-footer {
+
+  padding:
+    60px 0 25px;
+
+  background:
+    #03070c;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.06);
+
+}
+
+
+.footer-inner {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+}
+
+
+.footer-brand {
+
+  font-family:
+    "Manrope",
+    sans-serif;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  letter-spacing: .08em;
+
+  color:
+    #ffffff;
+
+}
+
+
+.footer-inner p {
+
+  margin:
+    8px 0 0;
+
+  font-size: 10px;
+
+  letter-spacing: .18em;
+
+  color:
+    rgba(255,255,255,.4);
+
+}
+
+
+.footer-bottom {
+
+  margin-top: 45px;
+
+  padding-top: 20px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.05);
+
+}
+
+
+.footer-bottom p {
+
+  margin: 0;
+
+  font-size: 10px;
+
+  color:
+    rgba(255,255,255,.3);
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 900px) {
+
+
+  .service-intro-grid {
+
+    grid-template-columns:
+      1fr;
+
+    gap: 45px;
+
+  }
+
+
+  .benefits-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .process-grid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+}
+
+
+@media (max-width: 650px) {
+
+
+  .service-hero {
+
+    min-height: auto;
+
+  }
+
+
+  .service-hero-content {
+
+    padding:
+      120px 0 90px;
+
+  }
+
+
+  .service-hero h1 {
+
+    font-size:
+      clamp(48px, 15vw, 72px);
+
+  }
+
+
+  .service-hero p {
+
+    font-size: 15px;
+
+  }
+
+
+  .service-hero-actions {
+
+    flex-direction:
+      column;
+
+    align-items:
+      stretch;
+
+  }
+
+
+  .service-hero .btn {
+
+    width: 100%;
+
+  }
+
+
+  .service-intro,
+  .service-solutions,
+  .service-benefits,
+  .service-process {
+
+    padding:
+      90px 0;
+
+  }
+
+
+  .solutions-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .benefits-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .process-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .process-step {
+
+    min-height:
+      auto;
+
+  }
+
+
+  .footer-inner {
+
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+
+  }
+
+
+     }
+   
 </style>
 </head>
 
