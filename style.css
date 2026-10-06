@@ -6589,3 +6589,152 @@ html.reduced-motion .scroll-progress {
   }
 
 }
+
+/* =====================================================
+   WHAT WE DO — WHO WE SERVE
+===================================================== */
+
+.serve-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+
+.serve-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      115deg,
+      transparent 0%,
+      rgba(70,217,255,.025) 50%,
+      transparent 100%
+    );
+  pointer-events: none;
+}
+
+.serve-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 60px;
+}
+
+.serve-card {
+  position: relative;
+  min-height: 310px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(5,11,20,.65);
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    background .35s ease;
+}
+
+.serve-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--line-cyan);
+  background: rgba(11,23,36,.9);
+}
+
+.serve-card-number {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  color: rgba(140,154,168,.3);
+  font-size: 10px;
+  letter-spacing: .18em;
+  font-weight: 700;
+}
+
+.serve-card-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 55px;
+  border: 1px solid rgba(70,217,255,.25);
+  border-radius: 12px;
+  color: var(--cyan);
+  background: rgba(70,217,255,.035);
+  font-size: 20px;
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.serve-card:hover .serve-card-icon {
+  transform: translateY(-3px) rotate(5deg);
+  box-shadow:
+    0 0 25px rgba(70,217,255,.10);
+}
+
+.serve-card h3 {
+  margin: 0 0 13px;
+  color: var(--white);
+  font-family: "Manrope", sans-serif;
+  font-size: 19px;
+  letter-spacing: -.02em;
+}
+
+.serve-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.serve-line {
+  position: absolute;
+  left: 30px;
+  bottom: 24px;
+  width: 34px;
+  height: 1px;
+  background: var(--cyan);
+  box-shadow:
+    0 0 12px rgba(70,217,255,.5);
+  transition: width .35s ease;
+}
+
+.serve-card:hover .serve-line {
+  width: 65px;
+}
+
+@media (max-width: 1050px) {
+
+  .serve-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .serve-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 40px;
+  }
+
+  .serve-card {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .serve-card-icon {
+    margin-bottom: 38px;
+  }
+
+  .serve-line {
+    left: 26px;
+  }
+
+}
