@@ -5689,3 +5689,46 @@ button:focus-visible {
   }
 
 }
+
+/* =====================================================
+   MOBILE PERFORMANCE
+===================================================== */
+
+@media (max-width: 760px) {
+
+  .hero-video {
+
+    opacity:.45;
+
+    filter:
+      saturate(.7)
+      contrast(1.03);
+
+  }
+
+
+  .hero-grid {
+
+    animation-duration:
+      28s;
+
+  }
+
+
+  .project-symbol {
+
+    animation-duration:
+      7s;
+
+  }
+
+
+  .service-card,
+  .project-card,
+  .identity-pillar {
+
+    will-change:auto;
+
+  }
+
+}
