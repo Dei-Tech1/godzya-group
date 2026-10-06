@@ -5437,3 +5437,36 @@ button:focus-visible {
   opacity: 1;
 
 }
+
+/* =====================================================
+   CARD CONTENT LAYERING
+===================================================== */
+
+.service-card > *,
+.project-card > * {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+.service-card::before,
+.project-card::before {
+
+  z-index: 1;
+
+  pointer-events: none;
+
+}
+
+
+.service-card::after,
+.project-card::after {
+
+  z-index: 3;
+
+  pointer-events: none;
+
+}
