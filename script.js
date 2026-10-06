@@ -4126,3 +4126,70 @@ if (supportsHover) {
   });
 
 }
+
+/* =====================================================
+   CONTACT LINK HANDLING
+===================================================== */
+
+const contactLinks =
+  document.querySelectorAll(
+    'a[href^="mailto:"]'
+  );
+
+
+contactLinks.forEach((link) => {
+
+  link.addEventListener(
+    "click",
+    () => {
+
+      /*
+         Close any open navigation
+         before opening the email app.
+      */
+
+      if (mainNav) {
+
+        mainNav.classList.remove(
+          "open"
+        );
+
+      }
+
+
+      if (menuToggle) {
+
+        menuToggle.classList.remove(
+          "active"
+        );
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+
+      if (languageSwitcher) {
+
+        languageSwitcher.classList.remove(
+          "open"
+        );
+
+      }
+
+
+      if (languageButton) {
+
+        languageButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+  );
+
+});
