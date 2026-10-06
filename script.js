@@ -4232,3 +4232,59 @@ window.addEventListener(
 
   }
 );
+
+/* =====================================================
+   SCROLL PROGRESS
+===================================================== */
+
+const scrollProgress =
+  document.createElement("div");
+
+
+scrollProgress.className =
+  "scroll-progress";
+
+
+document.body.appendChild(
+  scrollProgress
+);
+
+
+function updateScrollProgress() {
+
+  const scrollTop =
+    window.scrollY;
+
+  const documentHeight =
+    document.documentElement
+      .scrollHeight;
+
+  const windowHeight =
+    window.innerHeight;
+
+
+  const scrollableHeight =
+    documentHeight -
+    windowHeight;
+
+
+  const progress =
+    scrollableHeight > 0
+      ? (scrollTop / scrollableHeight) * 100
+      : 0;
+
+
+  scrollProgress.style.width =
+    `${progress}%`;
+
+}
+
+
+window.addEventListener(
+  "scroll",
+  updateScrollProgress,
+  { passive: true }
+);
+
+
+updateScrollProgress();
