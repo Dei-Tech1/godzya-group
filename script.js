@@ -4373,3 +4373,43 @@ reducedMotion.addEventListener(
   "change",
   applyMotionPreference
 );
+
+/* =====================================================
+   SAFE FEATURE INITIALIZATION
+===================================================== */
+
+function safeRun(
+  featureName,
+  featureFunction
+) {
+
+  try {
+
+    featureFunction();
+
+  } catch (error) {
+
+    console.warn(
+      `GODZYA feature "${featureName}" could not initialize.`,
+      error
+    );
+
+  }
+
+}
+
+
+/* =====================================================
+   GODZYA READY STATE
+===================================================== */
+
+safeRun(
+  "site-ready",
+  () => {
+
+    document.documentElement.classList.add(
+      "godzya-ready"
+    );
+
+  }
+);
