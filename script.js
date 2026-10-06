@@ -3943,3 +3943,61 @@ pageImages.forEach((image) => {
   }
 
 });
+
+/* =====================================================
+   KEYBOARD ACCESSIBILITY
+===================================================== */
+
+document.addEventListener(
+  "keydown",
+  (event) => {
+
+    /*
+       ESC closes the language menu
+       and mobile navigation.
+    */
+
+    if (event.key === "Escape") {
+
+      if (languageSwitcher) {
+
+        languageSwitcher.classList.remove(
+          "open"
+        );
+
+      }
+
+      if (languageButton) {
+
+        languageButton.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+      if (mainNav) {
+
+        mainNav.classList.remove(
+          "open"
+        );
+
+      }
+
+      if (menuToggle) {
+
+        menuToggle.classList.remove(
+          "active"
+        );
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+
+  }
+);
