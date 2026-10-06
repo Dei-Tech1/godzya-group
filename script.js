@@ -4413,3 +4413,32 @@ safeRun(
 
   }
 );
+
+/* =====================================================
+   GODZYA SITE STATUS
+===================================================== */
+
+const godzyaStatus = {
+
+  initialized: true,
+
+  language:
+    localStorage.getItem(
+      "godzyaLanguage"
+    ) || "en",
+
+  page:
+    window.location.pathname,
+
+  timestamp:
+    new Date().toISOString()
+
+};
+
+
+document.documentElement.dataset
+  .godzyaStatus = "ready";
+
+
+window.GODZYA =
+  godzyaStatus;
