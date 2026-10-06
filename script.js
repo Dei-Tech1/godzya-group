@@ -3803,3 +3803,95 @@ document.addEventListener(
 
   }
 );
+
+/* =====================================================
+   SMOOTH ANCHOR NAVIGATION
+===================================================== */
+
+document.querySelectorAll(
+  'a[href^="#"]'
+).forEach((link) => {
+
+  link.addEventListener(
+    "click",
+    (event) => {
+
+      const targetId =
+        link.getAttribute("href");
+
+
+      if (
+        !targetId ||
+        targetId === "#"
+      ) {
+        return;
+      }
+
+
+      const target =
+        document.querySelector(
+          targetId
+        );
+
+
+      if (!target) {
+        return;
+      }
+
+
+      event.preventDefault();
+
+
+      const headerHeight =
+        siteHeader
+          ? siteHeader.offsetHeight
+          : 0;
+
+
+      const targetPosition =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        headerHeight;
+
+
+      window.scrollTo({
+
+        top:
+          targetPosition,
+
+        behavior:
+          "smooth"
+
+      });
+
+
+      /*
+         Close mobile navigation
+         after selecting an anchor.
+      */
+
+      if (mainNav) {
+
+        mainNav.classList.remove(
+          "open"
+        );
+
+      }
+
+      if (menuToggle) {
+
+        menuToggle.classList.remove(
+          "active"
+        );
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+  );
+
+});
