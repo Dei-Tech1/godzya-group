@@ -5470,3 +5470,38 @@ button:focus-visible {
   pointer-events: none;
 
 }
+
+/* =====================================================
+   SCROLL PROGRESS
+===================================================== */
+
+.scroll-progress {
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  width:0;
+  height:2px;
+
+  z-index:2000;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--cyan-dark),
+      var(--cyan),
+      var(--cyan-soft)
+    );
+
+  box-shadow:
+    0 0 12px
+    rgba(70,217,255,.7);
+
+  pointer-events:none;
+
+  transition:
+    width .08s linear;
+
+}
