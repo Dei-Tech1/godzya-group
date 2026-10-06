@@ -5408,3 +5408,32 @@ button:focus-visible {
   }
 
 }
+
+/* =====================================================
+   INTERACTIVE CARD SPOTLIGHT
+===================================================== */
+
+.service-card::before,
+.project-card::before {
+
+  background:
+    radial-gradient(
+      220px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(70,217,255,.12),
+      transparent 65%
+    );
+
+  opacity: 0;
+
+  transition:
+    opacity .35s ease;
+
+}
+
+
+.service-card:hover::before,
+.project-card:hover::before {
+
+  opacity: 1;
+
+}
