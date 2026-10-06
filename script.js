@@ -4288,3 +4288,49 @@ window.addEventListener(
 
 
 updateScrollProgress();
+
+/* =====================================================
+   PREMIUM PAGE LOADER
+===================================================== */
+
+const pageLoader =
+  document.createElement("div");
+
+
+pageLoader.className =
+  "page-loader";
+
+
+pageLoader.innerHTML = `
+  <div class="loader-inner">
+    <div class="loader-mark">G</div>
+    <div class="loader-name">GODZYA GROUP</div>
+    <div class="loader-line">
+      <span></span>
+    </div>
+  </div>
+`;
+
+
+document.body.prepend(
+  pageLoader
+);
+
+
+window.addEventListener(
+  "load",
+  () => {
+
+    setTimeout(
+      () => {
+
+        pageLoader.classList.add(
+          "loaded"
+        );
+
+      },
+      450
+    );
+
+  }
+);
