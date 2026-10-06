@@ -4001,3 +4001,71 @@ document.addEventListener(
 
   }
 );
+
+/* =====================================================
+   FINAL PAGE INITIALIZATION
+===================================================== */
+
+function initializeGodzyaSite() {
+
+  /*
+     Refresh the active navigation state.
+  */
+
+  updateActiveNavigation();
+
+
+  /*
+     Refresh the header state.
+  */
+
+  updateHeader();
+
+
+  /*
+     Make sure the saved language
+     is applied.
+  */
+
+  const savedLanguage =
+    localStorage.getItem(
+      "godzyaLanguage"
+    ) || "en";
+
+
+  if (
+    translations[savedLanguage]
+  ) {
+
+    applyLanguage(
+      savedLanguage
+    );
+
+  } else {
+
+    applyLanguage("en");
+
+  }
+
+}
+
+
+/* =====================================================
+   START GODZYA
+===================================================== */
+
+if (
+  document.readyState ===
+  "loading"
+) {
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    initializeGodzyaSite
+  );
+
+} else {
+
+  initializeGodzyaSite();
+
+}
