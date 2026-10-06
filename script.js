@@ -4193,3 +4193,42 @@ contactLinks.forEach((link) => {
   );
 
 });
+
+/* =====================================================
+   REVEAL SAFETY
+===================================================== */
+
+window.addEventListener(
+  "load",
+  () => {
+
+    /*
+       Make sure elements that are already
+       visible are never left hidden.
+    */
+
+    revealElements.forEach(
+      (element) => {
+
+        const rect =
+          element.getBoundingClientRect();
+
+        const isVisible =
+          rect.top <
+          window.innerHeight &&
+          rect.bottom > 0;
+
+
+        if (isVisible) {
+
+          element.classList.add(
+            "visible"
+          );
+
+        }
+
+      }
+    );
+
+  }
+);
