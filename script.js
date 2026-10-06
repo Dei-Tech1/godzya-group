@@ -4069,3 +4069,60 @@ if (
   initializeGodzyaSite();
 
 }
+
+/* =====================================================
+   INTERACTIVE CARD SPOTLIGHT
+===================================================== */
+
+if (supportsHover) {
+
+  interactiveCards.forEach((card) => {
+
+    card.addEventListener(
+      "mousemove",
+      (event) => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+        const x =
+          event.clientX -
+          rect.left;
+
+        const y =
+          event.clientY -
+          rect.top;
+
+
+        card.style.setProperty(
+          "--mouse-x",
+          `${x}px`
+        );
+
+        card.style.setProperty(
+          "--mouse-y",
+          `${y}px`
+        );
+
+      }
+    );
+
+
+    card.addEventListener(
+      "mouseleave",
+      () => {
+
+        card.style.removeProperty(
+          "--mouse-x"
+        );
+
+        card.style.removeProperty(
+          "--mouse-y"
+        );
+
+      }
+    );
+
+  });
+
+}
