@@ -3753,3 +3753,53 @@ if (supportsHover) {
   });
 
 }
+
+/* =====================================================
+   CLOSE MOBILE MENU OUTSIDE
+===================================================== */
+
+document.addEventListener(
+  "click",
+  (event) => {
+
+    if (
+      !mainNav ||
+      !menuToggle
+    ) {
+      return;
+    }
+
+
+    const clickedInsideNav =
+      mainNav.contains(
+        event.target
+      );
+
+    const clickedMenuButton =
+      menuToggle.contains(
+        event.target
+      );
+
+
+    if (
+      !clickedInsideNav &&
+      !clickedMenuButton
+    ) {
+
+      mainNav.classList.remove(
+        "open"
+      );
+
+      menuToggle.classList.remove(
+        "active"
+      );
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  }
+);
