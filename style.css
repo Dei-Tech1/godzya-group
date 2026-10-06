@@ -5939,3 +5939,149 @@ html.reduced-motion .scroll-progress {
   }
 
 }
+
+/* =====================================================
+   WHAT WE DO — APPROACH
+===================================================== */
+
+.approach-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+
+.approach-section::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: -240px;
+  top: 20%;
+  border-radius: 50%;
+  background: rgba(70,217,255,.035);
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 60px;
+}
+
+.approach-card {
+  position: relative;
+  min-height: 300px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(14,28,43,.95),
+      rgba(8,18,30,.92)
+    );
+  box-shadow: var(--shadow);
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.approach-card::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: -80px;
+  bottom: -80px;
+  border-radius: 50%;
+  background: rgba(70,217,255,.07);
+  filter: blur(5px);
+  transition: transform .45s ease;
+}
+
+.approach-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--line-cyan);
+  box-shadow:
+    var(--shadow),
+    0 0 35px rgba(70,217,255,.08);
+}
+
+.approach-card:hover::before {
+  transform: scale(1.5);
+}
+
+.approach-number {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  color: rgba(140,154,168,.35);
+  font-size: 11px;
+  letter-spacing: .18em;
+  font-weight: 700;
+}
+
+.approach-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  border: 1px solid var(--line-cyan);
+  border-radius: 14px;
+  color: var(--cyan);
+  font-size: 22px;
+  background: rgba(70,217,255,.04);
+  box-shadow:
+    0 0 25px rgba(70,217,255,.06);
+}
+
+.approach-card h3 {
+  position: relative;
+  margin: 0 0 12px;
+  color: var(--white);
+  font-family: "Manrope", sans-serif;
+  font-size: 21px;
+  letter-spacing: -.02em;
+}
+
+.approach-card p {
+  position: relative;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1050px) {
+
+  .approach-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 40px;
+  }
+
+  .approach-card {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .approach-icon {
+    margin-bottom: 38px;
+  }
+
+}
