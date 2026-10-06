@@ -4451,3 +4451,218 @@ document.documentElement.dataset
 
 document.documentElement.dataset
   .foundation = "complete";
+
+/* =====================================================
+   WHAT WE DO — PAGE 2 TRANSLATIONS
+   BLOCK 1 — ENGLISH + CHINESE
+===================================================== */
+
+Object.assign(translations.en, {
+
+  whatWeDoKicker: "WHAT WE DO",
+  whatWeDoHeroTitle: "Solutions Built for Progress.",
+  whatWeDoHeroDescription:
+    "We combine AI, data, business, technology and professional support to help individuals and organizations work smarter, move forward and grow with confidence.",
+  whatWeDoExplore: "Explore Our Services",
+  whatWeDoTalk: "Let's Talk",
+  whatWeDoHeroBottom: "AI • DATA • BUSINESS • TECHNOLOGY",
+
+  approachKicker: "OUR APPROACH",
+  approachTitle: "Practical solutions.",
+  approachTitleAccent: "Meaningful results.",
+  approachDescription:
+    "We focus on understanding the need first, then building solutions that are practical, professional and designed to create real value.",
+
+  approach01Title: "Understand",
+  approach01Text:
+    "We identify the objective, challenges and priorities before recommending a solution.",
+
+  approach02Title: "Build",
+  approach02Text:
+    "We turn requirements into organized work, useful deliverables and practical solutions.",
+
+  approach03Title: "Improve",
+  approach03Text:
+    "We refine the result, keep the work organized and focus on continuous improvement.",
+
+  approach04Title: "Deliver",
+  approach04Text:
+    "We aim for clear communication, professional delivery and results you can actually use.",
+
+  whyKicker: "WHY GODZYA",
+  whyTitle: "Built with purpose.",
+  whyTitleAccent: "Driven by progress.",
+  whyDescription:
+    "GODZYA GROUP brings together technology, data, business thinking and practical professional support under one growing digital solutions company.",
+  whyNote:
+    "We believe in building what we can deliver well, communicating clearly and creating solutions that genuinely help our clients move forward.",
+  whyLink: "Discover what we can build",
+  whyCoreLabel: "GODZYA GROUP",
+  whyCoreSub: "WE BUILD. YOU GROW.",
+  whyPoint01: "Practical",
+  whyPoint02: "Professional",
+  whyPoint03: "Forward-thinking",
+
+  servicesKicker: "OUR SERVICES",
+  servicesTitle: "What we",
+  servicesTitleAccent: "build and support.",
+  servicesDescription:
+    "From digital solutions and data work to business support and project coordination, our services are designed to help you work smarter and move forward.",
+
+  serviceAiTitle: "AI & Automation",
+  serviceAiText:
+    "Practical AI and automation solutions that help simplify repetitive work and improve productivity.",
+  serviceAiTag1: "AI Solutions",
+  serviceAiTag2: "Automation",
+  serviceAiTag3: "Workflows",
+
+  serviceDataTitle: "Data, Excel & Analytics",
+  serviceDataText:
+    "Organized, accurate and useful data support from entry and cleaning to spreadsheets, reporting and analysis.",
+  serviceDataTag1: "Excel",
+  serviceDataTag2: "Data Entry",
+  serviceDataTag3: "Analytics",
+
+  serviceBusinessTitle: "Business Analysis",
+  serviceBusinessText:
+    "Structured analysis that helps identify requirements, opportunities, processes and practical improvements.",
+  serviceBusinessTag1: "Requirements",
+  serviceBusinessTag2: "Processes",
+  serviceBusinessTag3: "Insights",
+
+  serviceProjectTitle: "Project Management",
+  serviceProjectText:
+    "Organized project support from planning and coordination to progress tracking, documentation and handover.",
+  serviceProjectTag1: "Planning",
+  serviceProjectTag2: "Coordination",
+  serviceProjectTag3: "Tracking",
+
+  serviceTechnologyTitle: "Technology & Web Solutions",
+  serviceTechnologyText:
+    "Professional websites, digital solutions and technology support designed around your business needs.",
+  serviceTechnologyTag1: "Websites",
+  serviceTechnologyTag2: "Digital",
+  serviceTechnologyTag3: "Technology",
+
+  serviceLanguageTitle: "French Language & Document Services",
+  serviceLanguageText:
+    "English and French translation, proofreading, editing and professional document localization.",
+  serviceLanguageTag1: "English ↔ French",
+  serviceLanguageTag2: "Translation",
+  serviceLanguageTag3: "Documents",
+
+  serviceAdminTitle: "Virtual & Administrative Support",
+  serviceAdminText:
+    "Reliable support for documents, data entry, research, Microsoft Office tasks, organization and administration.",
+  serviceAdminTag1: "Microsoft Office",
+  serviceAdminTag2: "Administration",
+  serviceAdminTag3: "Support"
+
+});
+
+
+Object.assign(translations.zh, {
+
+  whatWeDoKicker: "我们提供什么",
+  whatWeDoHeroTitle: "为成长而打造的解决方案。",
+  whatWeDoHeroDescription:
+    "我们结合人工智能、数据、商业、技术和专业支持，帮助个人与组织更高效地工作、持续前进并充满信心地成长。",
+  whatWeDoExplore: "探索我们的服务",
+  whatWeDoTalk: "联系我们",
+  whatWeDoHeroBottom: "人工智能 • 数据 • 商业 • 技术",
+
+  approachKicker: "我们的方式",
+  approachTitle: "务实的解决方案。",
+  approachTitleAccent: "创造真正的成果。",
+  approachDescription:
+    "我们首先理解真正的需求，然后打造实用、专业并能够创造实际价值的解决方案。",
+
+  approach01Title: "理解",
+  approach01Text:
+    "在推荐解决方案之前，我们会明确目标、挑战和优先事项。",
+
+  approach02Title: "打造",
+  approach02Text:
+    "我们将需求转化为有组织的工作、实用的交付成果和可执行的解决方案。",
+
+  approach03Title: "改进",
+  approach03Text:
+    "我们不断完善成果，保持工作有序，并专注于持续改进。",
+
+  approach04Title: "交付",
+  approach04Text:
+    "我们重视清晰沟通、专业交付以及真正可以使用的成果。",
+
+  whyKicker: "为什么选择 GODZYA",
+  whyTitle: "以目标为基础。",
+  whyTitleAccent: "以进步为动力。",
+  whyDescription:
+    "GODZYA GROUP 将技术、数据、商业思维和实际专业支持结合在一个不断发展的数字解决方案公司中。",
+  whyNote:
+    "我们相信只打造自己能够高质量交付的服务，保持清晰沟通，并创造真正帮助客户前进的解决方案。",
+  whyLink: "了解我们可以打造什么",
+  whyCoreLabel: "GODZYA GROUP",
+  whyCoreSub: "我们打造。你成长。",
+  whyPoint01: "务实",
+  whyPoint02: "专业",
+  whyPoint03: "前瞻",
+
+  servicesKicker: "我们的服务",
+  servicesTitle: "我们",
+  servicesTitleAccent: "打造与支持。",
+  servicesDescription:
+    "从数字解决方案和数据工作，到商业支持和项目协调，我们的服务旨在帮助您更高效地工作并持续前进。",
+
+  serviceAiTitle: "人工智能与自动化",
+  serviceAiText:
+    "通过实用的人工智能和自动化解决方案，简化重复工作并提高生产力。",
+  serviceAiTag1: "AI 解决方案",
+  serviceAiTag2: "自动化",
+  serviceAiTag3: "工作流程",
+
+  serviceDataTitle: "数据、Excel 与分析",
+  serviceDataText:
+    "从数据录入和清理，到电子表格、报告和分析，为您提供有组织、准确且有价值的数据支持。",
+  serviceDataTag1: "Excel",
+  serviceDataTag2: "数据录入",
+  serviceDataTag3: "分析",
+
+  serviceBusinessTitle: "商业分析",
+  serviceBusinessText:
+    "通过结构化分析识别需求、机会、流程以及实际改进方向。",
+  serviceBusinessTag1: "需求",
+  serviceBusinessTag2: "流程",
+  serviceBusinessTag3: "洞察",
+
+  serviceProjectTitle: "项目管理",
+  serviceProjectText:
+    "从规划和协调，到进度跟踪、文档管理和项目交接，提供有组织的项目支持。",
+  serviceProjectTag1: "规划",
+  serviceProjectTag2: "协调",
+  serviceProjectTag3: "跟踪",
+
+  serviceTechnologyTitle: "技术与网站解决方案",
+  serviceTechnologyText:
+    "根据您的业务需求打造专业网站、数字解决方案并提供技术支持。",
+  serviceTechnologyTag1: "网站",
+  serviceTechnologyTag2: "数字化",
+  serviceTechnologyTag3: "技术",
+
+  serviceLanguageTitle: "法语语言与文档服务",
+  serviceLanguageText:
+    "提供英语与法语翻译、校对、编辑以及专业文档本地化服务。",
+  serviceLanguageTag1: "英语 ↔ 法语",
+  serviceLanguageTag2: "翻译",
+  serviceLanguageTag3: "文档",
+
+  serviceAdminTitle: "虚拟与行政支持",
+  serviceAdminText:
+    "为文档、数据录入、研究、Microsoft Office、组织管理和行政工作提供可靠支持。",
+  serviceAdminTag1: "Microsoft Office",
+  serviceAdminTag2: "行政",
+  serviceAdminTag3: "支持"
+
+});
+
+
+console.log("GODZYA — What We Do translations Block 1 loaded");
