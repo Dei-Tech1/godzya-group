@@ -7313,3 +7313,147 @@ html.reduced-motion .scroll-progress {
   }
 
 }
+
+/* =====================================================
+   WHAT WE DO — FINAL RESPONSIVE & RTL POLISH
+===================================================== */
+
+.what-we-do-hero,
+.approach-section,
+.why-section,
+.services-section,
+.capabilities-section,
+.serve-section,
+.process-section,
+.global-section,
+.contact-section {
+  scroll-margin-top: 90px;
+}
+
+/* -----------------------------------------------------
+   TABLET POLISH
+----------------------------------------------------- */
+
+@media (max-width: 1050px) {
+
+  .why-layout {
+    gap: 55px;
+  }
+
+  .global-panel {
+    gap: 30px;
+  }
+
+}
+
+/* -----------------------------------------------------
+   MOBILE POLISH
+----------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .page-hero-content {
+    width: min(100% - 34px, var(--container));
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+
+  .page-hero-bottom {
+    width: min(100% - 34px, var(--container));
+    bottom: 24px;
+    font-size: 8px;
+    letter-spacing: .18em;
+  }
+
+  .section-heading {
+    margin-bottom: 0;
+  }
+
+  .approach-card,
+  .service-card,
+  .capability-panel,
+  .serve-card {
+    min-height: auto;
+  }
+
+  .why-visual {
+    min-height: 390px;
+  }
+
+  .orbit-one {
+    width: 290px;
+    height: 290px;
+  }
+
+  .orbit-two {
+    width: 210px;
+    height: 210px;
+  }
+
+  .why-core {
+    width: 125px;
+    height: 125px;
+  }
+
+  .why-point {
+    padding: 8px 10px;
+  }
+
+  .why-point strong {
+    font-size: 8px;
+  }
+
+}
+
+/* -----------------------------------------------------
+   RTL SUPPORT
+----------------------------------------------------- */
+
+html[dir="rtl"] .page-hero-content,
+html[dir="rtl"] .section-heading,
+html[dir="rtl"] .why-content,
+html[dir="rtl"] .global-content,
+html[dir="rtl"] .contact-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .why-note {
+  border-left: 0;
+  border-right: 2px solid var(--cyan);
+  padding-left: 0;
+  padding-right: 18px;
+}
+
+html[dir="rtl"] .capability-panel li {
+  padding-left: 0;
+  padding-right: 22px;
+}
+
+html[dir="rtl"] .capability-panel li::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .contact-detail strong {
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+
+  html[dir="rtl"] .contact-detail strong {
+    text-align: right;
+  }
+
+}
+
+/* -----------------------------------------------------
+   REDUCED MOTION
+----------------------------------------------------- */
+
+html.reduced-motion .page-hero-glow,
+html.reduced-motion .why-orbit,
+html.reduced-motion .global-panel::before,
+html.reduced-motion .global-ring,
+html.reduced-motion .status-dot {
+  animation: none !important;
+}
