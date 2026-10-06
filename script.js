@@ -5727,3 +5727,135 @@ Object.assign(translations.af, {
 
 
 console.log("GODZYA — What We Do translations Block 4 loaded");
+
+/* =====================================================
+   WHAT WE DO — PAGE 2 TRANSLATIONS
+   BLOCK 5 — ENGLISH REMAINING SECTIONS
+===================================================== */
+
+Object.assign(translations.en, {
+
+  capabilitiesKicker: "CAPABILITIES",
+  capabilitiesTitle: "From ideas",
+  capabilitiesTitleAccent: "to execution.",
+  capabilitiesDescription:
+    "Our work can support different stages of a business, project or digital initiative — from organizing information to creating solutions and keeping work moving.",
+
+  capDataTitle: "Data & Excel",
+  capData01: "Data entry & organization",
+  capData02: "Excel formulas & functions",
+  capData03: "Tables, reports & dashboards",
+  capData04: "Data cleaning & processing",
+  capData05: "PDF → Excel / Word conversion",
+  capData06: "Basic reporting & business insights",
+
+  capProjectTitle: "Project Management",
+  capProject01: "Project planning",
+  capProject02: "Tasks & milestone management",
+  capProject03: "Documentation & coordination",
+  capProject04: "Progress tracking",
+  capProject05: "Risk & issue tracking",
+  capProject06: "Project handover support",
+
+  capLanguageTitle: "French & Documents",
+  capLanguage01: "English → French translation",
+  capLanguage02: "French → English translation",
+  capLanguage03: "Document translation",
+  capLanguage04: "Proofreading & editing",
+  capLanguage05: "Business document localization",
+  capLanguage06: "French / English communication",
+
+  capAdminTitle: "Administrative Support",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Document formatting",
+  capAdmin05: "Internet research",
+  capAdmin06: "File organization & preparation",
+
+  serveKicker: "WHO WE SERVE",
+  serveTitle: "Built around",
+  serveTitleAccent: "your needs.",
+  serveDescription:
+    "GODZYA GROUP can support individuals, entrepreneurs, small businesses, growing organizations and teams that need practical digital, business or professional support.",
+
+  serve01Title: "Individuals",
+  serve01Text:
+    "Professional support for personal projects, documents, data work, digital tasks and other practical needs.",
+
+  serve02Title: "Entrepreneurs",
+  serve02Text:
+    "Practical technology, data, business and administrative support for people building and growing their businesses.",
+
+  serve03Title: "Small Businesses",
+  serve03Text:
+    "Flexible support for organizations that need additional capacity without unnecessary complexity.",
+
+  serve04Title: "Teams & Organizations",
+  serve04Text:
+    "Structured support for projects, documentation, data, digital work and business operations.",
+
+  processKicker: "HOW WE WORK",
+  processTitle: "Clear process.",
+  processTitleAccent: "Better delivery.",
+  processDescription:
+    "Every engagement starts with clarity. We keep communication, expectations and deliverables organized from beginning to end.",
+
+  process01Title: "Discover",
+  process01Text:
+    "We understand your objective, requirements, priorities and expected outcome.",
+
+  process02Title: "Plan",
+  process02Text:
+    "We define the work, organize priorities and establish a practical path forward.",
+
+  process03Title: "Execute",
+  process03Text:
+    "We work through the agreed tasks while keeping communication and progress visible.",
+
+  process04Title: "Deliver",
+  process04Text:
+    "We review the work, finalize the deliverables and support a clear handover.",
+
+  globalKicker: "BUILT FOR A CONNECTED WORLD",
+  globalTitle: "From local ambition",
+  globalTitleAccent: "to global opportunity.",
+  globalDescription:
+    "GODZYA GROUP is being built with a global mindset — connecting technology, data, business and professional services across borders and languages.",
+  globalPoint1: "DIGITAL",
+  globalPoint2: "DATA",
+  globalPoint3: "BUSINESS",
+  globalPoint4: "TECHNOLOGY",
+  globalPoint5: "LANGUAGES",
+
+  contactKicker: "LET'S CONNECT",
+  contactTitle: "Have a project",
+  contactTitleAccent: "in mind?",
+  contactDescription:
+    "Tell us what you are working on, what you need help with, and where you want to go. Let's explore how GODZYA GROUP can support the next step.",
+  contactEmailButton: "Email GODZYA",
+  contactHomeButton: "Back to Home",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "READY TO CONNECT",
+  contactEmailLabel: "EMAIL",
+  contactFocusLabel: "FOCUS",
+  contactFocus: "AI • DATA • BUSINESS • TECHNOLOGY",
+  contactBottom: "WE BUILD. YOU GROW.",
+
+  footerDescription:
+    "Building smarter solutions for a connected future.",
+  footerNavigate: "NAVIGATE",
+  footerFocus: "FOCUS",
+  footerFocus1: "AI & Automation",
+  footerFocus2: "Data & Analytics",
+  footerFocus3: "Business & Technology",
+  footerFocus4: "Professional Support",
+  footerConnect: "CONNECT",
+  footerGlobal: "Serving a connected world",
+  footerTagline: "WE BUILD. YOU GROW."
+
+});
+
+console.log("GODZYA — What We Do English remaining translations loaded");
+
+
