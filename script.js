@@ -3895,3 +3895,51 @@ document.querySelectorAll(
   );
 
 });
+
+/* =====================================================
+   IMAGE LOADING PROTECTION
+===================================================== */
+
+const pageImages =
+  document.querySelectorAll(
+    "img"
+  );
+
+
+pageImages.forEach((image) => {
+
+  image.addEventListener(
+    "error",
+    () => {
+
+      image.classList.add(
+        "image-error"
+      );
+
+    }
+  );
+
+
+  if (image.complete) {
+
+    image.classList.add(
+      "image-loaded"
+    );
+
+  } else {
+
+    image.addEventListener(
+      "load",
+      () => {
+
+        image.classList.add(
+          "image-loaded"
+        );
+
+      },
+      { once: true }
+    );
+
+  }
+
+});
