@@ -4334,3 +4334,42 @@ window.addEventListener(
 
   }
 );
+
+/* =====================================================
+   MOTION PREFERENCE
+===================================================== */
+
+const reducedMotion =
+  window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+
+function applyMotionPreference() {
+
+  if (
+    reducedMotion.matches
+  ) {
+
+    document.documentElement.classList.add(
+      "reduced-motion"
+    );
+
+  } else {
+
+    document.documentElement.classList.remove(
+      "reduced-motion"
+    );
+
+  }
+
+}
+
+
+applyMotionPreference();
+
+
+reducedMotion.addEventListener(
+  "change",
+  applyMotionPreference
+);
