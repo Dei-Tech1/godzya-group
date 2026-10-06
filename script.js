@@ -4986,4 +4986,321 @@ Object.assign(translations.fr, {
 
 console.log("GODZYA — What We Do translations Block 2 loaded");
 
+/* =====================================================
+   WHAT WE DO — PAGE 2 TRANSLATIONS
+   BLOCK 3 — ARABIC + PORTUGUESE + BENGALI
+===================================================== */
 
+Object.assign(translations.ar, {
+
+  whatWeDoKicker: "ماذا نقدم",
+  whatWeDoHeroTitle: "حلول مصممة للتقدم.",
+  whatWeDoHeroDescription:
+    "نجمع بين الذكاء الاصطناعي والبيانات والأعمال والتكنولوجيا والدعم المهني لمساعدة الأفراد والمؤسسات على العمل بذكاء أكبر والتقدم والنمو بثقة.",
+  whatWeDoExplore: "اكتشف خدماتنا",
+  whatWeDoTalk: "لنتحدث",
+  whatWeDoHeroBottom: "الذكاء الاصطناعي • البيانات • الأعمال • التكنولوجيا",
+
+  approachKicker: "منهجيتنا",
+  approachTitle: "حلول عملية.",
+  approachTitleAccent: "نتائج ذات معنى.",
+  approachDescription:
+    "نبدأ بفهم الاحتياج، ثم نبني حلولًا عملية ومهنية مصممة لتحقيق قيمة حقيقية.",
+
+  approach01Title: "نفهم",
+  approach01Text:
+    "نحدد الهدف والتحديات والأولويات قبل التوصية بالحل المناسب.",
+
+  approach02Title: "نبني",
+  approach02Text:
+    "نحوّل المتطلبات إلى عمل منظم ومخرجات مفيدة وحلول عملية.",
+
+  approach03Title: "نطوّر",
+  approach03Text:
+    "نحسّن النتائج ونحافظ على تنظيم العمل ونركز على التطوير المستمر.",
+
+  approach04Title: "نسلّم",
+  approach04Text:
+    "نركز على التواصل الواضح والتنفيذ المهني والنتائج التي يمكنك استخدامها فعليًا.",
+
+  whyKicker: "لماذا GODZYA",
+  whyTitle: "نبني بهدف.",
+  whyTitleAccent: "ونتحرك نحو التقدم.",
+  whyDescription:
+    "تجمع GODZYA GROUP بين التكنولوجيا والبيانات والتفكير التجاري والدعم المهني العملي ضمن شركة متنامية للحلول الرقمية.",
+  whyNote:
+    "نؤمن ببناء ما نستطيع تقديمه بجودة، والتواصل بوضوح، وإنشاء حلول تساعد عملاءنا فعليًا على التقدم.",
+  whyLink: "اكتشف ما يمكننا بناؤه",
+  whyCoreLabel: "GODZYA GROUP",
+  whyCoreSub: "نحن نبني. أنتم تنمون.",
+  whyPoint01: "عملي",
+  whyPoint02: "مهني",
+  whyPoint03: "مستقبلي",
+
+  servicesKicker: "خدماتنا",
+  servicesTitle: "ما",
+  servicesTitleAccent: "نبنيه وندعمه.",
+  servicesDescription:
+    "من الحلول الرقمية والعمل مع البيانات إلى دعم الأعمال وتنسيق المشاريع، صُممت خدماتنا لمساعدتك على العمل بذكاء أكبر والتقدم.",
+
+  serviceAiTitle: "الذكاء الاصطناعي والأتمتة",
+  serviceAiText:
+    "حلول عملية للذكاء الاصطناعي والأتمتة تساعد على تبسيط الأعمال المتكررة وتحسين الإنتاجية.",
+  serviceAiTag1: "حلول AI",
+  serviceAiTag2: "الأتمتة",
+  serviceAiTag3: "سير العمل",
+
+  serviceDataTitle: "البيانات وExcel والتحليلات",
+  serviceDataText:
+    "دعم منظم ودقيق للبيانات، من إدخال البيانات وتنظيفها إلى جداول البيانات والتقارير والتحليل.",
+  serviceDataTag1: "Excel",
+  serviceDataTag2: "إدخال البيانات",
+  serviceDataTag3: "التحليلات",
+
+  serviceBusinessTitle: "تحليل الأعمال",
+  serviceBusinessText:
+    "تحليل منظم يساعد على تحديد المتطلبات والفرص والعمليات والتحسينات العملية.",
+  serviceBusinessTag1: "المتطلبات",
+  serviceBusinessTag2: "العمليات",
+  serviceBusinessTag3: "الرؤى",
+
+  serviceProjectTitle: "إدارة المشاريع",
+  serviceProjectText:
+    "دعم منظم للمشاريع يبدأ من التخطيط والتنسيق وصولًا إلى متابعة التقدم والتوثيق والتسليم.",
+  serviceProjectTag1: "التخطيط",
+  serviceProjectTag2: "التنسيق",
+  serviceProjectTag3: "المتابعة",
+
+  serviceTechnologyTitle: "التكنولوجيا وحلول الويب",
+  serviceTechnologyText:
+    "مواقع احترافية وحلول رقمية ودعم تقني مصمم وفق احتياجات عملك.",
+  serviceTechnologyTag1: "المواقع",
+  serviceTechnologyTag2: "رقمي",
+  serviceTechnologyTag3: "التكنولوجيا",
+
+  serviceLanguageTitle: "خدمات اللغة الفرنسية والوثائق",
+  serviceLanguageText:
+    "الترجمة بين الإنجليزية والفرنسية، والمراجعة والتحرير والتوطين المهني للوثائق.",
+  serviceLanguageTag1: "الإنجليزية ↔ الفرنسية",
+  serviceLanguageTag2: "الترجمة",
+  serviceLanguageTag3: "الوثائق",
+
+  serviceAdminTitle: "الدعم الافتراضي والإداري",
+  serviceAdminText:
+    "دعم موثوق للوثائق وإدخال البيانات والبحث ومهام Microsoft Office والتنظيم والإدارة.",
+  serviceAdminTag1: "Microsoft Office",
+  serviceAdminTag2: "الإدارة",
+  serviceAdminTag3: "الدعم"
+
+});
+
+
+Object.assign(translations.pt, {
+
+  whatWeDoKicker: "O QUE FAZEMOS",
+  whatWeDoHeroTitle: "Soluções construídas para o progresso.",
+  whatWeDoHeroDescription:
+    "Combinamos IA, dados, negócios, tecnologia e suporte profissional para ajudar pessoas e organizações a trabalhar melhor, avançar e crescer com confiança.",
+  whatWeDoExplore: "Explorar nossos serviços",
+  whatWeDoTalk: "Vamos conversar",
+  whatWeDoHeroBottom: "IA • DADOS • NEGÓCIOS • TECNOLOGIA",
+
+  approachKicker: "NOSSA ABORDAGEM",
+  approachTitle: "Soluções práticas.",
+  approachTitleAccent: "Resultados significativos.",
+  approachDescription:
+    "Primeiro entendemos a necessidade e depois desenvolvemos soluções práticas, profissionais e criadas para gerar valor real.",
+
+  approach01Title: "Entender",
+  approach01Text:
+    "Identificamos o objetivo, os desafios e as prioridades antes de recomendar uma solução.",
+
+  approach02Title: "Construir",
+  approach02Text:
+    "Transformamos requisitos em trabalho organizado, entregáveis úteis e soluções práticas.",
+
+  approach03Title: "Melhorar",
+  approach03Text:
+    "Aperfeiçoamos o resultado, mantemos o trabalho organizado e buscamos melhoria contínua.",
+
+  approach04Title: "Entregar",
+  approach04Text:
+    "Valorizamos uma comunicação clara, uma entrega profissional e resultados realmente úteis.",
+
+  whyKicker: "POR QUE GODZYA",
+  whyTitle: "Construído com propósito.",
+  whyTitleAccent: "Impulsionado pelo progresso.",
+  whyDescription:
+    "A GODZYA GROUP reúne tecnologia, dados, pensamento empresarial e suporte profissional prático em uma empresa de soluções digitais em crescimento.",
+  whyNote:
+    "Acreditamos em construir aquilo que podemos entregar bem, comunicar com clareza e criar soluções que realmente ajudem nossos clientes a avançar.",
+  whyLink: "Descubra o que podemos construir",
+  whyCoreLabel: "GODZYA GROUP",
+  whyCoreSub: "NÓS CONSTRUÍMOS. VOCÊ CRESCE.",
+  whyPoint01: "Prático",
+  whyPoint02: "Profissional",
+  whyPoint03: "Voltado para o futuro",
+
+  servicesKicker: "NOSSOS SERVIÇOS",
+  servicesTitle: "O que",
+  servicesTitleAccent: "construímos e apoiamos.",
+  servicesDescription:
+    "De soluções digitais e trabalho com dados a suporte empresarial e coordenação de projetos, nossos serviços foram criados para ajudar você a trabalhar melhor e avançar.",
+
+  serviceAiTitle: "IA e Automação",
+  serviceAiText:
+    "Soluções práticas de IA e automação para simplificar tarefas repetitivas e melhorar a produtividade.",
+  serviceAiTag1: "Soluções de IA",
+  serviceAiTag2: "Automação",
+  serviceAiTag3: "Fluxos de trabalho",
+
+  serviceDataTitle: "Dados, Excel e Analytics",
+  serviceDataText:
+    "Suporte organizado e preciso para dados, desde entrada e limpeza até planilhas, relatórios e análises.",
+  serviceDataTag1: "Excel",
+  serviceDataTag2: "Entrada de dados",
+  serviceDataTag3: "Analytics",
+
+  serviceBusinessTitle: "Análise de Negócios",
+  serviceBusinessText:
+    "Análise estruturada para identificar requisitos, oportunidades, processos e melhorias práticas.",
+  serviceBusinessTag1: "Requisitos",
+  serviceBusinessTag2: "Processos",
+  serviceBusinessTag3: "Insights",
+
+  serviceProjectTitle: "Gestão de Projetos",
+  serviceProjectText:
+    "Suporte organizado desde o planejamento e coordenação até o acompanhamento, documentação e entrega.",
+  serviceProjectTag1: "Planejamento",
+  serviceProjectTag2: "Coordenação",
+  serviceProjectTag3: "Acompanhamento",
+
+  serviceTechnologyTitle: "Tecnologia e Soluções Web",
+  serviceTechnologyText:
+    "Sites profissionais, soluções digitais e suporte tecnológico desenvolvidos de acordo com as necessidades do seu negócio.",
+  serviceTechnologyTag1: "Sites",
+  serviceTechnologyTag2: "Digital",
+  serviceTechnologyTag3: "Tecnologia",
+
+  serviceLanguageTitle: "Serviços de Língua Francesa e Documentos",
+  serviceLanguageText:
+    "Tradução entre inglês e francês, revisão, edição e localização profissional de documentos.",
+  serviceLanguageTag1: "Inglês ↔ Francês",
+  serviceLanguageTag2: "Tradução",
+  serviceLanguageTag3: "Documentos",
+
+  serviceAdminTitle: "Suporte Virtual e Administrativo",
+  serviceAdminText:
+    "Suporte confiável para documentos, entrada de dados, pesquisa, Microsoft Office, organização e administração.",
+  serviceAdminTag1: "Microsoft Office",
+  serviceAdminTag2: "Administração",
+  serviceAdminTag3: "Suporte"
+
+});
+
+
+Object.assign(translations.bn, {
+
+  whatWeDoKicker: "আমরা যা করি",
+  whatWeDoHeroTitle: "অগ্রগতির জন্য তৈরি সমাধান।",
+  whatWeDoHeroDescription:
+    "আমরা AI, ডেটা, ব্যবসা, প্রযুক্তি এবং পেশাদার সহায়তাকে একত্রিত করে ব্যক্তি ও প্রতিষ্ঠানকে আরও দক্ষভাবে কাজ করতে, এগিয়ে যেতে এবং আত্মবিশ্বাসের সাথে বৃদ্ধি পেতে সাহায্য করি।",
+  whatWeDoExplore: "আমাদের সেবা দেখুন",
+  whatWeDoTalk: "চলুন কথা বলি",
+  whatWeDoHeroBottom: "AI • ডেটা • ব্যবসা • প্রযুক্তি",
+
+  approachKicker: "আমাদের পদ্ধতি",
+  approachTitle: "ব্যবহারিক সমাধান।",
+  approachTitleAccent: "অর্থবহ ফলাফল।",
+  approachDescription:
+    "আমরা প্রথমে প্রয়োজন বুঝি, তারপর বাস্তব মূল্য তৈরি করার জন্য ব্যবহারিক ও পেশাদার সমাধান তৈরি করি।",
+
+  approach01Title: "বোঝা",
+  approach01Text:
+    "সমাধান দেওয়ার আগে আমরা লক্ষ্য, চ্যালেঞ্জ এবং অগ্রাধিকার নির্ধারণ করি।",
+
+  approach02Title: "তৈরি করা",
+  approach02Text:
+    "আমরা প্রয়োজনীয়তাকে সংগঠিত কাজ, কার্যকর ডেলিভারেবল এবং ব্যবহারিক সমাধানে রূপান্তর করি।",
+
+  approach03Title: "উন্নত করা",
+  approach03Text:
+    "আমরা ফলাফলকে আরও উন্নত করি, কাজকে সংগঠিত রাখি এবং ধারাবাহিক উন্নতির দিকে মনোযোগ দিই।",
+
+  approach04Title: "সরবরাহ করা",
+  approach04Text:
+    "আমরা পরিষ্কার যোগাযোগ, পেশাদার ডেলিভারি এবং বাস্তবে ব্যবহারযোগ্য ফলাফলের ওপর গুরুত্ব দিই।",
+
+  whyKicker: "কেন GODZYA",
+  whyTitle: "উদ্দেশ্য নিয়ে তৈরি।",
+  whyTitleAccent: "অগ্রগতির দ্বারা পরিচালিত।",
+  whyDescription:
+    "GODZYA GROUP প্রযুক্তি, ডেটা, ব্যবসায়িক চিন্তাভাবনা এবং ব্যবহারিক পেশাদার সহায়তাকে একটি বিকাশমান ডিজিটাল সলিউশন কোম্পানির মধ্যে একত্রিত করে।",
+  whyNote:
+    "আমরা এমন কাজ তৈরি করতে বিশ্বাস করি যা আমরা ভালোভাবে সরবরাহ করতে পারি, পরিষ্কারভাবে যোগাযোগ করতে পারি এবং যা আমাদের ক্লায়েন্টদের সত্যিকার অর্থে এগিয়ে যেতে সাহায্য করে।",
+  whyLink: "আমরা কী তৈরি করতে পারি দেখুন",
+  whyCoreLabel: "GODZYA GROUP",
+  whyCoreSub: "আমরা তৈরি করি। আপনি এগিয়ে যান।",
+  whyPoint01: "ব্যবহারিক",
+  whyPoint02: "পেশাদার",
+  whyPoint03: "ভবিষ্যতমুখী",
+
+  servicesKicker: "আমাদের সেবা",
+  servicesTitle: "আমরা যা",
+  servicesTitleAccent: "তৈরি ও সহায়তা করি।",
+  servicesDescription:
+    "ডিজিটাল সমাধান ও ডেটা কাজ থেকে ব্যবসায়িক সহায়তা এবং প্রকল্প সমন্বয় পর্যন্ত, আমাদের সেবাগুলো আপনাকে আরও দক্ষভাবে কাজ করতে এবং এগিয়ে যেতে সাহায্য করার জন্য তৈরি।",
+
+  serviceAiTitle: "AI ও অটোমেশন",
+  serviceAiText:
+    "পুনরাবৃত্তিমূলক কাজ সহজ করতে এবং উৎপাদনশীলতা বাড়াতে ব্যবহারিক AI ও অটোমেশন সমাধান।",
+  serviceAiTag1: "AI সমাধান",
+  serviceAiTag2: "অটোমেশন",
+  serviceAiTag3: "ওয়ার্কফ্লো",
+
+  serviceDataTitle: "ডেটা, Excel ও অ্যানালিটিক্স",
+  serviceDataText:
+    "ডেটা এন্ট্রি ও পরিষ্কার করা থেকে স্প্রেডশিট, রিপোর্ট এবং বিশ্লেষণ পর্যন্ত সংগঠিত ও কার্যকর ডেটা সহায়তা।",
+  serviceDataTag1: "Excel",
+  serviceDataTag2: "ডেটা এন্ট্রি",
+  serviceDataTag3: "অ্যানালিটিক্স",
+
+  serviceBusinessTitle: "বিজনেস অ্যানালাইসিস",
+  serviceBusinessText:
+    "প্রয়োজনীয়তা, সুযোগ, প্রক্রিয়া এবং ব্যবহারিক উন্নতি শনাক্ত করার জন্য কাঠামোবদ্ধ বিশ্লেষণ।",
+  serviceBusinessTag1: "প্রয়োজনীয়তা",
+  serviceBusinessTag2: "প্রক্রিয়া",
+  serviceBusinessTag3: "ইনসাইট",
+
+  serviceProjectTitle: "প্রজেক্ট ম্যানেজমেন্ট",
+  serviceProjectText:
+    "পরিকল্পনা ও সমন্বয় থেকে অগ্রগতি ট্র্যাকিং, ডকুমেন্টেশন এবং হ্যান্ডওভার পর্যন্ত সংগঠিত প্রকল্প সহায়তা।",
+  serviceProjectTag1: "পরিকল্পনা",
+  serviceProjectTag2: "সমন্বয়",
+  serviceProjectTag3: "ট্র্যাকিং",
+
+  serviceTechnologyTitle: "প্রযুক্তি ও ওয়েব সমাধান",
+  serviceTechnologyText:
+    "আপনার ব্যবসার প্রয়োজন অনুযায়ী পেশাদার ওয়েবসাইট, ডিজিটাল সমাধান এবং প্রযুক্তিগত সহায়তা।",
+  serviceTechnologyTag1: "ওয়েবসাইট",
+  serviceTechnologyTag2: "ডিজিটাল",
+  serviceTechnologyTag3: "প্রযুক্তি",
+
+  serviceLanguageTitle: "ফরাসি ভাষা ও ডকুমেন্ট সেবা",
+  serviceLanguageText:
+    "ইংরেজি ও ফরাসি অনুবাদ, প্রুফরিডিং, সম্পাদনা এবং পেশাদার ডকুমেন্ট লোকালাইজেশন।",
+  serviceLanguageTag1: "ইংরেজি ↔ ফরাসি",
+  serviceLanguageTag2: "অনুবাদ",
+  serviceLanguageTag3: "ডকুমেন্ট",
+
+  serviceAdminTitle: "ভার্চুয়াল ও প্রশাসনিক সহায়তা",
+  serviceAdminText:
+    "ডকুমেন্ট, ডেটা এন্ট্রি, গবেষণা, Microsoft Office, সংগঠন এবং প্রশাসনিক কাজের জন্য নির্ভরযোগ্য সহায়তা।",
+  serviceAdminTag1: "Microsoft Office",
+  serviceAdminTag2: "প্রশাসন",
+  serviceAdminTag3: "সহায়তা"
+
+});
+
+
+console.log("GODZYA — What We Do translations Block 3 loaded");
