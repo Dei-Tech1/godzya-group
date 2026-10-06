@@ -3693,3 +3693,63 @@ if (currentYear) {
     new Date().getFullYear();
 
 }
+
+/* =====================================================
+   PREMIUM CARD INTERACTION
+===================================================== */
+
+const interactiveCards =
+  document.querySelectorAll(
+    ".service-card, .project-card"
+  );
+
+
+const supportsHover =
+  window.matchMedia(
+    "(hover: hover) and (pointer: fine)"
+  ).matches;
+
+
+if (supportsHover) {
+
+  interactiveCards.forEach((card) => {
+
+    card.addEventListener(
+      "mousemove",
+      (event) => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+        const x =
+          event.clientX - rect.left;
+
+        const y =
+          event.clientY - rect.top;
+
+        const rotateY =
+          ((x / rect.width) - 0.5) * 5;
+
+        const rotateX =
+          ((y / rect.height) - 0.5) * -5;
+
+        card.style.transform =
+          `translateY(-8px) perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+      }
+    );
+
+
+    card.addEventListener(
+      "mouseleave",
+      () => {
+
+        card.style.transform =
+          "";
+
+      }
+    );
+
+  });
+
+}
