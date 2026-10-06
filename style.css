@@ -6085,3 +6085,257 @@ html.reduced-motion .scroll-progress {
   }
 
 }
+
+/* =====================================================
+   WHAT WE DO — WHY GODZYA
+===================================================== */
+
+.why-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.why-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, .9fr);
+  gap: 90px;
+  align-items: center;
+}
+
+.why-content {
+  max-width: 650px;
+}
+
+.why-content .section-description {
+  margin-bottom: 22px;
+}
+
+.why-note {
+  max-width: 590px;
+  margin: 0 0 30px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--cyan);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition:
+    gap .3s ease,
+    color .3s ease;
+}
+
+.text-link span {
+  font-size: 18px;
+  transition: transform .3s ease;
+}
+
+.text-link:hover {
+  gap: 16px;
+  color: var(--cyan-soft);
+}
+
+.text-link:hover span {
+  transform: translateX(3px);
+}
+
+.why-visual {
+  position: relative;
+  min-height: 520px;
+  display: grid;
+  place-items: center;
+}
+
+.why-orbit {
+  position: absolute;
+  border: 1px solid rgba(70,217,255,.14);
+  border-radius: 50%;
+  animation: whySpin 18s linear infinite;
+}
+
+.orbit-one {
+  width: 390px;
+  height: 390px;
+}
+
+.orbit-two {
+  width: 280px;
+  height: 280px;
+  border-color: rgba(70,217,255,.20);
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+.why-orbit::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow:
+    0 0 18px rgba(70,217,255,.8);
+}
+
+@keyframes whySpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.why-core {
+  position: relative;
+  z-index: 4;
+  width: 190px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(70,217,255,.35);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.10),
+      rgba(5,11,20,.96) 68%
+    );
+  box-shadow:
+    0 0 60px rgba(70,217,255,.12),
+    inset 0 0 35px rgba(70,217,255,.06);
+}
+
+.why-core-mark {
+  margin-bottom: 8px;
+  color: var(--cyan);
+  font-family: "Manrope", sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.why-core span:not(.why-core-mark) {
+  color: var(--white);
+  font-size: 10px;
+  letter-spacing: .18em;
+}
+
+.why-core small {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 7px;
+  letter-spacing: .18em;
+}
+
+.why-point {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(5,11,20,.78);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.3);
+}
+
+.why-point span {
+  color: var(--cyan);
+  font-size: 8px;
+  letter-spacing: .18em;
+}
+
+.why-point strong {
+  color: var(--white);
+  font-size: 11px;
+  letter-spacing: .03em;
+}
+
+.why-point-one {
+  top: 8%;
+  right: 3%;
+}
+
+.why-point-two {
+  left: 0;
+  bottom: 15%;
+}
+
+.why-point-three {
+  right: 2%;
+  bottom: 4%;
+}
+
+@media (max-width: 950px) {
+
+  .why-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .why-content {
+    max-width: 100%;
+  }
+
+  .why-visual {
+    min-height: 450px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .why-visual {
+    min-height: 370px;
+  }
+
+  .orbit-one {
+    width: 300px;
+    height: 300px;
+  }
+
+  .orbit-two {
+    width: 220px;
+    height: 220px;
+  }
+
+  .why-core {
+    width: 150px;
+    height: 150px;
+  }
+
+  .why-core-mark {
+    font-size: 34px;
+  }
+
+  .why-point {
+    padding: 9px 11px;
+  }
+
+  .why-point-one {
+    right: 0;
+  }
+
+  .why-point-two {
+    left: 0;
+  }
+
+}
