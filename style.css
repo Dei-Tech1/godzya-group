@@ -2919,3 +2919,56 @@ h2 span {
   }
 
 }
+
+/* =================================================
+   21 — CINEMATIC EARTH BACKGROUND
+================================================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,10,18,.96) 0%,
+      rgba(3,10,18,.88) 38%,
+      rgba(3,10,18,.35) 68%,
+      rgba(3,10,18,.18) 100%
+    ),
+    url("godzya-earth-hero.png")
+    center / cover
+    no-repeat;
+}
+
+
+/* KEEP HERO CONTENT ABOVE EARTH */
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+}
+
+
+/* SUBTLE LOWER DIGITAL GLOW */
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 30%;
+
+  z-index: 2;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      ellipse at bottom,
+      rgba(70,217,255,.16),
+      transparent 65%
+    );
+}
