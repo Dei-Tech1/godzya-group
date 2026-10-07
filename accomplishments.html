@@ -673,6 +673,245 @@
 
 </section>
 
+  <!-- =====================================================
+     CUSTOMER VOICE
+===================================================== -->
+
+<section
+  class="customer-voice-section"
+  id="customer-voice"
+>
+
+  <div class="section-shell">
+
+
+    <div class="section-heading">
+
+      <span
+        class="eyebrow"
+        data-i18n="feedbackKicker"
+      >
+        CUSTOMER VOICE
+      </span>
+
+
+      <h2 data-i18n="feedbackTitle">
+        Your voice
+        <span>helps us grow.</span>
+      </h2>
+
+
+      <p data-i18n="feedbackDescription">
+        Whether you have something positive to share,
+        an idea for improvement or a concern, we want
+        to hear from you.
+      </p>
+
+    </div>
+
+
+    <div class="feedback-layout">
+
+
+      <!-- FEEDBACK INFORMATION -->
+
+      <div class="feedback-intro">
+
+        <div class="feedback-orbit">
+
+          <div class="feedback-core">
+            G
+          </div>
+
+          <span class="feedback-dot dot-one"></span>
+          <span class="feedback-dot dot-two"></span>
+          <span class="feedback-dot dot-three"></span>
+
+        </div>
+
+
+        <h3 data-i18n="feedbackIntroTitle">
+          Every perspective matters.
+        </h3>
+
+
+        <p data-i18n="feedbackIntroText">
+          Honest feedback helps us understand what we are
+          doing well and where we can improve the experience
+          we provide.
+        </p>
+
+      </div>
+
+
+
+      <!-- FEEDBACK FORM -->
+
+      <form
+        class="feedback-form"
+        id="feedbackForm"
+      >
+
+        <div class="form-group">
+
+          <label
+            for="feedbackType"
+            data-i18n="feedbackTypeLabel"
+          >
+            Feedback Type
+          </label>
+
+
+          <select
+            id="feedbackType"
+            name="feedbackType"
+            required
+          >
+
+            <option
+              value=""
+              data-i18n="feedbackTypePlaceholder"
+            >
+              Select feedback type
+            </option>
+
+            <option
+              value="Compliment"
+              data-i18n="feedbackCompliment"
+            >
+              Compliment
+            </option>
+
+            <option
+              value="Suggestion"
+              data-i18n="feedbackSuggestion"
+            >
+              Suggestion
+            </option>
+
+            <option
+              value="Complaint"
+              data-i18n="feedbackComplaint"
+            >
+              Complaint
+            </option>
+
+            <option
+              value="General Feedback"
+              data-i18n="feedbackGeneral"
+            >
+              General Feedback
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label
+              for="feedbackName"
+              data-i18n="feedbackNameLabel"
+            >
+              Name
+            </label>
+
+
+            <input
+              type="text"
+              id="feedbackName"
+              name="name"
+              placeholder="Your name"
+              data-i18n-placeholder="feedbackNamePlaceholder"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label
+              for="feedbackEmail"
+              data-i18n="feedbackEmailLabel"
+            >
+              Email
+            </label>
+
+
+            <input
+              type="email"
+              id="feedbackEmail"
+              name="email"
+              placeholder="Your email"
+              data-i18n-placeholder="feedbackEmailPlaceholder"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label
+            for="feedbackMessage"
+            data-i18n="feedbackMessageLabel"
+          >
+            Your Message
+          </label>
+
+
+          <textarea
+            id="feedbackMessage"
+            name="message"
+            rows="6"
+            placeholder="Tell us what you think..."
+            data-i18n-placeholder="feedbackMessagePlaceholder"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="btn btn-primary feedback-submit"
+          data-i18n="feedbackSubmit"
+        >
+          Send Feedback
+        </button>
+
+
+        <p
+          class="feedback-note"
+          data-i18n="feedbackNote"
+        >
+          Your feedback will open your email application
+          for sending. No information is stored directly
+          on this website.
+        </p>
+
+
+        <div
+          class="feedback-status"
+          id="feedbackStatus"
+          aria-live="polite"
+        ></div>
+
+      </form>
+
+
+    </div>
+
+  </div>
+
+</section>
+
   
 
 </body>
