@@ -3919,3 +3919,94 @@ h2 span {
   }
 
 }
+
+/* =================================================
+   31 — OUR EXPERTISE ATMOSPHERE
+================================================== */
+
+.expertise {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(70,217,255,.09),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(85,72,255,.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #050b14 0%,
+      #07121e 50%,
+      #050b14 100%
+    );
+}
+
+
+/* DIGITAL GRID */
+
+.expertise::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  z-index: -1;
+
+  background-image:
+    linear-gradient(
+      rgba(70,217,255,.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(70,217,255,.035) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    55px 55px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent,
+      black 20%,
+      black 80%,
+      transparent
+    );
+}
+
+
+/* TOP ENERGY LINE */
+
+.expertise::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 10%;
+  right: 10%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(70,217,255,.55),
+      transparent
+    );
+
+  box-shadow:
+    0 0 20px rgba(70,217,255,.22);
+
+  pointer-events: none;
+}
