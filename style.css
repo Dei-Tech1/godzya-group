@@ -412,3 +412,222 @@ h2 span {
   position: relative;
   padding: 130px 0;
 }
+
+/* =================================================
+   07 — NAVIGATION
+================================================== */
+
+.site-header {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.06);
+
+  background:
+    rgba(5,11,20,.72);
+
+  backdrop-filter:
+    blur(18px);
+
+}
+
+
+.site-nav {
+
+  width: min(
+    calc(100% - 48px),
+    var(--container)
+  );
+
+  min-height: 82px;
+
+  margin-inline: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+}
+
+
+/* BRAND */
+
+.brand {
+
+  display: inline-flex;
+
+  align-items: baseline;
+
+  gap: 7px;
+
+  flex-shrink: 0;
+
+}
+
+
+.brand-name {
+
+  color: var(--white);
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  letter-spacing: .08em;
+
+}
+
+
+.brand-group {
+
+  color: var(--cyan);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .2em;
+
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 34px;
+
+}
+
+
+.nav-links a {
+
+  position: relative;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: .08em;
+
+  text-transform: uppercase;
+
+  transition:
+    color .3s ease;
+
+}
+
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--cyan);
+
+  transition:
+    width .3s ease;
+
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+
+  color: var(--white);
+
+}
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+
+  width: 100%;
+
+}
+
+
+/* LANGUAGE */
+
+.language-button {
+
+  min-width: 42px;
+
+  height: 36px;
+
+  border:
+    1px solid
+    var(--line-cyan);
+
+  border-radius: 999px;
+
+  background:
+    rgba(70,217,255,.04);
+
+  color: var(--cyan);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+}
+
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border:
+    1px solid
+    var(--line-cyan);
+
+  border-radius: 10px;
+
+  background: transparent;
+
+}
+
+
+.menu-toggle span {
+
+  display: block;
+
+  width: 20px;
+  height: 1px;
+
+  margin: 5px auto;
+
+  background: var(--white);
+
+}
