@@ -8878,3 +8878,203 @@ html.reduced-motion .status-dot {
   }
 
 }
+
+/* =====================================================
+   ACCOMPLISHMENTS — CONTACT POLISH
+===================================================== */
+
+.accomplishments-contact {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    100px 0;
+
+}
+
+
+.accomplishments-contact .contact-panel {
+
+  position: relative;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(70,217,255,.16);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(11,23,36,.94),
+      rgba(5,11,20,.98)
+    );
+
+  box-shadow:
+    var(--shadow);
+
+}
+
+
+.accomplishments-contact .contact-panel::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(70,217,255,.08),
+      transparent 32%
+    );
+
+  pointer-events: none;
+
+}
+
+
+.accomplishments-contact .contact-content {
+
+  position: relative;
+
+  z-index: 3;
+
+}
+
+
+.accomplishments-contact .contact-panel-visual {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+.accomplishments-contact .contact-glow {
+
+  position: absolute;
+
+  width: 500px;
+
+  height: 500px;
+
+  right: -180px;
+
+  bottom: -220px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.09),
+      transparent 68%
+    );
+
+  pointer-events: none;
+
+}
+
+
+@media (max-width: 850px) {
+
+  .accomplishments-contact {
+
+    padding:
+      80px 0;
+
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .accomplishments-contact {
+
+    padding:
+      65px 0;
+
+  }
+
+
+  .accomplishments-contact .contact-panel {
+
+    border-radius:
+      22px;
+
+  }
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS — ACCESSIBILITY
+===================================================== */
+
+.project-card:focus-within,
+.story-card:focus-within {
+
+  border-color:
+    var(--line-cyan);
+
+}
+
+
+.project-link:focus-visible,
+.feedback-submit:focus-visible,
+.form-group input:focus-visible,
+.form-group select:focus-visible,
+.form-group textarea:focus-visible {
+
+  outline:
+    2px solid
+    var(--cyan);
+
+  outline-offset:
+    3px;
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS — REDUCED MOTION
+===================================================== */
+
+html.reduced-motion
+.accomplishments-hero .page-hero-glow,
+html.reduced-motion
+.project-glow,
+html.reduced-motion
+.future-orbit,
+html.reduced-motion
+.feedback-orbit {
+
+  animation:
+    none !important;
+
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .accomplishments-hero .page-hero-glow,
+  .project-glow,
+  .future-orbit,
+  .feedback-orbit {
+
+    animation:
+      none !important;
+
+  }
+
+}
