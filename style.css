@@ -7457,3 +7457,174 @@ html.reduced-motion .global-ring,
 html.reduced-motion .status-dot {
   animation: none !important;
 }
+
+/* =====================================================
+   GODZYA — ACCOMPLISHMENTS PAGE
+   VISUAL FOUNDATION
+===================================================== */
+
+.accomplishments-hero {
+
+  position: relative;
+
+  min-height: 88vh;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 35%,
+      rgba(70,217,255,.10),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 25% 75%,
+      rgba(75,70,255,.08),
+      transparent 30%
+    ),
+    var(--bg);
+
+}
+
+
+.accomplishments-hero::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(70,217,255,.035),
+      transparent 45%,
+      rgba(100,70,255,.035)
+    );
+
+  pointer-events: none;
+
+}
+
+
+.accomplishments-hero .page-hero-content {
+
+  position: relative;
+
+  z-index: 3;
+
+}
+
+
+.accomplishments-hero .page-hero-description {
+
+  max-width: 720px;
+
+}
+
+
+.accomplishments-hero .page-hero-glow {
+
+  position: absolute;
+
+  width: 520px;
+
+  height: 520px;
+
+  right: -160px;
+
+  top: 15%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.13),
+      transparent 68%
+    );
+
+  filter: blur(10px);
+
+  pointer-events: none;
+
+}
+
+
+.accomplishments-hero .page-hero-grid {
+
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .22;
+
+  background-image:
+    linear-gradient(
+      rgba(70,217,255,.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(70,217,255,.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 80px 80px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      transparent,
+      black 25%,
+      black 70%,
+      transparent
+    );
+
+  pointer-events: none;
+
+}
+
+
+.accomplishments-section,
+.project-stories-section,
+.customer-voice-section {
+
+  position: relative;
+
+  padding:
+    120px 0;
+
+  background: var(--bg);
+
+}
+
+
+.project-stories-section {
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--bg),
+      var(--bg-soft)
+    );
+
+}
+
+
+.customer-voice-section {
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(70,217,255,.055),
+      transparent 30%
+    ),
+    var(--bg-soft);
+
+}
