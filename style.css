@@ -3378,3 +3378,98 @@ h2 span {
   }
 
 }
+
+/* =================================================
+   27 — OUR VISION ATMOSPHERE
+================================================== */
+
+.vision {
+  position: relative;
+
+  isolation: isolate;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 78% 42%,
+      rgba(70,217,255,.12),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 18% 75%,
+      rgba(76,88,255,.08),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #050b14 0%,
+      #07111d 55%,
+      #050b14 100%
+    );
+}
+
+
+/* ELECTROMAGNETIC LIGHT */
+
+.vision::before {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -180px;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.15) 0%,
+      rgba(70,217,255,.05) 38%,
+      transparent 70%
+    );
+
+  filter:
+    blur(8px);
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* SUBTLE ENERGY LINE */
+
+.vision::after {
+  content: "";
+
+  position: absolute;
+
+  left: 8%;
+  right: 8%;
+  top: 0;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(70,217,255,.45),
+      transparent
+    );
+
+  box-shadow:
+    0 0 18px rgba(70,217,255,.22);
+
+  pointer-events: none;
+}
+
+
