@@ -979,3 +979,246 @@ h2 span {
   bottom: 18%;
 
 }
+
+/* =================================================
+   09 — VISION
+================================================== */
+
+.vision {
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(70,217,255,.025),
+      transparent 45%
+    );
+
+}
+
+
+.vision::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  left: -250px;
+  top: 20%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(25,118,255,.14),
+      transparent 70%
+    );
+
+  filter: blur(20px);
+
+}
+
+
+.vision-content {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  align-items: center;
+
+  gap: 100px;
+
+}
+
+
+.vision-text {
+
+  max-width: 620px;
+
+}
+
+
+.vision-text p {
+
+  margin-bottom: 24px;
+
+  color: var(--muted);
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+}
+
+
+.vision-text strong {
+
+  display: block;
+
+  margin-top: 35px;
+
+  color: var(--white);
+
+  font-size: 18px;
+
+}
+
+
+/* =================================================
+   VISION VISUAL
+================================================== */
+
+.vision-visual {
+
+  position: relative;
+
+  min-height: 430px;
+
+  display: grid;
+
+  place-items: center;
+
+}
+
+
+.vision-orbit {
+
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  border:
+    1px solid
+    rgba(70,217,255,.22);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 70px
+    rgba(70,217,255,.08);
+
+  transform:
+    rotate(35deg)
+    skewX(-10deg);
+
+}
+
+
+.vision-orbit::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 35px -25px;
+
+  border:
+    1px solid
+    rgba(70,217,255,.12);
+
+  border-radius: 50%;
+
+  transform: rotate(55deg);
+
+}
+
+
+.vision-core {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 150px;
+  height: 150px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.25),
+      rgba(5,11,20,.85) 65%
+    );
+
+  border:
+    1px solid
+    rgba(139,233,255,.45);
+
+  box-shadow:
+    0 0 70px
+    rgba(70,217,255,.18);
+
+}
+
+
+.vision-core span {
+
+  color: var(--cyan);
+
+  font-size: 60px;
+
+  font-weight: 800;
+
+  text-shadow:
+    0 0 30px
+    rgba(70,217,255,.65);
+
+}
+
+
+/* PARTICLES */
+
+.vision-particle {
+
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--cyan);
+
+  box-shadow:
+    0 0 18px
+    var(--cyan);
+
+}
+
+
+.particle-one {
+
+  top: 15%;
+  right: 20%;
+
+}
+
+
+.particle-two {
+
+  bottom: 18%;
+  left: 15%;
+
+}
+
+
+.particle-three {
+
+  top: 48%;
+  right: 4%;
+
+}
+
