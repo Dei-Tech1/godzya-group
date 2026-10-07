@@ -7132,3 +7132,110 @@ if (document.querySelector(".what-we-do-hero")) {
 }
 
 console.log("GODZYA — What We Do language system ready");
+
+<script src="script.js"></script>
+
+<script>
+
+/* =====================================================
+   GODZYA — ACCOMPLISHMENTS PAGE
+   FEEDBACK FORM
+===================================================== */
+
+const feedbackForm =
+  document.getElementById("feedbackForm");
+
+const feedbackStatus =
+  document.getElementById("feedbackStatus");
+
+
+if (feedbackForm) {
+
+  feedbackForm.addEventListener(
+    "submit",
+    function (event) {
+
+      event.preventDefault();
+
+      const type =
+        document.getElementById("feedbackType").value;
+
+      const name =
+        document.getElementById("feedbackName").value.trim();
+
+      const email =
+        document.getElementById("feedbackEmail").value.trim();
+
+      const message =
+        document.getElementById("feedbackMessage").value.trim();
+
+
+      if (
+        !type ||
+        !name ||
+        !email ||
+        !message
+      ) {
+
+        if (feedbackStatus) {
+
+          feedbackStatus.textContent =
+            "Please complete all required fields.";
+
+        }
+
+        return;
+
+      }
+
+
+      const subject =
+        encodeURIComponent(
+          "GODZYA GROUP — " + type
+        );
+
+
+      const body =
+        encodeURIComponent(
+          "Feedback Type: " + type +
+          "\n\n" +
+          "Name: " + name +
+          "\n" +
+          "Email: " + email +
+          "\n\n" +
+          "Message:\n" +
+          message
+        );
+
+
+      window.location.href =
+        "mailto:info@godzyagroup.com" +
+        "?subject=" + subject +
+        "&body=" + body;
+
+
+      if (feedbackStatus) {
+
+        feedbackStatus.textContent =
+          "Your email application is opening...";
+
+      }
+
+    }
+  );
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS — PAGE READY
+===================================================== */
+
+document.documentElement.dataset.accomplishments =
+  "ready";
+
+console.log(
+  "GODZYA — Accomplishments page ready"
+);
+
+</script>
