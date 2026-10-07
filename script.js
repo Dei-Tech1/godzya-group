@@ -149,4 +149,56 @@ if (languageButton) {
 
 }
 
+/* =================================================
+   04 — SCROLL REVEAL
+================================================== */
+
+const revealElements =
+  document.querySelectorAll(
+    ".expertise-card, .work-card, .why-card, .leader-card"
+  );
+
+
+const revealObserver =
+  new IntersectionObserver(
+
+    entries => {
+
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add(
+            "revealed"
+          );
+
+          revealObserver.unobserve(
+            entry.target
+          );
+
+        }
+
+      });
+
+    },
+
+    {
+      threshold: 0.15
+    }
+
+  );
+
+
+revealElements.forEach(element => {
+
+  element.classList.add(
+    "reveal-item"
+  );
+
+  revealObserver.observe(
+    element
+  );
+
+});
+
 
