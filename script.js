@@ -7701,3 +7701,224 @@ Object.assign(translations.fr, {
 
 });
 
+/* =====================================================
+   ACCOMPLISHMENTS — TRANSLATIONS
+   BLOCK 4 — ARABIC + PORTUGUESE + BENGALI
+===================================================== */
+
+Object.assign(translations.ar, {
+
+  accomplishmentsKicker: "إنجازاتنا",
+  accomplishmentsHeroTitle: "نحوّل العمل إلى نتائج.",
+  accomplishmentsHeroDescription: "مجموعة متنامية من المشاريع والتجارب الرقمية والأعمال المهنية التي نبنيها بهدف ودقة والتزام بالتحسين المستمر.",
+  accomplishmentsExplore: "استكشف أعمالنا",
+  accomplishmentsFeedback: "شاركنا رأيك",
+  accomplishmentsHeroBottom: "عمل حقيقي • مشاريع حقيقية • نبني باستمرار",
+
+  projectsKicker: "أعمال مختارة",
+  projectsTitle: "عمل يتحدث عن نفسه.",
+  projectsDescription: "يمثل كل مشروع فرصة للتعلم والبناء وإنشاء شيء مفيد. ومع نمو GODZYA GROUP، ستستمر هذه المجموعة في التطور.",
+
+  project01Type: "مشروع داخلي",
+  project01Title: "موقع GODZYA GROUP",
+  project01Text: "الواجهة الرقمية لـ GODZYA GROUP، المصممة لجمع رؤيتنا وقدراتنا وخدماتنا المهنية ومحفظة أعمالنا المتنامية.",
+  project01Link: "عرض المشروع",
+
+  project02Type: "مشروع عميل",
+  project02Title: "موقع NayaGlow",
+  project02Text: "تجربة رقمية متميزة تم إنشاؤها لـ NayaGlow، وهي علامة للجمال والعناية الذاتية ذات جذور أفريقية ورؤية عالمية.",
+  project02Link: "عرض المشروع",
+
+  project03Type: "قيد التنفيذ",
+  project03Title: "المزيد قادم",
+  project03Text: "تواصل GODZYA GROUP النمو. ستتم إضافة مشاريع وتعاونات وحلول رقمية جديدة هنا مع انضمامها إلى رحلتنا.",
+  project03Link: "قريبًا",
+
+  storiesKicker: "خلف العمل",
+  storiesTitle: "من الفكرة إلى الإبداع.",
+  storiesDescription: "إنجازاتنا أكثر من مجرد صفحات مكتملة. إنها تمثل التخطيط والتعلم وحل المشكلات والعملية المستمرة لتحويل الفكرة إلى شيء حقيقي.",
+
+  story01Label: "GODZYA GROUP",
+  story01Title: "نبني أساسنا الرقمي الخاص.",
+  story01Text: "GODZYA GROUP نفسه مشروع مستمر. يتم تطوير الموقع كقاعدة رقمية احترافية للأعمال وخدماتها وعملائها المستقبليين ونموها المستقبلي.",
+  story01Meta01: "داخلي",
+  story01Meta02: "تطوير مستمر",
+
+  story02Label: "NAYAGLOW",
+  story02Title: "إنشاء تجربة علامة تجارية متميزة.",
+  story02Text: "أتاحت NayaGlow فرصة لتحويل مفهوم علامة تجارية للجمال إلى تجربة رقمية سينمائية مصممة حول هويتها وجمهورها ورؤيتها.",
+  story02Meta01: "مشروع عميل",
+  story02Meta02: "تطوير موقع",
+
+  story03Label: "الرحلة",
+  story03Title: "كل مشروع يصبح خبرة.",
+  story03Text: "مع استمرار نمو GODZYA GROUP، سيساهم كل مشروع مكتمل في بناء محفظة أقوى وخبرة أعمق وطرق أفضل لخدمة العملاء المستقبليين.",
+  story03Meta01: "مستمر",
+  story03Meta02: "نبني إلى الأمام",
+
+  feedbackKicker: "صوت العميل",
+  feedbackTitle: "صوتك يساعدنا على النمو.",
+  feedbackDescription: "سواء كان لديك شيء إيجابي لمشاركته أو فكرة للتحسين أو ملاحظة، نريد أن نسمع منك.",
+  feedbackIntroTitle: "كل وجهة نظر مهمة.",
+  feedbackIntroText: "تساعدنا الملاحظات الصادقة على فهم ما نقوم به بشكل جيد وأين يمكننا تحسين التجربة التي نقدمها.",
+  feedbackTypeLabel: "نوع الملاحظات",
+  feedbackTypePlaceholder: "اختر نوع الملاحظات",
+  feedbackCompliment: "إطراء",
+  feedbackSuggestion: "اقتراح",
+  feedbackComplaint: "شكوى",
+  feedbackGeneral: "ملاحظات عامة",
+  feedbackNameLabel: "الاسم",
+  feedbackNamePlaceholder: "اسمك",
+  feedbackEmailLabel: "البريد الإلكتروني",
+  feedbackEmailPlaceholder: "بريدك الإلكتروني",
+  feedbackMessageLabel: "رسالتك",
+  feedbackMessagePlaceholder: "أخبرنا برأيك...",
+  feedbackSubmit: "إرسال الملاحظات",
+  feedbackNote: "سيتم فتح تطبيق البريد الإلكتروني لديك لإرسال ملاحظاتك. لا يتم تخزين أي معلومات مباشرة على هذا الموقع."
+
+});
+
+Object.assign(translations.pt, {
+
+  accomplishmentsKicker: "NOSSAS REALIZAÇÕES",
+  accomplishmentsHeroTitle: "Transformando trabalho em resultados.",
+  accomplishmentsHeroDescription: "Uma coleção crescente de projetos, experiências digitais e trabalhos profissionais construídos com propósito, precisão e compromisso com a melhoria contínua.",
+  accomplishmentsExplore: "Explorar nosso trabalho",
+  accomplishmentsFeedback: "Compartilhar feedback",
+  accomplishmentsHeroBottom: "TRABALHO REAL • PROJETOS REAIS • CONSTRUINDO CONTINUAMENTE",
+
+  projectsKicker: "TRABALHOS SELECIONADOS",
+  projectsTitle: "Um trabalho que fala por si.",
+  projectsDescription: "Cada projeto representa uma oportunidade de aprender, construir e criar algo útil. À medida que a GODZYA GROUP cresce, esta coleção continuará evoluindo.",
+
+  project01Type: "PROJETO INTERNO",
+  project01Title: "Site da GODZYA GROUP",
+  project01Text: "A casa digital da GODZYA GROUP, criada para reunir nossa visão, capacidades, serviços profissionais e portfólio em crescimento.",
+  project01Link: "Ver projeto",
+
+  project02Type: "PROJETO DE CLIENTE",
+  project02Title: "Site NayaGlow",
+  project02Text: "Uma experiência digital premium criada para a NayaGlow, uma marca de beleza e autocuidado com raízes africanas e visão global.",
+  project02Link: "Ver projeto",
+
+  project03Type: "EM ANDAMENTO",
+  project03Title: "Mais novidades em breve",
+  project03Text: "A GODZYA GROUP está crescendo. Novos projetos, colaborações e soluções digitais serão adicionados aqui à medida que fizerem parte da nossa jornada.",
+  project03Link: "Em breve",
+
+  storiesKicker: "POR TRÁS DO TRABALHO",
+  storiesTitle: "Do conceito à criação.",
+  storiesDescription: "Nossas realizações são mais do que páginas concluídas. Elas representam planejamento, aprendizado, resolução de problemas e o processo contínuo de transformar uma ideia em algo real.",
+
+  story01Label: "GODZYA GROUP",
+  story01Title: "Construindo nossa própria base digital.",
+  story01Text: "A GODZYA GROUP também é um projeto em andamento. O site está sendo desenvolvido como uma base digital profissional para o negócio, seus serviços, futuros clientes e crescimento.",
+  story01Meta01: "INTERNO",
+  story01Meta02: "DESENVOLVIMENTO ATIVO",
+
+  story02Label: "NAYAGLOW",
+  story02Title: "Criando uma experiência de marca premium.",
+  story02Text: "A NayaGlow foi uma oportunidade de transformar o conceito de uma marca de beleza em uma experiência digital cinematográfica criada em torno de sua identidade, público e visão.",
+  story02Meta01: "PROJETO DE CLIENTE",
+  story02Meta02: "DESENVOLVIMENTO WEB",
+
+  story03Label: "A JORNADA",
+  story03Title: "Cada projeto se torna experiência.",
+  story03Text: "À medida que a GODZYA GROUP continua crescendo, cada projeto concluído contribuirá para um portfólio mais forte, mais experiência e melhores formas de atender futuros clientes.",
+  story03Meta01: "CONTÍNUO",
+  story03Meta02: "CONSTRUINDO O FUTURO",
+
+  feedbackKicker: "VOZ DO CLIENTE",
+  feedbackTitle: "Sua voz nos ajuda a crescer.",
+  feedbackDescription: "Seja algo positivo para compartilhar, uma ideia de melhoria ou uma preocupação, queremos ouvir você.",
+  feedbackIntroTitle: "Toda perspectiva importa.",
+  feedbackIntroText: "Feedbacks honestos nos ajudam a entender o que estamos fazendo bem e onde podemos melhorar a experiência que oferecemos.",
+  feedbackTypeLabel: "Tipo de feedback",
+  feedbackTypePlaceholder: "Selecione o tipo de feedback",
+  feedbackCompliment: "Elogio",
+  feedbackSuggestion: "Sugestão",
+  feedbackComplaint: "Reclamação",
+  feedbackGeneral: "Feedback geral",
+  feedbackNameLabel: "Nome",
+  feedbackNamePlaceholder: "Seu nome",
+  feedbackEmailLabel: "E-mail",
+  feedbackEmailPlaceholder: "Seu e-mail",
+  feedbackMessageLabel: "Sua mensagem",
+  feedbackMessagePlaceholder: "Conte-nos o que você pensa...",
+  feedbackSubmit: "Enviar feedback",
+  feedbackNote: "Seu feedback abrirá seu aplicativo de e-mail para envio. Nenhuma informação é armazenada diretamente neste site."
+
+});
+
+Object.assign(translations.bn, {
+
+  accomplishmentsKicker: "আমাদের অর্জন",
+  accomplishmentsHeroTitle: "কাজকে ফলাফলে রূপ দেওয়া।",
+  accomplishmentsHeroDescription: "উদ্দেশ্য, নির্ভুলতা এবং ধারাবাহিক উন্নতির প্রতিশ্রুতি নিয়ে তৈরি প্রকল্প, ডিজিটাল অভিজ্ঞতা ও পেশাদার কাজের একটি ক্রমবর্ধমান সংগ্রহ।",
+  accomplishmentsExplore: "আমাদের কাজ দেখুন",
+  accomplishmentsFeedback: "আপনার মতামত জানান",
+  accomplishmentsHeroBottom: "বাস্তব কাজ • বাস্তব প্রকল্প • ধারাবাহিকভাবে এগিয়ে চলা",
+
+  projectsKicker: "নির্বাচিত কাজ",
+  projectsTitle: "যে কাজ নিজেই কথা বলে।",
+  projectsDescription: "প্রতিটি প্রকল্প শেখা, তৈরি করা এবং কার্যকর কিছু করার একটি সুযোগ। GODZYA GROUP বড় হওয়ার সঙ্গে সঙ্গে এই সংগ্রহও বিকশিত হবে।",
+
+  project01Type: "অভ্যন্তরীণ প্রকল্প",
+  project01Title: "GODZYA GROUP ওয়েবসাইট",
+  project01Text: "GODZYA GROUP-এর ডিজিটাল ভিত্তি, যেখানে আমাদের দৃষ্টিভঙ্গি, সক্ষমতা, পেশাদার পরিষেবা এবং ক্রমবর্ধমান পোর্টফোলিও একত্রিত করা হচ্ছে।",
+  project01Link: "প্রকল্প দেখুন",
+
+  project02Type: "ক্লায়েন্ট প্রকল্প",
+  project02Title: "NayaGlow ওয়েবসাইট",
+  project02Text: "NayaGlow-এর জন্য তৈরি একটি প্রিমিয়াম ডিজিটাল অভিজ্ঞতা, যা আফ্রিকান শিকড় ও বৈশ্বিক দৃষ্টিভঙ্গির সৌন্দর্য এবং স্ব-যত্ন ব্র্যান্ড।",
+  project02Link: "প্রকল্প দেখুন",
+
+  project03Type: "চলমান",
+  project03Title: "আরও আসছে",
+  project03Text: "GODZYA GROUP এগিয়ে যাচ্ছে। নতুন প্রকল্প, সহযোগিতা এবং ডিজিটাল সমাধান আমাদের যাত্রার অংশ হলে এখানে যুক্ত করা হবে।",
+  project03Link: "শীঘ্রই আসছে",
+
+  storiesKicker: "কাজের পেছনের গল্প",
+  storiesTitle: "ধারণা থেকে সৃষ্টিতে।",
+  storiesDescription: "আমাদের অর্জন শুধু সম্পূর্ণ পেজ নয়। এগুলো পরিকল্পনা, শেখা, সমস্যা সমাধান এবং একটি ধারণাকে বাস্তবে রূপ দেওয়ার ধারাবাহিক প্রক্রিয়ার প্রতিনিধিত্ব করে।",
+
+  story01Label: "GODZYA GROUP",
+  story01Title: "নিজস্ব ডিজিটাল ভিত্তি তৈরি করা।",
+  story01Text: "GODZYA GROUP নিজেই একটি চলমান প্রকল্প। ব্যবসা, পরিষেবা, ভবিষ্যৎ ক্লায়েন্ট এবং ভবিষ্যৎ বৃদ্ধির জন্য ওয়েবসাইটটি একটি পেশাদার ডিজিটাল ভিত্তি হিসেবে তৈরি করা হচ্ছে।",
+  story01Meta01: "অভ্যন্তরীণ",
+  story01Meta02: "সক্রিয় উন্নয়ন",
+
+  story02Label: "NAYAGLOW",
+  story02Title: "একটি প্রিমিয়াম ব্র্যান্ড অভিজ্ঞতা তৈরি করা।",
+  story02Text: "NayaGlow একটি সৌন্দর্য ব্র্যান্ডের ধারণাকে তার পরিচয়, দর্শক এবং দৃষ্টিভঙ্গির ভিত্তিতে একটি সিনেমাটিক ডিজিটাল অভিজ্ঞতায় রূপ দেওয়ার সুযোগ তৈরি করেছে।",
+  story02Meta01: "ক্লায়েন্ট প্রকল্প",
+  story02Meta02: "ওয়েবসাইট উন্নয়ন",
+
+  story03Label: "যাত্রা",
+  story03Title: "প্রতিটি প্রকল্প অভিজ্ঞতায় পরিণত হয়।",
+  story03Text: "GODZYA GROUP যত এগিয়ে যাবে, প্রতিটি সম্পন্ন প্রকল্প আরও শক্তিশালী পোর্টফোলিও, গভীর অভিজ্ঞতা এবং ভবিষ্যৎ ক্লায়েন্টদের আরও ভালোভাবে সেবা করার উপায় তৈরি করবে।",
+  story03Meta01: "ধারাবাহিক",
+  story03Meta02: "এগিয়ে নির্মাণ",
+
+  feedbackKicker: "ক্লায়েন্টের মতামত",
+  feedbackTitle: "আপনার মতামত আমাদের এগিয়ে যেতে সাহায্য করে।",
+  feedbackDescription: "আপনার কাছে ইতিবাচক কিছু শেয়ার করার থাকুক, উন্নতির কোনো ধারণা থাকুক বা কোনো উদ্বেগ থাকুক—আমরা শুনতে চাই।",
+  feedbackIntroTitle: "প্রতিটি দৃষ্টিভঙ্গি গুরুত্বপূর্ণ।",
+  feedbackIntroText: "সৎ মতামত আমাদের বুঝতে সাহায্য করে আমরা কী ভালো করছি এবং কোথায় আমাদের অভিজ্ঞতা আরও উন্নত করা যায়।",
+  feedbackTypeLabel: "মতামতের ধরন",
+  feedbackTypePlaceholder: "মতামতের ধরন নির্বাচন করুন",
+  feedbackCompliment: "প্রশংসা",
+  feedbackSuggestion: "পরামর্শ",
+  feedbackComplaint: "অভিযোগ",
+  feedbackGeneral: "সাধারণ মতামত",
+  feedbackNameLabel: "নাম",
+  feedbackNamePlaceholder: "আপনার নাম",
+  feedbackEmailLabel: "ইমেইল",
+  feedbackEmailPlaceholder: "আপনার ইমেইল",
+  feedbackMessageLabel: "আপনার বার্তা",
+  feedbackMessagePlaceholder: "আপনার মতামত জানান...",
+  feedbackSubmit: "মতামত পাঠান",
+  feedbackNote: "আপনার মতামত পাঠানোর জন্য আপনার ইমেইল অ্যাপ্লিকেশন খুলবে। এই ওয়েবসাইটে কোনো তথ্য সরাসরি সংরক্ষণ করা হয় না।"
+
+});
+
