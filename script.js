@@ -201,4 +201,33 @@ revealElements.forEach(element => {
 
 });
 
+/* =================================================
+   05 — CONTACT FORM
+================================================== */
 
+const contactForm =
+  document.getElementById("contactForm");
+
+const formStatus =
+  document.querySelector(".form-status");
+
+
+if (contactForm) {
+
+  contactForm.addEventListener(
+    "submit",
+    function (event) {
+
+      event.preventDefault();
+
+      if (formStatus) {
+
+        formStatus.textContent =
+          "Thank you. Your message is ready to be submitted.";
+
+      }
+
+    }
+  );
+
+     }
