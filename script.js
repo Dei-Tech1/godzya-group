@@ -8215,3 +8215,37 @@ Object.assign(translations.af, {
 
 });
 
+/* =====================================================
+   ACCOMPLISHMENTS — FINAL LANGUAGE ACTIVATION
+===================================================== */
+
+if (
+  document.querySelector(".accomplishments-hero")
+) {
+
+  const accomplishmentsLanguage =
+    localStorage.getItem("godzyaLanguage") || "en";
+
+  applyLanguage(
+    accomplishmentsLanguage
+  );
+
+}
+
+
+/* =====================================================
+   ACCOMPLISHMENTS — PAGE STATUS
+===================================================== */
+
+if (
+  document.querySelector(".accomplishments-hero")
+) {
+
+  document.documentElement.dataset.accomplishments =
+    "ready";
+
+  console.log(
+    "GODZYA — Accomplishments language system ready"
+  );
+
+}
