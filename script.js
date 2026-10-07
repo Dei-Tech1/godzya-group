@@ -7120,4 +7120,15 @@ Object.assign(translations.af, {
   footerTagline: "ONS BOU. JY GROEI."
 });
 
+/* =====================================================
+   WHAT WE DO — APPLY EXTENDED TRANSLATIONS
+===================================================== */
 
+if (document.querySelector(".what-we-do-hero")) {
+  const pageTwoLanguage =
+    localStorage.getItem("godzyaLanguage") || "en";
+
+  applyLanguage(pageTwoLanguage);
+}
+
+console.log("GODZYA — What We Do language system ready");
