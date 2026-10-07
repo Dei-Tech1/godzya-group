@@ -1,1 +1,113 @@
+/* =================================================
+   GODZYA GROUP
+   STYLE FOUNDATION
+================================================== */
 
+
+/* =================================================
+   01 — DESIGN VARIABLES
+================================================== */
+
+:root {
+
+  --bg: #050b14;
+  --bg-soft: #081522;
+  --bg-card: #0b1928;
+
+  --cyan: #46d9ff;
+  --cyan-soft: #8be9ff;
+  --blue: #1976ff;
+
+  --white: #f5f9fc;
+  --text: #d8e5ed;
+  --muted: #8ea0af;
+
+  --line: rgba(255,255,255,.09);
+  --line-cyan: rgba(70,217,255,.25);
+
+  --glow:
+    0 0 45px rgba(70,217,255,.18);
+
+  --shadow:
+    0 25px 80px rgba(0,0,0,.45);
+
+  --radius: 18px;
+  --radius-large: 28px;
+
+  --container: 1240px;
+
+}
+
+
+/* =================================================
+   02 — RESET
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+
+/* =================================================
+   03 — GLOBAL CONTAINER
+================================================== */
+
+.section-inner {
+
+  width: min(
+    calc(100% - 48px),
+    var(--container)
+  );
+
+  margin-inline: auto;
+
+}
