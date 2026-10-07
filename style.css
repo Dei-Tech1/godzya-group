@@ -2393,3 +2393,71 @@ h2 span {
   }
 
 }
+
+/* =================================================
+   16 — FOOTER
+================================================== */
+
+.site-footer {
+  position: relative;
+  padding: 55px 0 35px;
+  border-top: 1px solid var(--line);
+  background: #030810;
+}
+
+.footer-inner {
+  width: min(calc(100% - 48px), var(--container));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-brand .brand-name {
+  font-size: 20px;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  transition: color .3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--cyan);
+}
+
+.footer-meta {
+  text-align: right;
+}
+
+.footer-meta p:first-child {
+  margin-bottom: 8px;
+  color: var(--cyan);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.footer-meta p:last-child {
+  color: var(--muted);
+  font-size: 11px;
+}
+
