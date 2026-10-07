@@ -4010,3 +4010,131 @@ h2 span {
 
   pointer-events: none;
 }
+
+/* =================================================
+   32 — PREMIUM EXPERTISE CARDS
+================================================== */
+
+.expertise-card {
+  position: relative;
+
+  min-height: 300px;
+
+  padding: 30px;
+
+  border:
+    1px solid rgba(70,217,255,.13);
+
+  border-radius:
+    22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(14,28,43,.78),
+      rgba(6,14,24,.58)
+    );
+
+  box-shadow:
+    0 22px 55px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.035);
+
+  backdrop-filter:
+    blur(14px);
+
+  overflow: hidden;
+
+  transition:
+    transform .4s ease,
+    border-color .4s ease,
+    box-shadow .4s ease;
+}
+
+
+/* ELECTROMAGNETIC TOP EDGE */
+
+.expertise-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 15%;
+
+  width: 45%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--cyan),
+      transparent
+    );
+
+  opacity: .55;
+
+  box-shadow:
+    0 0 16px
+    rgba(70,217,255,.45);
+}
+
+
+/* SOFT INTERNAL GLOW */
+
+.expertise-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -60px;
+  bottom: -70px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.12),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* DESKTOP INTERACTION */
+
+@media (hover: hover) {
+
+  .expertise-card:hover {
+    transform:
+      translateY(-8px);
+
+    border-color:
+      rgba(70,217,255,.38);
+
+    box-shadow:
+      0 28px 70px rgba(0,0,0,.32),
+      0 0 28px rgba(70,217,255,.08);
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .expertise-card {
+    min-height: 270px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+  }
+
+}
