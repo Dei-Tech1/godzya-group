@@ -2461,3 +2461,137 @@ h2 span {
   font-size: 11px;
 }
 
+/* =================================================
+   17 — ELECTROMAGNETIC MOTION
+================================================== */
+
+@keyframes orbitRotate {
+  from {
+    transform:
+      translate(-50%, -50%)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      translate(-50%, -50%)
+      rotate(360deg);
+  }
+}
+
+@keyframes pulseGlow {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: .65;
+  }
+
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+
+}
+
+@keyframes floatParticle {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+
+}
+
+@keyframes electromagneticWave {
+
+  0% {
+    transform: scale(.85);
+    opacity: .15;
+  }
+
+  50% {
+    opacity: .55;
+  }
+
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+
+}
+
+.hero-orbit {
+  animation:
+    orbitRotate 18s linear infinite;
+}
+
+.hero-core {
+  animation:
+    pulseGlow 4s ease-in-out infinite;
+}
+
+.vision-orbit {
+  animation:
+    orbitRotate 22s linear infinite;
+}
+
+.vision-core {
+  animation:
+    pulseGlow 4.5s ease-in-out infinite;
+}
+
+.vision-particle {
+  animation:
+    floatParticle 3.5s ease-in-out infinite;
+}
+
+.vision-particle:nth-child(2) {
+  animation-delay: .8s;
+}
+
+.vision-particle:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  left: 50%;
+  top: 50%;
+  border: 1px solid rgba(70,217,255,.16);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation:
+    electromagneticWave 5s ease-out infinite;
+  pointer-events: none;
+}
+
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  left: 50%;
+  top: 50%;
+  border: 1px solid rgba(25,118,255,.14);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation:
+    electromagneticWave 5s ease-out infinite 1.7s;
+  pointer-events: none;
+}
+
+.expertise-card,
+.work-card,
+.why-card,
+.leader-card {
+  will-change: transform;
+}
+
