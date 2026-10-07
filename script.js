@@ -6237,4 +6237,383 @@ Object.assign(translations.fr, {
   footerTagline: "NOUS CONSTRUISONS. VOUS GRANDISSEZ."
 });
 
+/* =====================================================
+   WHAT WE DO — REMAINING TRANSLATIONS
+   ARABIC + PORTUGUESE + BENGALI
+===================================================== */
+
+Object.assign(translations.ar, {
+
+  capabilitiesKicker: "القدرات",
+  capabilitiesTitle: "من الأفكار",
+  capabilitiesTitleAccent: "إلى التنفيذ.",
+  capabilitiesDescription:
+    "يمكن لعملنا دعم مراحل مختلفة من الأعمال أو المشاريع أو المبادرات الرقمية — من تنظيم المعلومات إلى إنشاء الحلول والحفاظ على سير العمل.",
+
+  capDataTitle: "البيانات وExcel",
+  capData01: "إدخال وتنظيم البيانات",
+  capData02: "صيغ ووظائف Excel",
+  capData03: "الجداول والتقارير ولوحات المعلومات",
+  capData04: "تنظيف ومعالجة البيانات",
+  capData05: "تحويل PDF → Excel / Word",
+  capData06: "التقارير الأساسية ورؤى الأعمال",
+
+  capProjectTitle: "إدارة المشاريع",
+  capProject01: "تخطيط المشاريع",
+  capProject02: "إدارة المهام والمراحل الرئيسية",
+  capProject03: "التوثيق والتنسيق",
+  capProject04: "متابعة التقدم",
+  capProject05: "متابعة المخاطر والمشكلات",
+  capProject06: "دعم تسليم المشروع",
+
+  capLanguageTitle: "الفرنسية والمستندات",
+  capLanguage01: "الترجمة من الإنجليزية → الفرنسية",
+  capLanguage02: "الترجمة من الفرنسية → الإنجليزية",
+  capLanguage03: "ترجمة المستندات",
+  capLanguage04: "التدقيق والتحرير",
+  capLanguage05: "توطين مستندات الأعمال",
+  capLanguage06: "التواصل بالفرنسية / الإنجليزية",
+
+  capAdminTitle: "الدعم الإداري",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "تنسيق المستندات",
+  capAdmin05: "البحث عبر الإنترنت",
+  capAdmin06: "تنظيم الملفات وتجهيزها",
+
+  serveKicker: "من نخدم",
+  serveTitle: "مصمم حول",
+  serveTitleAccent: "احتياجاتك.",
+  serveDescription:
+    "يمكن لـ GODZYA GROUP دعم الأفراد ورواد الأعمال والشركات الصغيرة والمؤسسات النامية والفرق التي تحتاج إلى دعم عملي رقمي أو تجاري أو مهني.",
+
+  serve01Title: "الأفراد",
+  serve01Text:
+    "دعم مهني للمشاريع الشخصية والمستندات وأعمال البيانات والمهام الرقمية والاحتياجات العملية الأخرى.",
+
+  serve02Title: "رواد الأعمال",
+  serve02Text:
+    "دعم عملي في التكنولوجيا والبيانات والأعمال والإدارة للأشخاص الذين يبنون أعمالهم ويطورونها.",
+
+  serve03Title: "الشركات الصغيرة",
+  serve03Text:
+    "دعم مرن للمؤسسات التي تحتاج إلى قدرة إضافية دون تعقيد غير ضروري.",
+
+  serve04Title: "الفرق والمؤسسات",
+  serve04Text:
+    "دعم منظم للمشاريع والتوثيق والبيانات والعمل الرقمي والعمليات التجارية.",
+
+  processKicker: "كيف نعمل",
+  processTitle: "عملية واضحة.",
+  processTitleAccent: "تنفيذ أفضل.",
+  processDescription:
+    "يبدأ كل تعاون بالوضوح. نحافظ على تنظيم التواصل والتوقعات والمخرجات من البداية إلى النهاية.",
+
+  process01Title: "الاكتشاف",
+  process01Text:
+    "نفهم هدفك ومتطلباتك وأولوياتك والنتيجة المتوقعة.",
+
+  process02Title: "التخطيط",
+  process02Text:
+    "نحدد العمل وننظم الأولويات ونضع مسارًا عمليًا للمضي قدمًا.",
+
+  process03Title: "التنفيذ",
+  process03Text:
+    "نعمل على المهام المتفق عليها مع الحفاظ على وضوح التواصل والتقدم.",
+
+  process04Title: "التسليم",
+  process04Text:
+    "نراجع العمل وننهي المخرجات وندعم عملية تسليم واضحة.",
+
+  globalKicker: "مصمم لعالم مترابط",
+  globalTitle: "من الطموح المحلي",
+  globalTitleAccent: "إلى الفرصة العالمية.",
+  globalDescription:
+    "يتم بناء GODZYA GROUP بعقلية عالمية — لربط التكنولوجيا والبيانات والأعمال والخدمات المهنية عبر الحدود واللغات.",
+
+  globalPoint1: "رقمي",
+  globalPoint2: "بيانات",
+  globalPoint3: "أعمال",
+  globalPoint4: "تكنولوجيا",
+  globalPoint5: "لغات",
+
+  contactKicker: "لنتواصل",
+  contactTitle: "هل لديك مشروع",
+  contactTitleAccent: "في ذهنك؟",
+  contactDescription:
+    "أخبرنا بما تعمل عليه، وما تحتاج إلى المساعدة فيه، وإلى أين تريد الوصول. دعنا نستكشف كيف يمكن لـ GODZYA GROUP دعم خطوتك التالية.",
+
+  contactEmailButton: "راسل GODZYA",
+  contactHomeButton: "العودة إلى الصفحة الرئيسية",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "جاهزون للتواصل",
+  contactEmailLabel: "البريد الإلكتروني",
+  contactFocusLabel: "التركيز",
+  contactFocus: "الذكاء الاصطناعي • البيانات • الأعمال • التكنولوجيا",
+  contactBottom: "نحن نبني. أنتم تنمون.",
+
+  footerDescription:
+    "نبني حلولًا أكثر ذكاءً من أجل مستقبل مترابط.",
+  footerNavigate: "التنقل",
+  footerFocus: "التركيز",
+  footerFocus1: "الذكاء الاصطناعي والأتمتة",
+  footerFocus2: "البيانات والتحليلات",
+  footerFocus3: "الأعمال والتكنولوجيا",
+  footerFocus4: "الدعم المهني",
+  footerConnect: "تواصل",
+  footerGlobal: "نخدم عالمًا مترابطًا",
+  footerTagline: "نحن نبني. أنتم تنمون."
+});
+
+
+Object.assign(translations.pt, {
+
+  capabilitiesKicker: "CAPACIDADES",
+  capabilitiesTitle: "Das ideias",
+  capabilitiesTitleAccent: "à execução.",
+  capabilitiesDescription:
+    "Nosso trabalho pode apoiar diferentes etapas de uma empresa, projeto ou iniciativa digital — desde a organização de informações até a criação de soluções e a continuidade do trabalho.",
+
+  capDataTitle: "Dados e Excel",
+  capData01: "Entrada e organização de dados",
+  capData02: "Fórmulas e funções do Excel",
+  capData03: "Tabelas, relatórios e dashboards",
+  capData04: "Limpeza e processamento de dados",
+  capData05: "Conversão de PDF → Excel / Word",
+  capData06: "Relatórios básicos e insights de negócios",
+
+  capProjectTitle: "Gestão de Projetos",
+  capProject01: "Planejamento de projetos",
+  capProject02: "Gestão de tarefas e marcos",
+  capProject03: "Documentação e coordenação",
+  capProject04: "Acompanhamento do progresso",
+  capProject05: "Acompanhamento de riscos e problemas",
+  capProject06: "Suporte à entrega do projeto",
+
+  capLanguageTitle: "Francês e Documentos",
+  capLanguage01: "Tradução inglês → francês",
+  capLanguage02: "Tradução francês → inglês",
+  capLanguage03: "Tradução de documentos",
+  capLanguage04: "Revisão e edição",
+  capLanguage05: "Localização de documentos empresariais",
+  capLanguage06: "Comunicação em francês / inglês",
+
+  capAdminTitle: "Suporte Administrativo",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Formatação de documentos",
+  capAdmin05: "Pesquisa na Internet",
+  capAdmin06: "Organização e preparação de arquivos",
+
+  serveKicker: "QUEM ATENDEMOS",
+  serveTitle: "Criado em torno",
+  serveTitleAccent: "das suas necessidades.",
+  serveDescription:
+    "A GODZYA GROUP pode apoiar indivíduos, empreendedores, pequenas empresas, organizações em crescimento e equipes que precisam de suporte prático digital, empresarial ou profissional.",
+
+  serve01Title: "Indivíduos",
+  serve01Text:
+    "Suporte profissional para projetos pessoais, documentos, trabalhos com dados, tarefas digitais e outras necessidades práticas.",
+
+  serve02Title: "Empreendedores",
+  serve02Text:
+    "Suporte prático em tecnologia, dados, negócios e administração para pessoas que estão construindo e desenvolvendo suas empresas.",
+
+  serve03Title: "Pequenas Empresas",
+  serve03Text:
+    "Suporte flexível para organizações que precisam de capacidade adicional sem complexidade desnecessária.",
+
+  serve04Title: "Equipes e Organizações",
+  serve04Text:
+    "Suporte estruturado para projetos, documentação, dados, trabalho digital e operações empresariais.",
+
+  processKicker: "COMO TRABALHAMOS",
+  processTitle: "Processo claro.",
+  processTitleAccent: "Melhor execução.",
+  processDescription:
+    "Cada trabalho começa com clareza. Mantemos a comunicação, as expectativas e as entregas organizadas do início ao fim.",
+
+  process01Title: "Descobrir",
+  process01Text:
+    "Entendemos seu objetivo, requisitos, prioridades e resultado esperado.",
+
+  process02Title: "Planejar",
+  process02Text:
+    "Definimos o trabalho, organizamos as prioridades e estabelecemos um caminho prático.",
+
+  process03Title: "Executar",
+  process03Text:
+    "Trabalhamos nas tarefas acordadas mantendo a comunicação e o progresso visíveis.",
+
+  process04Title: "Entregar",
+  process04Text:
+    "Revisamos o trabalho, finalizamos as entregas e apoiamos uma transição clara.",
+
+  globalKicker: "CRIADO PARA UM MUNDO CONECTADO",
+  globalTitle: "Da ambição local",
+  globalTitleAccent: "à oportunidade global.",
+  globalDescription:
+    "A GODZYA GROUP está sendo construída com uma visão global — conectando tecnologia, dados, negócios e serviços profissionais através de fronteiras e idiomas.",
+
+  globalPoint1: "DIGITAL",
+  globalPoint2: "DADOS",
+  globalPoint3: "NEGÓCIOS",
+  globalPoint4: "TECNOLOGIA",
+  globalPoint5: "IDIOMAS",
+
+  contactKicker: "VAMOS CONVERSAR",
+  contactTitle: "Tem um projeto",
+  contactTitleAccent: "em mente?",
+  contactDescription:
+    "Conte-nos no que você está trabalhando, do que precisa e onde quer chegar. Vamos explorar como a GODZYA GROUP pode apoiar seu próximo passo.",
+
+  contactEmailButton: "Enviar e-mail para GODZYA",
+  contactHomeButton: "Voltar ao início",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "PRONTOS PARA CONECTAR",
+  contactEmailLabel: "E-MAIL",
+  contactFocusLabel: "FOCO",
+  contactFocus: "IA • DADOS • NEGÓCIOS • TECNOLOGIA",
+  contactBottom: "NÓS CONSTRUÍMOS. VOCÊ CRESCE.",
+
+  footerDescription:
+    "Construindo soluções mais inteligentes para um futuro conectado.",
+  footerNavigate: "NAVEGAÇÃO",
+  footerFocus: "FOCO",
+  footerFocus1: "IA e Automação",
+  footerFocus2: "Dados e Análises",
+  footerFocus3: "Negócios e Tecnologia",
+  footerFocus4: "Suporte Profissional",
+  footerConnect: "CONECTAR",
+  footerGlobal: "Servindo um mundo conectado",
+  footerTagline: "NÓS CONSTRUÍMOS. VOCÊ CRESCE."
+});
+
+
+Object.assign(translations.bn, {
+
+  capabilitiesKicker: "সক্ষমতা",
+  capabilitiesTitle: "ধারণা থেকে",
+  capabilitiesTitleAccent: "বাস্তবায়ন পর্যন্ত।",
+  capabilitiesDescription:
+    "আমাদের কাজ ব্যবসা, প্রকল্প বা ডিজিটাল উদ্যোগের বিভিন্ন পর্যায়ে সহায়তা করতে পারে — তথ্য সংগঠিত করা থেকে সমাধান তৈরি করা এবং কাজকে এগিয়ে নেওয়া পর্যন্ত।",
+
+  capDataTitle: "ডেটা ও Excel",
+  capData01: "ডেটা এন্ট্রি ও সংগঠন",
+  capData02: "Excel ফর্মুলা ও ফাংশন",
+  capData03: "টেবিল, রিপোর্ট ও ড্যাশবোর্ড",
+  capData04: "ডেটা পরিষ্কার ও প্রক্রিয়াকরণ",
+  capData05: "PDF → Excel / Word রূপান্তর",
+  capData06: "মৌলিক রিপোর্টিং ও ব্যবসায়িক অন্তর্দৃষ্টি",
+
+  capProjectTitle: "প্রজেক্ট ম্যানেজমেন্ট",
+  capProject01: "প্রজেক্ট পরিকল্পনা",
+  capProject02: "কাজ ও মাইলস্টোন ব্যবস্থাপনা",
+  capProject03: "ডকুমেন্টেশন ও সমন্বয়",
+  capProject04: "অগ্রগতি পর্যবেক্ষণ",
+  capProject05: "ঝুঁকি ও সমস্যা পর্যবেক্ষণ",
+  capProject06: "প্রজেক্ট হ্যান্ডওভার সহায়তা",
+
+  capLanguageTitle: "ফ্রেঞ্চ ও ডকুমেন্ট",
+  capLanguage01: "ইংরেজি → ফ্রেঞ্চ অনুবাদ",
+  capLanguage02: "ফ্রেঞ্চ → ইংরেজি অনুবাদ",
+  capLanguage03: "ডকুমেন্ট অনুবাদ",
+  capLanguage04: "প্রুফরিডিং ও সম্পাদনা",
+  capLanguage05: "ব্যবসায়িক ডকুমেন্ট লোকালাইজেশন",
+  capLanguage06: "ফ্রেঞ্চ / ইংরেজি যোগাযোগ",
+
+  capAdminTitle: "প্রশাসনিক সহায়তা",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "ডকুমেন্ট ফরম্যাটিং",
+  capAdmin05: "ইন্টারনেট গবেষণা",
+  capAdmin06: "ফাইল সংগঠন ও প্রস্তুতি",
+
+  serveKicker: "আমরা যাদের সেবা দিই",
+  serveTitle: "আপনার প্রয়োজনকে কেন্দ্র করে",
+  serveTitleAccent: "তৈরি।",
+  serveDescription:
+    "GODZYA GROUP ব্যক্তি, উদ্যোক্তা, ছোট ব্যবসা, ক্রমবর্ধমান প্রতিষ্ঠান এবং ব্যবহারিক ডিজিটাল, ব্যবসায়িক বা পেশাদার সহায়তা প্রয়োজন এমন দলকে সহায়তা করতে পারে।",
+
+  serve01Title: "ব্যক্তি",
+  serve01Text:
+    "ব্যক্তিগত প্রকল্প, ডকুমেন্ট, ডেটা কাজ, ডিজিটাল কাজ এবং অন্যান্য ব্যবহারিক প্রয়োজনের জন্য পেশাদার সহায়তা।",
+
+  serve02Title: "উদ্যোক্তা",
+  serve02Text:
+    "নিজেদের ব্যবসা তৈরি ও বৃদ্ধি করছেন এমন ব্যক্তিদের জন্য প্রযুক্তি, ডেটা, ব্যবসা ও প্রশাসনিক সহায়তা।",
+
+  serve03Title: "ছোট ব্যবসা",
+  serve03Text:
+    "অপ্রয়োজনীয় জটিলতা ছাড়াই অতিরিক্ত সক্ষমতা প্রয়োজন এমন প্রতিষ্ঠানের জন্য নমনীয় সহায়তা।",
+
+  serve04Title: "দল ও প্রতিষ্ঠান",
+  serve04Text:
+    "প্রকল্প, ডকুমেন্টেশন, ডেটা, ডিজিটাল কাজ এবং ব্যবসায়িক কার্যক্রমের জন্য কাঠামোবদ্ধ সহায়তা।",
+
+  processKicker: "আমরা যেভাবে কাজ করি",
+  processTitle: "স্পষ্ট প্রক্রিয়া।",
+  processTitleAccent: "আরও ভালো বাস্তবায়ন।",
+  processDescription:
+    "প্রতিটি কাজ স্পষ্টতা দিয়ে শুরু হয়। শুরু থেকে শেষ পর্যন্ত যোগাযোগ, প্রত্যাশা এবং ডেলিভারেবলগুলো সংগঠিত রাখা হয়।",
+
+  process01Title: "আবিষ্কার",
+  process01Text:
+    "আমরা আপনার লক্ষ্য, প্রয়োজনীয়তা, অগ্রাধিকার এবং প্রত্যাশিত ফলাফল বুঝি।",
+
+  process02Title: "পরিকল্পনা",
+  process02Text:
+    "আমরা কাজ নির্ধারণ করি, অগ্রাধিকার সাজাই এবং এগিয়ে যাওয়ার একটি বাস্তবসম্মত পথ তৈরি করি।",
+
+  process03Title: "বাস্তবায়ন",
+  process03Text:
+    "আমরা সম্মত কাজগুলো সম্পন্ন করি এবং যোগাযোগ ও অগ্রগতি দৃশ্যমান রাখি।",
+
+  process04Title: "ডেলিভারি",
+  process04Text:
+    "আমরা কাজ পর্যালোচনা করি, ডেলিভারেবল সম্পন্ন করি এবং একটি পরিষ্কার হ্যান্ডওভার নিশ্চিত করি।",
+
+  globalKicker: "একটি সংযুক্ত বিশ্বের জন্য তৈরি",
+  globalTitle: "স্থানীয় আকাঙ্ক্ষা থেকে",
+  globalTitleAccent: "বৈশ্বিক সুযোগে।",
+  globalDescription:
+    "GODZYA GROUP একটি বৈশ্বিক মানসিকতা নিয়ে তৈরি হচ্ছে — সীমান্ত ও ভাষার বাইরে প্রযুক্তি, ডেটা, ব্যবসা এবং পেশাদার সেবাকে সংযুক্ত করে।",
+
+  globalPoint1: "ডিজিটাল",
+  globalPoint2: "ডেটা",
+  globalPoint3: "ব্যবসা",
+  globalPoint4: "প্রযুক্তি",
+  globalPoint5: "ভাষা",
+
+  contactKicker: "যোগাযোগ করি",
+  contactTitle: "আপনার কি কোনো প্রকল্প",
+  contactTitleAccent: "মনে আছে?",
+  contactDescription:
+    "আপনি কী নিয়ে কাজ করছেন, কী ধরনের সহায়তা প্রয়োজন এবং কোথায় যেতে চান তা আমাদের জানান। আপনার পরবর্তী পদক্ষেপে GODZYA GROUP কীভাবে সহায়তা করতে পারে তা আলোচনা করি।",
+
+  contactEmailButton: "GODZYA-কে ইমেইল করুন",
+  contactHomeButton: "হোমে ফিরে যান",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "যোগাযোগের জন্য প্রস্তুত",
+  contactEmailLabel: "ইমেইল",
+  contactFocusLabel: "ফোকাস",
+  contactFocus: "AI • ডেটা • ব্যবসা • প্রযুক্তি",
+  contactBottom: "আমরা তৈরি করি। আপনি এগিয়ে যান।",
+
+  footerDescription:
+    "একটি সংযুক্ত ভবিষ্যতের জন্য আরও স্মার্ট সমাধান তৈরি করা।",
+  footerNavigate: "নেভিগেশন",
+  footerFocus: "ফোকাস",
+  footerFocus1: "AI ও অটোমেশন",
+  footerFocus2: "ডেটা ও অ্যানালিটিক্স",
+  footerFocus3: "ব্যবসা ও প্রযুক্তি",
+  footerFocus4: "পেশাদার সহায়তা",
+  footerConnect: "যোগাযোগ",
+  footerGlobal: "একটি সংযুক্ত বিশ্বের সেবা",
+  footerTagline: "আমরা তৈরি করি। আপনি এগিয়ে যান।"
+});
+
 
