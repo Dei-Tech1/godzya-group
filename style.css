@@ -3062,3 +3062,48 @@ h2 span {
   }
 
 }
+
+/* =================================================
+   23 — HERO SLOGAN
+================================================== */
+
+.hero-slogan {
+  position: relative;
+  z-index: 6;
+
+  margin: 0 0 18px;
+
+  font-size:
+    clamp(24px, 3vw, 42px);
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  letter-spacing: -.035em;
+
+  color: #ffffff;
+}
+
+.hero-slogan span {
+  color: var(--cyan);
+
+  text-shadow:
+    0 0 22px rgba(70,217,255,.28);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .hero-slogan {
+    max-width: 330px;
+
+    margin-bottom: 16px;
+
+    font-size:
+      clamp(23px, 7vw, 30px);
+  }
+
+}
