@@ -7366,3 +7366,116 @@ Object.assign(translations.en, {
 
 });
 
+/* =====================================================
+   ACCOMPLISHMENTS — TRANSLATIONS
+   BLOCK 2 — ENGLISH CUSTOMER VOICE + CONTACT
+===================================================== */
+
+Object.assign(translations.en, {
+
+  feedbackKicker:
+    "CUSTOMER VOICE",
+
+  feedbackTitle:
+    "Your voice helps us grow.",
+
+  feedbackDescription:
+    "Whether you have something positive to share, an idea for improvement or a concern, we want to hear from you.",
+
+  feedbackIntroTitle:
+    "Every perspective matters.",
+
+  feedbackIntroText:
+    "Honest feedback helps us understand what we are doing well and where we can improve the experience we provide.",
+
+  feedbackTypeLabel:
+    "Feedback Type",
+
+  feedbackTypePlaceholder:
+    "Select feedback type",
+
+  feedbackCompliment:
+    "Compliment",
+
+  feedbackSuggestion:
+    "Suggestion",
+
+  feedbackComplaint:
+    "Complaint",
+
+  feedbackGeneral:
+    "General Feedback",
+
+  feedbackNameLabel:
+    "Name",
+
+  feedbackNamePlaceholder:
+    "Your name",
+
+  feedbackEmailLabel:
+    "Email",
+
+  feedbackEmailPlaceholder:
+    "Your email",
+
+  feedbackMessageLabel:
+    "Your Message",
+
+  feedbackMessagePlaceholder:
+    "Tell us what you think...",
+
+  feedbackSubmit:
+    "Send Feedback",
+
+  feedbackNote:
+    "Your feedback will open your email application for sending. No information is stored directly on this website.",
+
+  contactKicker:
+    "LET'S CONNECT",
+
+  contactTitle:
+    "Have a project in mind?",
+
+  contactDescription:
+    "Tell us what you are working on, what you need help with, and where you want to go. Let's explore how GODZYA GROUP can support the next step.",
+
+  contactEmailButton:
+    "Email GODZYA",
+
+  contactHomeButton:
+    "Back to Home",
+
+  contactStatus:
+    "READY TO CONNECT",
+
+  footerDescription:
+    "Building smarter solutions for a connected future.",
+
+  footerNavigate:
+    "NAVIGATE",
+
+  footerFocus:
+    "FOCUS",
+
+  footerFocus1:
+    "AI & Automation",
+
+  footerFocus2:
+    "Data & Analytics",
+
+  footerFocus3:
+    "Business & Technology",
+
+  footerFocus4:
+    "Professional Support",
+
+  footerConnect:
+    "CONNECT",
+
+  footerGlobal:
+    "Serving a connected world",
+
+  footerTagline:
+    "WE BUILD. YOU GROW."
+
+});
