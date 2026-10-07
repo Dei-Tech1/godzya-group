@@ -231,3 +231,29 @@ if (contactForm) {
   );
 
      }
+
+/* =================================================
+   06 — INITIALIZATION
+================================================== */
+
+function initializeGodzya() {
+
+  document.documentElement.lang =
+    GODZYA_CONFIG.defaultLanguage.toLowerCase();
+
+  if (languageButton) {
+
+    languageButton.textContent =
+      GODZYA_CONFIG.defaultLanguage;
+
+  }
+
+}
+
+
+document.addEventListener(
+  "DOMContentLoaded",
+  initializeGodzya
+);
+
+
