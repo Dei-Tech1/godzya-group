@@ -1222,3 +1222,504 @@ h2 span {
 
 }
 
+/* =================================================
+   10 — EXPERTISE
+================================================== */
+
+.expertise-preview {
+
+  background:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(70,217,255,.025)
+    );
+
+}
+
+
+.expertise-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+
+}
+
+
+.expertise-card {
+
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 28px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.055),
+      rgba(255,255,255,.018)
+    );
+
+  box-shadow:
+    var(--shadow);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+
+}
+
+
+.expertise-card:hover {
+
+  transform:
+    translateY(-8px);
+
+  border-color:
+    var(--line-cyan);
+
+  box-shadow:
+    var(--shadow),
+    var(--glow);
+
+}
+
+
+.expertise-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -90px;
+  right: -90px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.12),
+      transparent 70%
+    );
+
+}
+
+
+.expertise-card h3 {
+
+  margin-top: 28px;
+
+}
+
+
+.expertise-card p {
+
+  margin-top: 14px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+}
+
+
+/* =================================================
+   SERVICE VISUALS
+================================================== */
+
+.expertise-visual {
+
+  position: relative;
+
+  height: 120px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+}
+
+
+/* AI */
+
+.visual-core {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 62px;
+  height: 62px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    var(--cyan);
+
+  border-radius: 50%;
+
+  color: var(--cyan);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 0 30px
+    rgba(70,217,255,.2);
+
+}
+
+
+.visual-node {
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--cyan);
+
+  box-shadow:
+    0 0 14px
+    var(--cyan);
+
+}
+
+
+.node-a {
+  top: 25px;
+  left: 25%;
+}
+
+.node-b {
+  top: 65px;
+  right: 23%;
+}
+
+.node-c {
+  bottom: 12px;
+  left: 38%;
+}
+
+
+/* DATA */
+
+.data-visual {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 28px);
+
+  grid-template-rows:
+    repeat(3, 22px);
+
+  gap: 5px;
+
+}
+
+
+.data-cell {
+
+  border:
+    1px solid
+    rgba(70,217,255,.25);
+
+  background:
+    rgba(70,217,255,.05);
+
+}
+
+
+.data-cell:nth-child(2) {
+
+  background:
+    rgba(70,217,255,.25);
+
+}
+
+
+.data-cell:nth-child(3) {
+
+  background:
+    rgba(70,217,255,.5);
+
+}
+
+
+.data-chart {
+
+  position: absolute;
+
+  width: 110px;
+  height: 55px;
+
+  border-left:
+    2px solid var(--cyan);
+
+  border-bottom:
+    2px solid var(--cyan);
+
+  transform:
+    skewY(-25deg);
+
+  opacity: .8;
+
+}
+
+
+/* BUSINESS FLOW */
+
+.flow-step {
+
+  padding:
+    7px 9px;
+
+  border:
+    1px solid
+    var(--line-cyan);
+
+  border-radius: 7px;
+
+  color: var(--cyan);
+
+  font-size: 8px;
+
+  letter-spacing: .08em;
+
+}
+
+
+.flow-line {
+
+  width: 20px;
+  height: 1px;
+
+  background:
+    var(--cyan);
+
+  opacity: .5;
+
+}
+
+
+/* PROJECT TIMELINE */
+
+.timeline-line {
+
+  position: absolute;
+
+  width: 75%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--cyan),
+      transparent
+    );
+
+}
+
+
+.timeline-point {
+
+  position: absolute;
+
+  width: 13px;
+  height: 13px;
+
+  border:
+    2px solid
+    var(--cyan);
+
+  border-radius: 50%;
+
+  background:
+    var(--bg-card);
+
+  box-shadow:
+    0 0 15px
+    rgba(70,217,255,.4);
+
+}
+
+
+.point-1 {
+  left: 12%;
+}
+
+.point-2 {
+  left: 48%;
+}
+
+.point-3 {
+  right: 12%;
+}
+
+
+/* TECHNOLOGY */
+
+.screen-frame {
+
+  position: relative;
+
+  width: 130px;
+  height: 78px;
+
+  border:
+    1px solid
+    rgba(139,233,255,.45);
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 0 30px
+    rgba(70,217,255,.12);
+
+}
+
+
+.screen-frame span {
+
+  display: block;
+
+  width: 60%;
+
+  height: 3px;
+
+  margin: 13px 12px;
+
+  background:
+    rgba(70,217,255,.4);
+
+}
+
+
+.tech-network {
+
+  position: absolute;
+
+  width: 70px;
+  height: 70px;
+
+  border:
+    1px solid
+    var(--cyan);
+
+  border-radius: 50%;
+
+  opacity: .25;
+
+}
+
+
+/* LANGUAGE */
+
+.language-node {
+
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    var(--line-cyan);
+
+  border-radius: 50%;
+
+  color: var(--cyan);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+}
+
+
+.language-arrow {
+
+  color: var(--white);
+
+  font-size: 20px;
+
+}
+
+
+/* ADMIN */
+
+.admin-folder {
+
+  padding:
+    18px 22px;
+
+  border:
+    1px solid
+    var(--line-cyan);
+
+  border-radius: 10px;
+
+  color: var(--cyan);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+}
+
+
+.admin-check {
+
+  width: 36px;
+  height: 36px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(70,217,255,.1);
+
+  color: var(--cyan);
+
+  font-size: 18px;
+
+}
+
