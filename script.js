@@ -7239,3 +7239,130 @@ console.log(
 );
 
 </script>
+
+/* =====================================================
+   ACCOMPLISHMENTS — TRANSLATIONS
+   BLOCK 1 — ENGLISH
+===================================================== */
+
+Object.assign(translations.en, {
+
+  accomplishmentsKicker:
+    "OUR ACCOMPLISHMENTS",
+
+  accomplishmentsHeroTitle:
+    "Turning work into results.",
+
+  accomplishmentsHeroDescription:
+    "A growing collection of projects, digital experiences and professional work built with purpose, precision and a commitment to continuous improvement.",
+
+  accomplishmentsExplore:
+    "Explore Our Work",
+
+  accomplishmentsFeedback:
+    "Share Your Feedback",
+
+  accomplishmentsHeroBottom:
+    "REAL WORK • REAL PROJECTS • CONTINUOUSLY BUILDING",
+
+  projectsKicker:
+    "SELECTED WORK",
+
+  projectsTitle:
+    "Work that speaks for itself.",
+
+  projectsDescription:
+    "Every project represents an opportunity to learn, build and create something useful. As GODZYA GROUP grows, this collection will continue to evolve.",
+
+  project01Type:
+    "INTERNAL PROJECT",
+
+  project01Title:
+    "GODZYA GROUP Website",
+
+  project01Text:
+    "The digital home of GODZYA GROUP — designed to bring together our vision, capabilities, professional services and growing portfolio.",
+
+  project01Link:
+    "View Project",
+
+  project02Type:
+    "CLIENT PROJECT",
+
+  project02Title:
+    "NayaGlow Website",
+
+  project02Text:
+    "A premium digital experience created for NayaGlow, a beauty and self-care brand with African roots and a global vision.",
+
+  project02Link:
+    "View Project",
+
+  project03Type:
+    "IN PROGRESS",
+
+  project03Title:
+    "More to Come",
+
+  project03Text:
+    "GODZYA GROUP is growing. New projects, collaborations and digital solutions will be added here as they become part of our journey.",
+
+  project03Link:
+    "Coming Soon",
+
+  storiesKicker:
+    "BEHIND THE WORK",
+
+  storiesTitle:
+    "From concept to creation.",
+
+  storiesDescription:
+    "Our accomplishments are more than finished pages. They represent planning, learning, problem-solving and the continuous process of turning an idea into something real.",
+
+  story01Label:
+    "GODZYA GROUP",
+
+  story01Title:
+    "Building our own digital foundation.",
+
+  story01Text:
+    "GODZYA GROUP is itself an ongoing project. The website is being developed as a professional digital foundation for the business, its services, future clients and future growth.",
+
+  story01Meta01:
+    "INTERNAL",
+
+  story01Meta02:
+    "ACTIVE DEVELOPMENT",
+
+  story02Label:
+    "NAYAGLOW",
+
+  story02Title:
+    "Creating a premium brand experience.",
+
+  story02Text:
+    "NayaGlow became an opportunity to transform a beauty brand concept into a cinematic digital experience designed around its identity, audience and vision.",
+
+  story02Meta01:
+    "CLIENT PROJECT",
+
+  story02Meta02:
+    "WEBSITE DEVELOPMENT",
+
+  story03Label:
+    "THE JOURNEY",
+
+  story03Title:
+    "Every project becomes experience.",
+
+  story03Text:
+    "As GODZYA GROUP continues to grow, every completed project will contribute to a stronger portfolio, deeper experience and better ways of serving future clients.",
+
+  story03Meta01:
+    "CONTINUOUS",
+
+  story03Meta02:
+    "BUILDING FORWARD",
+
+});
+
