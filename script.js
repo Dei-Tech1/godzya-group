@@ -102,4 +102,51 @@ if (navLinks) {
 
 }
 
+/* =================================================
+   03 — LANGUAGE SELECTOR
+================================================== */
+
+const languageButton =
+  document.querySelector(".language-button");
+
+let currentLanguage =
+  GODZYA_CONFIG.defaultLanguage;
+
+
+function changeLanguage() {
+
+  const languages =
+    GODZYA_CONFIG.languages;
+
+  const currentIndex =
+    languages.indexOf(currentLanguage);
+
+  const nextIndex =
+    (currentIndex + 1) % languages.length;
+
+  currentLanguage =
+    languages[nextIndex];
+
+  if (languageButton) {
+
+    languageButton.textContent =
+      currentLanguage;
+
+  }
+
+  document.documentElement.lang =
+    currentLanguage.toLowerCase();
+
+}
+
+
+if (languageButton) {
+
+  languageButton.addEventListener(
+    "click",
+    changeLanguage
+  );
+
+}
+
 
