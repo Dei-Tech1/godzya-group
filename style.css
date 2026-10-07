@@ -1723,3 +1723,250 @@ h2 span {
 
 }
 
+/* =================================================
+   11 — OUR WORK
+================================================== */
+
+.work-preview {
+
+  overflow: hidden;
+
+}
+
+
+.work-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+
+}
+
+
+.work-card {
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    var(--line);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    rgba(255,255,255,.025);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease;
+
+}
+
+
+.work-card:hover {
+
+  transform:
+    translateY(-8px);
+
+  border-color:
+    var(--line-cyan);
+
+}
+
+
+/* WORK IMAGE AREA */
+
+.work-image {
+
+  position: relative;
+
+  height: 270px;
+
+  display: grid;
+
+  place-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(70,217,255,.12),
+      rgba(5,11,20,.9) 70%
+    );
+
+}
+
+
+.work-image::before {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(70,217,255,.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(70,217,255,.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+
+}
+
+
+.work-image-glow {
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.25),
+      transparent 70%
+    );
+
+  filter: blur(12px);
+
+}
+
+
+/* PROJECT LOGOS */
+
+.work-logo,
+.work-placeholder {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 110px;
+  height: 110px;
+
+  display: grid;
+
+  place-items: center;
+
+  border:
+    1px solid
+    rgba(139,233,255,.45);
+
+  border-radius: 24px;
+
+  background:
+    rgba(70,217,255,.06);
+
+  color: var(--cyan);
+
+  font-size: 44px;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 0 50px
+    rgba(70,217,255,.12);
+
+}
+
+
+.work-tag {
+
+  position: absolute;
+
+  left: 18px;
+  bottom: 18px;
+
+  z-index: 3;
+
+  padding:
+    7px 10px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.1);
+
+  border-radius: 999px;
+
+  background:
+    rgba(5,11,20,.65);
+
+  backdrop-filter:
+    blur(10px);
+
+  color: var(--cyan);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: .12em;
+
+}
+
+
+/* WORK CONTENT */
+
+.work-content {
+
+  padding: 28px;
+
+}
+
+
+.work-category {
+
+  color: var(--cyan);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: .18em;
+
+}
+
+
+.work-content h3 {
+
+  margin-top: 10px;
+
+}
+
+
+.work-content p:last-child {
+
+  margin-top: 12px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+}
+
+
+.section-action {
+
+  margin-top: 50px;
+
+  text-align: center;
+
+}
+
