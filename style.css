@@ -3696,3 +3696,226 @@ h2 span {
 
 }
 
+/* =================================================
+   30 — VISION ENERGY CORE
+================================================== */
+
+.vision-visual {
+  position: relative;
+
+  min-height: 320px;
+
+  display: grid;
+  place-items: center;
+}
+
+
+/* MAIN G CORE */
+
+.vision-core {
+  position: relative;
+
+  width: 150px;
+  height: 150px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(70,217,255,.42);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(70,217,255,.18),
+      rgba(5,11,20,.82) 65%
+    );
+
+  box-shadow:
+    0 0 35px rgba(70,217,255,.16),
+    inset 0 0 35px rgba(70,217,255,.08);
+
+  animation:
+    visionCorePulse 4s ease-in-out infinite;
+}
+
+
+.vision-core span {
+  font-size: 58px;
+
+  font-weight: 900;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 0 22px rgba(70,217,255,.55);
+}
+
+
+/* ROTATING ORBIT */
+
+.vision-orbit {
+  position: absolute;
+
+  width: 245px;
+  height: 245px;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(70,217,255,.18);
+
+  box-shadow:
+    0 0 28px rgba(70,217,255,.05);
+
+  animation:
+    visionOrbitRotate 14s linear infinite;
+}
+
+
+.vision-orbit::before {
+  content: "";
+
+  position: absolute;
+
+  top: 17px;
+  left: 42px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background:
+    var(--cyan);
+
+  box-shadow:
+    0 0 10px var(--cyan),
+    0 0 24px rgba(70,217,255,.8);
+}
+
+
+/* PARTICLES */
+
+.vision-particle {
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background:
+    var(--cyan);
+
+  box-shadow:
+    0 0 14px var(--cyan);
+
+  animation:
+    visionParticleFloat 5s ease-in-out infinite;
+}
+
+
+.particle-one {
+  top: 20%;
+  right: 18%;
+}
+
+
+.particle-two {
+  bottom: 22%;
+  left: 18%;
+
+  animation-delay: -2s;
+}
+
+
+.particle-three {
+  top: 48%;
+  right: 8%;
+
+  animation-delay: -3.5s;
+}
+
+
+/* MOTION */
+
+@keyframes visionOrbitRotate {
+
+  to {
+    transform:
+      rotate(360deg);
+  }
+
+}
+
+
+@keyframes visionCorePulse {
+
+  0%,
+  100% {
+    transform:
+      scale(1);
+
+    box-shadow:
+      0 0 35px rgba(70,217,255,.16),
+      inset 0 0 35px rgba(70,217,255,.08);
+  }
+
+  50% {
+    transform:
+      scale(1.04);
+
+    box-shadow:
+      0 0 55px rgba(70,217,255,.28),
+      inset 0 0 45px rgba(70,217,255,.13);
+  }
+
+}
+
+
+@keyframes visionParticleFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0);
+
+    opacity: .35;
+  }
+
+  50% {
+    transform:
+      translateY(-20px);
+
+    opacity: 1;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .vision-visual {
+    min-height: 270px;
+  }
+
+  .vision-core {
+    width: 125px;
+    height: 125px;
+  }
+
+  .vision-core span {
+    font-size: 48px;
+  }
+
+  .vision-orbit {
+    width: 205px;
+    height: 205px;
+  }
+
+}
