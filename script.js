@@ -6616,4 +6616,508 @@ Object.assign(translations.bn, {
   footerTagline: "আমরা তৈরি করি। আপনি এগিয়ে যান।"
 });
 
+/* =====================================================
+   WHAT WE DO — REMAINING TRANSLATIONS
+   RUSSIAN + GERMAN + SWAHILI + AFRIKAANS
+===================================================== */
+
+Object.assign(translations.ru, {
+
+  capabilitiesKicker: "ВОЗМОЖНОСТИ",
+  capabilitiesTitle: "От идей",
+  capabilitiesTitleAccent: "к реализации.",
+  capabilitiesDescription:
+    "Наша работа может поддерживать различные этапы бизнеса, проекта или цифровой инициативы — от организации информации до создания решений и продвижения работы вперед.",
+
+  capDataTitle: "Данные и Excel",
+  capData01: "Ввод и организация данных",
+  capData02: "Формулы и функции Excel",
+  capData03: "Таблицы, отчеты и дашборды",
+  capData04: "Очистка и обработка данных",
+  capData05: "Конвертация PDF → Excel / Word",
+  capData06: "Базовая отчетность и бизнес-аналитика",
+
+  capProjectTitle: "Управление проектами",
+  capProject01: "Планирование проектов",
+  capProject02: "Управление задачами и этапами",
+  capProject03: "Документация и координация",
+  capProject04: "Отслеживание прогресса",
+  capProject05: "Отслеживание рисков и проблем",
+  capProject06: "Поддержка передачи проекта",
+
+  capLanguageTitle: "Французский язык и документы",
+  capLanguage01: "Перевод с английского → французский",
+  capLanguage02: "Перевод с французского → английский",
+  capLanguage03: "Перевод документов",
+  capLanguage04: "Корректура и редактирование",
+  capLanguage05: "Локализация деловых документов",
+  capLanguage06: "Коммуникация на французском / английском",
+
+  capAdminTitle: "Административная поддержка",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Форматирование документов",
+  capAdmin05: "Исследования в Интернете",
+  capAdmin06: "Организация и подготовка файлов",
+
+  serveKicker: "ДЛЯ КОГО МЫ РАБОТАЕМ",
+  serveTitle: "Создано вокруг",
+  serveTitleAccent: "ваших потребностей.",
+  serveDescription:
+    "GODZYA GROUP может поддерживать частных лиц, предпринимателей, малый бизнес, развивающиеся организации и команды, которым нужна практическая цифровая, деловая или профессиональная поддержка.",
+
+  serve01Title: "Частные лица",
+  serve01Text:
+    "Профессиональная поддержка для личных проектов, документов, работы с данными, цифровых задач и других практических потребностей.",
+
+  serve02Title: "Предприниматели",
+  serve02Text:
+    "Практическая поддержка в области технологий, данных, бизнеса и администрирования для тех, кто создает и развивает свой бизнес.",
+
+  serve03Title: "Малый бизнес",
+  serve03Text:
+    "Гибкая поддержка для организаций, которым нужны дополнительные ресурсы без лишней сложности.",
+
+  serve04Title: "Команды и организации",
+  serve04Text:
+    "Структурированная поддержка проектов, документации, данных, цифровой работы и бизнес-операций.",
+
+  processKicker: "КАК МЫ РАБОТАЕМ",
+  processTitle: "Четкий процесс.",
+  processTitleAccent: "Лучший результат.",
+  processDescription:
+    "Каждое сотрудничество начинается с ясности. Мы организуем коммуникацию, ожидания и результаты работы от начала до конца.",
+
+  process01Title: "Понять",
+  process01Text:
+    "Мы понимаем вашу цель, требования, приоритеты и ожидаемый результат.",
+
+  process02Title: "Спланировать",
+  process02Text:
+    "Мы определяем объем работы, расставляем приоритеты и создаем практический путь вперед.",
+
+  process03Title: "Выполнить",
+  process03Text:
+    "Мы выполняем согласованные задачи, сохраняя прозрачность коммуникации и прогресса.",
+
+  process04Title: "Передать",
+  process04Text:
+    "Мы проверяем работу, завершаем результаты и обеспечиваем понятную передачу.",
+
+  globalKicker: "СОЗДАНО ДЛЯ СВЯЗАННОГО МИРА",
+  globalTitle: "От локальных амбиций",
+  globalTitleAccent: "к глобальным возможностям.",
+  globalDescription:
+    "GODZYA GROUP создается с глобальным мышлением — объединяя технологии, данные, бизнес и профессиональные услуги через границы и языки.",
+
+  globalPoint1: "ЦИФРОВЫЕ ТЕХНОЛОГИИ",
+  globalPoint2: "ДАННЫЕ",
+  globalPoint3: "БИЗНЕС",
+  globalPoint4: "ТЕХНОЛОГИИ",
+  globalPoint5: "ЯЗЫКИ",
+
+  contactKicker: "ДАВАЙТЕ СВЯЖЕМСЯ",
+  contactTitle: "Есть проект",
+  contactTitleAccent: "в мыслях?",
+  contactDescription:
+    "Расскажите, над чем вы работаете, какая помощь вам нужна и куда вы хотите двигаться. Давайте обсудим, как GODZYA GROUP может поддержать ваш следующий шаг.",
+
+  contactEmailButton: "Написать GODZYA",
+  contactHomeButton: "Вернуться на главную",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "ГОТОВЫ К КОНТАКТУ",
+  contactEmailLabel: "ЭЛЕКТРОННАЯ ПОЧТА",
+  contactFocusLabel: "ФОКУС",
+  contactFocus: "ИИ • ДАННЫЕ • БИЗНЕС • ТЕХНОЛОГИИ",
+  contactBottom: "МЫ СТРОИМ. ВЫ РАСТЕТЕ.",
+
+  footerDescription:
+    "Создаем более умные решения для взаимосвязанного будущего.",
+  footerNavigate: "НАВИГАЦИЯ",
+  footerFocus: "ФОКУС",
+  footerFocus1: "ИИ и автоматизация",
+  footerFocus2: "Данные и аналитика",
+  footerFocus3: "Бизнес и технологии",
+  footerFocus4: "Профессиональная поддержка",
+  footerConnect: "КОНТАКТ",
+  footerGlobal: "Для взаимосвязанного мира",
+  footerTagline: "МЫ СТРОИМ. ВЫ РАСТЕТЕ."
+});
+
+
+Object.assign(translations.de, {
+
+  capabilitiesKicker: "KOMPETENZEN",
+  capabilitiesTitle: "Von Ideen",
+  capabilitiesTitleAccent: "bis zur Umsetzung.",
+  capabilitiesDescription:
+    "Unsere Arbeit kann verschiedene Phasen eines Unternehmens, Projekts oder digitalen Vorhabens unterstützen — von der Organisation von Informationen bis zur Entwicklung von Lösungen und der Weiterführung der Arbeit.",
+
+  capDataTitle: "Daten & Excel",
+  capData01: "Dateneingabe & Organisation",
+  capData02: "Excel-Formeln & Funktionen",
+  capData03: "Tabellen, Berichte & Dashboards",
+  capData04: "Datenbereinigung & Verarbeitung",
+  capData05: "PDF → Excel / Word Konvertierung",
+  capData06: "Grundlegende Berichte & Business Insights",
+
+  capProjectTitle: "Projektmanagement",
+  capProject01: "Projektplanung",
+  capProject02: "Aufgaben- & Meilensteinmanagement",
+  capProject03: "Dokumentation & Koordination",
+  capProject04: "Fortschrittskontrolle",
+  capProject05: "Risiko- & Problemverfolgung",
+  capProject06: "Unterstützung bei der Projektübergabe",
+
+  capLanguageTitle: "Französisch & Dokumente",
+  capLanguage01: "Englisch → Französisch Übersetzung",
+  capLanguage02: "Französisch → Englisch Übersetzung",
+  capLanguage03: "Dokumentübersetzung",
+  capLanguage04: "Korrekturlesen & Bearbeitung",
+  capLanguage05: "Lokalisierung von Geschäftsdokumenten",
+  capLanguage06: "Französische / englische Kommunikation",
+
+  capAdminTitle: "Administrative Unterstützung",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Dokumentenformatierung",
+  capAdmin05: "Internetrecherche",
+  capAdmin06: "Dateiorganisation & Vorbereitung",
+
+  serveKicker: "FÜR WEN WIR ARBEITEN",
+  serveTitle: "Entwickelt rund um",
+  serveTitleAccent: "Ihre Bedürfnisse.",
+  serveDescription:
+    "GODZYA GROUP kann Einzelpersonen, Unternehmer, kleine Unternehmen, wachsende Organisationen und Teams unterstützen, die praktische digitale, geschäftliche oder professionelle Unterstützung benötigen.",
+
+  serve01Title: "Einzelpersonen",
+  serve01Text:
+    "Professionelle Unterstützung für persönliche Projekte, Dokumente, Datenarbeiten, digitale Aufgaben und andere praktische Anforderungen.",
+
+  serve02Title: "Unternehmer",
+  serve02Text:
+    "Praktische Unterstützung in Technologie, Daten, Business und Administration für Menschen, die ihr Unternehmen aufbauen und weiterentwickeln.",
+
+  serve03Title: "Kleine Unternehmen",
+  serve03Text:
+    "Flexible Unterstützung für Organisationen, die zusätzliche Kapazitäten ohne unnötige Komplexität benötigen.",
+
+  serve04Title: "Teams & Organisationen",
+  serve04Text:
+    "Strukturierte Unterstützung für Projekte, Dokumentation, Daten, digitale Arbeit und Geschäftsabläufe.",
+
+  processKicker: "WIE WIR ARBEITEN",
+  processTitle: "Klarer Prozess.",
+  processTitleAccent: "Bessere Umsetzung.",
+  processDescription:
+    "Jede Zusammenarbeit beginnt mit Klarheit. Wir halten Kommunikation, Erwartungen und Ergebnisse von Anfang bis Ende organisiert.",
+
+  process01Title: "Verstehen",
+  process01Text:
+    "Wir verstehen Ihr Ziel, Ihre Anforderungen, Prioritäten und das gewünschte Ergebnis.",
+
+  process02Title: "Planen",
+  process02Text:
+    "Wir definieren die Arbeit, organisieren Prioritäten und legen einen praktischen Weg nach vorn fest.",
+
+  process03Title: "Umsetzen",
+  process03Text:
+    "Wir bearbeiten die vereinbarten Aufgaben und halten Kommunikation und Fortschritt sichtbar.",
+
+  process04Title: "Liefern",
+  process04Text:
+    "Wir prüfen die Arbeit, finalisieren die Ergebnisse und unterstützen eine klare Übergabe.",
+
+  globalKicker: "FÜR EINE VERNETZTE WELT ENTWICKELT",
+  globalTitle: "Von lokaler Ambition",
+  globalTitleAccent: "zu globalen Chancen.",
+  globalDescription:
+    "GODZYA GROUP wird mit einer globalen Perspektive aufgebaut — mit Technologie, Daten, Business und professionellen Dienstleistungen über Grenzen und Sprachen hinweg.",
+
+  globalPoint1: "DIGITAL",
+  globalPoint2: "DATEN",
+  globalPoint3: "BUSINESS",
+  globalPoint4: "TECHNOLOGIE",
+  globalPoint5: "SPRACHEN",
+
+  contactKicker: "LASSEN SIE UNS VERBINDEN",
+  contactTitle: "Haben Sie ein Projekt",
+  contactTitleAccent: "im Kopf?",
+  contactDescription:
+    "Erzählen Sie uns, woran Sie arbeiten, wobei Sie Unterstützung benötigen und wohin Sie möchten. Lassen Sie uns erkunden, wie GODZYA GROUP Ihren nächsten Schritt unterstützen kann.",
+
+  contactEmailButton: "GODZYA kontaktieren",
+  contactHomeButton: "Zur Startseite",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "BEREIT ZUR KONTAKTAUFNAHME",
+  contactEmailLabel: "E-MAIL",
+  contactFocusLabel: "FOKUS",
+  contactFocus: "KI • DATEN • BUSINESS • TECHNOLOGIE",
+  contactBottom: "WIR BAUEN. SIE WACHSEN.",
+
+  footerDescription:
+    "Wir entwickeln intelligentere Lösungen für eine vernetzte Zukunft.",
+  footerNavigate: "NAVIGATION",
+  footerFocus: "FOKUS",
+  footerFocus1: "KI & Automatisierung",
+  footerFocus2: "Daten & Analytik",
+  footerFocus3: "Business & Technologie",
+  footerFocus4: "Professionelle Unterstützung",
+  footerConnect: "KONTAKT",
+  footerGlobal: "Für eine vernetzte Welt",
+  footerTagline: "WIR BAUEN. SIE WACHSEN."
+});
+
+
+Object.assign(translations.sw, {
+
+  capabilitiesKicker: "UWEZO",
+  capabilitiesTitle: "Kutoka mawazo",
+  capabilitiesTitleAccent: "hadi utekelezaji.",
+  capabilitiesDescription:
+    "Kazi yetu inaweza kusaidia hatua mbalimbali za biashara, mradi au mpango wa kidijitali — kutoka kupanga taarifa hadi kuunda suluhisho na kuendeleza kazi.",
+
+  capDataTitle: "Data na Excel",
+  capData01: "Uingizaji na upangaji wa data",
+  capData02: "Fomula na functions za Excel",
+  capData03: "Majedwali, ripoti na dashboards",
+  capData04: "Usafishaji na uchakataji wa data",
+  capData05: "Ubadilishaji wa PDF → Excel / Word",
+  capData06: "Ripoti za msingi na maarifa ya biashara",
+
+  capProjectTitle: "Usimamizi wa Miradi",
+  capProject01: "Upangaji wa miradi",
+  capProject02: "Usimamizi wa kazi na hatua muhimu",
+  capProject03: "Nyaraka na uratibu",
+  capProject04: "Ufuatiliaji wa maendeleo",
+  capProject05: "Ufuatiliaji wa hatari na changamoto",
+  capProject06: "Msaada wa kukabidhi mradi",
+
+  capLanguageTitle: "Kifaransa na Nyaraka",
+  capLanguage01: "Tafsiri Kiingereza → Kifaransa",
+  capLanguage02: "Tafsiri Kifaransa → Kiingereza",
+  capLanguage03: "Tafsiri ya nyaraka",
+  capLanguage04: "Usahihishaji na uhariri",
+  capLanguage05: "Urekebishaji wa nyaraka za biashara",
+  capLanguage06: "Mawasiliano ya Kifaransa / Kiingereza",
+
+  capAdminTitle: "Msaada wa Kiutawala",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Uumbizaji wa nyaraka",
+  capAdmin05: "Utafiti wa mtandaoni",
+  capAdmin06: "Upangaji na maandalizi ya faili",
+
+  serveKicker: "TUNAWAHUDUMIA NANI",
+  serveTitle: "Imejengwa kulingana na",
+  serveTitleAccent: "mahitaji yako.",
+  serveDescription:
+    "GODZYA GROUP inaweza kusaidia watu binafsi, wajasiriamali, biashara ndogo, mashirika yanayokua na timu zinazohitaji msaada wa vitendo katika nyanja za kidijitali, biashara au kitaalamu.",
+
+  serve01Title: "Watu Binafsi",
+  serve01Text:
+    "Msaada wa kitaalamu kwa miradi binafsi, nyaraka, kazi za data, majukumu ya kidijitali na mahitaji mengine ya vitendo.",
+
+  serve02Title: "Wajasiriamali",
+  serve02Text:
+    "Msaada wa vitendo katika teknolojia, data, biashara na utawala kwa watu wanaojenga na kukuza biashara zao.",
+
+  serve03Title: "Biashara Ndogo",
+  serve03Text:
+    "Msaada unaobadilika kwa mashirika yanayohitaji uwezo wa ziada bila ugumu usio wa lazima.",
+
+  serve04Title: "Timu na Mashirika",
+  serve04Text:
+    "Msaada uliopangwa kwa miradi, nyaraka, data, kazi za kidijitali na shughuli za biashara.",
+
+  processKicker: "JINSI TUNAVYOFANYA KAZI",
+  processTitle: "Mchakato ulio wazi.",
+  processTitleAccent: "Utekelezaji bora.",
+  processDescription:
+    "Kila ushirikiano huanza kwa uwazi. Tunapanga mawasiliano, matarajio na kazi zinazowasilishwa kuanzia mwanzo hadi mwisho.",
+
+  process01Title: "Gundua",
+  process01Text:
+    "Tunaelewa lengo lako, mahitaji, vipaumbele na matokeo unayotarajia.",
+
+  process02Title: "Panga",
+  process02Text:
+    "Tunafafanua kazi, tunapanga vipaumbele na kuweka njia ya vitendo ya kusonga mbele.",
+
+  process03Title: "Tekeleza",
+  process03Text:
+    "Tunafanya kazi zilizokubaliwa huku tukiweka mawasiliano na maendeleo wazi.",
+
+  process04Title: "Wasilisha",
+  process04Text:
+    "Tunakagua kazi, tunakamilisha matokeo na kusaidia makabidhiano yaliyo wazi.",
+
+  globalKicker: "IMEJENGWA KWA ULIMWENGU ULIOUNGANISHWA",
+  globalTitle: "Kutoka matarajio ya ndani",
+  globalTitleAccent: "hadi fursa za kimataifa.",
+  globalDescription:
+    "GODZYA GROUP inajengwa kwa mtazamo wa kimataifa — ikiunganisha teknolojia, data, biashara na huduma za kitaalamu kuvuka mipaka na lugha.",
+
+  globalPoint1: "KIDIJITALI",
+  globalPoint2: "DATA",
+  globalPoint3: "BIASHARA",
+  globalPoint4: "TEKNOLOJIA",
+  globalPoint5: "LUGHA",
+
+  contactKicker: "TUWASILIANE",
+  contactTitle: "Una mradi",
+  contactTitleAccent: "akilini?",
+  contactDescription:
+    "Tuambie unachofanyia kazi, unachohitaji msaada nacho na unapotaka kwenda. Tuchunguze jinsi GODZYA GROUP inaweza kusaidia hatua yako inayofuata.",
+
+  contactEmailButton: "Tuma barua pepe kwa GODZYA",
+  contactHomeButton: "Rudi Mwanzo",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "TAYARI KUWASILIANA",
+  contactEmailLabel: "BARUA PEPE",
+  contactFocusLabel: "MSISITIZO",
+  contactFocus: "AI • DATA • BIASHARA • TEKNOLOJIA",
+  contactBottom: "TUNAJENGA. UNAKUA.",
+
+  footerDescription:
+    "Kujenga suluhisho bora zaidi kwa ajili ya mustakabali uliounganishwa.",
+  footerNavigate: "URAMBO",
+  footerFocus: "MSISITIZO",
+  footerFocus1: "AI na Uendeshaji Kiotomatiki",
+  footerFocus2: "Data na Uchambuzi",
+  footerFocus3: "Biashara na Teknolojia",
+  footerFocus4: "Msaada wa Kitaalamu",
+  footerConnect: "WASILIANA",
+  footerGlobal: "Tunahudumia ulimwengu uliounganishwa",
+  footerTagline: "TUNAJENGA. UNAKUA."
+});
+
+
+Object.assign(translations.af, {
+
+  capabilitiesKicker: "VERMOËNS",
+  capabilitiesTitle: "Van idees",
+  capabilitiesTitleAccent: "tot uitvoering.",
+  capabilitiesDescription:
+    "Ons werk kan verskillende stadiums van ’n besigheid, projek of digitale inisiatief ondersteun — van die organisering van inligting tot die skep van oplossings en die bevordering van werk.",
+
+  capDataTitle: "Data & Excel",
+  capData01: "Data-invoer & organisering",
+  capData02: "Excel-formules & funksies",
+  capData03: "Tabelle, verslae & dashboards",
+  capData04: "Data-skoonmaak & verwerking",
+  capData05: "PDF → Excel / Word-omskakeling",
+  capData06: "Basiese verslagdoening & besigheidsinsigte",
+
+  capProjectTitle: "Projekbestuur",
+  capProject01: "Projekbeplanning",
+  capProject02: "Taak- & mylpaalbestuur",
+  capProject03: "Dokumentasie & koördinering",
+  capProject04: "Vorderingopsporing",
+  capProject05: "Risiko- & probleemopsporing",
+  capProject06: "Ondersteuning met projekoorhandiging",
+
+  capLanguageTitle: "Frans & Dokumente",
+  capLanguage01: "Engels → Frans vertaling",
+  capLanguage02: "Frans → Engels vertaling",
+  capLanguage03: "Dokumentvertaling",
+  capLanguage04: "Proeflees & redigering",
+  capLanguage05: "Lokalisering van besigheidsdokumente",
+  capLanguage06: "Franse / Engelse kommunikasie",
+
+  capAdminTitle: "Administratiewe Ondersteuning",
+  capAdmin01: "Microsoft Word",
+  capAdmin02: "Microsoft Excel",
+  capAdmin03: "Microsoft PowerPoint",
+  capAdmin04: "Dokumentformatering",
+  capAdmin05: "Internetnavorsing",
+  capAdmin06: "Lêerorganisering & voorbereiding",
+
+  serveKicker: "WIE ONS DIEN",
+  serveTitle: "Gebou rondom",
+  serveTitleAccent: "jou behoeftes.",
+  serveDescription:
+    "GODZYA GROUP kan individue, entrepreneurs, klein besighede, groeiende organisasies en spanne ondersteun wat praktiese digitale, besigheids- of professionele ondersteuning benodig.",
+
+  serve01Title: "Individue",
+  serve01Text:
+    "Professionele ondersteuning vir persoonlike projekte, dokumente, datawerk, digitale take en ander praktiese behoeftes.",
+
+  serve02Title: "Entrepreneurs",
+  serve02Text:
+    "Praktiese ondersteuning in tegnologie, data, besigheid en administrasie vir mense wat hul besighede bou en laat groei.",
+
+  serve03Title: "Klein Besighede",
+  serve03Text:
+    "Buigsame ondersteuning vir organisasies wat ekstra kapasiteit benodig sonder onnodige kompleksiteit.",
+
+  serve04Title: "Spanne & Organisasies",
+  serve04Text:
+    "Gestruktureerde ondersteuning vir projekte, dokumentasie, data, digitale werk en besigheidsbedrywighede.",
+
+  processKicker: "HOE ONS WERK",
+  processTitle: "Duidelike proses.",
+  processTitleAccent: "Beter uitvoering.",
+  processDescription:
+    "Elke samewerking begin met duidelikheid. Ons hou kommunikasie, verwagtinge en aflewerings van begin tot einde georganiseerd.",
+
+  process01Title: "Ontdek",
+  process01Text:
+    "Ons verstaan jou doelwit, vereistes, prioriteite en verwagte uitkoms.",
+
+  process02Title: "Beplan",
+  process02Text:
+    "Ons definieer die werk, organiseer prioriteite en stel ’n praktiese pad vorentoe vas.",
+
+  process03Title: "Voer uit",
+  process03Text:
+    "Ons werk deur die ooreengekome take terwyl ons kommunikasie en vordering sigbaar hou.",
+
+  process04Title: "Lewer",
+  process04Text:
+    "Ons hersien die werk, finaliseer die aflewerings en ondersteun ’n duidelike oorhandiging.",
+
+  globalKicker: "GEBOU VIR ’N VERBONDE WÊRELD",
+  globalTitle: "Van plaaslike ambisie",
+  globalTitleAccent: "tot globale geleenthede.",
+  globalDescription:
+    "GODZYA GROUP word met ’n globale ingesteldheid gebou — deur tegnologie, data, besigheid en professionele dienste oor grense en tale heen te verbind.",
+
+  globalPoint1: "DIGITAAL",
+  globalPoint2: "DATA",
+  globalPoint3: "BESIGHEID",
+  globalPoint4: "TEGNOLOGIE",
+  globalPoint5: "TALE",
+
+  contactKicker: "KOM ONS SKAKEL",
+  contactTitle: "Het jy ’n projek",
+  contactTitleAccent: "in gedagte?",
+  contactDescription:
+    "Vertel ons waaraan jy werk, waarmee jy hulp nodig het en waarheen jy wil gaan. Kom ons verken hoe GODZYA GROUP jou volgende stap kan ondersteun.",
+
+  contactEmailButton: "E-pos GODZYA",
+  contactHomeButton: "Terug na Tuis",
+  contactPanelLabel: "GODZYA GROUP",
+  contactStatus: "GEREED OM TE SKAKEL",
+  contactEmailLabel: "E-POS",
+  contactFocusLabel: "FOKUS",
+  contactFocus: "KI • DATA • BESIGHEID • TEGNOLOGIE",
+  contactBottom: "ONS BOU. JY GROEI.",
+
+  footerDescription:
+    "Ons bou slimmer oplossings vir ’n gekoppelde toekoms.",
+  footerNavigate: "NAVIGASIE",
+  footerFocus: "FOKUS",
+  footerFocus1: "KI & Outomatisering",
+  footerFocus2: "Data & Analise",
+  footerFocus3: "Besigheid & Tegnologie",
+  footerFocus4: "Professionele Ondersteuning",
+  footerConnect: "KONTAK",
+  footerGlobal: "Ons dien ’n gekoppelde wêreld",
+  footerTagline: "ONS BOU. JY GROEI."
+});
+
 
