@@ -2746,3 +2746,30 @@ h2 span {
 
 }
 
+/* =================================================
+   19 — SCROLL REVEAL
+================================================== */
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+}
+
