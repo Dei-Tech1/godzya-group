@@ -4474,3 +4474,148 @@ h2 span {
     animation: none;
   }
      }
+
+/* =================================================
+   39 — BUSINESS ANALYSIS VISUAL
+================================================== */
+
+.business-visual {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  overflow: hidden;
+}
+
+/* FOUR BUSINESS STAGES */
+
+.business-step {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+  min-width: 0;
+  max-width: 95px;
+  min-height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid rgba(70,217,255,.25);
+  border-radius: 10px;
+
+  background: rgba(8,27,42,.85);
+
+  animation: businessStepGlow 4s ease-in-out infinite;
+}
+
+.business-step:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.business-step:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
+.business-step:nth-of-type(4) {
+  animation-delay: 3s;
+}
+
+/* STEP NUMBERS */
+
+.business-symbol {
+  font-size: 21px;
+  font-weight: 900;
+  color: var(--cyan);
+}
+
+/* STEP LABELS */
+
+.business-label {
+  font-size: clamp(6px, 1.5vw, 9px);
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* CONNECTION ARROWS */
+
+.business-arrow {
+  flex-shrink: 0;
+
+  font-size: 17px;
+  color: var(--cyan);
+
+  text-shadow:
+    0 0 12px rgba(70,217,255,.65);
+
+  animation: businessArrowPulse 2s ease-in-out infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes businessStepGlow {
+  0%, 100% {
+    border-color: rgba(70,217,255,.2);
+    box-shadow: none;
+  }
+
+  50% {
+    border-color: rgba(70,217,255,.8);
+    box-shadow:
+      0 0 20px rgba(70,217,255,.22),
+      inset 0 0 12px rgba(70,217,255,.08);
+  }
+}
+
+@keyframes businessArrowPulse {
+  0%, 100% {
+    opacity: .35;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 600px) {
+  .business-visual {
+    gap: 4px;
+  }
+
+  .business-step {
+    min-height: 68px;
+    gap: 7px;
+    padding: 5px 2px;
+  }
+
+  .business-symbol {
+    font-size: 16px;
+  }
+
+  .business-arrow {
+    font-size: 12px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .business-step,
+  .business-arrow {
+    animation: none;
+  }
+}
+
