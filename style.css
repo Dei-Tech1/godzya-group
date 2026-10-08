@@ -4265,3 +4265,65 @@ h2 span {
     animation: none;
   }
 }
+
+/* =================================================
+   35 — AI NETWORK CONNECTION LINES
+================================================== */
+
+.ai-visual::before,
+.ai-visual::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 65%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(70,217,255,.8),
+    transparent
+  );
+
+  box-shadow:
+    0 0 10px rgba(70,217,255,.5);
+
+  transform-origin: center;
+
+  animation: aiConnectionGlow 3s ease-in-out infinite;
+}
+
+/* DIAGONAL CONNECTIONS */
+
+.ai-visual::before {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.ai-visual::after {
+  transform: translate(-50%, -50%) rotate(-30deg);
+  animation-delay: -1.5s;
+}
+
+/* ENERGY FLOW */
+
+@keyframes aiConnectionGlow {
+  0%, 100% {
+    opacity: .2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-visual::before,
+  .ai-visual::after {
+    animation: none;
+    opacity: .7;
+  }
+}
