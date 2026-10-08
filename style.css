@@ -4327,3 +4327,150 @@ h2 span {
     opacity: .7;
   }
 }
+
+/* =================================================
+   37 — DATA, EXCEL & ANALYTICS VISUAL
+================================================== */
+
+.data-visual {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  overflow: hidden;
+}
+
+/* EXCEL-STYLE GRID */
+
+.data-sheet {
+  display: grid;
+  grid-template-columns: repeat(3, 28px);
+  grid-template-rows: repeat(3, 28px);
+  gap: 3px;
+
+  transform: perspective(300px) rotateY(-12deg);
+}
+
+.data-sheet span {
+  border: 1px solid rgba(70,217,255,.28);
+  border-radius: 3px;
+
+  background: rgba(70,217,255,.06);
+
+  animation: dataCellGlow 3s ease-in-out infinite;
+}
+
+.data-sheet span:nth-child(2n) {
+  animation-delay: -.8s;
+}
+
+.data-sheet span:nth-child(3n) {
+  animation-delay: -1.6s;
+}
+
+/* ANALYTICS BAR CHART */
+
+.data-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+
+  height: 100px;
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid rgba(70,217,255,.5);
+}
+
+.data-bar {
+  width: 15px;
+  border-radius: 4px 4px 0 0;
+
+  background: linear-gradient(
+    180deg,
+    #8be9ff,
+    #168eaf
+  );
+
+  box-shadow: 0 0 15px rgba(70,217,255,.35);
+
+  transform-origin: bottom;
+  animation: dataBarRise 3s ease-in-out infinite alternate;
+}
+
+.bar-one { height: 35px; animation-delay: 0s; }
+.bar-two { height: 65px; animation-delay: -.5s; }
+.bar-three { height: 48px; animation-delay: -1s; }
+.bar-four { height: 85px; animation-delay: -1.5s; }
+
+/* BACKGROUND GLOW */
+
+.data-glow {
+  position: absolute;
+  inset: 15%;
+
+  z-index: -1;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle,
+    rgba(70,217,255,.12),
+    transparent 70%
+  );
+}
+
+/* ANIMATIONS */
+
+@keyframes dataCellGlow {
+  0%, 100% {
+    background: rgba(70,217,255,.05);
+  }
+
+  50% {
+    background: rgba(70,217,255,.3);
+    box-shadow: 0 0 12px rgba(70,217,255,.22);
+  }
+}
+
+@keyframes dataBarRise {
+  from {
+    transform: scaleY(.45);
+    opacity: .55;
+  }
+
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .data-visual {
+    gap: 18px;
+  }
+
+  .data-sheet {
+    grid-template-columns: repeat(3, 24px);
+    grid-template-rows: repeat(3, 24px);
+  }
+
+  .data-bar {
+    width: 13px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .data-sheet span,
+  .data-bar {
+    animation: none;
+  }
+     }
