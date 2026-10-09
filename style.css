@@ -5571,3 +5571,71 @@ h2 span {
   background: rgba(57, 223, 255, 0.15);
   color: #39dfff;
 }
+
+/* ==========================================
+   52 — PREMIUM LANGUAGE DROPDOWN FIX
+========================================== */
+
+.site-nav {
+  position: relative;
+  overflow: visible;
+}
+
+.language-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 2000;
+}
+
+.language-menu[hidden] {
+  display: none !important;
+}
+
+.language-selector .language-menu {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  right: 0 !important;
+  left: auto !important;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  width: 175px;
+  padding: 8px;
+  margin: 0;
+
+  background: #071827;
+  border: 1px solid rgba(57, 223, 255, 0.35);
+  border-radius: 14px;
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  z-index: 2001;
+}
+
+.language-selector .language-menu button {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.language-selector .language-menu button:hover,
+.language-selector .language-menu button:focus-visible {
+  background: rgba(57, 223, 255, 0.14);
+  color: #39dfff;
+}
