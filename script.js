@@ -256,4 +256,37 @@ document.addEventListener(
   initializeGodzya
 );
 
+/* ==========================================
+   GODZYA LANGUAGE DROPDOWN
+========================================== */
+
+const langButton = document.querySelector(".language-button");
+const langMenu = document.querySelector(".language-menu");
+
+if (langButton && langMenu) {
+
+  langButton.addEventListener("click", () => {
+    const isOpen = !langMenu.hidden;
+
+    langMenu.hidden = isOpen;
+    langButton.setAttribute("aria-expanded", String(!isOpen));
+  });
+
+  langMenu.querySelectorAll("[data-lang]").forEach(option => {
+    option.addEventListener("click", () => {
+      const language = option.dataset.lang;
+
+      langButton.textContent = language.toUpperCase();
+      langMenu.hidden = true;
+      langButton.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".language-selector")) {
+      langMenu.hidden = true;
+      langButton.setAttribute("aria-expanded", "false");
+    }
+  });
+}
 
