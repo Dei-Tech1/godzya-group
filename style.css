@@ -5493,3 +5493,32 @@ h2 span {
     transform: rotateX(-15deg) rotateY(-25deg);
   }
 }
+
+/* GODZYA HEADER SLOGAN */
+
+.brand-text .brand-name {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.brand-text .brand-group {
+  color: #39dfff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  text-shadow: 0 0 12px rgba(57, 223, 255, 0.65);
+}
+
+@media (max-width: 700px) {
+  .brand-text .brand-name {
+    font-size: 12px;
+  }
+
+  .brand-text .brand-group {
+    font-size: 11px;
+  }
+}
