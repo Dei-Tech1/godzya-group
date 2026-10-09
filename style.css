@@ -4687,40 +4687,172 @@ h2 span {
   }
 }
 
+/* =================================================
+   41 — PROJECT MANAGEMENT ANIMATION
+================================================== */
 
-<!-- PROJECT MANAGEMENT VISUAL -->
+.project-visual {
+  position: relative;
+  width: 100%;
+  min-height: 170px;
+  margin-top: 25px;
 
-<div class="expertise-visual project-visual" aria-hidden="true">
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
 
-  <div class="project-track">
+/* PROJECT TIMELINE */
 
-    <div class="project-milestone">
-      <span class="milestone-dot"></span>
-      <span>PLAN</span>
-    </div>
+.project-track {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-    <div class="project-milestone">
-      <span class="milestone-dot"></span>
-      <span>EXECUTE</span>
-    </div>
+/* ANIMATED PROGRESS LINE */
 
-    <div class="project-milestone">
-      <span class="milestone-dot"></span>
-      <span>REVIEW</span>
-    </div>
+.project-track::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 12%;
+  width: 76%;
+  height: 2px;
 
-    <div class="project-milestone">
-      <span class="milestone-dot"></span>
-      <span>DELIVER</span>
-    </div>
+  background: linear-gradient(
+    90deg,
+    #46d9ff,
+    #8be9ff
+  );
 
-  </div>
+  box-shadow: 0 0 12px rgba(70,217,255,.5);
 
-  <div class="project-status">
-    <span class="project-status-dot"></span>
-    PROJECT COMPLETED
-    <span class="project-check">✓</span>
-  </div>
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: projectProgress 6s ease-in-out infinite;
+}
 
-</div>
+/* MILESTONES */
+
+.project-milestone {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  flex: 1;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #d7e2ea;
+}
+
+.milestone-dot {
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid var(--cyan);
+  border-radius: 50%;
+
+  background: #081b2a;
+
+  box-shadow: 0 0 12px rgba(70,217,255,.3);
+
+  animation: milestonePulse 6s ease-in-out infinite;
+}
+
+.project-milestone:nth-child(2) .milestone-dot {
+  animation-delay: 1s;
+}
+
+.project-milestone:nth-child(3) .milestone-dot {
+  animation-delay: 2s;
+}
+
+.project-milestone:nth-child(4) .milestone-dot {
+  animation-delay: 3s;
+}
+
+/* COMPLETION STATUS */
+
+.project-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 12px;
+
+  border: 1px solid rgba(70,217,255,.25);
+  border-radius: 12px;
+
+  background: rgba(70,217,255,.06);
+
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.project-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #46d9ff;
+  box-shadow: 0 0 12px #46d9ff;
+}
+
+.project-check {
+  color: #46d9ff;
+  font-size: 17px;
+}
+
+/* ANIMATIONS */
+
+@keyframes projectProgress {
+  0% {
+    transform: scaleX(0);
+  }
+
+  65%, 85% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes milestonePulse {
+  0%, 100% {
+    background: #081b2a;
+    box-shadow: 0 0 8px rgba(70,217,255,.2);
+  }
+
+  30%, 70% {
+    background: var(--cyan);
+    box-shadow: 0 0 20px rgba(70,217,255,.7);
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-track::before {
+    animation: none;
+    transform: scaleX(1);
+  }
+
+  .milestone-dot {
+    animation: none;
+  }
+}
+
 
