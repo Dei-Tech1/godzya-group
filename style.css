@@ -5136,4 +5136,197 @@ h2 span {
   }
 }
 
+/* =================================================
+   47 — VIRTUAL & ADMINISTRATIVE SUPPORT
+================================================== */
+
+.admin-visual {
+  position: relative;
+  min-height: 180px;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  overflow: hidden;
+}
+
+/* DIGITAL DOCUMENT */
+
+.admin-document {
+  width: 65px;
+  height: 85px;
+  padding: 18px 10px;
+
+  border: 1px solid rgba(70,217,255,.5);
+  border-radius: 7px;
+
+  background: #0b2030;
+
+  box-shadow: 0 0 18px rgba(70,217,255,.15);
+
+  animation: adminDocumentFloat 4s ease-in-out infinite;
+}
+
+.admin-document span {
+  display: block;
+  height: 4px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+  background: var(--cyan);
+  opacity: .8;
+}
+
+.admin-document span:nth-child(2) {
+  width: 70%;
+}
+
+.admin-document span:nth-child(3) {
+  width: 85%;
+}
+
+/* FLOW ARROW */
+
+.admin-flow-arrow {
+  color: var(--cyan);
+  font-size: 28px;
+
+  text-shadow: 0 0 15px rgba(70,217,255,.6);
+
+  animation: adminArrowMove 2s ease-in-out infinite;
+}
+
+/* ORGANIZED FOLDER */
+
+.admin-folder {
+  position: relative;
+
+  width: 85px;
+  height: 65px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(70,217,255,.6);
+  border-radius: 5px 9px 9px 9px;
+
+  background:
+    linear-gradient(145deg, #103e56, #082131);
+
+  box-shadow:
+    0 0 25px rgba(70,217,255,.2),
+    inset 0 0 15px rgba(70,217,255,.08);
+}
+
+.admin-folder-tab {
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  width: 38px;
+  height: 11px;
+
+  border: 1px solid rgba(70,217,255,.6);
+  border-radius: 5px 5px 0 0;
+
+  background: #103e56;
+}
+
+.admin-folder-label {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+/* COMPLETION CHECK */
+
+.admin-complete {
+  position: absolute;
+  right: 12%;
+  bottom: 20%;
+
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(70,217,255,.12);
+  border: 1px solid var(--cyan);
+
+  color: var(--cyan);
+  font-size: 20px;
+  font-weight: 900;
+
+  box-shadow: 0 0 20px rgba(70,217,255,.3);
+
+  animation: adminCompletePulse 3s ease-in-out infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes adminDocumentFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes adminArrowMove {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: .5;
+  }
+
+  50% {
+    transform: translateX(7px);
+    opacity: 1;
+  }
+}
+
+@keyframes adminCompletePulse {
+  0%, 100% {
+    transform: scale(.9);
+    opacity: .5;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .admin-visual {
+    gap: 15px;
+  }
+
+  .admin-complete {
+    right: 5%;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .admin-document,
+  .admin-flow-arrow,
+  .admin-complete {
+    animation: none;
+  }
+}
+
+
+
 
