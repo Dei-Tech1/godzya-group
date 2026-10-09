@@ -5374,3 +5374,122 @@ h2 span {
     object-position: center 20%;
   }
 }
+
+/* ==========================================
+   50 — GODZYA ROTATING 3D HEADER CUBE
+========================================== */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-cube-scene {
+  width: 54px;
+  height: 54px;
+  perspective: 400px;
+  flex-shrink: 0;
+}
+
+.logo-cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: godzyaCubeSpin 12s linear infinite;
+}
+
+.logo-cube .cube-face {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("file_000000007ff8820eaa9dd60536038a62.png");
+  background-size: cover;
+  background-position: center;
+
+  border: 1px solid #39dfff;
+  box-shadow: 0 0 12px rgba(57, 223, 255, .5);
+  backface-visibility: visible;
+}
+
+.logo-cube .front {
+  transform: translateZ(27px);
+}
+
+.logo-cube .back {
+  transform: rotateY(180deg) translateZ(27px);
+}
+
+.logo-cube .right {
+  transform: rotateY(90deg) translateZ(27px);
+}
+
+.logo-cube .left {
+  transform: rotateY(-90deg) translateZ(27px);
+}
+
+.logo-cube .top {
+  transform: rotateX(90deg) translateZ(27px);
+}
+
+.logo-cube .bottom {
+  transform: rotateX(-90deg) translateZ(27px);
+}
+
+@keyframes godzyaCubeSpin {
+  0% {
+    transform: rotateX(-15deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(345deg) rotateY(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .logo-cube-scene {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-cube .front {
+    transform: translateZ(19px);
+  }
+
+  .logo-cube .back {
+    transform: rotateY(180deg) translateZ(19px);
+  }
+
+  .logo-cube .right {
+    transform: rotateY(90deg) translateZ(19px);
+  }
+
+  .logo-cube .left {
+    transform: rotateY(-90deg) translateZ(19px);
+  }
+
+  .logo-cube .top {
+    transform: rotateX(90deg) translateZ(19px);
+  }
+
+  .logo-cube .bottom {
+    transform: rotateX(-90deg) translateZ(19px);
+  }
+
+  .brand {
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-cube {
+    animation: none;
+    transform: rotateX(-15deg) rotateY(-25deg);
+  }
+}
