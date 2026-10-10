@@ -253,3 +253,45 @@ if (langButton && langMenu) {
   });
 }
 
+/* ==========================================
+   07 — GODZYA BACKGROUND MUSIC
+========================================== */
+
+const godzyaMusic =
+  document.getElementById("godzyaMusic");
+
+const musicToggle =
+  document.getElementById("musicToggle");
+
+if (godzyaMusic && musicToggle) {
+
+  godzyaMusic.volume = 0.35;
+
+  musicToggle.addEventListener("click", async () => {
+
+    if (godzyaMusic.paused) {
+
+      try {
+        await godzyaMusic.play();
+
+        musicToggle.textContent = "🔊 SOUND ON";
+        musicToggle.setAttribute("aria-pressed", "true");
+        musicToggle.setAttribute("aria-label", "Pause background music");
+
+      } catch (error) {
+        console.error("Music could not play:", error);
+      }
+
+    } else {
+
+      godzyaMusic.pause();
+
+      musicToggle.textContent = "🔇 SOUND OFF";
+      musicToggle.setAttribute("aria-pressed", "false");
+      musicToggle.setAttribute("aria-label", "Play background music");
+
+    }
+
+  });
+
+}
