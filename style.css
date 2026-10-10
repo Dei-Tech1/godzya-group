@@ -5690,3 +5690,22 @@ h2 span {
       #050b14
     );
 }
+
+/* ==========================================
+   54 — GODZYA EXPERTISE & WORK IMAGE
+========================================== */
+
+.expertise-preview,
+.work-preview {
+  background-image:
+    linear-gradient(
+      rgba(5, 11, 20, 0.25),
+      rgba(5, 11, 20, 0.45)
+    ),
+    url("3fa1f90e63d632bba744b19cc486fd38eef301e9e449bc2f0ec21eddf2bdcd35.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
