@@ -5639,3 +5639,54 @@ h2 span {
   background: rgba(57, 223, 255, 0.14);
   color: #39dfff;
 }
+
+/* ==========================================
+   53 — HOMEPAGE CARD SECTION BACKGROUNDS
+========================================== */
+
+.expertise-preview,
+.work-preview {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.expertise-preview {
+  background:
+    radial-gradient(
+      ellipse at 15% 35%,
+      rgba(57, 223, 255, 0.12),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 85% 75%,
+      rgba(60, 83, 190, 0.12),
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      #050b14,
+      #091827 55%,
+      #050b14
+    );
+}
+
+.work-preview {
+  background:
+    radial-gradient(
+      ellipse at 80% 25%,
+      rgba(57, 223, 255, 0.13),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 10% 85%,
+      rgba(42, 78, 150, 0.14),
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      #050b14,
+      #0a1929 55%,
+      #050b14
+    );
+}
