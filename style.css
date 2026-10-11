@@ -5709,3 +5709,59 @@ h2 span {
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
+
+/* ==========================================
+   55 — EXPERTISE PAGE HERO
+========================================== */
+
+.expertise-hero {
+  position: relative;
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 160px 0 110px;
+
+  background:
+    radial-gradient(
+      ellipse at 85% 35%,
+      rgba(70, 217, 255, 0.16),
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 15% 85%,
+      rgba(25, 118, 255, 0.12),
+      transparent 45%
+    ),
+    #050b14;
+}
+
+.expertise-hero .section-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.expertise-hero h1 {
+  max-width: 850px;
+  margin: 22px 0 28px;
+  font-size: clamp(44px, 7vw, 86px);
+  line-height: 1.06;
+}
+
+.expertise-hero h1 span {
+  color: var(--cyan);
+}
+
+.expertise-hero .section-intro {
+  margin: 0 0 36px;
+  max-width: 650px;
+}
+
+@media (max-width: 700px) {
+  .expertise-hero {
+    min-height: 560px;
+    padding: 135px 0 85px;
+  }
+}
+
