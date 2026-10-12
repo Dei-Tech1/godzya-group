@@ -5833,3 +5833,54 @@ h2 span {
   }
 }
 
+/* ==========================================
+   57 — EXPERTISE PAGE CALL TO ACTION
+========================================== */
+
+.expertise-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 115px 0;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(70, 217, 255, 0.15),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #071321,
+      #050b14
+    );
+
+  border-top: 1px solid rgba(70, 217, 255, 0.16);
+}
+
+.expertise-cta .section-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.expertise-cta h2 {
+  max-width: 850px;
+  margin: 20px auto 25px;
+  font-size: clamp(38px, 5vw, 68px);
+}
+
+.expertise-cta h2 span {
+  color: var(--cyan);
+}
+
+.expertise-cta .section-intro {
+  max-width: 630px;
+  margin: 0 auto 35px;
+}
+
+@media (max-width: 700px) {
+  .expertise-cta {
+    padding: 85px 0;
+  }
+}
+
