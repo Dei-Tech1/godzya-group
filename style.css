@@ -5765,3 +5765,71 @@ h2 span {
   }
 }
 
+/* ==========================================
+   56 — PREMIUM EXPERTISE PAGE CARDS
+========================================== */
+
+#our-services .expertise-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(17, 42, 65, 0.9),
+      rgba(5, 14, 26, 0.96)
+    );
+
+  border: 1px solid rgba(70, 217, 255, 0.15);
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+#our-services .expertise-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(70, 217, 255, 0.55);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+
+#our-services .expertise-visual {
+  height: 145px;
+}
+
+#our-services .visual-core {
+  width: 88px;
+  height: 88px;
+
+  border-radius: 24px;
+  border: 1px solid rgba(70, 217, 255, 0.65);
+
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(70, 217, 255, 0.25),
+      rgba(5, 16, 30, 0.9)
+    );
+
+  color: #8be9ff;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  box-shadow:
+    0 0 35px rgba(70, 217, 255, 0.15),
+    inset 0 0 20px rgba(70, 217, 255, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+#our-services .expertise-card:hover .visual-core {
+  transform: translateY(-5px) rotate(-4deg);
+  box-shadow: 0 0 45px rgba(70, 217, 255, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #our-services .expertise-card,
+  #our-services .visual-core {
+    transition: none;
+  }
+}
+
