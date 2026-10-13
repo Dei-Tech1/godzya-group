@@ -6102,3 +6102,17 @@ h2 span {
     padding: 90px 24px 75px;
   }
 }
+/* ==========================================
+   PAGE 3 — CORPORATE VISION BACKGROUND
+========================================== */
+
+body:has(#portfolio) .work-page-intro {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 13, 26, 0.88),
+      rgba(4, 13, 26, 0.55)
+    ),
+    url("godzya-work-vision.png")
+      center / cover no-repeat;
+}
