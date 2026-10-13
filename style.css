@@ -6116,3 +6116,18 @@ body:has(#portfolio) .work-page-intro {
     url("godzya-work-vision.png")
       center / cover no-repeat;
 }
+
+/* ==========================================
+   PAGE 2 — PREMIUM CORPORATE BACKGROUND
+========================================== */
+
+.expertise-hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 13, 26, 0.88),
+      rgba(4, 13, 26, 0.55)
+    ),
+    url("godzya-expertise-background.png")
+      center center / cover no-repeat;
+}
