@@ -6145,7 +6145,7 @@ body:has(#portfolio) .work-page-intro {
       rgba(3, 9, 20, 0.15) 100%
     ),
     url("godzya_sunrise_selected.jpg")
-  75% center / cover no-repeat;
+  25% center / cover no-repeat;
 }
 
 /* ==========================================
