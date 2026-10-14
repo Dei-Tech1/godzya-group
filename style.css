@@ -6163,3 +6163,19 @@ body:has(#portfolio) .work-page-intro {
 
   color: #ffffff;
 }
+
+/* ==========================================
+   GODZYA HOMEPAGE — DESKTOP IMAGE POSITION
+   Mobile version remains unchanged
+========================================== */
+
+@media (min-width: 1024px) {
+
+  .hero {
+    background-position: center, right center;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-color: #061525;
+  }
+
+}
