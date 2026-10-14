@@ -6148,3 +6148,19 @@ body:has(#portfolio) .work-page-intro {
 
   color: #ffffff;
 }
+
+/* ==========================================
+   GODZYA HOMEPAGE — REAL EARTH SUNRISE
+========================================== */
+
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 9, 20, 0.82) 0%,
+      rgba(3, 9, 20, 0.35) 60%,
+      rgba(3, 9, 20, 0.15) 100%
+    ),
+    url("godzya_sunrise_selected.jpg")
+      center center / cover no-repeat;
+}
