@@ -6133,13 +6133,18 @@ body:has(#portfolio) .work-page-intro {
 }
 
 /* ==========================================
-   GODZYA HOMEPAGE — REAL EARTH SUNRISE
+   GODZYA HOMEPAGE — CORPORATE SUNSET
 ========================================== */
 
 .hero {
   background:
-    url("godzya_sunrise_selected.jpg")
-    45% center / cover no-repeat;
+    linear-gradient(
+      90deg,
+      rgba(4, 13, 26, 0.65),
+      rgba(4, 13, 26, 0.15)
+    ),
+    url("godzya-expertise-background.png")
+      center center / cover no-repeat;
 }
 
 /* ==========================================
