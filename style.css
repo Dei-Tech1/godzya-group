@@ -6131,3 +6131,20 @@ body:has(#portfolio) .work-page-intro {
     url("godzya-expertise-background.png")
       center center / cover no-repeat;
 }
+
+/* ==========================================
+   WHY GODZYA — MOUNTAIN BACKGROUND
+========================================== */
+
+.why-godzya {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 13, 26, 0.85),
+      rgba(4, 13, 26, 0.45)
+    ),
+    url("godzya-why-mountain.jpg")
+      center center / cover no-repeat;
+
+  color: #ffffff;
+}
