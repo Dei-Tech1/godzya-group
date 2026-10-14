@@ -6138,14 +6138,8 @@ body:has(#portfolio) .work-page-intro {
 
 .hero {
   background:
-    linear-gradient(
-      90deg,
-      rgba(3, 9, 20, 0.82) 0%,
-      rgba(3, 9, 20, 0.35) 60%,
-      rgba(3, 9, 20, 0.15) 100%
-    ),
     url("godzya_sunrise_selected.jpg")
-  50% center / cover no-repeat;
+    45% center / cover no-repeat;
 }
 
 /* ==========================================
