@@ -6118,17 +6118,17 @@ body:has(#portfolio) .work-page-intro {
 }
 
 /* ==========================================
-   PAGE 2 — PREMIUM CORPORATE BACKGROUND
+   PAGE 2 — GODZYA BRIDGE BACKGROUND
 ========================================== */
 
 .expertise-hero {
   background:
     linear-gradient(
       90deg,
-      rgba(4, 13, 26, 0.88),
-      rgba(4, 13, 26, 0.55)
+      rgba(4, 13, 26, 0.82),
+      rgba(4, 13, 26, 0.20)
     ),
-    url("godzya-expertise-background.png")
+    url("godzya-expertise-bridge.png")
       center center / cover no-repeat;
 }
 
