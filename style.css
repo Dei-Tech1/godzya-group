@@ -6179,3 +6179,248 @@ body:has(#portfolio) .work-page-intro {
   }
 
 }
+
+/* ==========================================
+   GODZYA — ANIMATED CONTACT AMBASSADOR
+========================================== */
+
+.godzya-ambassador {
+  position: relative;
+  width: 100%;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px 15px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.ambassador-bubble {
+  padding: 12px 22px;
+  border: 1px solid rgba(70,217,255,.5);
+  border-radius: 25px;
+  background: #10283c;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 0 25px rgba(70,217,255,.2);
+  animation: bubbleFloat 3s ease-in-out infinite;
+}
+
+.ambassador-character {
+  position: relative;
+  width: 140px;
+  height: 220px;
+  animation: godzyaDance 1.2s ease-in-out infinite;
+}
+
+/* HEAD */
+
+.ambassador-head {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 60px;
+  height: 65px;
+  border-radius: 45%;
+  background: #a96742;
+  z-index: 3;
+}
+
+.ambassador-hair {
+  position: absolute;
+  top: -8px;
+  left: -3px;
+  width: 66px;
+  height: 24px;
+  border-radius: 50%;
+  background: #171717;
+}
+
+.ambassador-eyes {
+  position: absolute;
+  top: 30px;
+  left: 14px;
+  display: flex;
+  gap: 16px;
+}
+
+.ambassador-eyes span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #111;
+  animation: godzyaBlink 5s infinite;
+}
+
+.ambassador-smile {
+  position: absolute;
+  top: 45px;
+  left: 21px;
+  width: 20px;
+  height: 9px;
+  border-bottom: 3px solid #fff;
+  border-radius: 50%;
+}
+
+/* BODY */
+
+.ambassador-body {
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  width: 90px;
+  height: 85px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #061525, #17415e);
+  border: 2px solid #46d9ff;
+  z-index: 2;
+}
+
+.ambassador-body span {
+  display: block;
+  margin-top: 32px;
+  color: #46d9ff;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+/* ARMS */
+
+.ambassador-arm {
+  position: absolute;
+  top: 85px;
+  width: 20px;
+  height: 80px;
+  border-radius: 20px;
+  background: #10283c;
+  transform-origin: top center;
+}
+
+.arm-left {
+  left: 20px;
+  animation: godzyaWave 1s ease-in-out infinite alternate;
+}
+
+.arm-right {
+  right: 20px;
+  animation: godzyaPoint 1.5s ease-in-out infinite alternate;
+}
+
+/* LEGS */
+
+.ambassador-leg {
+  position: absolute;
+  top: 150px;
+  width: 25px;
+  height: 65px;
+  border-radius: 15px;
+  background: #081b30;
+  transform-origin: top center;
+}
+
+.leg-left {
+  left: 40px;
+  animation: godzyaStep 1s ease-in-out infinite alternate;
+}
+
+.leg-right {
+  right: 40px;
+  animation: godzyaStep 1s ease-in-out infinite alternate-reverse;
+}
+
+/* CAPTION */
+
+.ambassador-caption {
+  max-width: 300px;
+  color: #b9cbd9;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ANIMATIONS */
+
+@keyframes godzyaDance {
+  0%, 100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes godzyaWave {
+  from {
+    transform: rotate(20deg);
+  }
+
+  to {
+    transform: rotate(120deg);
+  }
+}
+
+@keyframes godzyaPoint {
+  from {
+    transform: rotate(-25deg);
+  }
+
+  to {
+    transform: rotate(-75deg);
+  }
+}
+
+@keyframes godzyaStep {
+  from {
+    transform: rotate(-15deg);
+  }
+
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes godzyaBlink {
+  0%, 95%, 100% {
+    transform: scaleY(1);
+  }
+
+  97% {
+    transform: scaleY(.1);
+  }
+}
+
+@keyframes bubbleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .godzya-ambassador {
+    min-height: 300px;
+    padding: 25px 10px;
+  }
+
+  .ambassador-character {
+    transform-origin: center;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .godzya-ambassador *,
+  .ambassador-character {
+    animation: none !important;
+  }
+}
