@@ -168,32 +168,9 @@ revealElements.forEach(element => {
    05 — CONTACT FORM
 ================================================== */
 
-const contactForm =
-  document.getElementById("contactForm");
-
-const formStatus =
-  document.querySelector(".form-status");
-
-
-if (contactForm) {
-
-  contactForm.addEventListener(
-    "submit",
-    function (event) {
-
-      event.preventDefault();
-
-      if (formStatus) {
-
-        formStatus.textContent =
-          "Thank you. Your message is ready to be submitted.";
-
-      }
-
-    }
-  );
-
-     }
+// Form submissions are handled by Formspree.
+// The form sends data using its HTML action and POST method.
+// No JavaScript interception is required.
 
 /* =================================================
    06 — INITIALIZATION
