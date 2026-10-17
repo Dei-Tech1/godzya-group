@@ -282,6 +282,9 @@ if (langButton && langMenu) {
     // Update the document language
     document.documentElement.lang = language;
 
+    // Translate the page content
+    applyLanguage(language);
+
     // Close the dropdown
     langMenu.hidden = true;
     langButton.setAttribute("aria-expanded", "false");
