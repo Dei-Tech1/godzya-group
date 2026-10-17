@@ -56,6 +56,7 @@ heroDescription: "GODZYA GROUP aide les entreprises à transformer leurs idées,
 heroExplore: "Découvrez nos expertises",
 heroConnect: "Contactez-nous",
 visionLabel: "NOTRE VISION"
+  }
 
 };
 
