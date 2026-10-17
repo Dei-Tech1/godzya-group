@@ -6193,3 +6193,14 @@ body:has(#portfolio) .work-page-intro {
   }
 
 }
+
+/* GODZYA — HERO SLOGAN COLOUR FIX */
+
+.hero-slogan span:first-child {
+  color: #ffffff;
+  text-shadow: none;
+}
+
+.hero-slogan span:last-child {
+  color: var(--cyan);
+}
