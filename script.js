@@ -42,7 +42,9 @@ heroSloganEnd: "Grow.",
 heroDescription: "GODZYA GROUP helps businesses turn ideas, data and technology into practical solutions that create real progress.",
 heroExplore: "Explore Our Expertise",
 heroConnect: "Let's Connect",
-visionLabel: "OUR VISION"
+visionLabel: "OUR VISION",
+visionTitleStart: "Technology with",
+visionTitleEnd: "purpose."
   },
 
   fr: {
