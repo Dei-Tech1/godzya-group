@@ -37,7 +37,8 @@ const GODZYA_TRANSLATIONS = {
     navExpertise: "Our Expertise",
     navWork: "Our Work",
     navContact: "Let's Connect",
-heroSlogan: "We Build. You Grow.",
+heroSloganStart: "We Build. You",
+heroSloganEnd: "Grow.",
 heroDescription: "GODZYA GROUP helps businesses turn ideas, data and technology into practical solutions that create real progress.",
 heroExplore: "Explore Our Expertise",
 heroConnect: "Let's Connect"
