@@ -213,14 +213,25 @@ if (langButton && langMenu) {
   });
 
   langMenu.querySelectorAll("[data-lang]").forEach(option => {
-    option.addEventListener("click", () => {
-      const language = option.dataset.lang;
+  option.addEventListener("click", () => {
 
-      langButton.textContent = language.toUpperCase();
-      langMenu.hidden = true;
-      langButton.setAttribute("aria-expanded", "false");
-    });
+    const language = option.dataset.lang;
+
+    // Remember the selected language
+    localStorage.setItem("godzyaLanguage", language);
+
+    // Update the language button
+    langButton.textContent = language.toUpperCase();
+
+    // Update the document language
+    document.documentElement.lang = language;
+
+    // Close the dropdown
+    langMenu.hidden = true;
+    langButton.setAttribute("aria-expanded", "false");
+
   });
+});
 
   document.addEventListener("click", event => {
     if (!event.target.closest(".language-selector")) {
