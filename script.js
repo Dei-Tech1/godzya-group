@@ -49,6 +49,27 @@ const GODZYA_TRANSLATIONS = {
 };
 
 /* =================================================
+   GODZYA — APPLY TRANSLATIONS
+================================================== */
+
+function applyLanguage(language) {
+
+  const translations =
+    GODZYA_TRANSLATIONS[language] ||
+    GODZYA_TRANSLATIONS.en;
+
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+
+    const key = element.dataset.i18n;
+
+    if (translations[key]) {
+      element.textContent = translations[key];
+    }
+
+  });
+
+}
+/* =================================================
    02 — MOBILE NAVIGATION
 ================================================== */
 
