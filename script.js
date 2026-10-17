@@ -44,7 +44,8 @@ heroExplore: "Explore Our Expertise",
 heroConnect: "Let's Connect",
 visionLabel: "OUR VISION",
 visionTitleStart: "Technology with",
-visionTitleEnd: "purpose."
+visionTitleEnd: "purpose.",
+visionTextOne: "At GODZYA GROUP, we believe technology should create clarity, opportunity and progress."
   },
 
   fr: {
