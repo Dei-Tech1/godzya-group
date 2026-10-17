@@ -36,14 +36,22 @@ const GODZYA_TRANSLATIONS = {
     navHome: "Home",
     navExpertise: "Our Expertise",
     navWork: "Our Work",
-    navContact: "Let's Connect"
+    navContact: "Let's Connect",
+heroSlogan: "We Build. You Grow.",
+heroDescription: "GODZYA GROUP helps businesses turn ideas, data and technology into practical solutions that create real progress.",
+heroExplore: "Explore Our Expertise",
+heroConnect: "Let's Connect"
   },
 
   fr: {
     navHome: "Accueil",
     navExpertise: "Nos Expertises",
     navWork: "Nos Réalisations",
-    navContact: "Contactez-nous"
+    navContact: "Contactez-nous",
+heroSlogan: "Nous construisons. Vous grandissez.",
+heroDescription: "GODZYA GROUP aide les entreprises à transformer leurs idées, leurs données et la technologie en solutions concrètes qui favorisent leur développement.",
+heroExplore: "Découvrez nos expertises",
+heroConnect: "Contactez-nous"
   }
 
 };
