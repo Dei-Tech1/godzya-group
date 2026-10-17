@@ -54,8 +54,8 @@ heroSloganStart: "Nous construisons. Vous",
 heroSloganEnd: "grandissez.",
 heroDescription: "GODZYA GROUP aide les entreprises à transformer leurs idées, leurs données et la technologie en solutions concrètes qui favorisent leur développement.",
 heroExplore: "Découvrez nos expertises",
-heroConnect: "Contactez-nous"
-  }
+heroConnect: "Contactez-nous",
+visionLabel: "NOTRE VISION"
 
 };
 
