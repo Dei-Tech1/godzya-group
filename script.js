@@ -242,10 +242,12 @@ function initializeGodzya() {
   }
 
   // Set the document language
-  document.documentElement.lang = activeLanguage;
+document.documentElement.lang = activeLanguage;
+
+// Apply the saved language to this page
+applyLanguage(activeLanguage);
 
 }
-
 
 document.addEventListener(
   "DOMContentLoaded",
