@@ -27,6 +27,28 @@ const GODZYA_CONFIG = {
 };
 
 /* =================================================
+   GODZYA — TRANSLATION DICTIONARY
+================================================== */
+
+const GODZYA_TRANSLATIONS = {
+
+  en: {
+    navHome: "Home",
+    navExpertise: "Our Expertise",
+    navWork: "Our Work",
+    navContact: "Let's Connect"
+  },
+
+  fr: {
+    navHome: "Accueil",
+    navExpertise: "Nos Expertises",
+    navWork: "Nos Réalisations",
+    navContact: "Contactez-nous"
+  }
+
+};
+
+/* =================================================
    02 — MOBILE NAVIGATION
 ================================================== */
 
