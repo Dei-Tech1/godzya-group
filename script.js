@@ -60,7 +60,8 @@ heroExplore: "Découvrez nos expertises",
 heroConnect: "Contactez-nous",
 visionLabel: "NOTRE VISION",
 visionTitleStart: "La technologie au service",
-visionTitleEnd: "de vos ambitions."
+visionTitleEnd: "de vos ambitions.",
+visionTextOne: "Chez GODZYA GROUP, nous croyons que la technologie doit apporter de la clarté, créer des opportunités et favoriser le progrès."
   }
 
 };
