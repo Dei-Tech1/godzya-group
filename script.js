@@ -178,15 +178,28 @@ revealElements.forEach(element => {
 
 function initializeGodzya() {
 
-  document.documentElement.lang =
-    GODZYA_CONFIG.defaultLanguage.toLowerCase();
+  // Retrieve the visitor's saved language
+  const savedLanguage =
+    localStorage.getItem("godzyaLanguage") || "en";
 
+  // Check that the language is supported
+  const supportedLanguages = [
+    "en", "fr", "es", "pt", "de"
+  ];
+
+  const activeLanguage =
+    supportedLanguages.includes(savedLanguage)
+      ? savedLanguage
+      : "en";
+
+  // Update the language button
   if (languageButton) {
-
     languageButton.textContent =
-      GODZYA_CONFIG.defaultLanguage;
-
+      activeLanguage.toUpperCase();
   }
+
+  // Set the document language
+  document.documentElement.lang = activeLanguage;
 
 }
 
