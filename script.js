@@ -47,7 +47,19 @@ visionTitleStart: "Technology with",
 visionTitleEnd: "purpose.",
 visionTextOne: "At GODZYA GROUP, we believe technology should create clarity, opportunity and progress.",
 visionTextTwo: "We combine artificial intelligence, data, business thinking and technology to build practical solutions for a connected world.",
-visionCommitment: "We don't sell what we aren't ready to deliver."
+visionCommitment: "We don't sell what we aren't ready to deliver.",
+
+expertiseLabel: "WHAT WE DO",
+expertiseTitleStart: "Expertise built for",
+expertiseTitleEnd: "real progress.",
+expertiseIntro: "Practical solutions across technology, data, business and professional support.",
+
+serviceData: "Data, Excel & Analytics",
+serviceBusiness: "Business Analysis",
+serviceProject: "Project Management",
+serviceTechnology: "Technology & Web Solutions",
+serviceLanguage: "Global Language Solutions",
+serviceAdmin: "Virtual & Administrative Support"
   },
 
   fr: {
