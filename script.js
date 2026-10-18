@@ -45,7 +45,8 @@ heroConnect: "Let's Connect",
 visionLabel: "OUR VISION",
 visionTitleStart: "Technology with",
 visionTitleEnd: "purpose.",
-visionTextOne: "At GODZYA GROUP, we believe technology should create clarity, opportunity and progress."
+visionTextOne: "At GODZYA GROUP, we believe technology should create clarity, opportunity and progress.",
+visionTextTwo: "We combine artificial intelligence, data, business thinking and technology to build practical solutions for a connected world."
   },
 
   fr: {
