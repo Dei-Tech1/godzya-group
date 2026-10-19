@@ -6204,3 +6204,15 @@ body:has(#portfolio) .work-page-intro {
 .hero-slogan span:last-child {
   color: var(--cyan);
 }
+
+/* ==========================================
+   GODZYA — WHAT WE DO HEADING COLOUR FIX
+========================================== */
+
+.expertise-preview .expertise-heading-main {
+  color: #ffffff;
+}
+
+.expertise-preview .expertise-heading-highlight {
+  color: var(--cyan);
+}
