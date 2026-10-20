@@ -99,8 +99,12 @@ leaderDeiRole: "FOUNDER & CEO",
 leaderDeiDescription: "Technology, business and digital solutions focused on turning ideas into practical results.",
 
 leaderDesirRole: "CO-FOUNDER & OPERATIONS DIRECTOR",
-leaderDesirDescription: "Finance, quotations, client communication, contracts, feedback and operational coordination."
+leaderDesirDescription: "Finance, quotations, client communication, contracts, feedback and operational coordination.",
   },
+     
+footerSlogan: "We Build. You Grow.",
+footerServices: "AI • DATA • BUSINESS • TECHNOLOGY",
+footerCopyright: "© 2026 GODZYA GROUP. All rights reserved."
 
   fr: {
     navHome: "Accueil",
