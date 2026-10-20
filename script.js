@@ -66,7 +66,13 @@ serviceBusinessText: "Turning information into structured analysis that supports
 serviceProjectText: "Planning, coordination, documentation, progress tracking and project delivery support.",
 serviceTechnologyText: "Professional websites, digital solutions, updates and technology support.",
 serviceLanguageText: "Professional translation, document services and cross-border communication support, beginning with French and English.",
-serviceAdminText: "Professional document preparation, organization, research and administrative support."
+serviceAdminText: "Professional document preparation, organization, research and administrative support.",
+
+portfolioLabel: "GODZYA GROUP · SELECTED PROJECTS",
+portfolioTitleStart: "From Vision",
+portfolioTitleEnd: "to Value.",
+portfolioDescription: "Discover how GODZYA GROUP brings strategy, technology and execution together to create purposeful digital solutions.",
+portfolioButton: "Explore Our Portfolio"
   },
 
   fr: {
