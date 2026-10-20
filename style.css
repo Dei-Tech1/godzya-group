@@ -6272,3 +6272,34 @@ body:has(#portfolio) .work-page-intro {
   }
 
 }
+
+/* ==========================================
+   GODZYA — MULTILINGUAL HEADING COLOUR FIX
+========================================== */
+
+/* FROM VISION TO VALUE */
+.work-page-intro h2 span:first-child {
+  color: #ffffff !important;
+}
+
+.work-page-intro h2 span:last-child {
+  color: #46d9ff !important;
+}
+
+/* WHY GODZYA */
+.why-godzya .section-heading h2 span:first-child {
+  color: #ffffff !important;
+}
+
+.why-godzya .section-heading h2 span:last-child {
+  color: #46d9ff !important;
+}
+
+/* LEADERSHIP */
+.leadership .section-heading h2 span:first-child {
+  color: #ffffff !important;
+}
+
+.leadership .section-heading h2 span:last-child {
+  color: #46d9ff !important;
+}
