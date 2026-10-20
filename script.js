@@ -72,7 +72,23 @@ portfolioLabel: "GODZYA GROUP · SELECTED PROJECTS",
 portfolioTitleStart: "From Vision",
 portfolioTitleEnd: "to Value.",
 portfolioDescription: "Discover how GODZYA GROUP brings strategy, technology and execution together to create purposeful digital solutions.",
-portfolioButton: "Explore Our Portfolio"
+portfolioButton: "Explore Our Portfolio",
+
+whyLabel: "WHY GODZYA",
+whyTitleStart: "Built on clarity.",
+whyTitleEnd: "Driven by progress.",
+
+whyCardOneTitle: "Practical Thinking",
+whyCardOneText: "We focus on solutions that make sense in the real world — not technology for technology's sake.",
+
+whyCardTwoTitle: "Connected Expertise",
+whyCardTwoText: "AI, data, business and technology work together to create stronger solutions.",
+
+whyCardThreeTitle: "Built to Grow",
+whyCardThreeText: "We build with the future in mind, creating foundations that can evolve as your needs grow.",
+
+whyCardFourTitle: "Honest Delivery",
+whyCardFourText: "We don't sell what we aren't ready to deliver. Trust starts with knowing what we can do."
   },
 
   fr: {
@@ -115,7 +131,23 @@ portfolioLabel: "GODZYA GROUP · PROJETS SÉLECTIONNÉS",
 portfolioTitleStart: "De la vision",
 portfolioTitleEnd: "à la valeur.",
 portfolioDescription: "Découvrez comment GODZYA GROUP associe stratégie, technologie et réalisation pour créer des solutions numériques utiles et adaptées à vos besoins.",
-portfolioButton: "Découvrez nos réalisations"
+portfolioButton: "Découvrez nos réalisations",
+
+whyLabel: "POURQUOI GODZYA",
+whyTitleStart: "Fondé sur la clarté.",
+whyTitleEnd: "Guidé par le progrès.",
+
+whyCardOneTitle: "Une approche pragmatique",
+whyCardOneText: "Nous privilégions des solutions adaptées aux besoins réels, plutôt que la technologie pour elle-même.",
+
+whyCardTwoTitle: "Des expertises complémentaires",
+whyCardTwoText: "L'intelligence artificielle, les données, l'analyse métier et la technologie se combinent pour créer des solutions plus performantes.",
+
+whyCardThreeTitle: "Conçu pour évoluer",
+whyCardThreeText: "Nous construisons des bases solides, capables de s'adapter à l'évolution de vos besoins.",
+
+whyCardFourTitle: "Des engagements honnêtes",
+whyCardFourText: "Nous ne vendons pas ce que nous ne sommes pas prêts à réaliser. La confiance commence par la transparence sur nos capacités."
   }
 };
 
