@@ -88,7 +88,18 @@ whyCardThreeTitle: "Built to Grow",
 whyCardThreeText: "We build with the future in mind, creating foundations that can evolve as your needs grow.",
 
 whyCardFourTitle: "Honest Delivery",
-whyCardFourText: "We don't sell what we aren't ready to deliver. Trust starts with knowing what we can do."
+whyCardFourText: "We don't sell what we aren't ready to deliver. Trust starts with knowing what we can do.",
+
+leadershipLabel: "THE PEOPLE BEHIND GODZYA",
+leadershipTitleStart: "Built by people.",
+leadershipTitleEnd: "Driven by purpose.",
+leadershipIntro: "A leadership team focused on building meaningful solutions and creating lasting client relationships.",
+
+leaderDeiRole: "FOUNDER & CEO",
+leaderDeiDescription: "Technology, business and digital solutions focused on turning ideas into practical results.",
+
+leaderDesirRole: "CO-FOUNDER & OPERATIONS DIRECTOR",
+leaderDesirDescription: "Finance, quotations, client communication, contracts, feedback and operational coordination."
   },
 
   fr: {
