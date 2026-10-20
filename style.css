@@ -6216,3 +6216,34 @@ body:has(#portfolio) .work-page-intro {
 .expertise-preview .expertise-heading-highlight {
   color: var(--cyan);
 }
+
+/* ==========================================
+   GODZYA — COMPACT MOBILE WHATSAPP
+========================================== */
+
+@media (max-width: 600px) {
+
+  .whatsapp-float {
+    width: 56px;
+    height: 56px;
+    min-height: 56px;
+    padding: 6px;
+    gap: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .whatsapp-float::before {
+    display: none;
+  }
+
+  .whatsapp-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
+
+}
