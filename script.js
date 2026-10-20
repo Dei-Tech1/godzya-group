@@ -59,7 +59,14 @@ serviceBusiness: "Business Analysis",
 serviceProject: "Project Management",
 serviceTechnology: "Technology & Web Solutions",
 serviceLanguage: "Global Language Solutions",
-serviceAdmin: "Virtual & Administrative Support"
+serviceAdmin: "Virtual & Administrative Support",
+
+serviceDataText: "Data organization, Excel solutions, reporting, dashboards and meaningful business insights.",
+serviceBusinessText: "Turning information into structured analysis that supports better business decisions.",
+serviceProjectText: "Planning, coordination, documentation, progress tracking and project delivery support.",
+serviceTechnologyText: "Professional websites, digital solutions, updates and technology support.",
+serviceLanguageText: "Professional translation, document services and cross-border communication support, beginning with French and English.",
+serviceAdminText: "Professional document preparation, organization, research and administrative support."
   },
 
   fr: {
@@ -89,7 +96,14 @@ serviceBusiness: "Analyse Métier",
 serviceProject: "Gestion de Projet",
 serviceTechnology: "Technologie et Solutions Web",
 serviceLanguage: "Solutions Linguistiques Internationales",
-serviceAdmin: "Assistance Virtuelle et Administrative"
+serviceAdmin: "Assistance Virtuelle et Administrative",
+
+serviceDataText: "Organisation des données, solutions Excel, rapports, tableaux de bord et analyses utiles à la prise de décision.",
+serviceBusinessText: "Transformation des informations en analyses structurées pour améliorer les décisions des entreprises.",
+serviceProjectText: "Planification, coordination, documentation, suivi de l'avancement et accompagnement dans la réalisation des projets.",
+serviceTechnologyText: "Création de sites web professionnels, solutions numériques, mises à jour et assistance technologique.",
+serviceLanguageText: "Traduction professionnelle, services documentaires et accompagnement de la communication internationale, notamment en français et en anglais.",
+serviceAdminText: "Préparation de documents professionnels, organisation, recherche et assistance administrative."
   }
 };
 
