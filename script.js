@@ -158,8 +158,20 @@ whyCardThreeTitle: "Conçu pour évoluer",
 whyCardThreeText: "Nous construisons des bases solides, capables de s'adapter à l'évolution de vos besoins.",
 
 whyCardFourTitle: "Des engagements honnêtes",
-whyCardFourText: "Nous ne vendons pas ce que nous ne sommes pas prêts à réaliser. La confiance commence par la transparence sur nos capacités."
+whyCardFourText: "Nous ne vendons pas ce que nous ne sommes pas prêts à réaliser. La confiance commence par la transparence sur nos capacités.",
+
+leadershipLabel: "LES PERSONNES DERRIÈRE GODZYA",
+leadershipTitleStart: "Une équipe engagée.",
+leadershipTitleEnd: "Une vision commune.",
+leadershipIntro: "Une équipe dirigeante engagée dans la création de solutions utiles et de relations durables avec ses clients.",
+
+leaderDeiRole: "FONDATEUR ET DIRECTEUR GÉNÉRAL",
+leaderDeiDescription: "Technologie, stratégie d'entreprise et solutions numériques pour transformer les idées en résultats concrets.",
+
+leaderDesirRole: "COFONDATEUR ET DIRECTEUR DES OPÉRATIONS",
+leaderDesirDescription: "Finance, devis, communication client, contrats, retours clients et coordination opérationnelle."
   }
+   
 };
 
 /* =================================================
