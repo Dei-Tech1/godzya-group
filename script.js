@@ -173,9 +173,12 @@ leaderDeiRole: "FONDATEUR ET DIRECTEUR GÉNÉRAL",
 leaderDeiDescription: "Technologie, stratégie d'entreprise et solutions numériques pour transformer les idées en résultats concrets.",
 
 leaderDesirRole: "COFONDATEUR ET DIRECTEUR DES OPÉRATIONS",
-leaderDesirDescription: "Finance, devis, communication client, contrats, retours clients et coordination opérationnelle."
+leaderDesirDescription: "Finance, devis, communication client, contrats, retours clients et coordination opérationnelle.",
+
+footerSlogan: "Nous construisons. Vous grandissez.",
+footerServices: "IA • DONNÉES • BUSINESS • TECHNOLOGIE",
+footerCopyright: "© 2026 GODZYA GROUP. Tous droits réservés."
   }
-   
 };
 
 /* =================================================
