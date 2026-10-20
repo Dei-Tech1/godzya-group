@@ -109,7 +109,13 @@ serviceBusinessText: "Transformation des informations en analyses structurées p
 serviceProjectText: "Planification, coordination, documentation, suivi de l'avancement et accompagnement dans la réalisation des projets.",
 serviceTechnologyText: "Création de sites web professionnels, solutions numériques, mises à jour et assistance technologique.",
 serviceLanguageText: "Traduction professionnelle, services documentaires et accompagnement de la communication internationale, notamment en français et en anglais.",
-serviceAdminText: "Préparation de documents professionnels, organisation, recherche et assistance administrative."
+serviceAdminText: "Préparation de documents professionnels, organisation, recherche et assistance administrative.",
+
+portfolioLabel: "GODZYA GROUP · PROJETS SÉLECTIONNÉS",
+portfolioTitleStart: "De la vision",
+portfolioTitleEnd: "à la valeur.",
+portfolioDescription: "Découvrez comment GODZYA GROUP associe stratégie, technologie et réalisation pour créer des solutions numériques utiles et adaptées à vos besoins.",
+portfolioButton: "Découvrez nos réalisations"
   }
 };
 
