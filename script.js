@@ -213,6 +213,160 @@ expCtaTitleEnd: "commence ici.",
 expCtaDescription: "Vous avez un projet, un défi professionnel ou une tâche nécessitant un accompagnement ? Parlez-nous de vos besoins.",
 expCtaButton: "Contactez-nous →"
   }
+
+   /* =====================================================
+   GODZYA GROUP — EXPERTISE SERVICE TRANSLATIONS
+   ENGLISH + FRENCH
+===================================================== */
+
+Object.assign(GODZYA_TRANSLATIONS.en, {
+
+  /* DATA, EXCEL & ANALYTICS */
+
+  expDataTitle: "Data, Excel & Analytics",
+  expDataDesc: "We help businesses organise, process and understand their data through accurate data entry, structured spreadsheets and practical reporting.",
+  expData1: "Data entry and data cleaning",
+  expData2: "Excel formulas and spreadsheets",
+  expData3: "Data formatting and organisation",
+  expData4: "Reports, charts and dashboards",
+  expData5: "PDF to Excel or Word conversion",
+  expData6: "Data analysis and business insights",
+
+  /* BUSINESS ANALYSIS */
+
+  expBusinessTitle: "Business Analysis",
+  expBusinessDesc: "We help businesses understand their processes, identify opportunities for improvement and turn information into practical recommendations.",
+  expBusiness1: "Business requirements gathering",
+  expBusiness2: "Process mapping and documentation",
+  expBusiness3: "Workflow and gap analysis",
+  expBusiness4: "Business reports and presentations",
+  expBusiness5: "Requirements and specification documents",
+  expBusiness6: "Operational improvement recommendations",
+
+  /* PROJECT MANAGEMENT */
+
+  expProjectTitle: "Project Management",
+  expProjectDesc: "We support businesses in planning, organising and coordinating projects from initiation through completion, with clear communication, structured documentation and progress monitoring.",
+  expProject1: "Project planning and scheduling",
+  expProject2: "Task coordination and tracking",
+  expProject3: "Project documentation and reporting",
+  expProject4: "Milestone and deadline monitoring",
+  expProject5: "Stakeholder communication support",
+  expProject6: "Risk and issue tracking",
+  expProject7: "Project closure and handover support",
+
+  /* TECHNOLOGY & WEB SOLUTIONS */
+
+  expWebTitle: "Technology & Web Solutions",
+  expWebDesc: "We help businesses establish and improve their digital presence through professional, responsive websites and practical technology solutions tailored to their needs.",
+  expWeb1: "Business and corporate websites",
+  expWeb2: "Landing pages and portfolio websites",
+  expWeb3: "Mobile-responsive website design",
+  expWeb4: "Website updates and maintenance",
+  expWeb5: "Domain and hosting setup assistance",
+  expWeb6: "Website performance improvements",
+  expWeb7: "Website redesign and modernisation",
+
+  /* FRENCH LANGUAGE SERVICES */
+
+  expLanguageTitle: "French Language & Document Services",
+  expLanguageDesc: "We help businesses and individuals communicate professionally in French and English through accurate translation, document preparation and language support.",
+  expLanguage1: "French to English document translation",
+  expLanguage2: "English to French document translation",
+  expLanguage3: "French and English proofreading",
+  expLanguage4: "Business correspondence and emails",
+  expLanguage5: "Document editing and formatting",
+  expLanguage6: "Customer service document support",
+  expLanguage7: "Bilingual business communication",
+
+  /* MICROSOFT OFFICE */
+
+  expOfficeTitle: "Microsoft Office & Documents",
+  expOfficeDesc: "We help businesses and individuals create, organise and improve professional documents, spreadsheets and presentations for everyday business needs.",
+  expOffice1: "Microsoft Word document creation",
+  expOffice2: "Professional document formatting",
+  expOffice3: "Excel spreadsheet creation and editing",
+  expOffice4: "PowerPoint presentation design",
+  expOffice5: "PDF conversion and document editing",
+  expOffice6: "Reports, templates and business forms",
+  expOffice7: "Administrative document preparation"
+
+});
+
+
+Object.assign(GODZYA_TRANSLATIONS.fr, {
+
+  /* DONNÉES, EXCEL ET ANALYSE */
+
+  expDataTitle: "Données, Excel et Analyse",
+  expDataDesc: "Nous aidons les entreprises à organiser, traiter et comprendre leurs données grâce à une saisie précise, des feuilles de calcul structurées et des rapports pratiques.",
+  expData1: "Saisie et nettoyage des données",
+  expData2: "Formules Excel et feuilles de calcul",
+  expData3: "Mise en forme et organisation des données",
+  expData4: "Rapports, graphiques et tableaux de bord",
+  expData5: "Conversion PDF vers Excel ou Word",
+  expData6: "Analyse des données et informations commerciales",
+
+  /* ANALYSE MÉTIER */
+
+  expBusinessTitle: "Analyse Métier",
+  expBusinessDesc: "Nous aidons les entreprises à comprendre leurs processus, à identifier les possibilités d'amélioration et à transformer les informations en recommandations concrètes.",
+  expBusiness1: "Collecte des besoins métier",
+  expBusiness2: "Cartographie et documentation des processus",
+  expBusiness3: "Analyse des flux de travail et des écarts",
+  expBusiness4: "Rapports et présentations professionnels",
+  expBusiness5: "Documents de besoins et de spécifications",
+  expBusiness6: "Recommandations d'amélioration opérationnelle",
+
+  /* GESTION DE PROJET */
+
+  expProjectTitle: "Gestion de Projet",
+  expProjectDesc: "Nous accompagnons les entreprises dans la planification, l'organisation et la coordination de leurs projets, du lancement à la clôture, avec une communication claire, une documentation structurée et un suivi régulier.",
+  expProject1: "Planification et programmation des projets",
+  expProject2: "Coordination et suivi des tâches",
+  expProject3: "Documentation et rapports de projet",
+  expProject4: "Suivi des étapes clés et des échéances",
+  expProject5: "Communication avec les parties prenantes",
+  expProject6: "Suivi des risques et des problèmes",
+  expProject7: "Clôture des projets et transfert des livrables",
+
+  /* TECHNOLOGIE ET WEB */
+
+  expWebTitle: "Technologie et Solutions Web",
+  expWebDesc: "Nous aidons les entreprises à développer et améliorer leur présence numérique grâce à des sites web professionnels, adaptés aux différents écrans, et à des solutions technologiques répondant à leurs besoins.",
+  expWeb1: "Sites web professionnels et d'entreprise",
+  expWeb2: "Pages de destination et sites portfolio",
+  expWeb3: "Conception de sites adaptés aux mobiles",
+  expWeb4: "Mises à jour et maintenance des sites web",
+  expWeb5: "Assistance pour les domaines et l'hébergement",
+  expWeb6: "Amélioration des performances des sites web",
+  expWeb7: "Refonte et modernisation des sites web",
+
+  /* SERVICES LINGUISTIQUES */
+
+  expLanguageTitle: "Services Linguistiques et Documentaires en Français",
+  expLanguageDesc: "Nous aidons les entreprises et les particuliers à communiquer professionnellement en français et en anglais grâce à des traductions précises, à la préparation de documents et à un accompagnement linguistique.",
+  expLanguage1: "Traduction de documents du français vers l'anglais",
+  expLanguage2: "Traduction de documents de l'anglais vers le français",
+  expLanguage3: "Relecture et correction en français et en anglais",
+  expLanguage4: "Correspondance professionnelle et courriels",
+  expLanguage5: "Modification et mise en forme de documents",
+  expLanguage6: "Assistance documentaire pour le service client",
+  expLanguage7: "Communication professionnelle bilingue",
+
+  /* MICROSOFT OFFICE */
+
+  expOfficeTitle: "Microsoft Office et Documents",
+  expOfficeDesc: "Nous aidons les entreprises et les particuliers à créer, organiser et améliorer leurs documents professionnels, feuilles de calcul et présentations pour leurs besoins quotidiens.",
+  expOffice1: "Création de documents Microsoft Word",
+  expOffice2: "Mise en forme professionnelle de documents",
+  expOffice3: "Création et modification de feuilles Excel",
+  expOffice4: "Conception de présentations PowerPoint",
+  expOffice5: "Conversion PDF et modification de documents",
+  expOffice6: "Rapports, modèles et formulaires professionnels",
+  expOffice7: "Préparation de documents administratifs"
+
+});
 };
 
 /* =================================================
