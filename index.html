@@ -66,27 +66,62 @@
 
 </a>
 
-    <!-- NAVIGATION LINKS -->
-    <div class="nav-links">
-      
-<a href="index.html" class="active" data-i18n="navHome">
-  Home
-</a>
+    <!-- ==========================================
+     GODZYA PREMIUM NAVIGATION
+========================================== -->
 
-<a href="expertise.html" data-i18n="navExpertise">
-  Our Expertise
-</a>
+<div class="nav-links">
 
-<a href="work.html" data-i18n="navWork">
-  Our Work
-</a>
+  <a
+    href="index.html"
+    class="active"
+    data-i18n="navHome">
+    Home
+  </a>
 
-<a href="work.html#connect" data-i18n="navContact">
-  Let's Connect
-      
+  <!-- OUR EXPERTISE DROPDOWN -->
+
+  <div class="expertise-nav-group">
+
+    <a
+      href="expertise.html"
+      data-i18n="navExpertise">
+      Our Expertise
+    </a>
+
+    <button
+      class="expertise-dropdown-toggle"
+      type="button"
+      aria-label="Show expertise submenu"
+      aria-expanded="false"
+      aria-controls="homepage-expertise-submenu">
+      ▾
+    </button>
+
+    <div
+      class="expertise-submenu"
+      id="homepage-expertise-submenu"
+      hidden>
+
+      <a href="expertise.html#our-services">
+        Our Services
+      </a>
+
+      <a href="expertise.html#our-work">
+        Our Work
       </a>
 
     </div>
+
+  </div>
+
+  <!-- GODZYA CONNECT -->
+
+  <a href="connect.html">
+    GODZYA CONNECT
+  </a>
+
+</div>
 
     <!-- LANGUAGE SELECTOR -->
 
