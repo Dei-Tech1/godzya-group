@@ -194,7 +194,24 @@ leaderDesirDescription: "Finance, devis, communication client, contrats, retours
 
 footerSlogan: "Nous construisons. Vous grandissez.",
 footerServices: "IA • DONNÉES • BUSINESS • TECHNOLOGIE",
-footerCopyright: "© 2026 GODZYA GROUP. Tous droits réservés."
+footerCopyright: "© 2026 GODZYA GROUP. Tous droits réservés.",
+
+expHeroLabel: "GODZYA GROUP / NOS EXPERTISES",
+expHeroTitleStart: "Des solutions conçues pour",
+expHeroTitleEnd: "un progrès réel.",
+expHeroDescription: "Des données aux solutions numériques, en passant par les opérations et la gestion de projet, nous aidons les organisations à transformer leurs défis en résultats concrets.",
+expHeroButton: "Découvrez nos services →",
+
+expServicesLabel: "CE QUE NOUS PROPOSONS",
+expServicesTitleStart: "Nos principales",
+expServicesTitleEnd: "expertises.",
+expServicesIntro: "Des services pratiques pour aider les entreprises à travailler plus efficacement, à mieux s'organiser et à progresser durablement.",
+
+expCtaLabel: "CONSTRUISONS QUELQUE CHOSE D'UTILE",
+expCtaTitleStart: "Votre prochaine étape",
+expCtaTitleEnd: "commence ici.",
+expCtaDescription: "Vous avez un projet, un défi professionnel ou une tâche nécessitant un accompagnement ? Parlez-nous de vos besoins.",
+expCtaButton: "Contactez-nous →"
   }
 };
 
