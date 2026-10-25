@@ -103,7 +103,24 @@ leaderDesirDescription: "Finance, quotations, client communication, contracts, f
      
 footerSlogan: "We Build. You Grow.",
 footerServices: "AI • DATA • BUSINESS • TECHNOLOGY",
-footerCopyright: "© 2026 GODZYA GROUP. All rights reserved."
+footerCopyright: "© 2026 GODZYA GROUP. All rights reserved.",
+
+expHeroLabel: "GODZYA GROUP / OUR EXPERTISE",
+expHeroTitleStart: "Solutions Built for",
+expHeroTitleEnd: "Real Progress.",
+expHeroDescription: "From data and digital solutions to business operations and project management, we help organisations turn complex challenges into practical results.",
+expHeroButton: "Explore Our Services →",
+
+expServicesLabel: "WHAT WE DELIVER",
+expServicesTitleStart: "Our Core",
+expServicesTitleEnd: "Expertise.",
+expServicesIntro: "Practical services designed to help businesses work smarter, stay organised and achieve meaningful progress.",
+
+expCtaLabel: "LET'S BUILD SOMETHING MEANINGFUL",
+expCtaTitleStart: "Your Next Step Starts",
+expCtaTitleEnd: "Here.",
+expCtaDescription: "Have a project, a business challenge, or a task that needs professional support? Tell us what you need.",
+expCtaButton: "Start a Conversation →"
   },
    
   fr: {
