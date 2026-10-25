@@ -2,105 +2,546 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta name="theme-color" content="#050b14">
 
-  <meta name="description"
-        content="Explore GODZYA GROUP's professional services.">
+  <meta
+    name="description"
+    content="Explore GODZYA GROUP expertise, professional services and selected projects."
+  >
 
   <title>Our Expertise | GODZYA GROUP</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* ==========================================
+       GODZYA GROUP
+       EXPERTISE & SELECTED WORK
+
+       Uses the existing GODZYA design system.
+       Does not replace shared styles.
+    ========================================== */
+
+    /* NAVIGATION — EXPERTISE SUBMENU */
+
+    .expertise-nav-group {
+      position: relative;
+    }
+
+    .expertise-nav-group > a {
+      display: inline-block;
+    }
+
+    .expertise-submenu {
+      position: absolute;
+      top: calc(100% + 18px);
+      left: 0;
+
+      min-width: 190px;
+      padding: 10px;
+
+      border: 1px solid var(--line-cyan);
+      border-radius: 14px;
+
+      background: #081522;
+
+      box-shadow: var(--shadow);
+    }
+
+    .expertise-submenu[hidden] {
+      display: none !important;
+    }
+
+    .expertise-submenu a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 8px;
+
+      color: var(--text);
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .expertise-submenu a:hover {
+      background: rgba(70,217,255,.09);
+      color: var(--cyan);
+    }
+
+    /* OUR WORK — ORIGINAL BACKGROUND PRESERVED */
+
+    .godzya-selected-work {
+      position: relative;
+      padding: 115px 0 125px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(5,11,20,.94),
+          rgba(5,11,20,.82)
+        ),
+        url("godzya-work-vision.png")
+        center / cover no-repeat;
+
+      overflow: hidden;
+    }
+
+    .godzya-selected-work::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(
+          circle at 85% 15%,
+          rgba(70,217,255,.13),
+          transparent 38%
+        );
+
+      pointer-events: none;
+    }
+
+    .godzya-selected-work .section-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .godzya-selected-work .section-heading {
+      margin-bottom: 45px;
+    }
+
+    .godzya-selected-work .section-heading h2 {
+      max-width: 780px;
+    }
+
+    /* COMPACT PROJECT GRID */
+
+    .godzya-project-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 20px;
+    }
+
+    .godzya-project-card {
+      display: flex;
+      align-items: center;
+
+      min-width: 0;
+      min-height: 205px;
+      padding: 24px;
+      gap: 24px;
+
+      border: 1px solid rgba(70,217,255,.16);
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(13,30,47,.94),
+          rgba(5,11,20,.90)
+        );
+
+      box-shadow:
+        0 15px 45px rgba(0,0,0,.22);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+    }
+
+    .godzya-project-card:hover {
+      transform: translateY(-5px);
+
+      border-color: rgba(70,217,255,.48);
+
+      box-shadow:
+        0 20px 55px rgba(0,0,0,.32),
+        0 0 25px rgba(70,217,255,.07);
+    }
+
+    /* LOGO DESIGNATED BOX */
+
+    .godzya-project-logo-box {
+      flex: 0 0 125px;
+
+      width: 125px;
+      height: 125px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 14px;
+
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 16px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(70,217,255,.08),
+          rgba(5,11,20,.75)
+        );
+
+      overflow: hidden;
+    }
+
+    .godzya-project-logo-box img {
+      display: block;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+      object-position: center;
+
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    /* PROJECT INFORMATION */
+
+    .godzya-project-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .godzya-project-category {
+      margin-bottom: 9px;
+
+      color: var(--cyan);
+
+      font-size: 10px;
+      font-weight: 700;
+
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .godzya-project-info h3 {
+      margin-bottom: 10px;
+
+      color: var(--white);
+      font-size: clamp(18px, 2vw, 23px);
+
+      line-height: 1.25;
+    }
+
+    .godzya-project-description {
+      margin-bottom: 15px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .godzya-project-status {
+      display: inline-flex;
+      align-items: center;
+
+      padding: 7px 11px;
+
+      border: 1px solid rgba(70,217,255,.24);
+      border-radius: 999px;
+
+      color: var(--cyan);
+
+      font-size: 10px;
+      font-weight: 700;
+
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .godzya-project-link {
+      display: inline-flex;
+      align-items: center;
+
+      min-height: 34px;
+      padding: 8px 14px;
+
+      border: 1px solid rgba(70,217,255,.5);
+      border-radius: 999px;
+
+      background: var(--cyan);
+
+      color: #031018;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      text-decoration: none;
+
+      transition:
+        background .3s ease,
+        transform .3s ease;
+    }
+
+    .godzya-project-link:hover {
+      background: var(--cyan-soft);
+      color: #031018;
+      transform: translateY(-2px);
+    }
+
+    /* FUTURE PROJECT */
+
+    .godzya-future-symbol {
+      color: var(--cyan);
+
+      font-size: 70px;
+      font-weight: 300;
+
+      line-height: 1;
+    }
+
+    /* CTA BUTTON CONTRAST */
+
+    .expertise-page .btn-primary,
+    .expertise-page .btn-primary:visited {
+      background: var(--cyan);
+      color: #031018;
+    }
+
+    .expertise-page .btn-primary:hover,
+    .expertise-page .btn-primary:focus-visible {
+      background: var(--cyan-soft);
+      color: #031018;
+    }
+
+    .expertise-page .btn-primary span {
+      color: inherit;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .godzya-project-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      .godzya-selected-work {
+        padding: 80px 0;
+      }
+
+      .godzya-project-card {
+        padding: 18px;
+        gap: 17px;
+      }
+
+      .godzya-project-logo-box {
+        flex-basis: 100px;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+      }
+
+      .godzya-project-info h3 {
+        font-size: 18px;
+      }
+
+      .godzya-project-description {
+        font-size: 12px;
+      }
+
+      .expertise-submenu {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+      }
+
+    }
+
+    @media (max-width: 380px) {
+
+      .godzya-project-card {
+        align-items: flex-start;
+      }
+
+      .godzya-project-logo-box {
+        flex-basis: 78px;
+        width: 78px;
+        height: 78px;
+      }
+
+    }
+
+  </style>
+
 </head>
 
-<body>
 
-  <!-- GODZYA NAVIGATION -->
+<body class="expertise-page">
+
+
+<!-- ==========================================
+     GODZYA CORPORATE NAVIGATION
+========================================== -->
 
 <header class="site-header">
+
   <nav class="site-nav">
 
+    <!-- ROTATING GODZYA LOGO -->
+
     <a href="index.html" class="brand">
+
       <div class="logo-cube-scene">
+
         <div class="logo-cube">
+
           <div class="cube-face front"></div>
           <div class="cube-face back"></div>
           <div class="cube-face right"></div>
           <div class="cube-face left"></div>
           <div class="cube-face top"></div>
           <div class="cube-face bottom"></div>
+
         </div>
+
       </div>
 
       <div class="brand-text">
-        <span class="brand-name">WE BUILD.</span>
-        <span class="brand-group">YOU GROW.</span>
+
+        <span class="brand-name">
+          WE BUILD.
+        </span>
+
+        <span class="brand-group">
+          YOU GROW.
+        </span>
+
       </div>
+
     </a>
+
+
+    <!-- MAIN NAVIGATION -->
 
     <div class="nav-links">
 
-  <a href="index.html" data-i18n="navHome">
-    Home
-  </a>
+      <a href="index.html" data-i18n="navHome">
+        Home
+      </a>
 
-  <a href="expertise.html" class="active" data-i18n="navExpertise">
-    Our Expertise
-  </a>
+      <div class="expertise-nav-group">
 
-  <a href="work.html" data-i18n="navWork">
-    Our Work
-  </a>
+        <a
+          href="expertise.html"
+          class="active"
+          data-i18n="navExpertise">
+          Our Expertise
+        </a>
 
-  <a href="work.html#connect" data-i18n="navContact">
-    Let's Connect
-  </a>
+        <div class="expertise-submenu" hidden>
+
+          <a href="#our-services">
+            Our Services
+          </a>
+
+          <a href="#our-work">
+            Our Work
+          </a>
+
+        </div>
+
+      </div>
+
+      <a href="connect.html" data-i18n="navContact">
+        GODZYA CONNECT
+      </a>
 
     </div>
 
+
+    <!-- LANGUAGE SELECTOR -->
+
     <div class="language-selector">
+
       <button
         class="language-button"
         type="button"
         aria-label="Change language"
         aria-expanded="false"
-        aria-controls="language-menu"
-      >EN</button>
+        aria-controls="language-menu">
+        EN
+      </button>
 
-      <div class="language-menu" id="language-menu" hidden>
-        <button type="button" data-lang="en">🇬🇧 English</button>
-        <button type="button" data-lang="fr">🇫🇷 Français</button>
-        <button type="button" data-lang="es">🇪🇸 Español</button>
-        <button type="button" data-lang="pt">🇵🇹 Português</button>
-        <button type="button" data-lang="de">🇩🇪 Deutsch</button>
+      <div
+        class="language-menu"
+        id="language-menu"
+        hidden>
+
+        <button type="button" data-lang="en">
+          🇬🇧 English
+        </button>
+
+        <button type="button" data-lang="fr">
+          🇫🇷 Français
+        </button>
+
+        <button type="button" data-lang="es">
+          🇪🇸 Español
+        </button>
+
+        <button type="button" data-lang="pt">
+          🇵🇹 Português
+        </button>
+
+        <button type="button" data-lang="de">
+          🇩🇪 Deutsch
+        </button>
+
       </div>
+
     </div>
+
+
+    <!-- MOBILE MENU -->
 
     <button
       class="menu-toggle"
       type="button"
       aria-label="Open menu"
-      aria-expanded="false"
-    >
+      aria-expanded="false">
+
       <span></span>
       <span></span>
       <span></span>
+
     </button>
 
   </nav>
+
 </header>
 
-  <!-- ==========================================
-     GODZYA EXPERTISE — HERO
-========================================== -->
 
 <main>
 
-  <section class="expertise-hero">
+
+<!-- ==========================================
+     EXPERTISE HERO
+     EXISTING DESIGN PRESERVED
+========================================== -->
+
+<section class="expertise-hero">
 
   <div class="section-inner">
 
@@ -109,8 +550,15 @@
     </p>
 
     <h1>
-      <span data-i18n="expHeroTitleStart">Solutions Built for</span>
-      <span data-i18n="expHeroTitleEnd">Real Progress.</span>
+
+      <span data-i18n="expHeroTitleStart">
+        Solutions Built for
+      </span>
+
+      <span data-i18n="expHeroTitleEnd">
+        Real Progress.
+      </span>
+
     </h1>
 
     <p class="section-intro" data-i18n="expHeroDescription">
@@ -119,17 +567,20 @@
       complex challenges into practical results.
     </p>
 
-    <a href="#our-services" class="btn btn-primary"
-       data-i18n="expHeroButton">
+    <a
+      href="#our-services"
+      class="btn btn-primary"
+      data-i18n="expHeroButton">
       Explore Our Services →
     </a>
 
   </div>
 
-  </section>
-  
+</section>
+
+
 <!-- ==========================================
-     GODZYA — OUR SERVICES
+     OUR SIX CORE SERVICES
 ========================================== -->
 
 <section class="expertise-preview" id="our-services">
@@ -138,221 +589,381 @@
 
     <div class="section-heading">
 
-  <p class="section-label" data-i18n="expServicesLabel">
-    WHAT WE DELIVER
-  </p>
+      <p class="section-label" data-i18n="expServicesLabel">
+        WHAT WE DELIVER
+      </p>
 
-  <h2>
-    <span data-i18n="expServicesTitleStart">Our Core</span>
-    <span data-i18n="expServicesTitleEnd">Expertise.</span>
-  </h2>
+      <h2>
 
-  <p class="section-intro" data-i18n="expServicesIntro">
-    Practical services designed to help businesses
-    work smarter, stay organised and achieve
-    meaningful progress.
-  </p>
+        <span data-i18n="expServicesTitleStart">
+          Our Core
+        </span>
+
+        <span data-i18n="expServicesTitleEnd">
+          Expertise.
+        </span>
+
+      </h2>
+
+      <p class="section-intro" data-i18n="expServicesIntro">
+        Practical services designed to help businesses
+        work smarter, stay organised and achieve
+        meaningful progress.
+      </p>
 
     </div>
 
+
     <div class="expertise-grid">
 
+
+      <!-- SERVICE 1 — DATA -->
+
       <article class="expertise-card">
+
         <div class="service-image">
-  <img
-    src="godzya-data.png"
-    alt="Digital data analytics dashboard"
-    loading="lazy"
-  >
-</div>
+
+          <img
+            src="godzya-data.png"
+            alt="Digital data analytics dashboard"
+            loading="lazy">
+
+        </div>
 
         <h3 data-i18n="expDataTitle">
-  Data, Excel & Analytics
-</h3>
+          Data, Excel & Analytics
+        </h3>
 
-<p data-i18n="expDataDesc">
-  We help businesses organise, process
-  and understand their data through
-  accurate data entry, structured
-  spreadsheets and practical reporting.
-</p>
+        <p data-i18n="expDataDesc">
+          We help businesses organise, process
+          and understand their data through
+          accurate data entry, structured
+          spreadsheets and practical reporting.
+        </p>
 
-<ul class="service-details">
-  <li data-i18n="expData1">Data entry and data cleaning</li>
-  <li data-i18n="expData2">Excel formulas and spreadsheets</li>
-  <li data-i18n="expData3">Data formatting and organisation</li>
-  <li data-i18n="expData4">Reports, charts and dashboards</li>
-  <li data-i18n="expData5">PDF to Excel or Word conversion</li>
-  <li data-i18n="expData6">Data analysis and business insights</li>
-</ul>
-        
+        <ul class="service-details">
+
+          <li data-i18n="expData1">
+            Data entry and data cleaning
+          </li>
+
+          <li data-i18n="expData2">
+            Excel formulas and spreadsheets
+          </li>
+
+          <li data-i18n="expData3">
+            Data formatting and organisation
+          </li>
+
+          <li data-i18n="expData4">
+            Reports, charts and dashboards
+          </li>
+
+          <li data-i18n="expData5">
+            PDF to Excel or Word conversion
+          </li>
+
+          <li data-i18n="expData6">
+            Data analysis and business insights
+          </li>
+
+        </ul>
+
       </article>
+
+
+      <!-- SERVICE 2 — BUSINESS ANALYSIS -->
 
       <article class="expertise-card">
+
         <div class="service-image">
-  <img
-    src="godzya-business.png"
-    alt="Business analysis reports and process diagrams"
-    loading="lazy"
-  >
-</div>
+
+          <img
+            src="godzya-business.png"
+            alt="Business analysis reports and process diagrams"
+            loading="lazy">
+
+        </div>
 
         <h3 data-i18n="expBusinessTitle">
-  Business Analysis
-</h3>
+          Business Analysis
+        </h3>
 
-<p data-i18n="expBusinessDesc">
-  We help businesses understand their
-  processes, identify opportunities
-  for improvement and turn information
-  into practical recommendations.
-</p>
+        <p data-i18n="expBusinessDesc">
+          We help businesses understand their
+          processes, identify opportunities
+          for improvement and turn information
+          into practical recommendations.
+        </p>
 
-<ul class="service-details">
-  <li data-i18n="expBusiness1">Business requirements gathering</li>
-  <li data-i18n="expBusiness2">Process mapping and documentation</li>
-  <li data-i18n="expBusiness3">Workflow and gap analysis</li>
-  <li data-i18n="expBusiness4">Business reports and presentations</li>
-  <li data-i18n="expBusiness5">Requirements and specification documents</li>
-  <li data-i18n="expBusiness6">Operational improvement recommendations</li>
-</ul>
-        
+        <ul class="service-details">
+
+          <li data-i18n="expBusiness1">
+            Business requirements gathering
+          </li>
+
+          <li data-i18n="expBusiness2">
+            Process mapping and documentation
+          </li>
+
+          <li data-i18n="expBusiness3">
+            Workflow and gap analysis
+          </li>
+
+          <li data-i18n="expBusiness4">
+            Business reports and presentations
+          </li>
+
+          <li data-i18n="expBusiness5">
+            Requirements and specification documents
+          </li>
+
+          <li data-i18n="expBusiness6">
+            Operational improvement recommendations
+          </li>
+
+        </ul>
+
       </article>
 
-      <!-- PROJECT MANAGEMENT -->
-<article class="expertise-card">
-  <div class="service-image">
-  <img
-    src="godzya-project.png"
-    alt="Digital project planning dashboard and timeline"
-    loading="lazy"
-  >
-</div>
 
-  <h3 data-i18n="expProjectTitle">
-  Project Management
-</h3>
+      <!-- SERVICE 3 — PROJECT MANAGEMENT -->
 
-<p data-i18n="expProjectDesc">
-  We support businesses in planning,
-  organising and coordinating projects
-  from initiation through completion,
-  with clear communication, structured
-  documentation and progress monitoring.
-</p>
+      <article class="expertise-card">
 
-<ul class="service-details">
-  <li data-i18n="expProject1">Project planning and scheduling</li>
-  <li data-i18n="expProject2">Task coordination and tracking</li>
-  <li data-i18n="expProject3">Project documentation and reporting</li>
-  <li data-i18n="expProject4">Milestone and deadline monitoring</li>
-  <li data-i18n="expProject5">Stakeholder communication support</li>
-  <li data-i18n="expProject6">Risk and issue tracking</li>
-  <li data-i18n="expProject7">Project closure and handover support</li>
-</ul>
-  
-</article>
+        <div class="service-image">
 
-<!-- TECHNOLOGY -->
-<article class="expertise-card">
-  <div class="service-image">
-  <img
-    src="godzya-web.png"
-    alt="Professional website design across digital devices"
-    loading="lazy"
-  >
-</div>
+          <img
+            src="godzya-project.png"
+            alt="Digital project planning dashboard and timeline"
+            loading="lazy">
 
-  <h3 data-i18n="expWebTitle">
-  Technology & Web Solutions
-</h3>
+        </div>
 
-<p data-i18n="expWebDesc">
-  We help businesses establish and improve
-  their digital presence through professional,
-  responsive websites and practical
-  technology solutions tailored to
-  their needs.
-</p>
+        <h3 data-i18n="expProjectTitle">
+          Project Management
+        </h3>
 
-<ul class="service-details">
-  <li data-i18n="expWeb1">Business and corporate websites</li>
-  <li data-i18n="expWeb2">Landing pages and portfolio websites</li>
-  <li data-i18n="expWeb3">Mobile-responsive website design</li>
-  <li data-i18n="expWeb4">Website updates and maintenance</li>
-  <li data-i18n="expWeb5">Domain and hosting setup assistance</li>
-  <li data-i18n="expWeb6">Website performance improvements</li>
-  <li data-i18n="expWeb7">Website redesign and modernisation</li>
-</ul>
-  
-</article>
+        <p data-i18n="expProjectDesc">
+          We support businesses in planning,
+          organising and coordinating projects
+          from initiation through completion,
+          with clear communication, structured
+          documentation and progress monitoring.
+        </p>
 
-<!-- LANGUAGE -->
-<article class="expertise-card">
-  <div class="service-image">
-  <img
-    src="godzya-language.png"
-    alt="French and English language translation services"
-    loading="lazy"
-  >
-</div>
+        <ul class="service-details">
 
-  <h3 data-i18n="expLanguageTitle">
-  French Language & Document Services
-</h3>
+          <li data-i18n="expProject1">
+            Project planning and scheduling
+          </li>
 
-<p data-i18n="expLanguageDesc">
-  We help businesses and individuals
-  communicate professionally in French
-  and English through accurate translation,
-  document preparation and language support.
-</p>
+          <li data-i18n="expProject2">
+            Task coordination and tracking
+          </li>
 
-<ul class="service-details">
-  <li data-i18n="expLanguage1">French to English document translation</li>
-  <li data-i18n="expLanguage2">English to French document translation</li>
-  <li data-i18n="expLanguage3">French and English proofreading</li>
-  <li data-i18n="expLanguage4">Business correspondence and emails</li>
-  <li data-i18n="expLanguage5">Document editing and formatting</li>
-  <li data-i18n="expLanguage6">Customer service document support</li>
-  <li data-i18n="expLanguage7">Bilingual business communication</li>
-</ul>
-  
-</article>
+          <li data-i18n="expProject3">
+            Project documentation and reporting
+          </li>
 
-<!-- OFFICE & DOCUMENTS -->
-<article class="expertise-card">
-  <div class="service-image">
-  <img
-    src="godzya-office.png"
-    alt="Microsoft Word, Excel and PowerPoint document services"
-    loading="lazy"
-  >
-</div>
+          <li data-i18n="expProject4">
+            Milestone and deadline monitoring
+          </li>
 
-  <h3 data-i18n="expOfficeTitle">
-  Microsoft Office & Documents
-</h3>
+          <li data-i18n="expProject5">
+            Stakeholder communication support
+          </li>
 
-<p data-i18n="expOfficeDesc">
-  We help businesses and individuals
-  create, organise and improve
-  professional documents, spreadsheets
-  and presentations for everyday
-  business needs.
-</p>
+          <li data-i18n="expProject6">
+            Risk and issue tracking
+          </li>
 
-<ul class="service-details">
-  <li data-i18n="expOffice1">Microsoft Word document creation</li>
-  <li data-i18n="expOffice2">Professional document formatting</li>
-  <li data-i18n="expOffice3">Excel spreadsheet creation and editing</li>
-  <li data-i18n="expOffice4">PowerPoint presentation design</li>
-  <li data-i18n="expOffice5">PDF conversion and document editing</li>
-  <li data-i18n="expOffice6">Reports, templates and business forms</li>
-  <li data-i18n="expOffice7">Administrative document preparation</li>
-</ul>
-  
-</article>
+          <li data-i18n="expProject7">
+            Project closure and handover support
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- SERVICE 4 — TECHNOLOGY -->
+
+      <article class="expertise-card">
+
+        <div class="service-image">
+
+          <img
+            src="godzya-web.png"
+            alt="Professional website design across digital devices"
+            loading="lazy">
+
+        </div>
+
+        <h3 data-i18n="expWebTitle">
+          Technology & Web Solutions
+        </h3>
+
+        <p data-i18n="expWebDesc">
+          We help businesses establish and improve
+          their digital presence through professional,
+          responsive websites and practical
+          technology solutions tailored to
+          their needs.
+        </p>
+
+        <ul class="service-details">
+
+          <li data-i18n="expWeb1">
+            Business and corporate websites
+          </li>
+
+          <li data-i18n="expWeb2">
+            Landing pages and portfolio websites
+          </li>
+
+          <li data-i18n="expWeb3">
+            Mobile-responsive website design
+          </li>
+
+          <li data-i18n="expWeb4">
+            Website updates and maintenance
+          </li>
+
+          <li data-i18n="expWeb5">
+            Domain and hosting setup assistance
+          </li>
+
+          <li data-i18n="expWeb6">
+            Website performance improvements
+          </li>
+
+          <li data-i18n="expWeb7">
+            Website redesign and modernisation
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- SERVICE 5 — LANGUAGE -->
+
+      <article class="expertise-card">
+
+        <div class="service-image">
+
+          <img
+            src="godzya-language.png"
+            alt="French and English language translation services"
+            loading="lazy">
+
+        </div>
+
+        <h3 data-i18n="expLanguageTitle">
+          French Language & Document Services
+        </h3>
+
+        <p data-i18n="expLanguageDesc">
+          We help businesses and individuals
+          communicate professionally in French
+          and English through accurate translation,
+          document preparation and language support.
+        </p>
+
+        <ul class="service-details">
+
+          <li data-i18n="expLanguage1">
+            French to English document translation
+          </li>
+
+          <li data-i18n="expLanguage2">
+            English to French document translation
+          </li>
+
+          <li data-i18n="expLanguage3">
+            French and English proofreading
+          </li>
+
+          <li data-i18n="expLanguage4">
+            Business correspondence and emails
+          </li>
+
+          <li data-i18n="expLanguage5">
+            Document editing and formatting
+          </li>
+
+          <li data-i18n="expLanguage6">
+            Customer service document support
+          </li>
+
+          <li data-i18n="expLanguage7">
+            Bilingual business communication
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- SERVICE 6 — MICROSOFT OFFICE -->
+
+      <article class="expertise-card">
+
+        <div class="service-image">
+
+          <img
+            src="godzya-office.png"
+            alt="Microsoft Word, Excel and PowerPoint document services"
+            loading="lazy">
+
+        </div>
+
+        <h3 data-i18n="expOfficeTitle">
+          Microsoft Office & Documents
+        </h3>
+
+        <p data-i18n="expOfficeDesc">
+          We help businesses and individuals
+          create, organise and improve
+          professional documents, spreadsheets
+          and presentations for everyday
+          business needs.
+        </p>
+
+        <ul class="service-details">
+
+          <li data-i18n="expOffice1">
+            Microsoft Word document creation
+          </li>
+
+          <li data-i18n="expOffice2">
+            Professional document formatting
+          </li>
+
+          <li data-i18n="expOffice3">
+            Excel spreadsheet creation and editing
+          </li>
+
+          <li data-i18n="expOffice4">
+            PowerPoint presentation design
+          </li>
+
+          <li data-i18n="expOffice5">
+            PDF conversion and document editing
+          </li>
+
+          <li data-i18n="expOffice6">
+            Reports, templates and business forms
+          </li>
+
+          <li data-i18n="expOffice7">
+            Administrative document preparation
+          </li>
+
+        </ul>
+
+      </article>
 
     </div>
 
@@ -360,8 +971,212 @@
 
 </section>
 
-  <!-- ==========================================
-     GODZYA — SERVICES CALL TO ACTION
+
+<!-- ==========================================
+     OUR WORK — SELECTED PROJECTS
+========================================== -->
+
+<section class="godzya-selected-work" id="our-work">
+
+  <div class="section-inner">
+
+    <div class="section-heading">
+
+      <p class="section-label" data-i18n="portfolioLabel">
+        OUR ACCOMPLISHMENTS
+      </p>
+
+      <h2>
+
+        <span data-i18n="portfolioTitleStart">
+          Ideas Brought
+        </span>
+
+        <span data-i18n="portfolioTitleEnd">
+          to Life.
+        </span>
+
+      </h2>
+
+      <p class="section-intro" data-i18n="portfolioIntro">
+        Discover the brands and digital experiences
+        we're building through creativity,
+        business thinking and technology.
+      </p>
+
+    </div>
+
+
+    <div class="godzya-project-grid">
+
+
+      <!-- PROJECT 1 — GODZYA GROUP -->
+
+      <article class="godzya-project-card">
+
+        <div class="godzya-project-logo-box">
+
+          <img
+            src="godzya-geometric-g-face.png"
+            alt="GODZYA GROUP logo"
+            loading="lazy">
+
+        </div>
+
+        <div class="godzya-project-info">
+
+          <p class="godzya-project-category"
+             data-i18n="portfolioGodzyaCategory">
+            CORPORATE TECHNOLOGY
+          </p>
+
+          <h3>GODZYA GROUP</h3>
+
+          <p class="godzya-project-description"
+             data-i18n="portfolioGodzyaDescription">
+            Our corporate platform presenting
+            our expertise, vision and digital solutions.
+          </p>
+
+          <a
+            href="index.html"
+            class="godzya-project-link"
+            data-i18n="portfolioVisit">
+            Visit Website →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 2 — NAYAGLOW -->
+
+      <article class="godzya-project-card">
+
+        <div class="godzya-project-logo-box">
+
+          <img
+            src="IMG-20260915-WA0005.jpg"
+            alt="NayaGlow logo"
+            loading="lazy">
+
+        </div>
+
+        <div class="godzya-project-info">
+
+          <p class="godzya-project-category"
+             data-i18n="portfolioNayaCategory">
+            BEAUTY & DIGITAL EXPERIENCE
+          </p>
+
+          <h3>NayaGlow</h3>
+
+          <p class="godzya-project-description"
+             data-i18n="portfolioNayaDescription">
+            An elegant beauty and self-care
+            digital experience focused on
+            brand storytelling.
+          </p>
+
+          <span class="godzya-project-status"
+                data-i18n="portfolioConstruction">
+            Under Construction
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 3 — INÈS LUXEA DÉCO -->
+
+      <article class="godzya-project-card">
+
+        <div class="godzya-project-logo-box">
+
+          <img
+            src="IL Logo.png"
+            alt="INÈS LUXEA DÉCO logo"
+            loading="lazy">
+
+        </div>
+
+        <div class="godzya-project-info">
+
+          <p class="godzya-project-category"
+             data-i18n="portfolioInesCategory">
+            EVENTS & DECORATION
+          </p>
+
+          <h3>INÈS LUXEA DÉCO</h3>
+
+          <p class="godzya-project-description"
+             data-i18n="portfolioInesDescription">
+            A premium event-planning and decoration
+            website celebrating beautiful occasions
+            and personalized experiences.
+          </p>
+
+          <span class="godzya-project-status"
+                data-i18n="portfolioConstruction">
+            Under Construction
+          </span>
+
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT 4 — FUTURE PROJECTS -->
+
+      <article class="godzya-project-card">
+
+        <div class="godzya-project-logo-box">
+
+          <span
+            class="godzya-future-symbol"
+            aria-hidden="true">
+            +
+          </span>
+
+        </div>
+
+        <div class="godzya-project-info">
+
+          <p class="godzya-project-category"
+             data-i18n="portfolioFutureCategory">
+            INNOVATION & GROWTH
+          </p>
+
+          <h3 data-i18n="portfolioFutureTitle">
+            Future Projects
+          </h3>
+
+          <p class="godzya-project-description"
+             data-i18n="portfolioFutureDescription">
+            New collaborations and digital solutions
+            are on the way as GODZYA GROUP grows.
+          </p>
+
+          <span class="godzya-project-status"
+                data-i18n="portfolioComingSoon">
+            Coming Soon
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ==========================================
+     CALL TO ACTION
 ========================================== -->
 
 <section class="expertise-cta">
@@ -373,12 +1188,15 @@
     </p>
 
     <h2>
+
       <span data-i18n="expCtaTitleStart">
         Your Next Step Starts
       </span>
+
       <span data-i18n="expCtaTitleEnd">
         Here.
       </span>
+
     </h2>
 
     <p class="section-intro" data-i18n="expCtaDescription">
@@ -387,20 +1205,46 @@
       Tell us what you need.
     </p>
 
-    <a href="work.html#connect"
-       class="btn btn-primary"
-       data-i18n="expCtaButton">
+    <a
+      href="connect.html"
+      class="btn btn-primary"
+      data-i18n="expCtaButton">
       Start a Conversation →
     </a>
 
   </div>
 
 </section>
-  
+
+
 </main>
 
-  <!-- ==========================================
-     GODZYA CORPORATE FOOTER
+
+<!-- ==========================================
+     FLOATING WHATSAPP
+     SAME DESIGN AS HOMEPAGE
+========================================== -->
+
+<a
+  href="https://wa.me/27814905793"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with GODZYA GROUP on WhatsApp">
+
+  <span class="whatsapp-icon">
+    WA
+  </span>
+
+  <span class="whatsapp-text">
+    Chat with us
+  </span>
+
+</a>
+
+
+<!-- ==========================================
+     CORPORATE FOOTER
 ========================================== -->
 
 <footer class="site-footer">
@@ -409,8 +1253,13 @@
 
     <div class="footer-brand">
 
-      <span class="brand-name">GODZYA</span>
-      <span class="brand-group">GROUP</span>
+      <span class="brand-name">
+        GODZYA
+      </span>
+
+      <span class="brand-group">
+        GROUP
+      </span>
 
       <p data-i18n="footerSlogan">
         We Build. You Grow.
@@ -418,25 +1267,27 @@
 
     </div>
 
+
     <div class="footer-links">
 
       <a href="index.html" data-i18n="navHome">
         Home
       </a>
 
-      <a href="expertise.html" data-i18n="navExpertise">
-        Our Expertise
+      <a href="#our-services">
+        Our Services
       </a>
 
-      <a href="work.html" data-i18n="navWork">
+      <a href="#our-work">
         Our Work
       </a>
 
-      <a href="work.html#connect" data-i18n="navContact">
-        Let's Connect
+      <a href="connect.html" data-i18n="navContact">
+        GODZYA CONNECT
       </a>
 
     </div>
+
 
     <div class="footer-meta">
 
@@ -454,8 +1305,58 @@
 
 </footer>
 
-<!-- GODZYA JAVASCRIPT -->
+
+<!-- ==========================================
+     SHARED JAVASCRIPT
+========================================== -->
+
 <script src="script.js"></script>
+
+
+<!-- ==========================================
+     EXPERTISE SUBMENU
+========================================== -->
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const group =
+      document.querySelector(".expertise-nav-group");
+
+    const submenu =
+      document.querySelector(".expertise-submenu");
+
+    if (!group || !submenu) return;
+
+    function openSubmenu() {
+      submenu.hidden = false;
+    }
+
+    function closeSubmenu() {
+      submenu.hidden = true;
+    }
+
+    group.addEventListener("mouseenter", openSubmenu);
+
+    group.addEventListener("mouseleave", closeSubmenu);
+
+    group.addEventListener("focusin", openSubmenu);
+
+    group.addEventListener("focusout", function (event) {
+      if (!group.contains(event.relatedTarget)) {
+        closeSubmenu();
+      }
+    });
+
+    submenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeSubmenu);
+    });
+
+  });
+
+</script>
+
 
 </body>
 </html>
