@@ -213,8 +213,9 @@ expCtaTitleEnd: "commence ici.",
 expCtaDescription: "Vous avez un projet, un défi professionnel ou une tâche nécessitant un accompagnement ? Parlez-nous de vos besoins.",
 expCtaButton: "Contactez-nous →"
   }
+};
 
-   /* =====================================================
+ /* =====================================================
    GODZYA GROUP — EXPERTISE SERVICE TRANSLATIONS
    ENGLISH + FRENCH
 ===================================================== */
@@ -365,9 +366,8 @@ Object.assign(GODZYA_TRANSLATIONS.fr, {
   expOffice5: "Conversion PDF et modification de documents",
   expOffice6: "Rapports, modèles et formulaires professionnels",
   expOffice7: "Préparation de documents administratifs"
-
+   
 });
-};
 
 /* =================================================
    GODZYA — APPLY TRANSLATIONS
