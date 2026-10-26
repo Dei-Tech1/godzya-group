@@ -6303,3 +6303,49 @@ body:has(#portfolio) .work-page-intro {
 .leadership .section-heading h2 span:last-child {
   color: #46d9ff !important;
 }
+
+/* ==========================================
+   GODZYA — DESKTOP DESIGN POLISH
+========================================== */
+
+@media (min-width: 901px) {
+
+  /* EXPERTISE HERO */
+  .expertise-hero h1 span:first-child {
+    color: #ffffff !important;
+  }
+
+  .expertise-hero h1 span:last-child {
+    color: #46d9ff !important;
+  }
+
+  /* EXPERTISE SECTION HEADING */
+  .expertise-preview .section-heading h2 span:first-child {
+    color: #ffffff !important;
+  }
+
+  .expertise-preview .section-heading h2 span:last-child {
+    color: #46d9ff !important;
+  }
+
+  /* EXPERTISE CALL TO ACTION */
+  .expertise-cta h2 span:first-child {
+    color: #ffffff !important;
+  }
+
+  .expertise-cta h2 span:last-child {
+    color: #46d9ff !important;
+  }
+
+  /* BUTTON READABILITY */
+  .btn-primary {
+    color: #031018 !important;
+    font-weight: 700;
+    text-shadow: none;
+  }
+
+  .btn-primary span {
+    color: inherit;
+  }
+
+}
