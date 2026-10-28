@@ -6344,8 +6344,15 @@ body:has(#portfolio) .work-page-intro {
     text-shadow: none;
   }
 
-  .btn-primary span {
-    color: inherit;
-  }
+  /* =====================================================
+   GODZYA GROUP — SELECTED PROJECTS
+   WHITE + CYAN HEADING FIX
+===================================================== */
 
+.godzya-selected-work .section-heading h2 span:first-child {
+  color: #ffffff !important;
+}
+
+.godzya-selected-work .section-heading h2 span:last-child {
+  color: #46d9ff !important;
 }
