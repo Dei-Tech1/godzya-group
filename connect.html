@@ -1,1 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#050b14">
+
+  <meta
+    name="description"
+    content="GODZYA CONNECT — Business enquiries, partnerships, quotations, customer care and professional support."
+  >
+
+  <title>GODZYA CONNECT | GODZYA GROUP</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* ==========================================
+       GODZYA CONNECT
+       PREMIUM CORPORATE DESIGN
+    ========================================== */
+
+    :root {
+      --connect-bg: #050b14;
+      --connect-surface: #0a1625;
+      --connect-surface-light: #102237;
+      --connect-cyan: #46d9ff;
+      --connect-white: #ffffff;
+      --connect-muted: #a6b7c9;
+      --connect-border: rgba(70, 217, 255, .16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body.connect-page {
+      margin: 0;
+      background: var(--connect-bg);
+      color: var(--connect-white);
+      font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+    }
+
+    .connect-page a {
+      text-decoration: none;
+    }
+
+    .connect-page button,
+    .connect-page input,
+    .connect-page select,
+    .connect-page textarea {
+      font: inherit;
+    }
+
+    .connect-page button {
+      cursor: pointer;
+    }
+
+    .connect-container {
+      width: min(1200px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* ==========================================
+       NAVIGATION
+    ========================================== */
+
+    .connect-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(5, 11, 20, .96);
+      border-bottom: 1px solid var(--connect-border);
+      backdrop-filter: blur(20px);
+    }
+
+    .connect-nav {
+      width: min(1240px, calc(100% - 48px));
+      min-height: 86px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .connect-brand {
+      color: #fff;
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .connect-brand span {
+      color: var(--connect-cyan);
+    }
+
+    .connect-nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .connect-nav-links a {
+      color: #dce7f1;
+      font-size: 13px;
+      font-weight: 600;
+      transition: color .3s;
+    }
+
+    .connect-nav-links a:hover,
+    .connect-nav-links a.active {
+      color: var(--connect-cyan);
+    }
+
+    .connect-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .connect-language {
+      padding: 9px 12px;
+      border: 1px solid var(--connect-border);
+      border-radius: 7px;
+      color: #fff;
+      background: #0a1625;
+    }
+
+    .connect-language option {
+      color: #fff;
+      background: #0a1625;
+    }
+
+    .connect-menu-button {
+      display: none;
+      padding: 8px 12px;
+      border: 1px solid var(--connect-border);
+      border-radius: 7px;
+      color: #fff;
+      background: transparent;
+      font-size: 22px;
+    }
+
+    /* ==========================================
+       HERO
+    ========================================== */
+
+    .connect-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 130px 0 115px;
+      text-align: center;
+      background:
+        radial-gradient(
+          ellipse at 50% 0%,
+          rgba(70, 217, 255, .16),
+          transparent 60%
+        ),
+        linear-gradient(
+          180deg,
+          #081523 0%,
+          #050b14 100%
+        );
+    }
+
+    .connect-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .3;
+      background-image:
+        linear-gradient(
+          rgba(70,217,255,.06) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(70,217,255,.06) 1px,
+          transparent 1px
+        );
+      background-size: 65px 65px;
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent
+      );
+    }
+
+    .connect-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .connect-eyebrow {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: var(--connect-cyan);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .connect-hero h1 {
+      margin: 0 0 28px;
+      font-size: clamp(48px, 7vw, 100px);
+      line-height: 1.05;
+      letter-spacing: -4px;
+      font-weight: 800;
+    }
+
+    .connect-hero h1 span {
+      color: var(--connect-cyan);
+    }
+
+    .connect-hero-description {
+      max-width: 680px;
+      margin: auto;
+      color: var(--connect-muted);
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .connect-hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .connect-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 14px 25px;
+      border: 1px solid var(--connect-cyan);
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .3s;
+    }
+
+    .connect-btn-primary {
+      color: #05111b;
+      background: var(--connect-cyan);
+    }
+
+    .connect-btn-primary:hover {
+      background: #fff;
+      border-color: #fff;
+    }
+
+    .connect-btn-outline {
+      color: var(--connect-cyan);
+      background: transparent;
+    }
+
+    .connect-btn-outline:hover {
+      background: rgba(70,217,255,.1);
+    }
+
+    /* ==========================================
+       SECTION HEADINGS
+    ========================================== */
+
+    .connect-section {
+      padding: 100px 0;
+    }
+
+    .connect-section-header {
+      max-width: 760px;
+      margin: 0 auto 55px;
+      text-align: center;
+    }
+
+    .connect-section-header h2 {
+      margin: 12px 0 20px;
+      font-size: clamp(32px, 4vw, 55px);
+      line-height: 1.12;
+      letter-spacing: -2px;
+    }
+
+    .connect-section-header h2 span {
+      color: var(--connect-cyan);
+    }
+
+    .connect-section-header p {
+      color: var(--connect-muted);
+      line-height: 1.8;
+    }
+
+    /* ==========================================
+       DEPARTMENT CARDS
+    ========================================== */
+
+    .connect-department-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .connect-department-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 340px;
+      padding: 36px;
+      border: 1px solid var(--connect-border);
+      border-radius: 14px;
+      background: linear-gradient(
+        145deg,
+        #102237,
+        #081421
+      );
+      transition: .35s;
+    }
+
+    .connect-department-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--connect-cyan);
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    }
+
+    .connect-card-number {
+      color: var(--connect-cyan);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .connect-department-card h3 {
+      margin: 25px 0 15px;
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    .connect-department-card p {
+      color: var(--connect-muted);
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .connect-card-action {
+      margin-top: auto;
+      padding-top: 25px;
+      align-self: flex-start;
+      border: 0;
+      background: transparent;
+      color: var(--connect-cyan);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .connect-card-action:hover {
+      text-decoration: underline;
+    }
+
+    /* ==========================================
+       CUSTOMER REQUEST FORM
+    ========================================== */
+
+    .connect-form-section {
+      background: #081421;
+    }
+
+    .connect-form-wrapper {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px;
+      border: 1px solid var(--connect-border);
+      border-radius: 16px;
+      background: #0c1c2d;
+      box-shadow: 0 25px 80px rgba(0,0,0,.18);
+    }
+
+    .connect-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .connect-field {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .connect-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .connect-field label {
+      color: #e6eff8;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .connect-field input,
+    .connect-field select,
+    .connect-field textarea {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 7px;
+      outline: none;
+      color: #fff;
+      background: #071421;
+    }
+
+    .connect-field input:focus,
+    .connect-field select:focus,
+    .connect-field textarea:focus {
+      border-color: var(--connect-cyan);
+    }
+
+    .connect-field input::placeholder,
+    .connect-field textarea::placeholder {
+      color: #8396a9;
+    }
+
+    .connect-field select option {
+      background: #071421;
+      color: #fff;
+    }
+
+    .connect-field textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .connect-form-notice {
+      margin-bottom: 24px;
+      padding: 17px 20px;
+      border: 1px solid rgba(70,217,255,.2);
+      border-radius: 8px;
+      background: rgba(70,217,255,.05);
+      color: #b8c9d8;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .connect-submit {
+      width: 100%;
+      min-height: 55px;
+      border: none;
+      border-radius: 7px;
+      color: #05111b;
+      background: var(--connect-cyan);
+      font-weight: 800;
+    }
+
+    .connect-submit:disabled {
+      cursor: not-allowed;
+      opacity: .55;
+    }
+
+    /* ==========================================
+       TRACKING
+    ========================================== */
+
+    .connect-tracking {
+      text-align: center;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(70,217,255,.08),
+          transparent 65%
+        );
+    }
+
+    .connect-tracking-box {
+      max-width: 650px;
+      margin: 40px auto 0;
+      padding: 40px;
+      border: 1px solid var(--connect-border);
+      border-radius: 14px;
+      background: var(--connect-surface);
+    }
+
+    .connect-tracking-box label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    .connect-tracking-box input {
+      width: 100%;
+      padding: 17px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 7px;
+      color: #fff;
+      background: #071421;
+      margin-bottom: 18px;
+    }
+
+    .connect-tracking-box button {
+      width: 100%;
+    }
+
+    .connect-status-note {
+      margin-top: 20px;
+      color: var(--connect-muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    /* ==========================================
+       FOOTER
+    ========================================== */
+
+    .connect-footer {
+      padding: 60px 0 30px;
+      border-top: 1px solid var(--connect-border);
+      background: #030810;
+    }
+
+    .connect-footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 45px;
+    }
+
+    .connect-footer-brand {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .connect-footer-brand span {
+      color: var(--connect-cyan);
+    }
+
+    .connect-footer p {
+      color: var(--connect-muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .connect-footer-links {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    .connect-footer-links a {
+      color: #dce7f1;
+      font-size: 13px;
+    }
+
+    .connect-footer-links a:hover {
+      color: var(--connect-cyan);
+    }
+
+    .connect-copyright {
+      padding-top: 25px;
+      border-top: 1px solid var(--connect-border);
+      text-align: center;
+      color: #8a9bad;
+      font-size: 12px;
+    }
+
+    /* ==========================================
+       RESPONSIVE
+    ========================================== */
+
+    @media (max-width: 900px) {
+
+      .connect-nav {
+        flex-wrap: wrap;
+        min-height: 76px;
+      }
+
+      .connect-menu-button {
+        display: block;
+      }
+
+      .connect-nav-links {
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 0 25px;
+      }
+
+      .connect-nav-links.open {
+        display: flex;
+      }
+
+      .connect-nav-links a {
+        padding: 14px 0;
+      }
+
+      .connect-department-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .connect-department-card {
+        min-height: auto;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .connect-hero {
+        padding: 100px 0 85px;
+      }
+
+      .connect-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .connect-section {
+        padding: 70px 0;
+      }
+
+      .connect-form-wrapper {
+        padding: 25px 20px;
+      }
+
+      .connect-form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .connect-tracking-box {
+        padding: 25px 20px;
+      }
+
+      .connect-footer-grid {
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body class="connect-page">
+
+  <!-- ==========================================
+       HEADER
+  ========================================== -->
+
+  <header class="connect-header">
+
+    <nav class="connect-nav" aria-label="Main navigation">
+
+      <a href="index.html" class="connect-brand">
+        GODZYA <span>GROUP</span>
+      </a>
+
+      <div
+        class="connect-nav-links"
+        id="connectNavLinks"
+      >
+
+        <a href="index.html" data-en="Home" data-fr="Accueil">
+          Home
+        </a>
+
+        <a
+          href="expertise.html"
+          data-en="Our Expertise"
+          data-fr="Nos expertises"
+        >
+          Our Expertise
+        </a>
+
+        <a
+          href="expertise.html#our-work"
+          data-en="Our Work"
+          data-fr="Nos réalisations"
+        >
+          Our Work
+        </a>
+
+        <a
+          href="work.html"
+          data-en="Our Accomplishments"
+          data-fr="Nos accomplissements"
+        >
+          Our Accomplishments
+        </a>
+
+        <a
+          href="connect.html"
+          class="active"
+        >
+          GODZYA CONNECT
+        </a>
+
+      </div>
+
+      <div class="connect-nav-actions">
+
+        <select
+          id="connectLanguage"
+          class="connect-language"
+          aria-label="Select language"
+        >
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+
+        <button
+          type="button"
+          class="connect-menu-button"
+          id="connectMenuButton"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="connectNavLinks"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- ==========================================
+         HERO
+    ========================================== -->
+
+    <section class="connect-hero">
+
+      <div class="connect-container connect-hero-content">
+
+        <span
+          class="connect-eyebrow"
+          data-en="GODZYA GROUP • CUSTOMER EXPERIENCE"
+          data-fr="GODZYA GROUP • RELATION CLIENT"
+        >
+          GODZYA GROUP • CUSTOMER EXPERIENCE
+        </span>
+
+        <h1>
+          GODZYA <span>CONNECT.</span>
+        </h1>
+
+        <p
+          class="connect-hero-description"
+          data-en="Connecting people, opportunities and solutions. Whether you're exploring a partnership, requesting a quotation or seeking assistance, our team is ready to guide you."
+          data-fr="Nous connectons les personnes, les opportunités et les solutions. Que vous souhaitiez proposer un partenariat, demander un devis ou obtenir de l'aide, notre équipe est à votre écoute."
+        >
+          Connecting people, opportunities and solutions.
+          Whether you're exploring a partnership,
+          requesting a quotation or seeking assistance,
+          our team is ready to guide you.
+        </p>
+
+        <div class="connect-hero-actions">
+
+          <a
+            href="#request"
+            class="connect-btn connect-btn-primary"
+            data-en="Submit a Request →"
+            data-fr="Envoyer une demande →"
+          >
+            Submit a Request →
+          </a>
+
+          <a
+            href="#tracking"
+            class="connect-btn connect-btn-outline"
+            data-en="Track Your Request"
+            data-fr="Suivre votre demande"
+          >
+            Track Your Request
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         DEPARTMENTS
+    ========================================== -->
+
+    <section
+      class="connect-section"
+      id="departments"
+    >
+
+      <div class="connect-container">
+
+        <div class="connect-section-header">
+
+          <span
+            class="connect-eyebrow"
+            data-en="OUR DEPARTMENTS"
+            data-fr="NOS DÉPARTEMENTS"
+          >
+            OUR DEPARTMENTS
+          </span>
+
+          <h2>
+            <span
+              data-en="How Can We"
+              data-fr="Comment pouvons-nous"
+            >
+              How Can We
+            </span>
+            <span
+              data-en="Help You?"
+              data-fr="vous aider ?"
+            >
+              Help You?
+            </span>
+          </h2>
+
+          <p
+            data-en="Select the department that best matches your enquiry. We'll guide your request to the appropriate team."
+            data-fr="Sélectionnez le département correspondant à votre demande. Nous l'orienterons vers l'équipe compétente."
+          >
+            Select the department that best matches
+            your enquiry. We'll guide your request
+            to the appropriate team.
+          </p>
+
+        </div>
+
+
+        <div class="connect-department-grid">
+
+          <!-- BUSINESS -->
+
+          <article class="connect-department-card">
+
+            <span class="connect-card-number">
+              01 / BUSINESS
+            </span>
+
+            <h3
+              data-en="Business & Partnerships"
+              data-fr="Affaires et partenariats"
+            >
+              Business & Partnerships
+            </h3>
+
+            <p
+              data-en="Explore strategic partnerships, business proposals, corporate collaborations and new opportunities."
+              data-fr="Explorez les partenariats stratégiques, les propositions commerciales, les collaborations et les nouvelles opportunités."
+            >
+              Explore strategic partnerships,
+              business proposals, corporate
+              collaborations and new opportunities.
+            </p>
+
+            <button
+              type="button"
+              class="connect-card-action"
+              data-department="business"
+              data-en="Start a Conversation →"
+              data-fr="Démarrer une conversation →"
+            >
+              Start a Conversation →
+            </button>
+
+          </article>
+
+
+          <!-- FINANCE -->
+
+          <article class="connect-department-card">
+
+            <span class="connect-card-number">
+              02 / FINANCE
+            </span>
+
+            <h3
+              data-en="Finance & Quotations"
+              data-fr="Finances et devis"
+            >
+              Finance & Quotations
+            </h3>
+
+            <p
+              data-en="Request quotations, discuss contracts, invoices, payments and financial administration."
+              data-fr="Demandez des devis ou contactez-nous concernant les contrats, factures, paiements et questions financières."
+            >
+              Request quotations, discuss contracts,
+              invoices, payments and financial
+              administration.
+            </p>
+
+            <button
+              type="button"
+              class="connect-card-action"
+              data-department="finance"
+              data-en="Request Assistance →"
+              data-fr="Demander de l'aide →"
+            >
+              Request Assistance →
+            </button>
+
+          </article>
+
+
+          <!-- CUSTOMER CARE -->
+
+          <article class="connect-department-card">
+
+            <span class="connect-card-number">
+              03 / SUPPORT
+            </span>
+
+            <h3
+              data-en="Customer Care"
+              data-fr="Service client"
+            >
+              Customer Care
+            </h3>
+
+            <p
+              data-en="Get assistance with general enquiries, complaints, compliments, feedback and service-related matters."
+              data-fr="Obtenez de l'aide pour vos questions générales, réclamations, compliments, commentaires et demandes de service."
+            >
+              Get assistance with general enquiries,
+              complaints, compliments, feedback
+              and service-related matters.
+            </p>
+
+            <button
+              type="button"
+              class="connect-card-action"
+              data-department="support"
+              data-en="Contact Customer Care →"
+              data-fr="Contacter le service client →"
+            >
+              Contact Customer Care →
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         CUSTOMER REQUEST FORM
+    ========================================== -->
+
+    <section
+      class="connect-section connect-form-section"
+      id="request"
+    >
+
+      <div class="connect-container">
+
+        <div class="connect-section-header">
+
+          <span
+            class="connect-eyebrow"
+            data-en="CUSTOMER REQUEST CENTRE"
+            data-fr="CENTRE DE DEMANDES"
+          >
+            CUSTOMER REQUEST CENTRE
+          </span>
+
+          <h2>
+            <span
+              data-en="Submit Your"
+              data-fr="Envoyez votre"
+            >
+              Submit Your
+            </span>
+            <span
+              data-en="Request."
+              data-fr="demande."
+            >
+              Request.
+            </span>
+          </h2>
+
+          <p
+            data-en="Tell us how we can assist you. Your request will be directed to the relevant department once our secure submission service is activated."
+            data-fr="Expliquez-nous votre demande. Elle sera transmise au département concerné après l'activation de notre service sécurisé."
+          >
+            Tell us how we can assist you.
+            Your request will be directed to the
+            relevant department once our secure
+            submission service is activated.
+          </p>
+
+        </div>
+
+
+        <div class="connect-form-wrapper">
+
+          <form
+            id="godzyaRequestForm"
+            autocomplete="on"
+          >
+
+            <div class="connect-form-grid">
+
+              <div class="connect-field">
+
+                <label
+                  for="customerName"
+                  data-en="Full Name"
+                  data-fr="Nom complet"
+                >
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  id="customerName"
+                  name="customer_name"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                >
+
+              </div>
+
+
+              <div class="connect-field">
+
+                <label
+                  for="customerEmail"
+                  data-en="Email Address"
+                  data-fr="Adresse e-mail"
+                >
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="customerEmail"
+                  name="customer_email"
+                  placeholder="Your email address"
+                  autocomplete="email"
+                  required
+                >
+
+              </div>
+
+
+              <div class="connect-field">
+
+                <label
+                  for="customerPhone"
+                  data-en="Phone Number (Optional)"
+                  data-fr="Téléphone (facultatif)"
+                >
+                  Phone Number (Optional)
+                </label>
+
+                <input
+                  type="tel"
+                  id="customerPhone"
+                  name="customer_phone"
+                  placeholder="Your contact number"
+                  autocomplete="tel"
+                >
+
+              </div>
+
+
+              <div class="connect-field">
+
+                <label
+                  for="customerCompany"
+                  data-en="Company (Optional)"
+                  data-fr="Entreprise (facultatif)"
+                >
+                  Company (Optional)
+                </label>
+
+                <input
+                  type="text"
+                  id="customerCompany"
+                  name="company"
+                  placeholder="Company name"
+                  autocomplete="organization"
+                >
+
+              </div>
+
+
+              <div class="connect-field full">
+
+                <label
+                  for="requestDepartment"
+                  data-en="Select Department"
+                  data-fr="Choisir un département"
+                >
+                  Select Department
+                </label>
+
+                <select
+                  id="requestDepartment"
+                  name="department"
+                  required
+                >
+
+                  <option value="">
+                    Select a department
+                  </option>
+
+                  <option value="business">
+                    Business & Partnerships
+                  </option>
+
+                  <option value="finance">
+                    Finance & Quotations
+                  </option>
+
+                  <option value="support">
+                    Customer Care
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="connect-field full">
+
+                <label
+                  for="requestType"
+                  data-en="Type of Request"
+                  data-fr="Type de demande"
+                >
+                  Type of Request
+                </label>
+
+                <select
+                  id="requestType"
+                  name="request_type"
+                  required
+                >
+
+                  <option value="">
+                    Select request type
+                  </option>
+
+                  <option value="general">
+                    General Enquiry
+                  </option>
+
+                  <option value="partnership">
+                    Business Partnership
+                  </option>
+
+                  <option value="proposal">
+                    Business Proposal
+                  </option>
+
+                  <option value="quotation">
+                    Quotation Request
+                  </option>
+
+                  <option value="contract">
+                    Contract Enquiry
+                  </option>
+
+                  <option value="invoice">
+                    Invoice or Payment
+                  </option>
+
+                  <option value="complaint">
+                    Customer Complaint
+                  </option>
+
+                  <option value="compliment">
+                    Compliment
+                  </option>
+
+                  <option value="feedback">
+                    Customer Feedback
+                  </option>
+
+                  <option value="support">
+                    Customer Support
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="connect-field full">
+
+                <label
+                  for="requestSubject"
+                  data-en="Subject"
+                  data-fr="Objet"
+                >
+                  Subject
+                </label>
+
+                <input
+                  type="text"
+                  id="requestSubject"
+                  name="subject"
+                  placeholder="Brief description of your request"
+                  maxlength="150"
+                  required
+                >
+
+              </div>
+
+
+              <div class="connect-field full">
+
+                <label
+                  for="requestMessage"
+                  data-en="Your Message"
+                  data-fr="Votre message"
+                >
+                  Your Message
+                </label>
+
+                <textarea
+                  id="requestMessage"
+                  name="message"
+                  placeholder="Tell us how we can assist you..."
+                  maxlength="5000"
+                  required
+                ></textarea>
+
+              </div>
+
+            </div>
+
+
+            <div
+              class="connect-form-notice"
+              id="connectFormNotice"
+              role="status"
+            >
+              Our secure request submission system
+              is being prepared. This form is
+              currently a preview and does not
+              send customer information.
+            </div>
+
+
+            <button
+              type="submit"
+              class="connect-submit"
+              id="connectSubmitButton"
+              disabled
+              data-en="Request Submission Coming Soon"
+              data-fr="Envoi des demandes bientôt disponible"
+            >
+              Request Submission Coming Soon
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         REFERENCE TRACKING
+    ========================================== -->
+
+    <section
+      class="connect-section connect-tracking"
+      id="tracking"
+    >
+
+      <div class="connect-container">
+
+        <div class="connect-section-header">
+
+          <span
+            class="connect-eyebrow"
+            data-en="REQUEST MANAGEMENT"
+            data-fr="SUIVI DES DEMANDES"
+          >
+            REQUEST MANAGEMENT
+          </span>
+
+          <h2>
+            <span
+              data-en="Track Your"
+              data-fr="Suivez votre"
+            >
+              Track Your
+            </span>
+            <span
+              data-en="Request."
+              data-fr="demande."
+            >
+              Request.
+            </span>
+          </h2>
+
+          <p
+            data-en="Our planned tracking system will allow customers to check request progress securely using a reference number and identity verification."
+            data-fr="Notre futur système de suivi permettra aux clients de consulter l'avancement de leur demande en toute sécurité avec un numéro de référence et une vérification d'identité."
+          >
+            Our planned tracking system will allow
+            customers to check request progress
+            securely using a reference number
+            and identity verification.
+          </p>
+
+        </div>
+
+
+        <div class="connect-tracking-box">
+
+          <label
+            for="trackingReference"
+            data-en="Your Reference Number"
+            data-fr="Votre numéro de référence"
+          >
+            Your Reference Number
+          </label>
+
+          <input
+            type="text"
+            id="trackingReference"
+            placeholder="GZ-XXXX-2026-0001"
+            disabled
+          >
+
+          <button
+            type="button"
+            class="connect-btn connect-btn-primary"
+            disabled
+            data-en="Tracking Coming Soon"
+            data-fr="Suivi bientôt disponible"
+          >
+            Tracking Coming Soon
+          </button>
+
+          <p
+            class="connect-status-note"
+            data-en="Reference-number tracking will become available after our secure customer management system is connected."
+            data-fr="Le suivi par numéro de référence sera disponible après la connexion de notre système sécurisé de gestion des demandes."
+          >
+            Reference-number tracking will become
+            available after our secure customer
+            management system is connected.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       FOOTER
+  ========================================== -->
+
+  <footer class="connect-footer">
+
+    <div class="connect-container">
+
+      <div class="connect-footer-grid">
+
+        <div>
+
+          <div class="connect-footer-brand">
+            GODZYA <span>GROUP</span>
+          </div>
+
+          <p>We Build. You Grow.</p>
+
+          <p>
+            AI • Data • Business • Technology
+          </p>
+
+          <p>
+            South Africa • Building Beyond Borders
+          </p>
+
+        </div>
+
+
+        <div class="connect-footer-links">
+
+          <a href="index.html">Home</a>
+
+          <a href="expertise.html">
+            Our Expertise
+          </a>
+
+          <a href="work.html">
+            Our Accomplishments
+          </a>
+
+          <a href="connect.html">
+            GODZYA CONNECT
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="connect-copyright">
+
+        © <span id="connectYear"></span>
+        GODZYA GROUP.
+        All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ==========================================
+       PAGE JAVASCRIPT
+  ========================================== -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      /* ========================================
+         COPYRIGHT YEAR
+      ======================================== */
+
+      const yearElement =
+        document.getElementById("connectYear");
+
+      if (yearElement) {
+        yearElement.textContent =
+          new Date().getFullYear();
+      }
+
+
+      /* ========================================
+         MOBILE NAVIGATION
+      ======================================== */
+
+      const menuButton =
+        document.getElementById("connectMenuButton");
+
+      const navLinks =
+        document.getElementById("connectNavLinks");
+
+      if (menuButton && navLinks) {
+
+        menuButton.addEventListener("click", function () {
+
+          const isOpen =
+            navLinks.classList.toggle("open");
+
+          menuButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+          );
+
+        });
+
+        navLinks.querySelectorAll("a").forEach(function (link) {
+
+          link.addEventListener("click", function () {
+
+            navLinks.classList.remove("open");
+
+            menuButton.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+          });
+
+        });
+
+      }
+
+
+      /* ========================================
+         LANGUAGE SYSTEM
+      ======================================== */
+
+      const languageSelector =
+        document.getElementById("connectLanguage");
+
+      function applyConnectLanguage(language) {
+
+        document.documentElement.lang = language;
+
+        document.querySelectorAll(
+          "[data-en][data-fr]"
+        ).forEach(function (element) {
+
+          const translatedText =
+            element.getAttribute("data-" + language);
+
+          if (translatedText !== null) {
+            element.textContent = translatedText;
+          }
+
+        });
+
+      }
+
+      let savedLanguage = "en";
+
+      try {
+
+        const storedLanguage =
+          localStorage.getItem("godzyaLanguage");
+
+        if (storedLanguage === "fr") {
+          savedLanguage = "fr";
+        }
+
+      } catch (error) {
+
+        savedLanguage = "en";
+
+      }
+
+      if (languageSelector) {
+
+        languageSelector.value = savedLanguage;
+
+        applyConnectLanguage(savedLanguage);
+
+        languageSelector.addEventListener(
+          "change",
+          function () {
+
+            const selectedLanguage =
+              languageSelector.value;
+
+            applyConnectLanguage(selectedLanguage);
+
+            try {
+
+              localStorage.setItem(
+                "godzyaLanguage",
+                selectedLanguage
+              );
+
+            } catch (error) {
+
+              // Language still works without storage.
+
+            }
+
+          }
+        );
+
+      }
+
+
+      /* ========================================
+         DEPARTMENT SELECTION
+      ======================================== */
+
+      const departmentSelect =
+        document.getElementById("requestDepartment");
+
+      const requestTypeSelect =
+        document.getElementById("requestType");
+
+      const departmentButtons =
+        document.querySelectorAll(
+          "[data-department]"
+        );
+
+      const departmentDefaultTypes = {
+
+        business: "partnership",
+
+        finance: "quotation",
+
+        support: "support"
+
+      };
+
+      departmentButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+          const department =
+            button.getAttribute("data-department");
+
+          if (departmentSelect) {
+
+            departmentSelect.value = department;
+
+          }
+
+          if (requestTypeSelect) {
+
+            requestTypeSelect.value =
+              departmentDefaultTypes[department] || "";
+
+          }
+
+          const requestSection =
+            document.getElementById("request");
+
+          if (requestSection) {
+
+            requestSection.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+
+          }
+
+        });
+
+      });
+
+
+      /* ========================================
+         REQUEST FORM — PREVIEW MODE
+      ======================================== */
+
+      const requestForm =
+        document.getElementById("godzyaRequestForm");
+
+      if (requestForm) {
+
+        requestForm.addEventListener(
+          "submit",
+          function (event) {
+
+            event.preventDefault();
+
+            // No customer data is sent or stored.
+            // A secure backend must be configured
+            // before enabling submission.
+
+          }
+        );
+
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>
