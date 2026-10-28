@@ -570,6 +570,103 @@ applyLanguage(activeLanguage);
 
 }
 
+/* =====================================================
+   GODZYA GROUP — PORTFOLIO TRANSLATIONS
+   ENGLISH + FRENCH
+===================================================== */
+
+Object.assign(GODZYA_TRANSLATIONS.en, {
+
+  portfolioIntro:
+    "Discover the brands and digital experiences we're building through creativity, business thinking and technology.",
+
+  portfolioGodzyaCategory:
+    "CORPORATE TECHNOLOGY",
+
+  portfolioGodzyaDescription:
+    "Our corporate platform presenting our expertise, vision and digital solutions.",
+
+  portfolioVisit:
+    "Visit Website →",
+
+  portfolioNayaCategory:
+    "BEAUTY & DIGITAL EXPERIENCE",
+
+  portfolioNayaDescription:
+    "An elegant beauty and self-care digital experience focused on brand storytelling.",
+
+  portfolioConstruction:
+    "Under Construction",
+
+  portfolioInesCategory:
+    "EVENTS & DECORATION",
+
+  portfolioInesDescription:
+    "A premium event-planning and decoration website celebrating beautiful occasions and personalized experiences.",
+
+  portfolioFutureCategory:
+    "INNOVATION & GROWTH",
+
+  portfolioFutureTitle:
+    "Future Projects",
+
+  portfolioFutureDescription:
+    "New collaborations and digital solutions are on the way as GODZYA GROUP grows.",
+
+  portfolioComingSoon:
+    "Coming Soon"
+
+});
+
+
+Object.assign(GODZYA_TRANSLATIONS.fr, {
+
+  portfolioIntro:
+    "Découvrez les marques et les expériences numériques que nous développons grâce à la créativité, à la stratégie d'entreprise et à la technologie.",
+
+  portfolioGodzyaCategory:
+    "TECHNOLOGIE D'ENTREPRISE",
+
+  portfolioGodzyaDescription:
+    "Notre plateforme professionnelle présentant nos expertises, notre vision et nos solutions numériques.",
+
+  portfolioVisit:
+    "Visiter le site →",
+
+  portfolioNayaCategory:
+    "BEAUTÉ & EXPÉRIENCE NUMÉRIQUE",
+
+  portfolioNayaDescription:
+    "Une expérience numérique élégante dédiée à la beauté et au bien-être, mettant en valeur l'identité et l'histoire de la marque.",
+
+  portfolioConstruction:
+    "En cours de réalisation",
+
+  portfolioInesCategory:
+    "ÉVÉNEMENTIEL & DÉCORATION",
+
+  portfolioInesDescription:
+    "Un site haut de gamme dédié à l'organisation et à la décoration d'événements, célébrant les belles occasions et les expériences personnalisées.",
+
+  portfolioFutureCategory:
+    "INNOVATION & CROISSANCE",
+
+  portfolioFutureTitle:
+    "Projets à venir",
+
+  portfolioFutureDescription:
+    "De nouvelles collaborations et solutions numériques verront bientôt le jour au rythme du développement de GODZYA GROUP.",
+
+  portfolioComingSoon:
+    "Prochainement"
+
+});
+
+
+/* =====================================================
+   INITIALIZE GODZYA
+===================================================== */
+
 document.addEventListener(
   "DOMContentLoaded",
   initializeGodzya
