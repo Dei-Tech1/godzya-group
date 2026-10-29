@@ -742,6 +742,93 @@ body.connect-page {
     font-size: clamp(34px, 10vw, 48px);
   }
 }
+    
+/* ==========================================
+   GODZYA CONNECT
+   HOMEPAGE-STYLE MOBILE NAVIGATION
+========================================== */
+
+@media (max-width: 900px) {
+
+  /* Keep the header at a consistent height */
+  .connect-header {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .connect-nav {
+    min-height: 82px;
+    position: relative;
+  }
+
+  /* Floating navigation panel */
+  .connect-nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: min(520px, calc(100vw - 48px));
+
+    padding: 22px 30px;
+
+    background: rgba(3, 10, 19, 0.97);
+    border: 1px solid rgba(70, 217, 255, 0.16);
+    border-radius: 24px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(18px);
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    z-index: 1100;
+  }
+
+  /* Opened menu */
+  .connect-nav-links.open {
+    display: flex;
+  }
+
+  /* Menu links */
+  .connect-nav-links a {
+    display: block;
+    width: 100%;
+
+    padding: 17px 4px;
+
+    color: #b8c7d4;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .connect-nav-links a:hover,
+  .connect-nav-links a.active {
+    color: #46d9ff;
+  }
+
+  /* Keep the language and hamburger controls aligned */
+  .connect-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+
+  .connect-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+}
+
 
   </style>
 
