@@ -90,8 +90,72 @@
   outline: 2px solid #46d9ff;
   outline-offset: 3px;
 }
-  
+
+   
+/* ==========================================
+   ABOUT US — PREMIUM LANGUAGE MENU 01C-4
+========================================== */
+
+.about-page .about-language-selector {
+  position: relative;
+}
+
+.about-page .about-language-button {
+  min-width: 42px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(70, 217, 255, .35);
+  border-radius: 999px;
+  background: rgba(70, 217, 255, .04);
+  color: #46d9ff;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.about-page .about-language-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 100;
+  width: 170px;
+  padding: 8px;
+  border: 1px solid rgba(70, 217, 255, .2);
+  border-radius: 12px;
+  background: #0b1928;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .4);
+}
+
+.about-page .about-language-menu[hidden] {
+  display: none;
+}
+
+.about-page .about-language-menu button {
+  display: block;
+  width: 100%;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #d8e5ed;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.about-page .about-language-menu button:hover,
+.about-page .about-language-menu button:focus-visible {
+  background: rgba(70, 217, 255, .12);
+  color: #46d9ff;
+}
+
+.about-page .about-language-button:focus-visible {
+  outline: 2px solid #46d9ff;
+  outline-offset: 3px;
+   }
+   
 </style>
+   
 </head>
 <body class="about-page">
 <a class="about-skip" href="#main" data-t="skip">Skip to content</a>
