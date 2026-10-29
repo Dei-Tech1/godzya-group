@@ -398,7 +398,8 @@ languageMenu.querySelectorAll('[data-lang]').forEach(button => {
 });
 
 document.addEventListener('click', event => {
-  if (!event.target.closest('.about-language-selector')) {
+  
+if (!event.target.closest('.language-selector')) {
     closeAboutLanguageMenu();
   }
 });
