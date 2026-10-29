@@ -6356,3 +6356,99 @@ body:has(#portfolio) .work-page-intro {
 .godzya-selected-work .section-heading h2 span:last-child {
   color: #46d9ff !important;
 }
+
+/* ==========================================
+   GODZYA GROUP — OUR STORY INTRODUCTION
+========================================== */
+
+.godzya-story {
+  position: relative;
+  padding: 120px 24px;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(70, 217, 255, .12),
+      transparent 65%
+    ),
+    #050b14;
+  border-top: 1px solid rgba(70, 217, 255, .12);
+}
+
+.godzya-story-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.godzya-story-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 22px 0 28px;
+  font-size: clamp(38px, 6vw, 76px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.godzya-story-title span:first-child {
+  color: #ffffff;
+}
+
+.godzya-story-title span:last-child {
+  color: #46d9ff;
+}
+
+.godzya-story-intro,
+.godzya-story-description {
+  max-width: 650px;
+  margin: 0 auto 32px;
+  color: #b8c8d6;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.godzya-story-quote {
+  margin: 45px auto 20px;
+  padding: 40px;
+  border: 1px solid rgba(70, 217, 255, .22);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .025);
+  color: #ffffff;
+  font-size: clamp(19px, 2.6vw, 29px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.godzya-story-signature {
+  margin-bottom: 38px;
+  color: #46d9ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .15em;
+}
+
+.godzya-story .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .godzya-story {
+    padding: 80px 20px;
+  }
+
+  .godzya-story-quote {
+    padding: 28px 22px;
+  }
+
+  .godzya-story-intro,
+  .godzya-story-description {
+    font-size: 14px;
+  }
+     }
+   
