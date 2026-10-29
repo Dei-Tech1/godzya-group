@@ -99,6 +99,58 @@
 .about-page .about-hero h1 span:last-child {
   color: #46d9ff;
    }
+
+   
+/* ==========================================
+   ABOUT US — HERO REFINEMENT 02B
+========================================== */
+
+.about-page .about-hero {
+  padding: 140px 0 125px;
+}
+
+.about-page .about-hero h1 {
+  max-width: 950px;
+  margin: 0;
+  font-size: clamp(44px, 6.5vw, 88px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.about-page .about-hero .about-lead {
+  max-width: 680px;
+  margin-top: 30px;
+  line-height: 1.75;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .about-page .about-hero {
+    padding: 105px 0 95px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .about-page .about-hero {
+    padding: 85px 0 80px;
+  }
+
+  .about-page .about-hero h1 {
+    font-size: clamp(36px, 8vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -.035em;
+  }
+
+  .about-page .about-hero .about-lead {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
    
 </style>
    
