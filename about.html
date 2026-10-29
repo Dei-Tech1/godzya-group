@@ -186,8 +186,73 @@ pt:{cofounderRole:'Cofundadora e diretora de operações · GODZYA GROUP',cofoun
 de:{cofounderRole:'Mitgründerin und Betriebsdirektorin · GODZYA GROUP',cofounderText:'Als Teil des Führungsteams von GODZYA GROUP unterstützt sie die Ausrichtung und den Betrieb des Unternehmens.',cofounderContact:'GODZYA kontaktieren',skip:'Zum Inhalt springen',home:'Startseite',expertise:'Unsere Expertise',about:'Über uns',connect:'GODZYA CONNECT',eyebrow:'MENSCHEN · ZWECK · VISION',heroA:'Auf Erfahrung gebaut.',heroB:'Von Sinn angetrieben.',heroText:'Lernen Sie die Menschen, Werte und Vision hinter GODZYA GROUP kennen.',whoLabel:'UNSERE GESCHICHTE',whoA:'Wer wir',whoB:'sind.',whoText1:'GODZYA GROUP wurde aus der Überzeugung gegründet, dass Wissen, Innovation und Entschlossenheit Chancen schaffen.',whoText2:'Wir verbinden Erfahrung in Kundenbeziehungen, Kommunikation, Geschäftsabläufen und digitalen Lösungen.',whoText3:'Unser Ansatz beruht auf kontinuierlichem Lernen und praktischen Lösungen.',valuesLabel:'UNSERE LEITLINIEN',valuesA:'Unser Zweck.',valuesB:'Unsere Prinzipien.',mission:'Unsere Mission',missionText:'Menschen und Organisationen durch praktische Geschäfts-, Daten- und Technologielösungen voranzubringen.',vision:'Unsere Vision',visionText:'Ein vertrauenswürdiges Unternehmen aufzubauen, das Erfahrung, Innovation und Chancen über Grenzen hinweg verbindet.',values:'Unsere Werte',valuesText:'Integrität, lebenslanges Lernen, Zusammenarbeit, Verantwortung und sinnvolle Innovation.',peopleLabel:'DIE MENSCHEN HINTER GODZYA',peopleA:'Führung mit',peopleB:'Sinn.',role:'Gründer und Geschäftsführer · GODZYA GROUP',philosophy:'Meine Philosophie',quote:'„Das Leben ist eine fortwährende Reise des Lernens. Bildung gibt uns Wissen, Erfahrung gibt uns Weisheit und Ausdauer gibt uns die Kraft, unsere Träume zu verwirklichen.“',bioTitle:'Über den Gründer',bio1:'Dei Bouya ist Unternehmer, Gründer und Geschäftsführer von GODZYA GROUP. Das Unternehmen beruht auf dem Glauben, dass Wissen, Innovation und Entschlossenheit bedeutende Chancen schaffen.',bio2:'Mit mehr als zehn Jahren Berufserfahrung im Kundenservice und internationalen Geschäftsumfeld bringt Dei fundierte Kenntnisse in Kommunikation, Kundenbeziehungen, Problemlösung und operativer Exzellenz mit.',bio3:'Sein beruflicher Weg zeigt sein Engagement für Weiterbildung, persönliche Entwicklung und Anpassungsfähigkeit. Er ist überzeugt, dass Lernen niemals aufhören sollte, unabhängig von Alter, Herkunft oder Umständen.',bio4:'Aus Neugier und Leidenschaft für Technologie, Geschäftsentwicklung und digitale Innovation gründete Dei GODZYA GROUP, um Menschen und Organisationen durch praktische, moderne Lösungen neue Möglichkeiten zu eröffnen.',bio5:'Für ihn misst sich Erfolg nicht nur an Leistungen, sondern auch am erworbenen Wissen, überwundenen Herausforderungen und der positiven Wirkung.',leadTitle:'Führungsphilosophie',leadText:'Ständig lernen. Sinnvoll führen. Mit Integrität aufbauen. Über Grenzen hinauswachsen.',messageTitle:'Persönliche Botschaft',message:'„Ich glaube, dass unser Ausgangspunkt im Leben nicht bestimmt, wie weit wir kommen können. Jede Herausforderung lehrt uns etwas, jede Erfahrung prägt unseren Charakter und jede Gelegenheit zu lernen bringt uns der Zukunft näher, die wir gestalten möchten. Mein Ziel ist nicht nur der Aufbau eines erfolgreichen Unternehmens, sondern etwas Sinnvolles zu schaffen, das andere inspiriert, an ihr Potenzial zu glauben.“',signature:'Gründer und Geschäftsführer — GODZYA GROUP',founderContact:'Gründer kontaktieren',togetherLabel:'GEMEINSAM GESTALTEN',togetherA:'Das nächste Kapitel',togetherB:'beginnt hier.',togetherText:'Haben Sie ein Projekt, eine Frage oder eine Idee zur Zusammenarbeit? Kontaktieren Sie uns.',togetherBtn:'GODZYA CONNECT besuchen',footerTag:'Wir bauen. Sie wachsen.',rights:'Alle Rechte vorbehalten.'}
 };
 const base={};document.querySelectorAll('[data-t]').forEach(e=>base[e.dataset.t]=e.textContent.trim());T.en=base;
-const select=document.querySelector('#about-language');function applyAboutLanguage(lang){const dict=T[lang]||T.en;document.querySelectorAll('[data-t]').forEach(e=>{const key=e.dataset.t;if(Object.hasOwn(dict,key))e.textContent=dict[key];else console.warn('Missing about translation',lang,key)});document.documentElement.lang=lang;try{localStorage.setItem('godzyaLanguage',lang)}catch{}}
-try{const stored=(localStorage.getItem('godzyaLanguage')||'en').toLowerCase();select.value=T[stored]?stored:'en'}catch{select.value='en'}applyAboutLanguage(select.value);select.addEventListener('change',()=>applyAboutLanguage(select.value));
+
+
+const languageButton = document.querySelector('.about-language-button');
+const languageMenu = document.querySelector('#about-language-menu');
+
+function applyAboutLanguage(lang) {
+  const chosen = Object.hasOwn(T, lang) ? lang : 'en';
+  const dict = T[chosen];
+
+  document.querySelectorAll('[data-t]').forEach(element => {
+    const key = element.dataset.t;
+
+    if (Object.hasOwn(dict, key)) {
+      element.textContent = dict[key];
+    }
+  });
+
+  document.documentElement.lang = chosen;
+  languageButton.textContent = chosen.toUpperCase();
+
+  try {
+    localStorage.setItem('godzyaLanguage', chosen);
+  } catch {}
+}
+
+function closeAboutLanguageMenu() {
+  languageMenu.hidden = true;
+  languageButton.setAttribute('aria-expanded', 'false');
+}
+
+languageButton.addEventListener('click', () => {
+  const opening = languageMenu.hidden;
+  languageMenu.hidden = !opening;
+  languageButton.setAttribute('aria-expanded', String(opening));
+});
+
+languageMenu.querySelectorAll('[data-lang]').forEach(button => {
+  button.addEventListener('click', () => {
+    applyAboutLanguage(button.dataset.lang);
+    closeAboutLanguageMenu();
+    languageButton.focus();
+  });
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('.about-language-selector')) {
+    closeAboutLanguageMenu();
+  }
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    closeAboutLanguageMenu();
+  }
+});
+
+let initialLanguage = 'en';
+
+try {
+  const saved = localStorage.getItem('godzyaLanguage');
+  if (saved && Object.hasOwn(T, saved.toLowerCase())) {
+    initialLanguage = saved.toLowerCase();
+  }
+} catch {}
+
+applyAboutLanguage(initialLanguage);
+
 const menu=document.querySelector('.about-menu'),links=document.querySelector('.about-links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));document.querySelector('#about-year').textContent=new Date().getFullYear();
 </script>
 </body></html>
