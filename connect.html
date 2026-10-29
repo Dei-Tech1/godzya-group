@@ -1744,81 +1744,118 @@ body.connect-page {
       }
 
 
-      /* ========================================
-         LANGUAGE SYSTEM
-      ======================================== */
+      
+/* ========================================
+   GODZYA CONNECT — LANGUAGE SYSTEM
+======================================== */
 
-      const languageSelector =
-        document.getElementById("connectLanguage");
+const languageButton =
+  document.getElementById("connectLanguageButton");
 
-      function applyConnectLanguage(language) {
+const languageMenu =
+  document.getElementById("connectLanguageMenu");
 
-        document.documentElement.lang = language;
+function applyConnectLanguage(language) {
 
-        document.querySelectorAll(
-          "[data-en][data-fr]"
-        ).forEach(function (element) {
+  const activeLanguage =
+    language === "fr" ? "fr" : "en";
 
-          const translatedText =
-            element.getAttribute("data-" + language);
+  document.documentElement.lang = activeLanguage;
 
-          if (translatedText !== null) {
-            element.textContent = translatedText;
-          }
+  document.querySelectorAll("[data-en][data-fr]")
+    .forEach(function (element) {
 
-        });
+      const translation =
+        element.getAttribute("data-" + activeLanguage);
 
+      if (translation !== null) {
+        element.textContent = translation;
       }
 
-      let savedLanguage = "en";
+    });
+
+  if (languageButton) {
+    languageButton.textContent =
+      activeLanguage.toUpperCase();
+  }
+}
+
+let savedLanguage = "en";
+
+try {
+  const storedLanguage =
+    localStorage.getItem("godzyaLanguage");
+
+  if (storedLanguage === "fr") {
+    savedLanguage = "fr";
+  }
+} catch (error) {
+  // Continue with English.
+}
+
+applyConnectLanguage(savedLanguage);
+
+if (languageButton && languageMenu) {
+
+  languageButton.addEventListener("click", function () {
+
+    const opening = languageMenu.hidden;
+
+    languageMenu.hidden = !opening;
+
+    languageButton.setAttribute(
+      "aria-expanded",
+      String(opening)
+    );
+
+  });
+
+  languageMenu.querySelectorAll(
+    "button[data-lang]:not([disabled])"
+  ).forEach(function (option) {
+
+    option.addEventListener("click", function () {
+
+      const language = option.dataset.lang;
+
+      applyConnectLanguage(language);
 
       try {
-
-        const storedLanguage =
-          localStorage.getItem("godzyaLanguage");
-
-        if (storedLanguage === "fr") {
-          savedLanguage = "fr";
-        }
-
-      } catch (error) {
-
-        savedLanguage = "en";
-
-      }
-
-      if (languageSelector) {
-
-        languageSelector.value = savedLanguage;
-
-        applyConnectLanguage(savedLanguage);
-
-        languageSelector.addEventListener(
-          "change",
-          function () {
-
-            const selectedLanguage =
-              languageSelector.value;
-
-            applyConnectLanguage(selectedLanguage);
-
-            try {
-
-              localStorage.setItem(
-                "godzyaLanguage",
-                selectedLanguage
-              );
-
-            } catch (error) {
-
-              // Language still works without storage.
-
-            }
-
-          }
+        localStorage.setItem(
+          "godzyaLanguage",
+          language
         );
-
+      } catch (error) {
+        // Continue without storage.
       }
+
+      languageMenu.hidden = true;
+
+      languageButton.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+  document.addEventListener("click", function (event) {
+
+    if (!event.target.closest(".language-selector")) {
+
+      languageMenu.hidden = true;
+
+      languageButton.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+  });
+
+}
 
 
       /* ========================================
