@@ -910,15 +910,50 @@ body.connect-page {
 
 <div class="connect-nav-actions">
 
-  <select
-    id="connectLanguage"
-    class="connect-language"
-    aria-label="Select language"
-  >
+  
+<!-- HOMEPAGE LANGUAGE SELECTOR -->
 
-          <option value="en">EN</option>
-          <option value="fr">FR</option>
-        </select>
+<div class="language-selector">
+
+  <button
+    class="language-button"
+    id="connectLanguageButton"
+    type="button"
+    aria-label="Change language"
+    aria-expanded="false"
+    aria-controls="connectLanguageMenu">
+    EN
+  </button>
+
+  <div
+    class="language-menu"
+    id="connectLanguageMenu"
+    hidden>
+
+    <button type="button" data-lang="en">
+      🇬🇧 English
+    </button>
+
+    <button type="button" data-lang="fr">
+      🇫🇷 Français
+    </button>
+
+    <button type="button" data-lang="es" disabled>
+      🇪🇸 Español — Soon
+    </button>
+
+    <button type="button" data-lang="pt" disabled>
+      🇵🇹 Português — Soon
+    </button>
+
+    <button type="button" data-lang="de" disabled>
+      🇩🇪 Deutsch — Soon
+    </button>
+
+  </div>
+
+</div>
+
 
         <button
           type="button"
