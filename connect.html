@@ -897,139 +897,129 @@ body.connect-page {
        HEADER
   ========================================== -->
 
-  <header class="connect-header">
+  
+<!-- ========================================
+     GODZYA MASTER HEADER
+======================================== -->
 
-    <nav class="connect-nav" aria-label="Main navigation">
+<header class="site-header">
 
-      
-<!-- GODZYA ORIGINAL HOMEPAGE 3D LOGO -->
+  <nav class="site-nav" aria-label="Main navigation">
 
-<a href="index.html" class="brand">
+    <!-- ORIGINAL 3D ROTATING LOGO -->
 
-  <div class="logo-cube-scene">
-    <div class="logo-cube">
+    <a href="index.html" class="brand">
 
-      <div class="cube-face front"></div>
-      <div class="cube-face back"></div>
-      <div class="cube-face right"></div>
-      <div class="cube-face left"></div>
-      <div class="cube-face top"></div>
-      <div class="cube-face bottom"></div>
+      <div class="logo-cube-scene">
+        <div class="logo-cube">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+
+      <div class="brand-text">
+        <span class="brand-name">WE BUILD.</span>
+        <span class="brand-group">YOU GROW.</span>
+      </div>
+
+    </a>
+
+    <!-- FOUR DIRECT NAVIGATION LINKS -->
+
+    <div class="nav-links" id="connectNavLinks">
+
+      <a href="index.html"
+         data-en="Home"
+         data-fr="Accueil">
+        Home
+      </a>
+
+      <a href="expertise.html"
+         data-en="Our Expertise"
+         data-fr="Nos expertises">
+        Our Expertise
+      </a>
+
+      <a href="about.html"
+         data-en="About Us"
+         data-fr="À propos">
+        About Us
+      </a>
+
+      <a href="connect.html" class="active">
+        GODZYA CONNECT
+      </a>
 
     </div>
-  </div>
 
-  <div class="brand-text">
-    <span class="brand-name">WE BUILD.</span>
-    <span class="brand-group">YOU GROW.</span>
-  </div>
+    <!-- LANGUAGE SELECTOR -->
 
-</a>
+    <div class="language-selector">
 
+      <button
+        class="language-button"
+        id="connectLanguageButton"
+        type="button"
+        aria-label="Change language"
+        aria-expanded="false"
+        aria-controls="connectLanguageMenu">
+        EN
+      </button>
 
-      
-<!-- GODZYA HOMEPAGE NAVIGATION -->
+      <div
+        class="language-menu"
+        id="connectLanguageMenu"
+        hidden>
 
-<div class="connect-nav-links" id="connectNavLinks">
+        <button type="button" data-lang="en">
+          🇬🇧 English
+        </button>
 
-  <a
-    href="index.html"
-    data-en="Home"
-    data-fr="Accueil">
-    Home
-  </a>
+        <button type="button" data-lang="fr">
+          🇫🇷 Français
+        </button>
 
-  <a
-    href="expertise.html"
-    data-en="Our Expertise"
-    data-fr="Nos expertises">
-    Our Expertise
-  </a>
+        <button type="button" data-lang="es" disabled>
+          🇪🇸 Español — Soon
+        </button>
 
-  <a
-    href="about.html"
-    data-en="About Us"
-    data-fr="À propos">
-    About Us
-  </a>
+        <button type="button" data-lang="pt" disabled>
+          🇵🇹 Português — Soon
+        </button>
 
-  <a
-    href="connect.html"
-    class="active">
-    GODZYA CONNECT
-  </a>
-
-
-</div>
-
-<!-- LANGUAGE SELECTOR AND MOBILE MENU -->
-
-<div class="connect-nav-actions">
-
-  
-<!-- HOMEPAGE LANGUAGE SELECTOR -->
-
-<div class="language-selector">
-
-  <button
-    class="language-button"
-    id="connectLanguageButton"
-    type="button"
-    aria-label="Change language"
-    aria-expanded="false"
-    aria-controls="connectLanguageMenu">
-    EN
-  </button>
-
-  <div
-    class="language-menu"
-    id="connectLanguageMenu"
-    hidden>
-
-    <button type="button" data-lang="en">
-      🇬🇧 English
-    </button>
-
-    <button type="button" data-lang="fr">
-      🇫🇷 Français
-    </button>
-
-    <button type="button" data-lang="es" disabled>
-      🇪🇸 Español — Soon
-    </button>
-
-    <button type="button" data-lang="pt" disabled>
-      🇵🇹 Português — Soon
-    </button>
-
-    <button type="button" data-lang="de" disabled>
-      🇩🇪 Deutsch — Soon
-    </button>
-
-  </div>
-
-</div>
-
-<button
-  type="button"
-  class="connect-menu-button"
-  id="connectMenuButton"
-  aria-label="Toggle navigation"
-  aria-expanded="false"
-  aria-controls="connectNavLinks"
->
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+        <button type="button" data-lang="de" disabled>
+          🇩🇪 Deutsch — Soon
+        </button>
 
       </div>
 
-    </nav>
+    </div>
 
-  </header>
+    <!-- HOMEPAGE-STYLE HAMBURGER -->
 
+    <button
+      class="menu-toggle"
+      id="connectMenuButton"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="connectNavLinks">
 
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </nav>
+
+</header>
+
+  
   <main>
 
     <!-- ==========================================
