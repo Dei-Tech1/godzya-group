@@ -234,7 +234,8 @@
 </head>
 <body class="about-page">
 <a class="about-skip" href="#main" data-t="skip">Skip to content</a>
-<header class="about-header"><nav class="about-wrap about-nav" aria-label="Main navigation">
+
+   <header class="about-header"><nav class="about-wrap about-nav" aria-label="Main navigation">
 
 <!-- GODZYA 3D ROTATING LOGO -->
 
@@ -291,23 +292,101 @@
 
   </div>
 
-  
-<!-- MOBILE MENU -->
-<button
-  class="about-menu"
-  type="button"
-  aria-label="Open menu"
-  aria-controls="about-links"
-  aria-expanded="false">
+<!-- GODZYA GROUP — SHARED PREMIUM HEADER -->
 
-  <span></span>
-  <span></span>
-  <span></span>
+<header class="site-header">
 
-</button>
+  <nav class="site-nav" aria-label="Main navigation">
 
+    <!-- 3D ROTATING LOGO -->
+    <a href="index.html" class="brand">
 
-</div>
+      <div class="logo-cube-scene">
+        <div class="logo-cube">
+          <div class="cube-face front"></div>
+          <div class="cube-face back"></div>
+          <div class="cube-face right"></div>
+          <div class="cube-face left"></div>
+          <div class="cube-face top"></div>
+          <div class="cube-face bottom"></div>
+        </div>
+      </div>
+
+      <div class="brand-text">
+        <span class="brand-name">WE BUILD.</span>
+        <span class="brand-group">YOU GROW.</span>
+      </div>
+
+    </a>
+
+    <!-- NAVIGATION -->
+    <div class="nav-links" id="about-links">
+
+      <a href="index.html" data-t="home">
+        Home
+      </a>
+
+      <a href="expertise.html" data-t="expertise">
+        Our Expertise
+      </a>
+
+      <a href="about.html"
+         class="active"
+         aria-current="page"
+         data-t="about">
+        About Us
+      </a>
+
+      <a href="connect.html" data-t="connect">
+        GODZYA CONNECT
+      </a>
+
+    </div>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="language-selector">
+
+      <button
+        class="language-button about-language-button"
+        type="button"
+        aria-label="Change language"
+        aria-expanded="false"
+        aria-controls="about-language-menu">
+        EN
+      </button>
+
+      <div
+        class="language-menu about-language-menu"
+        id="about-language-menu"
+        hidden>
+
+        <button type="button" data-lang="en">🇬🇧 English</button>
+        <button type="button" data-lang="fr">🇫🇷 Français</button>
+        <button type="button" data-lang="es">🇪🇸 Español</button>
+        <button type="button" data-lang="pt">🇵🇹 Português</button>
+        <button type="button" data-lang="de">🇩🇪 Deutsch</button>
+
+      </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <button
+      class="menu-toggle about-menu"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="about-links"
+      aria-expanded="false">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </nav>
+
+</header>
 
 </nav></header>
 <main id="main">
