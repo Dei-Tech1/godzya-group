@@ -638,7 +638,21 @@ function applyAboutLanguage(lang) {
     const key = element.dataset.t;
 
     if (Object.hasOwn(dict, key)) {
-      element.textContent = dict[key];
+      if (key === 'cofounderText') {
+  const paragraphs = dict[key]
+    .split(/\n\s*\n/)
+    .filter(Boolean);
+
+  element.replaceChildren();
+
+  paragraphs.forEach(text => {
+    const p = document.createElement('p');
+    p.textContent = text.trim();
+    element.appendChild(p);
+  });
+} else {
+  element.textContent = dict[key];
+      }
     }
   });
 
