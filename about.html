@@ -163,6 +163,44 @@
 .about-page .about-grid h2 span:last-child {
   color: #46d9ff;
 }
+
+   
+/* ==========================================
+   ABOUT US — WHO WE ARE REFINEMENT 04B
+========================================== */
+
+.about-page .about-grid {
+  gap: clamp(35px, 5vw, 80px);
+  align-items: start;
+}
+
+.about-page .about-grid h2 {
+  max-width: 560px;
+  font-size: clamp(38px, 4.8vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -.04em;
+}
+
+.about-page .about-grid .about-copy {
+  max-width: 600px;
+}
+
+.about-page .about-grid .about-copy p {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+@media (max-width: 850px) {
+  .about-page .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .about-page .about-grid h2 {
+    font-size: clamp(36px, 7vw, 52px);
+  }
+}
    
 </style>
    
