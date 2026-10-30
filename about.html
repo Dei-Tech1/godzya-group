@@ -398,6 +398,50 @@
   }
 }
    
+/* ==========================================
+   ABOUT US — LEADERSHIP LAYOUT 05B-3
+========================================== */
+
+@media (min-width: 851px) {
+  .about-page #founder .about-founder-grid {
+    grid-template-columns:
+      minmax(260px, 0.85fr)
+      minmax(0, 1.4fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 75px);
+  }
+}
+
+.about-page #founder .about-founder-grid > div {
+  min-width: 0;
+}
+
+.about-page #founder .about-founder-grid .about-portrait {
+  width: 100%;
+  min-height: 0;
+}
+
+@media (max-width: 850px) {
+  .about-page #founder .about-founder-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .about-page #founder .about-founder-grid > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-page #founder .about-founder-grid {
+    gap: 24px;
+  }
+
+  .about-page #founder .about-founder-grid .about-portrait {
+    width: 100%;
+  }
+}
+   
 </style>
    
 </head>
