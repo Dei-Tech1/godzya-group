@@ -88,7 +88,7 @@ whyCardThreeTitle: "Built to Grow",
 whyCardThreeText: "We build with the future in mind, creating foundations that can evolve as your needs grow.",
 
 whyCardFourTitle: "Honest Delivery",
-whyCardFourText: "We don't sell what we aren't ready to deliver. Trust starts with knowing what we can do.",
+whyCardFourText: "We communicate openly, set realistic expectations and take responsibility for the commitments we make.",
 
 leadershipLabel: "THE PEOPLE BEHIND GODZYA",
 leadershipTitleStart: "Built by people.",
