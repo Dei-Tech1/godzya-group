@@ -179,7 +179,7 @@ whyCardThreeTitle: "Conçu pour évoluer",
 whyCardThreeText: "Nous construisons des bases solides, capables de s'adapter à l'évolution de vos besoins.",
 
 whyCardFourTitle: "Des engagements honnêtes",
-whyCardFourText: "Nous ne vendons pas ce que nous ne sommes pas prêts à réaliser. La confiance commence par la transparence sur nos capacités.",
+whyCardFourText: "Nous communiquons avec transparence, fixons des attentes réalistes et assumons la responsabilité de nos engagements.",
 
 leadershipLabel: "LES PERSONNES DERRIÈRE GODZYA",
 leadershipTitleStart: "Une équipe engagée.",
