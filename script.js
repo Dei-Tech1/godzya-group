@@ -585,7 +585,7 @@ function initializeGodzya() {
 document.documentElement.lang = activeLanguage;
 
 // Apply the saved language to this page
-applyLanguage(activeLanguage);
+godzyaTranslate(activeLanguage);
 
 }
 
