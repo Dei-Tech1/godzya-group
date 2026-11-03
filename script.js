@@ -722,7 +722,7 @@ if (langButton && langMenu) {
     document.documentElement.lang = language;
 
     // Translate the page content
-    applyLanguage(language);
+godzyaTranslate(language);
 
     // Close the dropdown
     langMenu.hidden = true;
