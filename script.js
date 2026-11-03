@@ -380,7 +380,13 @@ Object.assign(GODZYA_TRANSLATIONS.en, {
 
 Object.assign(GODZYA_TRANSLATIONS.fr, {
   storyTitleOne: "Bâti avec détermination.",
-  storyTitleTwo: "Guidé par une vision."
+  storyTitleTwo: "Guidé par une vision.",
+
+  storyIntro: "Derrière chaque solution porteuse de sens se trouve une histoire de détermination, d’apprentissage continu et de courage pour bâtir quelque chose de plus grand.",
+
+  storyDescription: "Découvrez les personnes, les valeurs et la vision qui façonnent notre parcours.",
+
+  storyButton: "Découvrez notre histoire"
 });
 /* =================================================
    GODZYA — APPLY TRANSLATIONS
