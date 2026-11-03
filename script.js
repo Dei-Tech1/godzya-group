@@ -738,3 +738,42 @@ if (langButton && langMenu) {
     }
   });
 }
+/* =====================================================
+   GODZYA GROUP — H05
+   SHARED MULTILINGUAL ENGINE
+   VERSION 1.0
+===================================================== */
+
+const GODZYA_LANGUAGES = ["en", "fr", "es", "pt", "de"];
+
+function godzyaTranslate(language) {
+
+  const selectedLanguage =
+    GODZYA_LANGUAGES.includes(language)
+      ? language
+      : "en";
+
+  const englishTranslations =
+    GODZYA_TRANSLATIONS.en || {};
+
+  const selectedTranslations =
+    GODZYA_TRANSLATIONS[selectedLanguage] || {};
+
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+
+    const key = element.dataset.i18n;
+
+    const translatedText =
+      selectedTranslations[key] ??
+      englishTranslations[key];
+
+    if (translatedText !== undefined) {
+      element.textContent = translatedText;
+    }
+
+  });
+
+  document.documentElement.lang = selectedLanguage;
+
+  return selectedLanguage;
+}
