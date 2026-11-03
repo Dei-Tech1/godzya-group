@@ -369,6 +369,19 @@ Object.assign(GODZYA_TRANSLATIONS.fr, {
    
 });
 
+/* =========================================
+   GODZYA STORY — ENGLISH & FRENCH
+========================================= */
+
+Object.assign(GODZYA_TRANSLATIONS.en, {
+  storyTitleOne: "Built on purpose.",
+  storyTitleTwo: "Driven by vision."
+});
+
+Object.assign(GODZYA_TRANSLATIONS.fr, {
+  storyTitleOne: "Bâti avec détermination.",
+  storyTitleTwo: "Guidé par une vision."
+});
 /* =================================================
    GODZYA — APPLY TRANSLATIONS
 ================================================== */
