@@ -118,7 +118,7 @@ window.GODZYA_LANGUAGE_DATA = {
     whyTitleEnd: "Guidé par le progrès.",
     whyCardOneTitle: "Une Approche Pragmatique",
     whyCardOneText: "Nous privilégions des solutions adaptées aux besoins réels, plutôt que la technologie pour elle-même.",
-    whyCardTwoTitle: "Une Expertise Complémentaire",
+    whyCardFourTitle: "Des Engagements Transparents",
     whyCardTwoText: "L'intelligence artificielle, les données, la stratégie et la technologie se complètent pour créer des solutions plus solides.",
     whyCardThreeTitle: "Conçu pour Évoluer",
     whyCardThreeText: "Nous construisons en pensant à l'avenir, avec des bases capables d'évoluer selon vos besoins.",
