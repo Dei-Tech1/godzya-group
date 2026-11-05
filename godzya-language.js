@@ -82,3 +82,77 @@
     });
   }
   
+
+  function init() {
+    document.querySelectorAll('.language-selector').forEach(selector => {
+      const button = selector.querySelector('.language-button');
+      const menu = selector.querySelector('.language-menu');
+
+      if (!button || !menu) return;
+
+      menu.replaceChildren();
+
+      [
+        ['en', '🇬🇧 English'],
+        ['fr', '🇫🇷 Français']
+      ].forEach(([code, label]) => {
+        const option = document.createElement('button');
+
+        option.type = 'button';
+        option.dataset.lang = code;
+        option.textContent = label;
+
+        option.addEventListener('click', () => {
+          setLanguage(code);
+        });
+
+        menu.appendChild(option);
+      });
+
+      button.addEventListener('click', () => {
+        menu.hidden = !menu.hidden;
+
+        button.setAttribute(
+          'aria-expanded',
+          String(!menu.hidden)
+        );
+      });
+    });
+
+    document.addEventListener('click', event => {
+      if (event.target.closest('.language-selector')) return;
+
+      document.querySelectorAll('.language-menu').forEach(menu => {
+        menu.hidden = true;
+      });
+
+      document.querySelectorAll('.language-button').forEach(button => {
+        button.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+
+      document.querySelectorAll('.language-menu').forEach(menu => {
+        menu.hidden = true;
+      });
+
+      document.querySelectorAll('.language-button').forEach(button => {
+        button.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    translate(savedLanguage());
+  }
+
+  window.GODZYA_LANGUAGE = {
+    init,
+    setLanguage,
+    savedLanguage
+  };
+
+  // Do not auto-start until legacy language
+  // listeners have been removed from all pages.
+})();
+         
